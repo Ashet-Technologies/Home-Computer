@@ -2,6 +2,27 @@
 
 ## Features
 
+- Dual Core Arm CPU (Cortex-M33, 150 MHz)
+- 16 MB RAM
+- 16 MB Flash
+- DVI Video Out (800x480, 60 Hz)
+- Stereo Audio Out (48 kHz, 16 bit)
+- Stereo Audio In (48 kHz, 16 bit)
+- USB 1.1 Host
+- 10/100 Mbps Ethernet
+- Wireless LAN
+- TTL UART (5V, 3.3V, isolated)
+- USB UART (FT232H)
+- RTC
+- Status Display (128x64, monochrome)
+- 2× C64 Serial
+- I²C Port (100kHz, isolated)
+- Integrated Debugger
+
+## Block Diagram
+
+![Block Diagram](Concept/Block%20Diagram.svg)
+
 ## Parts
 
 - [RP2350 Stamp XL](https://www.lectronz.com/products/rp2350-stamp-xl) ([Documentation](https://www.solder.party/docs/rp2350-stamp-xl/))
