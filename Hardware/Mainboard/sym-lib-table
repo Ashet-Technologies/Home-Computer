@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RP2xxx_Stamp")(type "KiCad")(uri "/home/felix/projects/ashet/home-computer/Hardware/vendor/rp2xxx_stamp_footprints-main/RP2xxx_Stamp.kicad_sym")(options "")(descr ""))
+)
