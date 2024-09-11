@@ -1928,7 +1928,7 @@
 	)
 	(hierarchical_label "DDC_{SCL}"
 		(shape bidirectional)
-		(at 76.2 38.1 0)
+		(at 76.2 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1988,7 +1988,7 @@
 	)
 	(hierarchical_label "DDC_{SDA}"
 		(shape bidirectional)
-		(at 76.2 40.64 0)
+		(at 76.2 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

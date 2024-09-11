@@ -2445,7 +2445,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 59.69) (xy 73.66 59.69)
+			(xy 59.69 59.69) (xy 74.93 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2575,7 +2575,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 52.07) (xy 96.52 52.07)
+			(xy 92.71 52.07) (xy 96.52 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2595,7 +2595,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 77.47) (xy 73.66 77.47)
+			(xy 62.23 77.47) (xy 74.93 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2675,7 +2675,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 77.47) (xy 96.52 77.47)
+			(xy 92.71 77.47) (xy 96.52 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2695,7 +2695,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 41.91) (xy 96.52 41.91)
+			(xy 92.71 41.91) (xy 96.52 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2945,7 +2945,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 67.31) (xy 96.52 67.31)
+			(xy 92.71 67.31) (xy 96.52 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2975,7 +2975,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 44.45) (xy 73.66 44.45)
+			(xy 59.69 44.45) (xy 74.93 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3085,7 +3085,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 52.07) (xy 73.66 52.07)
+			(xy 59.69 52.07) (xy 74.93 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3205,7 +3205,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 74.93) (xy 96.52 74.93)
+			(xy 92.71 74.93) (xy 96.52 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3335,6 +3335,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 67.31) (xy 74.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e04727-93b0-4716-a9b2-058cc9cc5442")
+	)
+	(wire
+		(pts
 			(xy 177.8 130.175) (xy 168.275 130.175)
 		)
 		(stroke
@@ -3355,7 +3365,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 59.69) (xy 96.52 59.69)
+			(xy 92.71 59.69) (xy 96.52 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3385,7 +3395,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 54.61) (xy 96.52 54.61)
+			(xy 92.71 54.61) (xy 96.52 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3445,7 +3455,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 46.99) (xy 96.52 46.99)
+			(xy 92.71 46.99) (xy 96.52 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3625,7 +3635,17 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 54.61) (xy 73.66 54.61)
+			(xy 73.66 69.85) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79850b80-befc-46e1-b43d-b4abebed0ff1")
+	)
+	(wire
+		(pts
+			(xy 59.69 54.61) (xy 74.93 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3645,7 +3665,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 41.91) (xy 73.66 41.91)
+			(xy 59.69 41.91) (xy 74.93 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3785,7 +3805,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 72.39) (xy 96.52 72.39)
+			(xy 92.71 72.39) (xy 96.52 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3825,7 +3845,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 39.37) (xy 96.52 39.37)
+			(xy 92.71 39.37) (xy 96.52 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3935,7 +3955,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 57.15) (xy 73.66 57.15)
+			(xy 59.69 57.15) (xy 74.93 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4015,7 +4035,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 69.85) (xy 73.66 69.85)
+			(xy 59.69 69.85) (xy 71.12 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4085,7 +4105,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 46.99) (xy 73.66 46.99)
+			(xy 59.69 46.99) (xy 74.93 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4095,7 +4115,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 64.77) (xy 73.66 64.77)
+			(xy 59.69 64.77) (xy 74.93 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4165,7 +4185,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 64.77) (xy 96.52 64.77)
+			(xy 92.71 64.77) (xy 96.52 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4245,7 +4265,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 62.23) (xy 73.66 62.23)
+			(xy 59.69 62.23) (xy 74.93 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4302,6 +4322,16 @@
 			(type default)
 		)
 		(uuid "b75d6115-ed7b-4c7a-b5b4-a31c42190031")
+	)
+	(wire
+		(pts
+			(xy 59.69 72.39) (xy 71.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7db916e-d838-4907-bf03-310a7dbcf65a")
 	)
 	(wire
 		(pts
@@ -4395,16 +4425,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 67.31) (xy 73.66 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0492e76-a176-4814-ba54-c758169a5f1b")
-	)
-	(wire
-		(pts
 			(xy 87.63 106.68) (xy 77.47 106.68)
 		)
 		(stroke
@@ -4442,16 +4462,6 @@
 			(type default)
 		)
 		(uuid "c868d63e-b820-4517-8ecd-013026b95a1d")
-	)
-	(wire
-		(pts
-			(xy 59.69 72.39) (xy 73.66 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cae3bcb3-0752-4e08-8e72-fabc58b10d56")
 	)
 	(wire
 		(pts
@@ -4525,7 +4535,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 49.53) (xy 96.52 49.53)
+			(xy 92.71 49.53) (xy 96.52 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4625,7 +4635,17 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 69.85) (xy 96.52 69.85)
+			(xy 73.66 72.39) (xy 71.12 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52e3f99-0c13-41c8-94a7-8dd97af6b2d8")
+	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 96.52 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4755,6 +4775,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 69.85) (xy 71.12 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df90fd40-d448-41ca-9dac-350568d18ede")
+	)
+	(wire
+		(pts
 			(xy 116.84 106.68) (xy 124.46 106.68)
 		)
 		(stroke
@@ -4805,7 +4835,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 62.23) (xy 96.52 62.23)
+			(xy 92.71 62.23) (xy 96.52 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4815,7 +4845,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 74.93) (xy 73.66 74.93)
+			(xy 64.77 74.93) (xy 74.93 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4855,7 +4885,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 49.53) (xy 73.66 49.53)
+			(xy 59.69 49.53) (xy 74.93 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4865,7 +4895,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 57.15) (xy 96.52 57.15)
+			(xy 92.71 57.15) (xy 96.52 57.15)
 		)
 		(stroke
 			(width 0)
@@ -5005,7 +5035,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 44.45) (xy 96.52 44.45)
+			(xy 92.71 44.45) (xy 96.52 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5035,7 +5065,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 39.37) (xy 73.66 39.37)
+			(xy 59.69 39.37) (xy 74.93 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5062,6 +5092,16 @@
 			(type default)
 		)
 		(uuid "fb0e188d-1049-41dc-a36a-606a179d8f24")
+	)
+	(wire
+		(pts
+			(xy 73.66 72.39) (xy 74.93 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba21653-2d6b-4c67-9e05-2d737a59bf95")
 	)
 	(wire
 		(pts
@@ -6966,7 +7006,7 @@
 	)
 	(symbol
 		(lib_id "compi:YC248-JR-0710KL")
-		(at 82.55 48.26 0)
+		(at 83.82 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6974,7 +7014,7 @@
 		(dnp no)
 		(uuid "4b3a77de-fd79-42cb-9f48-377685b6ea9c")
 		(property "Reference" "U10"
-			(at 82.55 37.846 0)
+			(at 83.82 37.846 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6983,7 +7023,7 @@
 			)
 		)
 		(property "Value" "YC248-JR-0710KL"
-			(at 82.55 33.782 0)
+			(at 83.82 33.782 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6992,7 +7032,7 @@
 			)
 		)
 		(property "Footprint" "compi:YC248-JR-0710KL"
-			(at 81.28 25.4 0)
+			(at 82.55 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7002,7 +7042,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-yc_tc_group_51_rohs_l.pdf"
-			(at 88.138 113.538 0)
+			(at 89.408 113.538 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7012,7 +7052,7 @@
 			)
 		)
 		(property "Description" "10k Ohm ±5% 62.5mW Power Per Element Isolated 8 Resistor Network/Array ±200ppm/°C 1606, Convex, Long Side Terminals"
-			(at 94.742 138.176 0)
+			(at 96.012 138.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +7061,7 @@
 			)
 		)
 		(property "DigiKey Part No." "13-YC248-JR-0710KLCT-ND"
-			(at 119.38 533.02 0)
+			(at 120.65 533.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7031,7 +7071,7 @@
 			)
 		)
 		(property "TroniDex Component ID" "YC248-JR-0710KL"
-			(at 119.38 533.02 0)
+			(at 120.65 533.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7041,7 +7081,7 @@
 			)
 		)
 		(property "TroniDex Part No." "YC248-JR-0710KL"
-			(at 119.38 533.02 0)
+			(at 120.65 533.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,7 +7923,7 @@
 	)
 	(symbol
 		(lib_id "compi:YC248-JR-0710KL")
-		(at 82.55 68.58 0)
+		(at 83.82 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7891,7 +7931,7 @@
 		(dnp no)
 		(uuid "885c41f7-8fd2-49c8-8e35-9f2a4c1277f8")
 		(property "Reference" "U11"
-			(at 82.296 83.566 0)
+			(at 83.566 83.566 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7900,7 +7940,7 @@
 			)
 		)
 		(property "Value" "YC248-JR-0710KL"
-			(at 82.55 79.248 0)
+			(at 83.82 79.248 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7909,7 +7949,7 @@
 			)
 		)
 		(property "Footprint" "compi:YC248-JR-0710KL"
-			(at 81.28 45.72 0)
+			(at 82.55 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7919,7 +7959,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-yc_tc_group_51_rohs_l.pdf"
-			(at 88.138 133.858 0)
+			(at 89.408 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7929,7 +7969,7 @@
 			)
 		)
 		(property "Description" "10k Ohm ±5% 62.5mW Power Per Element Isolated 8 Resistor Network/Array ±200ppm/°C 1606, Convex, Long Side Terminals"
-			(at 94.742 158.496 0)
+			(at 96.012 158.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7938,7 +7978,7 @@
 			)
 		)
 		(property "DigiKey Part No." "13-YC248-JR-0710KLCT-ND"
-			(at 119.38 553.34 0)
+			(at 120.65 553.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +7988,7 @@
 			)
 		)
 		(property "TroniDex Component ID" "YC248-JR-0710KL"
-			(at 119.38 553.34 0)
+			(at 120.65 553.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7958,7 +7998,7 @@
 			)
 		)
 		(property "TroniDex Part No." "YC248-JR-0710KL"
-			(at 119.38 553.34 0)
+			(at 120.65 553.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)

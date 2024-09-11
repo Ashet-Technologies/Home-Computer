@@ -1,4 +1,4 @@
-12079836905746
+284664978014285
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95388,3 +95388,1109 @@ Varistor VF
 0
 2
 2
+compi
+2N7000
+N-Channel 60 V 200mA (Ta) 400mW (Ta) Through Hole TO-92-3
+
+0
+3
+3
+compi
+5-103634-7
+Connector Header Through Hole, Right Angle 8 position 0.100" (2.54mm)
+connector, dupont
+0
+8
+8
+compi
+24LC256-I_P
+EEPROM Memory IC 256Kbit I2C 400 kHz 900 ns 8-PDIP
+
+0
+8
+8
+compi
+54-00174
+3.50mm (0.141", 1/8", Mini Plug) - Headphone Phone Jack Stereo (4 Conductor, TRRS) Connector Solder
+jack, audio
+0
+5
+4
+compi
+74HC165PW_118
+Shift Shift Register 1 Element 8 Bit 16-TSSOP
+shift-register
+0
+16
+16
+compi
+74VHC9126FT
+Buffer, Inverting, Non-Inverting 1 Element 5 Bit per Element 3-State Output 14-TSSOPB
+buffer
+0
+14
+14
+compi
+74VHCV541FT
+Buffer, Non-Inverting 1 Element 8 Bit per Element 3-State Output 20-TSSOPB
+buffer
+0
+20
+20
+compi
+74hc595d
+The 74HC595D is a high speed 8-BIT SHIFT REGISTER/LATCH fabricated with silicon gate C²MOS technology
+shift-register
+0
+16
+16
+compi
+210-8MS
+Dip Switch SPST 8 Position Through Hole Slide (Standard) Actuator 100mA 20VDC
+
+0
+16
+16
+compi
+219-6LPST
+Dip Switch SPST 6 Position Surface Mount Slide (Standard) Actuator 100mA 20VDC
+switch, dipswitch
+0
+12
+12
+compi
+220AMA04R
+Dip Switch SP4T 4 Position Surface Mount Rotary for Tool Actuator 100mA 50VDC
+switch
+0
+6
+5
+compi
+1042
+"18650" lithium ion battery holders with SMT leaf springs
+18650, battery-holder
+0
+2
+2
+compi
+3306K-1-103
+10 kOhms 0.2W, 1/5W PC Pins Through Hole Trimmer Potentiometer Cermet 1.0 Turn Side Adjustment
+potentiometer
+0
+3
+3
+compi
+4816P-R2R-503LF
+50k, 100k Ohm ±2% 125mW Power Per Element R2R Ladder 16 Resistor Network/Array ±100ppm/°C 16-SOIC (0.220", 5.59mm Width)
+resistor-network-r2r
+0
+16
+16
+compi
+75869-131LF
+Connector Header Through Hole 6 position 0.100" (2.54mm)
+dupont
+0
+6
+6
+compi
+75869-332LF
+Connector Header Through Hole 8 position 0.100" (2.54mm)
+dupont
+0
+8
+8
+compi
+2172034-1
+USB - mini B USB 2.0 Receptacle Connector 5 Position Through Hole, Right Angle
+mini-usb
+0
+7
+6
+compi
+2199119-8
+67 Position Female Connector M.2 (NGFF) Mini Card Gold 0.020" (0.50mm) Black
+connector, m.2_key_a
+0
+69
+69
+compi
+2434804-1
+Navigation Switch, 2 - Axis Digital (Mechanical Switch) Output
+directional-switch
+0
+8
+8
+compi
+10029449-111RLF
+HDMI HDMI 1.4 Receptacle Connector 19 Position Surface Mount, Right Angle; Through Hole
+connector, video, hdmi
+0
+23
+20
+compi
+696107003002
+Fuse Block 20 A 250V 1 Circuit Cartridge Through Hole
+fuse-holder
+0
+2
+2
+compi
+0532610371
+Connector Header Surface Mount, Right Angle 3 position 0.049" (1.25mm)
+picoblade
+0
+5
+5
+compi
+09452812810
+Jack Modular Connector 2P2C Single Pair Ethernet (SPE) 90° Angle (Right) Unshielded
+connector, spe, ethernet-apl
+0
+6
+6
+compi
+ACS711KEXLT-15AB-T
+Current Sensor 15.5A 1 Channel Hall Effect, Open Loop Bidirectional 12-PowerWFQFN
+current-sensor, power
+0
+10
+10
+compi
+ACS720KLATR-15AB-T
+Current Sensor 15A 1 Channel Hall Effect, Open Loop Bidirectional 16-SOIC (0.295", 7.50mm Width)
+current-sensor, analog
+0
+16
+16
+compi
+ADUM1201BRZ-RL7
+General Purpose Digital Isolator 2500Vrms 2 Channel 10Mbps 25kV/µs CMTI 8-SOIC (0.154", 3.90mm Width)
+galvanic-isolator, buffer
+0
+8
+8
+compi
+ADV7403KSTZ-140
+Video Decoder, Digitizer IC Serial ITU-R BT.656, NTSC, PAL, SECAM 100-LQFP (14x14) Package
+video, voltage-sensor, cvbs, parallel-rgb
+0
+100
+100
+compi
+AK5720VT
+ADC, Audio 24 b 96k I²S 16-TSSOP
+audio, i2s, voltage-sensor, audio-adc
+0
+16
+16
+compi
+AP2112K-1_2TRG1
+Linear Voltage Regulator IC Positive Fixed 1 Output 600mA SOT-25
+voltage-regulator
+0
+5
+5
+compi
+AP2112K-2_5TRG1
+Linear Voltage Regulator IC Positive Fixed 1 Output 600mA SOT-25
+voltage-regulator
+0
+5
+5
+compi
+AP2112K-3_3TRG1
+Linear Voltage Regulator IC Positive Fixed 1 Output 600mA SOT-25
+voltage-regulator
+0
+5
+5
+compi
+AP22850SH8-7
+Power Switch/Driver 1:1 P-Channel 8A 8-WDFN (2x2)
+electronic-switch, power
+0
+9
+9
+compi
+ARJM11D7-009-AB-EW2
+1 Port RJ45Through Hole 10/100 Base-T, AutoMDIX
+ethernet, rj45
+0
+14
+13
+compi
+ATMEGA32A-PU
+AVR AVR® ATmega Microcontroller IC 8-Bit 16MHz 32KB (16K x 16) FLASH 40-PDIP
+
+0
+40
+40
+compi
+ATTINY212-SSN
+AVR tinyAVR™ 1, Functional Safety (FuSa) Microcontroller IC 8-Bit 20MHz 2KB (2K x 8) FLASH 8-SOIC
+avr, microcontroller
+0
+8
+8
+compi
+ATTINY1626-XUR
+AVR tinyAVR® 2 Microcontroller IC 8-Bit 20MHz 16KB (16K x 8) FLASH 20-SSOP
+avr, microcontroller
+0
+20
+20
+compi
+AZ1084CD-3_3TRG1
+Linear Voltage Regulator IC Positive Fixed 1 Output 5A TO-252-3
+voltage-regulator
+0
+3
+3
+compi
+AZ1117CH2-5_0TRG1
+Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3
+voltage-regulator
+0
+4
+4
+compi
+BH-25C-1
+Battery Holder (Open) Coin, 20.0mm 1 Cell PC Pin
+battery-holder, power
+0
+2
+2
+compi
+BL-HBGR32L-3-TRB-8
+Addressable Lighting - 1 LED Discrete Serial Red, Green, Blue (RGB) 5.00mm L x 5.00mm W
+neopixel, rgb-led
+0
+6
+6
+compi
+BT139-600E_DG_127
+TRIAC Logic - Sensitive Gate 600 V 16 A Through Hole TO-220AB
+
+0
+3
+3
+compi
+CAY16-103J4LF
+10k Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Convex, Long Side Terminals
+
+0
+8
+8
+compi
+CD74HC147M96
+Priority Encoder 1 x 10:4 16-SOIC
+priority-decoder
+0
+16
+16
+compi
+CD74HC154M96
+Decoder/Demultiplexer 1 x 4:16 24-SOIC
+
+0
+24
+24
+compi
+CDSOT236-T12C
+29.2V Clamp 12A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6
+diode, tvs-diode, esd-protection
+0
+6
+6
+compi
+CPDT-24V
+47V Clamp 1A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3
+tvs-diode, esd-protection
+0
+3
+3
+compi
+DS04-254-2-03BK-SMT
+Dip Switch SPST 3 Position Surface Mount Slide (Standard) Actuator 25mA 24VDC
+dipswitch
+0
+6
+6
+compi
+DX07S024WJ3R400
+USB-C (USB TYPE-C) USB 3.2 Gen 2 (USB 3.1 Gen 2, Superspeed + (USB 3.1)) Receptacle Connector 24 Position Surface Mount, Through Hole
+usb-c
+0
+28
+28
+compi
+ENC624J600-I_PT
+Ethernet Controller 10/100 Base-T PHY SPI, Parallel Interface 64-TQFP (10x10)
+ethernet, spi
+0
+64
+64
+compi
+ESDA14V2BP6
+Clamp Ipp Tvs Diode Surface Mount SOT-666
+tvs-diode, esd-protection
+0
+6
+6
+compi
+FM16W08-SGTR
+FRAM (Ferroelectric RAM) Memory IC 64Kbit Parallel 28-SOIC
+
+0
+28
+28
+compi
+FM6726
+6 Position Circular Connector Receptacle, Female Sockets Solder
+
+0
+10
+10
+compi
+FT232HQ-REEL
+USB Bridge, USB to UART,FIFO USB 2.0 UART, FIFO Interface 48-QFN (8x8)
+
+0
+49
+49
+compi
+HC-SR501
+PIR Motion Detector
+sensor
+0
+3
+3
+compi
+HW-08-09-L-D-430-SM-A
+16 Position Header Spacer Connector 0.100" (2.54mm) Gold Surface Mount
+connector, dupont
+0
+16
+16
+compi
+ICD15S13E4GV00LF
+15 Position D-Sub, High Density Receptacle, Female Sockets Connector
+connector, vga
+0
+17
+17
+compi
+ICE40UP5K-SG48I
+iCE40 UltraPlus™ Field Programmable Gate Array (FPGA) IC 39 1171456 5280 48-VFQFN Exposed Pad
+fpga
+0
+49
+49
+compi
+IN100-D1-R-RC1I
+RF Modulator IC 8-WDFN Exposed Pad
+bluetooth-le
+0
+9
+9
+compi
+INA228AIDGSR
+Power Supply Controller Digital Power Monitor 10-VSSOP
+voltage-sensor, current-sensor, i2c
+0
+10
+10
+compi
+IRFZ44NPBF
+N-Channel 55 V 49A (Tc) 94W (Tc) Through Hole TO-220AB
+mosfet, power
+0
+3
+3
+compi
+IS42S83200J-7TLI
+SDRAM Memory IC 256Mbit Parallel 143 MHz 5.4 ns 54-TSOP II
+sdram
+0
+54
+54
+compi
+ISO1540DR
+I²C Digital Isolator 2500Vrms 2 Channel 1Mbps 25kV/µs CMTI 8-SOIC (0.154", 3.90mm Width)
+galvanic-isolator, i2c
+0
+8
+8
+compi
+ISO1541DR
+I²C Digital Isolator 2500Vrms 2 Channel 1Mbps 25kV/µs CMTI 8-SOIC (0.154", 3.90mm Width)
+i2c, galvanic-isolator
+0
+8
+8
+compi
+J104D2C12VDC_20S
+General Purpose Relay DPDT (2 Form C) Through Hole
+relais
+0
+8
+8
+compi
+JS102011SAQN
+Slide Switch SPDT Surface Mount, Right Angle
+switch
+0
+3
+3
+compi
+LM431BIZX
+Shunt Voltage Reference IC Adjustable 2.495V 36 VV ±1% 100 mA TO-92-3
+voltage-reference, z-diode
+0
+3
+3
+compi
+MAX485CSA_
+1/1 Transceiver Half RS422, RS485 8-SOIC
+differential-transceiver, rs485, half-duplex
+0
+8
+8
+compi
+MAX485CUA_T
+1/1 Transceiver Half RS422, RS485 8-uMAX/uSOP
+differential-transceiver, rs485, half-duplex
+0
+8
+8
+compi
+MAX4389EUT_T
+Video Amp 1 Voltage Feedback SOT-6
+opamp
+0
+6
+6
+compi
+MB85RC128APNF-G-JNE1
+FRAM (Ferroelectric RAM) Memory IC 128Kbit I²C 1 MHz 900 ns 8-SOP
+fram
+0
+8
+8
+compi
+MBR0540-TP
+Diode 40 V 500mA Surface Mount SOD-123
+diode
+0
+2
+2
+compi
+MCP23S08T-E_SO
+I/O Expander 8 SPI 10 MHz 18-SOIC
+
+0
+18
+18
+compi
+MCP23S17-E_SO
+I/O Expander 16 SPI 10 MHz 28-SOIC
+spi, io-expander
+0
+28
+28
+compi
+MCP23S18T-E_SO
+I/O Expander 16 SPI 10 MHz 28-SOIC
+io-expander, spi
+0
+28
+28
+compi
+MT8816AP1
+Telecommunications Switch IC 1 Channel 44-PLCC (16.59x16.59)
+
+0
+44
+44
+compi
+MTJ-889X1
+Jack Modular Connector 8p8c (RJ45, Ethernet) 90° Angle (Right) Unshielded
+rj45, ethernet
+0
+10
+10
+compi
+MXO45-3C-5M000000
+5 MHz XO (Standard) HCMOS, TTL Oscillator 5V 14-DIP, 4 Leads (Full Size, Metal Can)
+clock-crystal, crystal
+0
+4
+4
+compi
+NAU8402WG
+DAC, Audio 24 b 96k I²S 16-TSSOP
+audio, i2s, audio-dac
+0
+16
+16
+compi
+NCP45525IMNTWG-L
+Power Switch/Driver 1:1 N-Channel 6A 8-DFN (2x2)
+electronic-switch, power
+0
+10
+9
+compi
+NGFF_A
+
+
+0
+67
+67
+compi
+NGFF_B
+
+
+0
+67
+67
+compi
+NGFF_B+M
+
+
+0
+59
+59
+compi
+NGFF_E
+
+
+0
+67
+67
+compi
+NGFF_M
+
+
+0
+67
+67
+compi
+NHD-C12864LZ-FSW-FBW-3V3
+Graphic LCD Display Module Transflective Black (White - Inverted) FSTN - Film Super-Twisted Nematic Parallel/Serial 128 x 64
+lcd
+0
+32
+32
+compi
+NSVR0320MW2T1G
+Diode 20 V 1A Surface Mount SOD-323
+diode
+0
+2
+2
+compi
+P8X32A-D40
+Propeller™ Microcontroller IC 32-Bit 8-Core 80MHz 32KB (32K x 8) ROM 40-DIP
+
+0
+40
+40
+compi
+PCM1754DBQR
+DAC, Audio 24 b 200k I2S 16-SSOP
+audio-dac, i2s
+0
+16
+16
+compi
+PCM1808PWR
+ADC, Audio 24 b 96k Serial 14-TSSOP
+audio-adc, i2s
+0
+14
+14
+compi
+PI3USB14-AZHE
+USB Switch IC 2 Channel 20-TQFN (4.5x3.5)
+electronic-switch, usb
+0
+21
+21
+compi
+PLCC44
+44 pin PLCC socket
+socket
+0
+44
+44
+compi
+RCJ-014
+3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack Mono Connector Solder
+video, audio, connector, cinch
+0
+4
+4
+compi
+RCJ-2223
+3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack Mono Connector Solder
+video, audio, connector, cinch
+0
+3
+3
+compi
+RCJ-61223344
+3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack Mono Connector Solder
+audio, video, cinch
+0
+11
+11
+compi
+RLP73V3AR016FTDF
+16 mOhms ±1% 2W Chip Resistor 2512 (6432 Metric) Current Sense Thick Film
+resistor, shunt, power
+0
+2
+2
+compi
+RS1D-A
+Diode 200 V 1A Surface Mount SMA/DO-214AC
+diode
+0
+2
+2
+compi
+SC16IS741AIPWJ
+UART Interface IC Single UART with I2C-bus/SPI interface, 64 bytes of transmit and receive FIFOs, IrDA SIR built-in suppor
+
+0
+16
+16
+compi
+SFH_4045N
+Infrared (IR) Emitter 950nm 1.6V 70mA 90mW/sr @ 70mA 18° 2-SMD, No Lead
+ir-transmitter
+0
+2
+2
+compi
+SG3225CAN_25_0000M-TJGA6
+25 MHz XO (Standard) CMOS Oscillator 1.8V ~ 3.3V Standby (Power Down) 4-SMD, No Lead
+crystal
+0
+4
+4
+compi
+SJ-3524-SMT-TR-BE
+3.50mm (0.141", 1/8", Mini Plug) - Headphone Phone Jack Stereo (3 Conductor, TRS) Connector Solder
+audio, jack
+0
+4
+4
+compi
+SJ-3524-SMT-TR-GR
+3.50mm (0.141", 1/8", Mini Plug) - Headphone Phone Jack Stereo (3 Conductor, TRS) Connector Solder
+audio, jack
+0
+4
+4
+compi
+SJ-435107
+3.50mm (0.141", 1/8", Mini Plug) - Headphone Phone Jack Stereo (4 Conductor, TRRS) Connector Solder
+jack, audio, video
+0
+8
+8
+compi
+SLM9670AQ20FW1311XTMA1
+
+security, spi
+0
+33
+33
+compi
+SN65HVD77DR
+1/1 Transceiver Full RS422, RS485 8-SOIC
+rs422, rs485, differential-transceiver
+0
+8
+8
+compi
+SN74AHC138N
+Decoder/Demultiplexer 1 x 3:8 16-PDIP
+
+0
+16
+16
+compi
+SN74HC148DR
+Priority Encoder 1 x 8:3 16-SOIC
+priority-decoder
+0
+16
+16
+compi
+SN74HCS238DR
+Decoder/Demultiplexer 1 x 3:8 16-SOIC
+logic-decoder
+0
+16
+16
+compi
+SN74HCS365DR
+Buffer, Non-Inverting 6 Element 6 Bit per Element 3-State Output 16-SOIC
+buffer
+0
+16
+16
+compi
+SN74LVC2G79DCUR
+Flip Flop 2 Element D-Type 1 Bit Positive Edge 8-VFSOP (0.091", 2.30mm Width)
+flip-flop
+0
+8
+8
+compi
+SSM3K357R_LF
+N-Channel 60 V 650mA (Ta) 1W (Ta) Surface Mount SOT-23F
+mosfet, n-channel
+0
+3
+3
+compi
+SSW-108-22-F-D-VS
+16 Position Receptacle Connector 0.100" (2.54mm) Surface Mount Gold
+connector, dupont
+0
+16
+16
+compi
+STM32U585VIT6
+ARM® Cortex®-M33 STM32U5 Microcontroller IC 32-Bit 160MHz 2MB (2M x 8) FLASH 100-LQFP (14x14)
+
+0
+100
+100
+compi
+T3A33BRG-H9C0002X1U1930
+Addressable Lighting T3A33BRG LED Discrete Red, Green, Blue (RGB) 5.36mm L x 5.00mm W
+neopixel, rgb-led
+0
+6
+6
+compi
+TB002-500-02BE
+2 Position Wire to Board Terminal Block Horizontal with Board 0.197" (5.00mm) Through Hole
+connector
+0
+2
+2
+compi
+TC33X-2-203E
+20 kOhms 0.1W, 1/10W J Lead Surface Mount Trimmer Potentiometer Cermet 1.0 Turn Top Adjustment
+potentiometer
+0
+3
+3
+compi
+TC358746AXBG
+MIPI® CSI-2 to Parallel port and Parallel port to CSI-2
+video, mipi-csi-2, i2c, parallel-rgb
+0
+72
+72
+compi
+TC358748XBG
+MIPI® CSI-2 to Parallel port and Parallel port to CSI-2
+video, mipi-csi-2, i2c, parallel-rgb
+0
+80
+80
+compi
+TCA9548ARGERQ1
+Bus Switch 1 x 8:1 24-VQFN (4x4)
+i2c
+0
+25
+25
+compi
+TCA9554ADBR
+I/O Expander 8 I²C, SMBus 400 kHz 16-SSOP
+io-expander, i2c
+0
+16
+16
+compi
+TFP410PAP
+3/0 Driver 64-HTQFP (10x10)
+parallel-rgb, hdmi
+0
+101
+65
+compi
+TUSB2036VFR
+USB Hub Controller USB 2.0 USB Interface 32-LQFP (7x7)
+usb, usb-hub
+0
+32
+32
+compi
+TUSB2046BIRHBR
+USB Hub Controller USB 2.0 USB Interface 32-VQFN (5x5)
+usb-hub
+0
+33
+33
+compi
+TXB0108DQSR
+Voltage Level Translator Bidirectional 1 Circuit 8 Channel 100Mbps 20-USON (4x2)
+
+0
+20
+20
+compi
+TXU0102DCUR
+Voltage Level Translator Unidirectional 1 Circuit 2 Channel 200Mbps 8-VSSOP
+level-shifter
+0
+8
+8
+compi
+ULN2803A
+Bipolar (BJT) Transistor Array 8 NPN Darlington 50V 500mA 2.25W Through Hole 18-DIP
+power, electronic-switch
+0
+18
+18
+compi
+UM6K31NTN
+Mosfet Array 60V 250mA 150mW Surface Mount UMT6
+
+0
+6
+6
+compi
+USB-A1HSW6
+USB-A (USB TYPE-A) Receptacle Connector 4 Position Through Hole, Right Angle
+usb-a, usb
+0
+4
+4
+compi
+USB4056-03-A
+USB-C (USB TYPE-C) USB 3.2 Gen 2 (USB 3.1 Gen 2, Superspeed + (USB 3.1)) Receptacle Connector 24 Position Surface Mount, Right Angle; Through Hole
+usb-c
+0
+28
+28
+compi
+USB4105-GF-A-060
+USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Right Angle; Through Hole
+usb-c
+0
+16
+16
+compi
+USB4115-03-C
+USB-C (USB TYPE-C) USB 3.2 Gen 2 (USB 3.1 Gen 2, Superspeed + (USB 3.1)) Receptacle Connector 24 Position Surface Mount, Through Hole
+usb-c
+0
+28
+28
+compi
+USB4145-03-0230-C
+USB-C (USB TYPE-C) USB 2.0 Receptacle Connector 24 (16+8 Dummy) Position Surface Mount, Through Hole
+usb-c, usb
+0
+20
+20
+compi
+YC248-JR-0710KL
+10k Ohm ±5% 62.5mW Power Per Element Isolated 8 Resistor Network/Array ±200ppm/°C 1606, Convex, Long Side Terminals
+
+0
+16
+16
+compi
+Z84C0010PEG
+Z80 Microprocessor IC Z80 1 Core, 8-Bit 10MHz 40-PDIP
+
+0
+40
+40
+compi
+aoz2261ngl-11
+28V/8A Synchronous EZBuckTM Regulator
+voltage-regulator
+0
+25
+25
+compi
+at25sf321b
+32-Mbit SPI Serial Flash Memory with Dual I/O and Quad I/O Support
+spi, flash
+0
+8
+8
+compi
+combicon-1757242
+2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.200" (5.08mm) 90°, Right Angle Through Hole
+combicon, connector
+0
+2
+2
+compi
+combicon-1843606
+2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.138" (3.50mm) Vertical Through Hole
+combicon, connector
+0
+2
+2
+compi
+combicon-1844210
+2 Position Terminal Block Header, Male Pins, Shrouded (4 Side) 0.138" (3.50mm) 90°, Right Angle Through Hole
+combicon, connector
+0
+2
+2
+compi
+dmg1012tn
+n-channel enhancement mode mosfet
+mosfet, n-channel
+0
+3
+3
+compi
+fc2012an
+Low ESR 50 kΩ Max. 32.768 kHz Crystal Unit
+clock-crystal
+0
+2
+2
+compi
+isl83490ibz
+3.3V, Low Power, High Speed RS-485/RS-422 Transceivers
+rs422, rs485, full-duplex
+0
+8
+8
+compi
+keystone-3568
+Sicherung Halter 30 A 500V 1 Schaltungen Klinge Durchkontaktierung
+fuse, electric-protection
+0
+4
+2
+compi
+mt8816af1
+ISO-CMOS MT8816 8 x 16 Analog Switch Array
+analog, video
+0
+44
+44
+compi
+pcf85063a
+Tiny Real-Time Clock/calendar with alarm function and I2C-bus
+rtc, i2c
+0
+8
+8
+compi
+pi-pico
+The Raspberry Pi Pico series is a range of tiny, fast, and versatile boards built using RP2040, the flagship microcontroller chip designed by Raspberry Pi in the UK
+eval-board, cortex-m0+, dual-core
+0
+53
+53
+compi
+rcj-32324
+CONN RCA JACK MONO 3.2MM R/A
+connector, video, audio
+0
+6
+6
+compi
+rp2040
+RP2040 is a 32-bit dual ARM Cortex-M0+ microcontroller integrated circuit by Raspberry Pi Ltd.
+microcontroller, cortex-m0+, dual-core, arm
+0
+57
+57
+compi
+rp2040-eth
+N-Channel Enhancement Mode Field Effect Transistor
+eval-board, ethernet
+0
+24
+24
+compi
+rp2040-zero
+Low-Cost, High-Performance Pico-Like MCU Board Based On Raspberry Pi Microcontroller RP2040
+eval-board, cortex-m0+, dual-core
+0
+23
+23
+compi
+rt6150b-33gqw
+Buck-Boost Switching Regulator IC Positive Fixed 3.3V 1 Output 800mA
+voltage-regulator
+0
+11
+11
+compi
+sw-fsm2jsmaa
+SWITCH TACTILE SPST-NO 0.05A 24V
+switch
+0
+4
+4
+compi
+sw-r-668003
+SWITCH TACTILE, SPST-NO, 0.02A 1
+switch
+0
+2
+2
+compi
+sy6280aac
+Low Loss Power Distribution Switch
+power
+0
+5
+5
+compi
+tca6408a
+Low-Voltage 8-Bit I2C and SMBus I/O Expander With Interrupt Output, Reset, and Configuration Registers
+io-expander, push-pull
+0
+16
+16
+compi
+vn7040astr
+High-side driver with MultiSense analog feedback for automotive applications
+power, electronic-switch
+0
+8
+8
+compi
+w25q16jvuxiq
+3V 16M-bitserial flash memory with dual, quadspi
+spi, flash
+0
+9
+9
+compi
+w25q32jvssiq
+3V 32M-bitserial flash memory with dual, quadspi
+spi, flash
+0
+8
+8
+compi
+xt4045
+Standalone Linear Li-Ion Battery Charger with Thermal Regulation
+power, li-ion-charger
+0
+5
+5

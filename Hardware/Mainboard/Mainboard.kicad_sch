@@ -4520,7 +4520,7 @@
 			(uuid "56904b30-e548-4c47-a7f1-86d75db62b88")
 		)
 		(pin "PSP_{CS}" input
-			(at 95.25 113.03 180)
+			(at 95.25 158.75 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4530,7 +4530,7 @@
 			(uuid "431ec36c-55b2-4dfc-961d-62860edd1d0e")
 		)
 		(pin "PSP_{AL}" input
-			(at 95.25 158.75 180)
+			(at 95.25 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,7 +4550,7 @@
 			(uuid "0d1ef273-6a19-49e7-abae-4146184eaa93")
 		)
 		(pin "PSP_{WR}" input
-			(at 95.25 118.11 180)
+			(at 95.25 113.03 180)
 			(effects
 				(font
 					(size 1.27 1.27)
