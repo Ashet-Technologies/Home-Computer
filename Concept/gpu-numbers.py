@@ -219,7 +219,7 @@ def set_result(scope: str, name: str, value: int | float, unit: str | Unit | Non
 
 
 def print_results():
-    results.sort()
+    # results.sort(key=lambda tup: tup[0:2])
 
     col_sizes = [0, 0, 0, 0]
     col_just = [str.ljust, str.ljust, str.rjust, str.ljust]
@@ -348,8 +348,9 @@ psram_hline_transfer_time = img_hline_size / psram_bit_throughput
 psram_hline_burst_cnt = int(math.ceil(psram_hline_transfer_time / psram_burst_time))
 
 
-def shared_compute(tag: str, hline_time):
+def shared_compute(tag_name: str, hline_time, vscan_time):
     psram_bursts_per_hline = int(hline_time // psram_burst_time)
+    psram_bursts_per_img = int(vscan_time // psram_burst_time)
 
     psram_hline_burst_leeway = psram_bursts_per_hline - psram_hline_burst_cnt
     psram_hline_mem_leeway = psram_burstsize * psram_hline_burst_leeway
@@ -358,26 +359,48 @@ def shared_compute(tag: str, hline_time):
     psram_vscan_mem_leeway = psram_burstsize * psram_vscan_burst_leeway
     psram_vscan_img_leeway = int(psram_vscan_mem_leeway // img_byte_size)
 
-    vram_vscan_burst_leeway = psram_count * psram_vscan_burst_leeway
+    psram_raw_burst_leeway = psram_bursts_per_img
+    psram_raw_mem_leeway = psram_burstsize * psram_raw_burst_leeway
+    psram_raw_img_leeway = int(psram_raw_mem_leeway // img_byte_size)
+
+    assert psram_count >= 1
+    rawc = psram_count - 1
+
+    vram_vscan_burst_leeway = psram_vscan_burst_leeway + psram_raw_burst_leeway * rawc
     vram_vscan_mem_leeway = psram_burstsize * vram_vscan_burst_leeway
     vram_vscan_img_leeway = int(vram_vscan_mem_leeway // img_byte_size)
 
-    pstag = "PSRAM " + tag
-    set_result(pstag, "Burst / H-Line Time", psram_bursts_per_hline, None)
-    set_result(pstag, "Burst Leeway / H-Line", psram_hline_burst_leeway, None)
-    set_result(pstag, "Available Mem / H-Line", psram_hline_mem_leeway, byte)
-    set_result(pstag, "Free Burst / Video out", psram_vscan_burst_leeway, None)
-    set_result(pstag, "Free Mem / Video out", psram_vscan_mem_leeway, MB)
-    set_result(pstag, "Full Image Transfer / Video out", psram_vscan_img_leeway, None)
+    tag = f"PSRAM {tag_name} VRAM"
+    set_result(tag, "Burst / H-Line Time", psram_bursts_per_hline, None)
+    set_result(tag, "Burst Leeway / H-Line", psram_hline_burst_leeway, None)
+    set_result(tag, "Available Mem / H-Line", psram_hline_mem_leeway, byte)
+    set_result(tag, "Burst / Video out", psram_vscan_burst_leeway, None)
+    set_result(tag, "Mem / Video out", psram_vscan_mem_leeway, MB)
+    set_result(tag, "Image Transfers / Video out", psram_vscan_img_leeway, None)
 
-    vrtag = "VRAM " + tag
-    set_result(vrtag, "Available Mem / Scanline", vram_vscan_burst_leeway, kB)
-    set_result(vrtag, "Available Mem / Image", vram_vscan_mem_leeway, MB)
-    set_result(vrtag, "Full Image Transfer / Image", vram_vscan_img_leeway, None)
+    tag = f"PSRAM {tag_name} User"
+    set_result(tag, "Bursts / Video Out", psram_raw_burst_leeway, None)
+    set_result(tag, "Mem / Video Out", psram_raw_mem_leeway, MB)
+    set_result(tag, "Image Transfers / Video Out", psram_raw_img_leeway, None)
+
+    tag = f"VRAM {tag_name}"
+    set_result(tag, "Bursts / Video Out", vram_vscan_burst_leeway, None)
+    set_result(tag, "Mem / H-Line", vram_vscan_burst_leeway, kB)
+    set_result(tag, "Mem / Video Out", vram_vscan_mem_leeway, MB)
+    set_result(tag, "Image Transfers / Video Out", vram_vscan_img_leeway, None)
 
 
-shared_compute("Video", vid_hline_total_time)
-shared_compute("Image", img_hline_time)
+shared_compute(
+    "Video",
+    hline_time=vid_hline_total_time,
+    vscan_time=vid_vimg_total_time,
+)
+
+shared_compute(
+    "Image",
+    hline_time=img_hline_time,
+    vscan_time=img_time,
+)
 
 ###############################################################################
 # Statistics
