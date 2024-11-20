@@ -1,0 +1,13 @@
+digraph {
+    node [shape=box];
+
+
+    RP2350;
+    PSRAM;
+    Flash;
+
+    RP2350 -> PSRAM [label="QMI"];
+    RP2350 -> Flash [label="QMI"];
+
+
+}
