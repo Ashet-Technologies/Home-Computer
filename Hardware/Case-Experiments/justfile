@@ -1,0 +1,9 @@
+
+render:
+    openscad simplecase-v2.scad --render -o render/vstrut.stl -D 'model_mode="vstrut"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/hstrut.stl -D 'model_mode="hstrut"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/pcb_guide.stl -D 'model_mode="pcb_guide"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/sidepanel.stl -D 'model_mode="sidepanel"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/toppanel.stl -D 'model_mode="toppanel"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/backpanel.stl -D 'model_mode="backpanel"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
+    openscad simplecase-v2.scad --render -o render/backplane.stl -D 'model_mode="backplane"' -D metrics=true 2>/dev/null 2>&1 | grep -e 'ECHO:'
