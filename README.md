@@ -21,7 +21,7 @@
 
 ## Block Diagram
 
-![Block Diagram](Concept/Block%20Diagram.svg)
+![Block Diagram](Concept/Block%20Diagram%20Gen2.svg)
 
 ## Parts
 

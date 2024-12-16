@@ -1,4 +1,5 @@
 //
+// $ openscad --autocenter --viewall --preview  -o /tmp/result.stl "Case Draft.scad"
 
 pcb_width = 100;  // mm
 pcb_length = 160; // mm

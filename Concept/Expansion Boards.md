@@ -16,6 +16,7 @@
 - Dual C64 Serial
 - Quad-Channel D-Bus-Controller (TI Calculator Link)
 - SD Card Expansion (USB2244-AEZG-06)
+- 100BASE-T1 (https://www.mouser.de/datasheet/2/268/LAN8770_Product_Brief_DS00002550C-3071247.pdf)
 
 ## Far Future
 
@@ -23,6 +24,8 @@
 - Dual-Channel MIDI
 - Parallelport
 - Retro Joystick (SUB-D 9, C64, Atari, ...)
+- VLSI Video Card (<https://www.vlsi.fi/en/products/vs23s040.html>)
+- VLSI Audio Card (<https://www.vlsi.fi/en/products/vs1053.html>)
 
 ## Community
 
