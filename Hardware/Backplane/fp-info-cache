@@ -1,4 +1,4 @@
-24207576651229689
+24211044912069483
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57981,12 +57981,26 @@ IC_ADS125H01IRHBT
 38
 38
 Home Computer
+QFP50P1600X1600X120-101N
+
+
+0
+101
+101
+Home Computer
 SOP50P310X90-8N
 
 
 0
 8
 8
+Home Computer
+SOP65P640X120-24N
+
+
+0
+24
+24
 Home Computer
 TE_5530843-7
 
