@@ -1,4 +1,4 @@
-# Potential Expansion Boards
+# List of Expansion Board Ideas
 
 ## Core
 
