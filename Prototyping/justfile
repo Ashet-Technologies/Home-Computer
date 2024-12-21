@@ -1,0 +1,29 @@
+
+
+rp2350-psram:
+    cmake \
+        -B ./build/rp2350-psram                                \
+        -S ./rp2350-psram                                      \
+        -DPICO_BOARD=pico2                                     \
+        -DPICO_PLATFORM=rp2350-arm-s                           \
+        "-DPICOTOOL_FETCH_FROM_GIT_PATH=$PWD/vendor/picotool"  \
+        -G Ninja
+    cmake --build ./build/rp2350-psram
+
+load-rp2350-psram: rp2350-psram
+    picotool load -xu build/rp2350-psram/rp2350_psram.uf2 
+
+monitor:
+    picocom /dev/ttyACM0 
+
+picotool:
+    cmake                                        \
+        -B ./build/picotool2                     \
+        -S ./vendor/picotool                     \
+        -D "PICO_SDK_PATH=$PWD/vendor/pico-sdk"  \
+        -G Ninja
+    cmake --build   ./build/picotool2
+    cmake --install ./build/picotool2 --prefix ./prefix/
+
+clean:
+    rm -rf ./build
