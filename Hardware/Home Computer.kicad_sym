@@ -5234,7 +5234,7 @@
 			)
 		)
 		(property "Description" "PCIe Connector"
-			(at 0 0 0)
+			(at 56.896 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,7 +5263,7 @@
 			)
 		)
 		(property "MANUFACTURER" "AMPHENOL"
-			(at 0 0 0)
+			(at 46.228 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,10 +5284,10 @@
 					(type background)
 				)
 			)
-			(pin power_in line
+			(pin open_collector line
 				(at -12.7 -2.54 0)
 				(length 5.08)
-				(name "GND"
+				(name "I2C_{SCL}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5302,10 +5302,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin open_collector line
 				(at -12.7 -5.08 0)
 				(length 5.08)
-				(name "GP0"
+				(name "I2C_{SDA}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5320,10 +5320,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin open_collector line
 				(at -12.7 -7.62 0)
 				(length 5.08)
-				(name "GP1"
+				(name "~{IRQ}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5341,7 +5341,7 @@
 			(pin bidirectional line
 				(at -12.7 -10.16 0)
 				(length 5.08)
-				(name "GP2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5359,7 +5359,7 @@
 			(pin bidirectional line
 				(at -12.7 -12.7 0)
 				(length 5.08)
-				(name "GP3"
+				(name "GP0"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5377,7 +5377,7 @@
 			(pin bidirectional line
 				(at -12.7 -15.24 0)
 				(length 5.08)
-				(name "GP4"
+				(name "GP1"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5395,7 +5395,7 @@
 			(pin bidirectional line
 				(at -12.7 -17.78 0)
 				(length 5.08)
-				(name "GP5"
+				(name "GP2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5413,7 +5413,7 @@
 			(pin bidirectional line
 				(at -12.7 -20.32 0)
 				(length 5.08)
-				(name "GP6"
+				(name "GP2"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5431,7 +5431,7 @@
 			(pin bidirectional line
 				(at -12.7 -22.86 0)
 				(length 5.08)
-				(name "GP7"
+				(name "GP3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5446,10 +5446,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -12.7 -25.4 0)
 				(length 5.08)
-				(name "GND"
+				(name "GP4"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5464,10 +5464,10 @@
 					)
 				)
 			)
-			(pin open_collector line
+			(pin bidirectional line
 				(at -12.7 -27.94 0)
 				(length 5.08)
-				(name "I2C_{SCL}"
+				(name "GP5"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5482,10 +5482,10 @@
 					)
 				)
 			)
-			(pin open_collector line
+			(pin bidirectional line
 				(at -12.7 -30.48 0)
 				(length 5.08)
-				(name "I2C_{SDA}"
+				(name "GP6"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5500,10 +5500,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at -12.7 -33.02 0)
 				(length 5.08)
-				(name "~{IRQ}"
+				(name "GP7"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5518,10 +5518,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -12.7 -35.56 0)
 				(length 5.08)
-				(name "CLK_{16MHz}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5554,10 +5554,10 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -12.7 -40.64 0)
 				(length 5.08)
-				(name "+5V"
+				(name "+3V3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5572,10 +5572,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 12.7 -2.54 180)
 				(length 5.08)
-				(name "GND"
+				(name "MOD_{A0}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5590,10 +5590,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at 12.7 -5.08 180)
 				(length 5.08)
-				(name "BUS_{0}"
+				(name "MOD_{A1}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5608,10 +5608,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at 12.7 -7.62 180)
 				(length 5.08)
-				(name "BUS_{1}"
+				(name "MOD_{A2}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5626,10 +5626,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at 12.7 -10.16 180)
 				(length 5.08)
-				(name "BUS_{2}"
+				(name "MOD_{A3}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5644,10 +5644,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at 12.7 -12.7 180)
 				(length 5.08)
-				(name "BUS_{3}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5662,10 +5662,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at 12.7 -15.24 180)
 				(length 5.08)
-				(name "BUS_{4}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5680,10 +5680,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at 12.7 -17.78 180)
 				(length 5.08)
-				(name "BUS_{5}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5716,10 +5716,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 12.7 -25.4 180)
 				(length 5.08)
-				(name "MOD_{A0}"
+				(name "+12V"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5734,10 +5734,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 12.7 -27.94 180)
 				(length 5.08)
-				(name "MOD_{A1}"
+				(name "+12V"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5752,10 +5752,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 12.7 -30.48 180)
 				(length 5.08)
-				(name "MOD_{A2}"
+				(name "+12V"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5770,10 +5770,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 12.7 -33.02 180)
 				(length 5.08)
-				(name "MOD_{A3}"
+				(name "+12V"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5809,7 +5809,7 @@
 			(pin power_in line
 				(at 12.7 -38.1 180)
 				(length 5.08)
-				(name "+3V3"
+				(name "+5V"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5862,10 +5862,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin output line
 				(at -12.7 17.78 0)
 				(length 5.08)
-				(name "GND"
+				(name "I2S_{SDI}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5898,10 +5898,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at -12.7 12.7 0)
 				(length 5.08)
-				(name "I2S_{SDI}"
+				(name "I2S_{WCLK}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5919,7 +5919,7 @@
 			(pin input line
 				(at -12.7 10.16 0)
 				(length 5.08)
-				(name "I2S_{WCLK}"
+				(name "I2S_{BCLK}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5937,7 +5937,7 @@
 			(pin input line
 				(at -12.7 7.62 0)
 				(length 5.08)
-				(name "I2S_{BCLK}"
+				(name "I2S_{MCLK}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5952,10 +5952,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -12.7 5.08 0)
 				(length 5.08)
-				(name "I2S_{MCLK}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5970,10 +5970,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -12.7 2.54 0)
 				(length 5.08)
-				(name "GND"
+				(name "CLK_{16MHz}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6006,10 +6006,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -12.7 35.56 0)
 				(length 5.08)
-				(name "HSTX_{1}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6042,10 +6042,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -12.7 30.48 0)
 				(length 5.08)
-				(name "HSTX_{3}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6078,10 +6078,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -12.7 25.4 0)
 				(length 5.08)
-				(name "HSTX_{5}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6114,10 +6114,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -12.7 20.32 0)
 				(length 5.08)
-				(name "HSTX_{7}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6276,10 +6276,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at 12.7 38.1 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{1}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6294,10 +6294,10 @@
 					)
 				)
 			)
-			(pin free line
+			(pin power_in line
 				(at 12.7 -20.32 180)
 				(length 5.08)
-				(name "BUS_{6}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6330,10 +6330,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at 12.7 33.02 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{3}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6366,10 +6366,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at 12.7 27.94 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{5}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -6402,10 +6402,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at 12.7 22.86 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{7}"
 					(effects
 						(font
 							(size 1.016 1.016)
