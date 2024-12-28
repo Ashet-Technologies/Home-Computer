@@ -2,3 +2,6 @@
 *-backups/
 *.bak
 .vscode/
+.venv/
+.zig-cache/
+zig-out/

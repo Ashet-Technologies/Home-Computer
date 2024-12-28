@@ -1,5 +1,4 @@
 
-
 rp2350-psram:
     cmake \
         -B ./build/rp2350-psram                                \
@@ -10,10 +9,28 @@ rp2350-psram:
         -G Ninja
     cmake --build ./build/rp2350-psram
 
+rp2350-hdmi:
+    cmake \
+        -B ./build/rp2350-hdmi                                \
+        -S ./rp2350-hdmi                                      \
+        -DPICO_BOARD=pico2                                     \
+        -DPICO_PLATFORM=rp2350-arm-s                           \
+        "-DPICOTOOL_FETCH_FROM_GIT_PATH=$PWD/vendor/picotool"  \
+        -G Ninja
+    cmake --build ./build/rp2350-hdmi
+
 load-rp2350-psram: rp2350-psram
-    picotool load -xu build/rp2350-psram/rp2350_psram.uf2 
+    picotool load -xfu build/rp2350-psram/rp2350_psram.uf2
+
+load-rp2350-hdmi: rp2350-hdmi
+    picotool load -xfu build/rp2350-hdmi/rp2350_hdmi.uf2
 
 monitor:
+    while [ ! -c "/dev/ttyACM0" ]; do  \
+        echo -n "." ; \
+        sleep 0.1 ; \
+    done
+    echo "ready."
     picocom /dev/ttyACM0 
 
 picotool:
@@ -27,3 +44,4 @@ picotool:
 
 clean:
     rm -rf ./build
+    
