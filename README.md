@@ -2,20 +2,25 @@
 
 ### _The 21st century home computer_
 
-| Project Status             |
-|----------------------------|
+| Project Status           |
+| ------------------------ |
 | ⚠️ **WORK IN PROGRESS** ⚠️ |
 
 ## Introduction
 
-The Ashet Home Computer is the attempt to recreate the home computer experience from the 80ies in the current days.
+The Ashet Home Computer bridges the gap between simple microcontroller development boards and modern single-board computers, offering the processing capability to run a full graphical desktop OS while maintaining the hardware accessibility of simpler systems.
 
-Modern computers are so complex nobody can understand them anymore. They are incredibly powerful and useful, but the user can't get as close to their machine as it was possible in the past. Even single-board computers like the RaspberryPi are so complex from their hardware and software architecture that they are hard to grasp for beginners, and even advanced users.
+Built around the RP2350 dual-core processor, it combines sufficient computational power for a modern user interface with a transparent, education-oriented architecture. The modular expansion system, inspired by classic computer designs, allows direct hardware access while providing proper driver abstractions for portability.
 
-This home computer attempts to give you the best of both worlds:
+Key differentiators:
 
-- Interfaces with the modern world
-- Simple enough to be understood by a single person
+- Runs [Ashet OS](https://github.com/Ashet-Technologies/Ashet-OS): A custom desktop operating system with modern GUI capabilities
+- Fully documented hardware architecture with direct register access
+- Modular expansion through 7 dedicated slots, including specialized video/audio interfaces
+- 8MB RAM and 16MB Flash supporting both low-level and high-level development
+- Comprehensive I/O capabilities suitable for real-time interfacing, creative projects, and systems development
+
+The system is designed for accessibility across different skill levels - from students learning computer architecture to makers building custom hardware interfaces, and from demosceners pushing hardware limits to educators teaching system design.
 
 ## Features
 
@@ -73,6 +78,25 @@ The following expansion cards are the stock expansion cards which come with a de
 There are many more ideas that can be realized with expansion cards.
 
 Take a peek at our [List of Expansion Board Ideas](Concept/Expansion%20Boards.md) or check out the [Expansion Card Interface Specification](Specs/Expansion%20Bus.md) how to create your own.
+
+## Comparison with Similar Projects
+
+The following table shows a comparison to other "small" computers. It should help you get an idea where the Ashet Home Computer is in relation to other projects.
+
+| Feature                      | Ashet                                                              | [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/)   | [Arduino Uno REV3](https://store.arduino.cc/products/arduino-uno-rev3) | [Neotron Pico](https://github.com/neotron-Compute/neotron-Pico)                                                                   |
+| ---------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| CPU Architecture             | Arm Cortex-M33 (32 bit)                                            | Arm Cortex-A72 (64 bit)                                                                         | ATmega328p (8 bit)                                                     | Arm Cortex-M0+ (32 bit)                                                                                                           |
+| CPU Model                    | [RapsberryPi RP2350](https://www.raspberrypi.com/products/rp2350/) | [Broadcom BCM2711](https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711) | [ATmega328P](https://www.microchip.com/en-us/product/atmega328p)       | [RapsberryPi RP2040](https://www.raspberrypi.com/products/rp2040/)                                                              1 |
+| CPU Cores                    | 2                                                                  | 4                                                                                               | 1                                                                      | 2                                                                                                                                 |
+| CPU Clock                    | 150 MHz                                                            | 1.8 GHz                                                                                         | 16 MHz                                                                 | 133 MHz                                                                                                                           |
+| System Memory                | 8 MB                                                               | 1GB, 2GB, 4GB or 8GB                                                                            | 2 KB                                                                   | 264 KB                                                                                                                            |
+| Understandable               | ✅                                                                  | ❌                                                                                               | ✅                                                                      | ✅                                                                                                                                 |
+| Modern I/O                   | ✅                                                                  | ✅                                                                                               | ❌                                                                      | ❌¹                                                                                                                                |
+| Modular Design               | ✅                                                                  | ❌                                                                                               | ❌                                                                      | ✅                                                                                                                                 |
+| Full Documentation Available | ✅                                                                  | ❌                                                                                               | ✅                                                                      | ✅                                                                                                                                 |
+| Ethernet                     | ✅                                                                  | ✅                                                                                               | ❌                                                                      | ❌                                                                                                                                 |
+
+¹Neotron Pico uses PS/2 for mouse/keyboard and VGA for video.
 
 ## Architecture
 
