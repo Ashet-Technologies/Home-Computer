@@ -4,3 +4,6 @@
 [submodule "Prototyping/vendor/picotool"]
 	path = Prototyping/vendor/picotool
 	url = https://github.com/raspberrypi/picotool
+[submodule "Hardware/Case-Experiments/lib/ScrewsMetric"]
+	path = Hardware/Case-Experiments/lib/ScrewsMetric
+	url = https://github.com/More-Wrong/ScrewsMetric

@@ -1,4 +1,4 @@
 ~*.lck
-
 *-backups/
 *.bak
+.vscode/
