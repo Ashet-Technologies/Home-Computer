@@ -1,0 +1,12 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-09092024-950750";"";
+"REFERENCE";"8051665";"";
+"rs_stock_number";"8051665";"";
+"TraceParts.InstanceId";"90-09092024-9507502N3XX9WWY2MK673V115V3T3RA";"";
+"url";"https://uk.rs-online.com/web/p/products/8051665?cm_mmc=en-ds-_-mcad-_-traceparts-_-8051665'";"";
+"TraceParts.PartTitle";"3.5MM, JACK SOCKET, PCB,4 POLE";"";
+"SUPPLIER";"RS PRO";"";
+"DESIGN";"3.5MM, JACK SOCKET, PCB,4 POLE";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.0";"";
