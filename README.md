@@ -6,6 +6,8 @@
 | ------------------------ |
 | ⚠️ **WORK IN PROGRESS** ⚠️ |
 
+![A rendering of a concept art](Concept/case-concept.png)
+
 ## Introduction
 
 The Ashet Home Computer bridges the gap between simple microcontroller development boards and modern single-board computers, offering the processing capability to run a full graphical desktop OS while maintaining the hardware accessibility of simpler systems.
