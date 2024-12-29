@@ -237,13 +237,13 @@ module case_assembly()
     translate([ (case_width - backplane_width) / 2, backplane_pos, 0 ]) backplane();
 
     // panels:
-    translate([-panel_thick, 0, 0]) sidepanel();
+    # translate([-panel_thick, 0, 0]) sidepanel();
     translate([case_width, 0, 0]) sidepanel();
 
     translate([ -panel_thick, 0, -panel_thick ]) toppanel();
-    translate([ -panel_thick, 0, case_height ]) toppanel();
+    # translate([ -panel_thick, 0, case_height ]) toppanel();
 
-    translate([-panel_thick, case_length, -panel_thick]) backpanel();
+    # translate([-panel_thick, case_length, -panel_thick]) backpanel();
 }
 
 module mod_assembly()
@@ -294,7 +294,7 @@ else
     if(model_mode != "default") {
         echo(str("unknown mode: '", model_mode, "'"));
     }
-    assembly();
+    yrotate(-90) assembly();
 }
 
 // mod_pcb_dummy();
