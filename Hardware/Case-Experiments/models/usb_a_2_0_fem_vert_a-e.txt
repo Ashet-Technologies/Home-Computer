@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.1.3";"";
+"SUPPLIER";"Assmann";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-14122010-115825";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"ASSMANN WSW Through Hole Type A USB Connector, Receptacle";"";
+"TraceParts.InstanceId";"10-14122010-115825DGQU6E6233I56XUEPMTXRJ4CO";"";
+"TraceParts.PartTitle";"ASSMANN WSW Through Hole Type A USB Connector, Receptacle";"";
+"REFERENCE";"A-USB A-E";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/6741356P?cm_mmc=en-ds-_-mcad-_-traceparts-_-6741356P'";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"rs_stock_number";"6741356P";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:10-14122010-115825";"";
