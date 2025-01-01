@@ -5,6 +5,7 @@
 | Project Status           |
 | ------------------------ |
 | ⚠️ **WORK IN PROGRESS** ⚠️ |
+|This README reflects the state of where the project wants to go, not where the project is right now!|
 
 ![A rendering of a concept art](Concept/case-concept.png)
 
@@ -51,7 +52,7 @@ These features are available no matter what expansion cards you have installed.
 
 ### Standard Expansions
 
-The following expansion cards are the stock expansion cards which come with a default-assembled Ashet Home Computer:
+The following expansion cards are the designated expansion cards which make up the Ashet Home Computer as designed:
 
 1. Framebuffer Video Card
     - DVI Video Out (800x480, 60 Hz)
@@ -80,6 +81,44 @@ The following expansion cards are the stock expansion cards which come with a de
 There are many more ideas that can be realized with expansion cards.
 
 Take a peek at our [List of Expansion Board Ideas](Concept/Expansion%20Boards.md) or check out the [Expansion Card Interface Specification](Specs/Expansion%20Bus.md) how to create your own.
+
+## Use Cases
+
+This chapter contains a list of things you can do with the computer, ordered loosely by user groups.
+
+### Demosceners
+
+Make a demo, i guess?
+
+With a good audio and video expansion card, and two strong multi-core CPUs the computer packs enough power to create awesome visuals and sound effects.
+
+### Retro-Enthusiasts
+
+The computer is able to emulate a lot of existing machines with fitting I/O connectivity. The backplane is able to emulate a lot of different protocols with cheap passive expansion modules.
+
+It also is able to create a multitude of video signals, analog and digital with 15 or 30 kHz line frequency. Another option is to have more complex expansion cards which can drive storage interfaces like [Shugart bus](https://en.wikipedia.org/wiki/Floppy_disk_drive_interface), [MFM disks](https://en.wikipedia.org/wiki/Modified_frequency_modulation), ATA and IDE…
+
+### Artists / Musicians
+
+The Ashet can be used as a cheap real-time sequencing controller which can handle a good amount of interfaces. With support for MIDI, DMX, analog audio channels and ethernet, it's possible to create complex audio setups. Another option is creating or using expansion cards that provide access to old-school synthesizers like the [AY-3-8910](https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910) or the [SID](https://en.wikipedia.org/wiki/MOS_Technology_6581).
+
+### Hackers / Makers
+
+With the Propeller 2 on the backplane, one can basically emulate any digital interface like SPI or I²C. With a breakout I/O expansion card, it can be used for controlling your own hardware, accessing and changing SPI flashes, ...
+
+It can also possible to use the Ashet as a basic logic analyzer and scope as well as a signal and waveform generator. With a bigger I/O card, can be expanded to 32 synchronously processed channels.
+
+By utilizing a scripting language on Ashet OS, one should be able to easily access and bootstrap newly acquired hardware.
+
+### Educators
+
+The project provides extensive documentation from decision making over the schematic up to the software architecture, so it can be used as an example on how to design a complete computer system.
+
+The machine also looks more like a "real computer" than a RaspberryPi or other modern single-board computers, so it is more tangible for persons that do not have experience with electronics and might give an easier start.
+
+### Students
+
+The computer provides a good hands-on experience and allows both creating or understanding hardware and software designs and how they play together. The system is also easily expansible and thus allows creating custom hardware modules. The available documentation allows learning basically everything about the computer that is possible to know.
 
 ## Comparison with Similar Projects
 
