@@ -29,6 +29,7 @@ module demo()
     translate([370,0,0]) preview() conn_pinheader_12x2_90deg_border();
     translate([400,0,0]) preview() conn_microswitch_2x_vert();
 
+    translate([440,0,0]) preview() dev_rpi_4b();
 }
 
 

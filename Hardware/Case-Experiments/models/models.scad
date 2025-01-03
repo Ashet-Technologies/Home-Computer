@@ -90,3 +90,9 @@ module conn_microswitch_2x_vert()
     // https://www.digikey.de/de/products/detail/e-switch/TL2243/1794126
     translate([0,4.5,5])  rotate(90,[1,0,0]) rotate(90,[0,0,1]) import("microsw_vert_2x_141_TL2243.stl");
 }
+
+module dev_rpi_4b()
+{
+    // https://www.printables.com/model/727545-raspberry-pi-4/files
+    translate([0,42.5,0.9])  rotate(-90,[0,0,1]) rotate(90,[1,0,0]) import("raspberrypi-model-4b.stl");
+}

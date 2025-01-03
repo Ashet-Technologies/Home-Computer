@@ -3,6 +3,8 @@ use <lib/ISOThreadUM2.scad>
 use <lib/ScrewsMetric/ScrewsMetric/ScrewsMetric.scad>
 use <models/models.scad>
 
+USE_PI_VARIANT = false;
+
 $fn = 20;
 
 fp_thick = 2;
@@ -130,12 +132,18 @@ module frontplate_item(i, cutout)
             component(cutout) translate([mod_pcb_width-12,fp_thick + 0.5,0]) conn_cinch_female();
         }
         union() { // main board
-
-            component(cutout) translate([7,0,0]) conn_usb_c_fem();
-            component(cutout) translate([48,0,0]) conn_usb_a_2_0_vert_fem();
-            component(cutout) translate([30,0,0]) conn_rj45();
-            component(cutout) translate([17,2.5,0]) conn_microswitch_2x_vert();
-            component(cutout) translate([mod_pcb_width-16,1.4,-4]) display_oled_128x64_0_96_in();
+            if(USE_PI_VARIANT)
+            {
+                component(cutout) translate([mod_pcb_width/2,0,-mod_pcb_height])  dev_rpi_4b();
+            }
+            else
+            {
+                component(cutout) translate([7,0,0]) conn_usb_c_fem();
+                component(cutout) translate([48,0,0]) conn_usb_a_2_0_vert_fem();
+                component(cutout) translate([30,0,0]) conn_rj45();
+                component(cutout) translate([17,2.5,0]) conn_microswitch_2x_vert();
+                component(cutout) translate([mod_pcb_width-16,1.4,-4]) display_oled_128x64_0_96_in();
+            }
         }
     }
 }
@@ -166,8 +174,7 @@ module mod_fp(i)
 // ground
 color("#d5b07c") translate([ 0, 0, -5 ]) cube([500,800,10], true); 
 
-translate([ 40, 210, 0 ]) zrotate(30) ikea_coffee_mug();
-
+// device:
 translate([case_length,-case_height/2,0])  yrotate(5) translate([-case_length,0,0])
 {
     case();
@@ -179,3 +186,8 @@ translate([case_length,-case_height/2,0])  yrotate(5) translate([-case_length,0,
         }
     }
 }
+
+
+// size references:
+translate([ -40, -45, 0 ]) dev_rpi_4b();
+translate([ 40, 210, 0 ]) zrotate(30) ikea_coffee_mug();
