@@ -8,10 +8,12 @@ module preview()
     children();
 }
 
-module demo()
+module parts_demo()
 {
     translate([-100,-50,-3]) color("#cccccc") cube([1000,100,3]); 
     translate([-100,0,0]) color("blue") cube([1000,50,0.1]); 
+
+    translate([-70,0,0]) preview() dev_ikea_vaerdera();
 
     translate([0,0,0])   preview() conn_sub_de_9_fem();
     translate([40,0,0])  preview() conn_sub_de_9_male();
@@ -30,7 +32,11 @@ module demo()
     translate([400,0,0]) preview() conn_microswitch_2x_vert();
 
     translate([440,0,0]) preview() dev_rpi_4b();
+
+    translate([480,0,0]) preview() conn_pcie_x4();
 }
 
 
-demo();
+parts_demo();
+
+// case_rm2095l();
