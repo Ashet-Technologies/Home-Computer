@@ -11,6 +11,10 @@
             .url = "git+https://github.com/ikskuh/zig-args.git#1df15086e5d1b245acedadbec03440bb37871e5e",
             .hash = "1220904d2fdcd970dd0d216211d092eb3ef6da01117163cc9393ab845a1d66c029d9",   
         },
+        .spin2cpp = .{
+            .url = "git+https://github.com/totalspectrum/spin2cpp.git#v6.9.10",
+            .hash = "1220e7717b7a2ff795b29fe887bc4f0d25b3b06983a6c96800fe94c47fd073683667",
+        },
     },
     .paths = .{
         "build.zig",

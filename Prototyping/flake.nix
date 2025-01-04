@@ -44,6 +44,8 @@
             pkgs.ninja
             pkgs.gcc-arm-embedded
             pkgs.picocom
+            pkgs.flex
+            pkgs.bison
           ];
           shellHook = ''
               export PATH="$PWD/prefix/bin:$PATH"
