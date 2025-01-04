@@ -27,7 +27,7 @@ pub fn build(b: *std.Build) void {
     }
 
     // flexspin compiler
-    {
+    const flexspin_exe = blk: {
         const flexspin_compile = b.addSystemCommand(&.{
             "make",
         });
@@ -52,5 +52,31 @@ pub fn build(b: *std.Build) void {
         install_file.step.dependOn(&flexspin_compile.step);
 
         b.getInstallStep().dependOn(&install_file.step);
+
+        break :blk flexspin_exe;
+    };
+
+    // Blinky
+    {
+        const compile_blinky = std.Build.Step.Run.create(b, "Compile Blinky");
+
+        compile_blinky.addFileArg(flexspin_exe);
+
+        compile_blinky.addArg("-2");
+        compile_blinky.addArg("-b");
+        compile_blinky.addArg("-Wall");
+
+        compile_blinky.addArg("-o");
+        const blinky_bin = compile_blinky.addOutputFileArg("blinky.bin");
+
+        compile_blinky.addFileArg(b.path("src/blinky.pasm"));
+
+        const install_blinky_bin = b.addInstallFileWithDir(
+            blinky_bin,
+            .{ .custom = "firmware" },
+            "blinky.bin",
+        );
+
+        b.getInstallStep().dependOn(&install_blinky_bin.step);
     }
 }
