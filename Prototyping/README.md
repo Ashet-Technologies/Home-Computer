@@ -10,6 +10,7 @@
 
 - Get setup ready for RP2350 + PSRAM
   - Evaluate RAM performance
+  - => <https://github.com/earlephilhower/arduino-pico/blob/master/cores/rp2040/psram.cpp>
 - Provide porting target for Ashet OS
 - Evaluate design concepts
   - Backplane
@@ -44,5 +45,3 @@
   - RS232 Card
   - Commodore Connectivity Card
 - Test rendering and input latency for a simple UI system
-
-
