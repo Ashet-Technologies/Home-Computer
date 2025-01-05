@@ -25,6 +25,12 @@ load-rp2350-psram: rp2350-psram
 load-rp2350-hdmi: rp2350-hdmi
     picotool load -xfu build/rp2350-hdmi/rp2350_hdmi.uf2
 
+p2-serial:
+    ./turboprop/zig-out/bin/flexspin -2 -b -o build/p2-serial.bin p2-serial/serial-demo.pasm
+
+load-p2-serial: p2-serial
+    ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-serial.bin
+
 monitor:
     while [ ! -c "/dev/ttyACM0" ]; do  \
         echo -n "." ; \

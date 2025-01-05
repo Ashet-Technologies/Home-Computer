@@ -1,11 +1,14 @@
 DAT
   entry
-    hubset ##16779771 '' _clkmode
-        
-    bith dirb, #31 '' pin
+    hubset ##16779771 '' external quarz + pll * 10
+    
+    DIRH #63
 
-    rep @blink_loop_end, #0
-    bitnot	outb, #31 '' pin
-    waitx ##100000000 '' CLK_FREQ/2
-        
-    blink_loop_end
+  rep @main_loop_end, #0
+    OUTNOT #63
+    WAITX ##100_000_000
+
+  main_loop_end
+
+  tmp
+    long 0

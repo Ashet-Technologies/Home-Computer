@@ -134,12 +134,14 @@ pub fn main() !u8 {
 
     std.log.info("code fully loaded.", .{});
 
-    while (true) {
-        var buffer: [64]u8 = undefined;
-        const len = try port.read(&buffer);
-        std.debug.print("{}\n", .{
-            std.zig.fmtEscapes(buffer[0..len]),
-        });
+    if (cli.options.monitor) {
+        while (true) {
+            var buffer: [64]u8 = undefined;
+            const len = try port.read(&buffer);
+            std.debug.print("{}\n", .{
+                std.zig.fmtEscapes(buffer[0..len]),
+            });
+        }
     }
 
     return 0;
@@ -148,9 +150,11 @@ pub fn main() !u8 {
 const CliArgs = struct {
     help: bool = false,
     port: []const u8 = "/dev/ttyUSB0",
+    monitor: bool = false,
 
     pub const shorthands = .{
         .h = "help",
         .P = "port",
+        .m = "monitor",
     };
 };
