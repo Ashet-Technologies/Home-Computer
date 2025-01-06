@@ -11,19 +11,41 @@ rp2350-psram:
 
 rp2350-hdmi:
     cmake \
-        -B ./build/rp2350-hdmi                                \
-        -S ./rp2350-hdmi                                      \
+        -B ./build/rp2350-hdmi                                 \
+        -S ./rp2350-hdmi                                       \
         -DPICO_BOARD=pico2                                     \
         -DPICO_PLATFORM=rp2350-arm-s                           \
         "-DPICOTOOL_FETCH_FROM_GIT_PATH=$PWD/vendor/picotool"  \
         -G Ninja
     cmake --build ./build/rp2350-hdmi
 
+propio:
+    cmake \
+        -B ./build/rp2350-propio                               \
+        -S ./propio                                            \
+        -DPICO_BOARD=pico2                                     \
+        -DPICO_PLATFORM=rp2350-arm-s                           \
+        "-DPICOTOOL_FETCH_FROM_GIT_PATH=$PWD/vendor/picotool"  \
+        -G Ninja
+    cmake --build ./build/rp2350-propio
+    
+    ./turboprop/zig-out/bin/flexspin  \
+        -2                            \
+        -o build/p2-propio.bin        \
+        propio/src/propio-client.pasm
+
 load-rp2350-psram: rp2350-psram
     picotool load -xfu build/rp2350-psram/rp2350_psram.uf2
 
 load-rp2350-hdmi: rp2350-hdmi
     picotool load -xfu build/rp2350-hdmi/rp2350_hdmi.uf2
+
+load-rp2350-propio: propio
+    picotool load -xfu build/rp2350-propio/rp2350_propio.uf2
+
+load-p2-propio: propio
+    # ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-propio.bin
+    ~/projects/experiments/prop2init/loadp2/build/loadp2  -p /dev/ttyUSB0 -b 115200  -v -DTR build/p2-propio.bin 
 
 p2-serial:
     ./turboprop/zig-out/bin/flexspin -2 -b -o build/p2-serial.bin p2-serial/serial-demo.pasm

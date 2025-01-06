@@ -1,0 +1,23 @@
+.pio_version 1
+
+.program propio_tx
+
+.side_set  1           ; [ clk ]
+.out       4 right            ; [ D0, D1, D2, D3 ]
+.fifo      tx
+
+.wrap_target
+public entry_point:
+    pull ifempty block      side 0x1
+
+    out pins, 4             side 0x0 [1]
+    nop                     side 0x1 [1]
+    out pins, 4             side 0x0 [1]
+    nop                     side 0x1 [1]
+
+.wrap
+
+
+% c-sdk {
+#include "hardware/gpio.h"
+%}

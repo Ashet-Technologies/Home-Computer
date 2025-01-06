@@ -9,7 +9,7 @@ DAT
     ''                                      CC   = "15pF per pin"
     ''                                        SS = clk:PLL
     '' => "CLK = XI * 20 with PLL enabled"
-    hubset ##16779771 '' _clkmode = 0x10009FB
+    hubset ##16779771 '' _clkmode = 0x10009FB = 200 MHz
     
     '' Configure Pin as UART TX
     ''     %AAAA_BBBB_FFF_MMMMMMMMMMMMM_TT_SSSSS_0
@@ -26,16 +26,8 @@ DAT
     '' would be $00215400.
     '' 115200 baud @ 200 MHz yields 1736.111… clocks
     ''          %DDDDDDDDDDDDDDDD__BBBBB
-    WXPIN ##$06C8_1C07, #0 '' 115200 @ 7 bit
-
-    '' Configure Pin UART RX Mode
-    '' X[31:16] establishes the number of clocks in a bit period, and in case X[31:26] is zero, X[15:10]
-    '' establishes the number of fractional clocks in a bit period. The X bit period value can be simply computed
-    '' as: (clocks * $1_0000) & $FFFFFC00. For example, 7.5 clocks would be $00078000, and 33.33 clocks
-    '' would be $00215400.
-    '' 115200 baud @ 200 MHz yields 1736.111… clocks
-    ''          %DDDDDDDDDDDDDDDD__BBBBB
-    WXPIN ##$06C8_1C07, #1 '' 115200 @ 7 bit
+    WXPIN ##$06C8_1C07, #0 '' 115200 @ 8 bit
+    WXPIN ##$06C8_1C07, #1 '' 115200 @ 8 bit
 
     '' enable smart pin
     DIRH #0
@@ -58,7 +50,6 @@ DAT
 
     JMP #main_loop
 
-  main_loop_end
 
   tmp
     long 0
