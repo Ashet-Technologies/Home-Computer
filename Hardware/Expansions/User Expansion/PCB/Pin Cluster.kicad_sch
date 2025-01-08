@@ -1,0 +1,7855 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7424e308-07fc-47a8-a694-20285a92ce1a")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 50.8 25.4)
+		(uuid "01a8b8f3-6bc9-494f-8cc3-ad1011500f33")
+	)
+	(no_connect
+		(at 38.1 69.85)
+		(uuid "02448d97-7340-4a95-9b2f-355c58aab517")
+	)
+	(no_connect
+		(at 38.1 25.4)
+		(uuid "04e32127-8fb6-4ba1-b194-d7acccea875f")
+	)
+	(no_connect
+		(at 38.1 50.8)
+		(uuid "04fbc949-0ae3-4d4d-858c-96e7b2c19169")
+	)
+	(no_connect
+		(at 25.4 31.75)
+		(uuid "07a0e4f9-7a1d-4abf-92d1-5904b7a5a768")
+	)
+	(no_connect
+		(at 44.45 63.5)
+		(uuid "1183dbe7-224a-4507-9c07-c0e14c75663c")
+	)
+	(no_connect
+		(at 31.75 69.85)
+		(uuid "11ef21b1-83c6-4049-baeb-13fe43b352dd")
+	)
+	(no_connect
+		(at 44.45 50.8)
+		(uuid "1341124b-d24b-4bbb-a6d3-95e2e9ca0ca9")
+	)
+	(no_connect
+		(at 31.75 44.45)
+		(uuid "14078970-6bf1-4377-9044-a71b9b3bc9b8")
+	)
+	(no_connect
+		(at 69.85 69.85)
+		(uuid "16d8fde4-4af0-40aa-bc18-eb5c50aaf55d")
+	)
+	(no_connect
+		(at 50.8 57.15)
+		(uuid "17346ad5-d7d4-45d0-bdbc-56f16439f8f0")
+	)
+	(no_connect
+		(at 63.5 44.45)
+		(uuid "175dcece-0f68-403e-9648-7a2e57fd8483")
+	)
+	(no_connect
+		(at 31.75 25.4)
+		(uuid "1b3e0129-6d91-4afb-acf0-d159776c7538")
+	)
+	(no_connect
+		(at 44.45 69.85)
+		(uuid "1db8e435-e105-4466-bd35-cb80b24dfe29")
+	)
+	(no_connect
+		(at 57.15 25.4)
+		(uuid "1f6200db-48b9-4c52-8ff2-31f2ca75d10b")
+	)
+	(no_connect
+		(at 57.15 31.75)
+		(uuid "214b143f-273d-47d9-915c-a1e638b1d193")
+	)
+	(no_connect
+		(at 38.1 57.15)
+		(uuid "21ab4f68-7f41-4638-8cd0-c851c6a0eea4")
+	)
+	(no_connect
+		(at 63.5 57.15)
+		(uuid "2999ec24-07df-48f5-bbc6-5f8f41560d16")
+	)
+	(no_connect
+		(at 50.8 63.5)
+		(uuid "2eef3acb-a747-44dc-8500-b31c38c2ca28")
+	)
+	(no_connect
+		(at 38.1 63.5)
+		(uuid "32e1c5cf-a408-41b9-a54e-b5b71419d130")
+	)
+	(no_connect
+		(at 57.15 50.8)
+		(uuid "349cfbec-7a5a-4706-ae65-bc41c47ba149")
+	)
+	(no_connect
+		(at 69.85 38.1)
+		(uuid "3617e398-f346-4192-803f-058af7d85a46")
+	)
+	(no_connect
+		(at 44.45 38.1)
+		(uuid "3b34cdd0-4679-4067-a1d7-b6de0121f14a")
+	)
+	(no_connect
+		(at 25.4 25.4)
+		(uuid "3b528fc2-61ac-458f-b5f1-60d648cf3065")
+	)
+	(no_connect
+		(at 25.4 44.45)
+		(uuid "3ecf3959-9005-4b9d-bc4d-15deb3708ba0")
+	)
+	(no_connect
+		(at 57.15 38.1)
+		(uuid "40a85c5d-5da6-463e-ae80-4bd55755c996")
+	)
+	(no_connect
+		(at 31.75 63.5)
+		(uuid "4104e580-9ff6-4017-9669-9f21b3b8c279")
+	)
+	(no_connect
+		(at 57.15 57.15)
+		(uuid "443b8cdc-a6aa-4f27-97c1-35f4b440793f")
+	)
+	(no_connect
+		(at 38.1 44.45)
+		(uuid "4c801fce-6ac8-41f2-a45b-fbbceb3edcfa")
+	)
+	(no_connect
+		(at 25.4 69.85)
+		(uuid "525f8523-c992-463e-9950-8a1d7c1eef2d")
+	)
+	(no_connect
+		(at 25.4 50.8)
+		(uuid "5601c3d7-556b-4f63-8207-82136f19693a")
+	)
+	(no_connect
+		(at 50.8 69.85)
+		(uuid "5773006f-8c3b-4085-bf5f-bbf36b513e1f")
+	)
+	(no_connect
+		(at 44.45 57.15)
+		(uuid "5b21b4ef-a4ea-4035-9eb9-2a370b4062c7")
+	)
+	(no_connect
+		(at 69.85 25.4)
+		(uuid "5c8558b4-69ac-42b6-ba96-c698b1d8b8fd")
+	)
+	(no_connect
+		(at 38.1 31.75)
+		(uuid "60105dd1-8a68-47f7-9ba4-c0f356a75e26")
+	)
+	(no_connect
+		(at 57.15 63.5)
+		(uuid "603af84f-be26-42fa-9c93-19d353045c4c")
+	)
+	(no_connect
+		(at 50.8 38.1)
+		(uuid "65e49b73-1a25-4944-a8e5-a157606bda27")
+	)
+	(no_connect
+		(at 44.45 31.75)
+		(uuid "6aecbd2c-d761-468d-94d9-3ef84bef853b")
+	)
+	(no_connect
+		(at 63.5 25.4)
+		(uuid "70f22508-1f60-4ad9-bbb9-7c5dbaeb2f1d")
+	)
+	(no_connect
+		(at 63.5 38.1)
+		(uuid "770cdcda-5153-4305-ba62-4533fbdca0e1")
+	)
+	(no_connect
+		(at 25.4 63.5)
+		(uuid "7e0f0897-4b14-495b-8f8d-7d27a614122a")
+	)
+	(no_connect
+		(at 44.45 44.45)
+		(uuid "842427d5-3813-4cf0-a4aa-d3dcecb15dfe")
+	)
+	(no_connect
+		(at 50.8 31.75)
+		(uuid "851a0204-d147-4585-91ac-bb6ad23cdb54")
+	)
+	(no_connect
+		(at 44.45 25.4)
+		(uuid "8835e74a-dcb7-4b95-ac59-be2051051322")
+	)
+	(no_connect
+		(at 69.85 31.75)
+		(uuid "92f2af55-3d75-40d3-baac-27ae57b35ce5")
+	)
+	(no_connect
+		(at 69.85 50.8)
+		(uuid "9e7e0bc7-8ed8-43b1-b495-9462bd4c0a77")
+	)
+	(no_connect
+		(at 69.85 57.15)
+		(uuid "a02a0ff9-0c08-4aaf-998a-4ee41a3d2520")
+	)
+	(no_connect
+		(at 63.5 69.85)
+		(uuid "a69137d8-1785-4d2a-a257-933d3cd0c481")
+	)
+	(no_connect
+		(at 25.4 57.15)
+		(uuid "aa27f68a-1e57-498a-9601-00d33c855bc5")
+	)
+	(no_connect
+		(at 57.15 44.45)
+		(uuid "ab1f86a1-daf8-4503-af41-08c16a879afe")
+	)
+	(no_connect
+		(at 31.75 31.75)
+		(uuid "b3cfa596-3c27-4184-a512-78e3c4d04d69")
+	)
+	(no_connect
+		(at 69.85 63.5)
+		(uuid "c1698fca-e7b8-4680-81ff-dd3a85039793")
+	)
+	(no_connect
+		(at 31.75 57.15)
+		(uuid "c1a48a02-cd2b-401f-b9f3-f54e79656c59")
+	)
+	(no_connect
+		(at 25.4 38.1)
+		(uuid "c88c86d5-67a8-44a8-bf89-c15bc87bdeed")
+	)
+	(no_connect
+		(at 31.75 50.8)
+		(uuid "cd6fb3c5-3bb8-4890-916f-e1d0dfa105fc")
+	)
+	(no_connect
+		(at 57.15 69.85)
+		(uuid "ce084e60-c7d2-4aaa-b292-269f412d7be4")
+	)
+	(no_connect
+		(at 63.5 63.5)
+		(uuid "dddb6540-ce91-4eef-a54b-0d0b82de8d74")
+	)
+	(no_connect
+		(at 63.5 31.75)
+		(uuid "e148bbdf-eed2-4e03-b4a4-c26c31ae5652")
+	)
+	(no_connect
+		(at 31.75 38.1)
+		(uuid "f2fe6eba-489c-44a9-aa2a-e7aed6b396d7")
+	)
+	(no_connect
+		(at 50.8 44.45)
+		(uuid "f5eaea44-9be8-4d45-ac97-0b9ebe9c652f")
+	)
+	(no_connect
+		(at 63.5 50.8)
+		(uuid "f62983e9-8c18-41a7-a1a1-583601e2088f")
+	)
+	(no_connect
+		(at 69.85 44.45)
+		(uuid "fde021d0-d1d1-4511-8156-44a815e423b0")
+	)
+	(no_connect
+		(at 50.8 50.8)
+		(uuid "fe39fdee-07e2-444f-ad19-d8668ec7ee23")
+	)
+	(no_connect
+		(at 38.1 38.1)
+		(uuid "ff2e6c5c-644d-49c0-ac07-0607239d127d")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03aa3bf3-7453-4de3-84ac-7f6a8af01f05")
+		(property "Reference" "TP208"
+			(at 26.67 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ecedcc2-f34b-47a9-883a-0bf1085c3d2b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP608")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP708")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP408")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1008")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1208")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP908")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1408")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP308")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP808")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1308")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP208")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP508")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d023d9f-32c1-4f55-85c2-b9c4cb772c89")
+		(property "Reference" "TP217"
+			(at 39.37 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9da8a1f2-5dc3-45bb-b177-e8998d63e8ac")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP617")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP717")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP417")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1017")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1217")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP917")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1417")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP317")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP817")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1317")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP217")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP517")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1236b5ae-5f7c-43d2-84a1-104b9f0d2a6e")
+		(property "Reference" "TP249"
+			(at 64.77 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5382f751-37d8-41cc-a388-36af5029be9d")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP649")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP749")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP449")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1049")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1249")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP949")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1449")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP349")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP849")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1349")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP249")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP549")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1149")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1375268f-9ab7-4242-8a1d-06e4fea4a798")
+		(property "Reference" "TP219"
+			(at 39.37 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0bc07b4-d3ab-402f-a011-984698348134")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP619")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP719")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP419")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1019")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1219")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP919")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1419")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP319")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP819")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1319")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP219")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP519")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13a2c3a9-8091-410c-a66f-1ca812c92ff5")
+		(property "Reference" "TP243"
+			(at 58.42 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e461358e-4b2f-4f35-9579-d30099b7b4ba")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP643")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP743")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP443")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1043")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1243")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP943")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1443")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP343")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP843")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1343")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP243")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP543")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16475ab3-551c-4a45-b792-ed87944879d7")
+		(property "Reference" "TP245"
+			(at 58.42 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bcf7ef8-cf56-45c0-8341-cf7a59a738b5")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP645")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP745")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP445")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1045")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1245")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP945")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1445")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP345")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP845")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1345")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP245")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP545")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ab86b09-ccc9-4624-8252-a5ec095c033d")
+		(property "Reference" "TP216"
+			(at 33.02 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6769a368-ff13-4d09-8569-e2b41cb225bb")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP616")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP716")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP416")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1016")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1216")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP916")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1416")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP316")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP816")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1316")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP216")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP516")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cdc0546-df0a-4591-a7e9-b81dd3797826")
+		(property "Reference" "TP244"
+			(at 58.42 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35f03234-733a-4853-be86-730b0970aeeb")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP644")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP744")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP444")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1044")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1244")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP944")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1444")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP344")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP844")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1344")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP244")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP544")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d79b128-7310-4e62-b9fb-3ec47c0d427d")
+		(property "Reference" "TP248"
+			(at 58.42 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "faa0352b-1aa5-41a4-814a-ce59f4fa1e53")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP648")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP748")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP448")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1048")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1248")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP948")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1448")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP348")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP848")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1348")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP248")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP548")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2350c609-2cb9-4938-85d3-0a2d32d8db1a")
+		(property "Reference" "TP230"
+			(at 45.72 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29705c66-cb55-446c-b945-8396a8eea3d4")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP630")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP730")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP430")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1030")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1230")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP930")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1430")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP330")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP830")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1330")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP230")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP530")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26239d25-f744-4079-adb8-31f62d77d834")
+		(property "Reference" "TP218"
+			(at 39.37 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bab76989-9de4-4fb0-9f7f-0c94a475c424")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP618")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP718")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP418")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1018")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1218")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP918")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1418")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP318")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP818")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1318")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP218")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP518")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26eca420-e3db-4888-afc5-3ce32240af2d")
+		(property "Reference" "TP253"
+			(at 64.77 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab4a327b-411f-42a1-a15e-e6f4482540e0")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP653")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP753")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP453")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1053")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1253")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP953")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1453")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP353")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP853")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1353")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP253")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP553")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1153")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f4c68f0-ada5-4b1b-8611-185bc521c89f")
+		(property "Reference" "TP262"
+			(at 71.12 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11b09c12-264c-4166-b6aa-761fde5b18d3")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP662")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP762")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP462")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1062")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1262")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP962")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1462")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP362")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP862")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1362")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP262")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP562")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3adbbde6-3e4c-4c1d-a9c6-e783c5420053")
+		(property "Reference" "TP207"
+			(at 26.67 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d93a7489-0b15-4be7-b262-eeba5eb96788")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP607")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP707")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP407")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1007")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1207")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP907")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1407")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP307")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP807")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1307")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP207")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP507")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dcc878e-3b56-4452-804a-a86f40b73480")
+		(property "Reference" "TP214"
+			(at 33.02 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ff18460-9bc7-45c6-ba28-50ecc2240e45")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP614")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP714")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP414")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1014")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1214")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP914")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1414")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP314")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP814")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1314")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP214")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP514")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f7e6615-13f4-45a2-841e-b9dfe614da8c")
+		(property "Reference" "TP210"
+			(at 33.02 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c8d9946-4115-492e-b974-4809e10b67d4")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP610")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP710")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP410")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1010")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1210")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP910")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1410")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP310")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP810")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1310")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP210")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP510")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4171a122-6101-4405-852c-5c17afae061e")
+		(property "Reference" "TP202"
+			(at 26.67 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4baed82c-c35f-47ef-9365-8a4bbcaa908e")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP602")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP702")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP402")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1002")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1202")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP902")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1402")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP302")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP802")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1302")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP202")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP502")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4bfd015f-f7d2-42e0-b0f8-712c8502ee51")
+		(property "Reference" "TP229"
+			(at 45.72 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a237e53f-b6a2-4ec9-9b13-5f428613fdac")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP629")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP729")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP429")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1029")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1229")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP929")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1429")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP329")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP829")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1329")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP229")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP529")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e603105-441f-43cc-8b2d-cf4708469932")
+		(property "Reference" "TP251"
+			(at 64.77 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e54ee4cc-153e-4d85-93cc-4ad0c58f5f33")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP651")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP751")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP451")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1051")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1251")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP951")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1451")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP351")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP851")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1351")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP251")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP551")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5016c808-d5e4-41a3-9120-9c0e6c1287c2")
+		(property "Reference" "TP220"
+			(at 39.37 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7542e7fc-a69a-44c4-8bac-e3c5d54a9e0f")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP620")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP720")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP420")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1020")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1220")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP920")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1420")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP320")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP820")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1320")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP220")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP520")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "573f9cb4-ef52-4820-8ecc-1c3b2418c53a")
+		(property "Reference" "TP250"
+			(at 64.77 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de188c63-9666-4b39-90c5-23056b3af67a")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP650")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP750")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP450")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1050")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1250")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP950")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1450")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP350")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP850")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1350")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP250")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP550")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58e7d037-b8dd-4938-bb9c-03cfbf4f26e9")
+		(property "Reference" "TP224"
+			(at 39.37 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba6cb38c-f5df-4399-bd2b-98f11c14a712")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP624")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP724")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP424")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1024")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1224")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP924")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1424")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP324")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP824")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1324")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP224")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP524")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a8eebfd-c80e-4d49-8418-0c31d1898ece")
+		(property "Reference" "TP257"
+			(at 71.12 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "caadfb16-0de3-460d-905f-1081d9a45472")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP657")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP757")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP457")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1057")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1257")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP957")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1457")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP357")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP857")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1357")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP257")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP557")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1157")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67519108-dfb8-4ce9-a974-daeccdb79fe9")
+		(property "Reference" "TP227"
+			(at 45.72 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c10241a-23d8-4392-bd56-e921ea08968b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP627")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP727")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP427")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1027")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1227")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP927")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1427")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP327")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP827")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1327")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP227")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP527")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6adf441f-9e6f-42af-a5d2-3e90df83609c")
+		(property "Reference" "TP209"
+			(at 33.02 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "695a9a98-c165-434b-aa48-a321f59b70b6")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP609")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP709")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP409")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1009")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1209")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP909")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1409")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP309")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP809")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1309")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP209")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP509")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6eeaf393-76d0-4e49-91c8-ba7251b0ccd1")
+		(property "Reference" "TP252"
+			(at 64.77 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90b9ec5d-0f5a-4a3e-b92b-900966a7391e")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP652")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP752")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP452")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1052")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1252")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP952")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1452")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP352")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP852")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1352")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP252")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP552")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fb57a08-7889-471b-bd12-ce807a0611cc")
+		(property "Reference" "TP205"
+			(at 26.67 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cd21518-b008-4624-8ad7-a8fc7060540b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP605")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP705")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP405")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1005")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1205")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP905")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1405")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP305")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP805")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1305")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP205")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP505")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7136b27f-9a0d-49f4-8193-147fa99f28eb")
+		(property "Reference" "TP211"
+			(at 33.02 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "049e1427-e67c-4c05-b2ac-9c8e33d18595")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP611")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP711")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP411")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1011")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1211")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP911")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1411")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP311")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP811")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1311")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP211")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP511")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74f48741-308a-49af-9425-ae841aac73c3")
+		(property "Reference" "TP260"
+			(at 71.12 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b3cb98a-9c59-4e69-b83e-f1fd3e527014")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP660")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP760")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP460")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1060")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1260")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP960")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1460")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP360")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP860")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1360")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP260")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP560")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ec4043a-16e6-4eb6-b0a6-ca689c45294a")
+		(property "Reference" "TP235"
+			(at 52.07 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb557df4-3a45-4791-937f-458bda087a6b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP635")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP735")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP435")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1035")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1235")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP935")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1435")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP335")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP835")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1335")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP235")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP535")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86b44dfb-2505-4bbe-8daa-ebc2ff29cde1")
+		(property "Reference" "TP236"
+			(at 52.07 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23722996-6564-446e-900e-dd15808603e9")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP636")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP736")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP436")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1036")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1236")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP936")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1436")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP336")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP836")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1336")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP236")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP536")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86bc3274-3b28-4569-ad1c-9989f27786da")
+		(property "Reference" "TP215"
+			(at 33.02 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fdc8bb2-de0f-42eb-ad5e-b674dff5a7b3")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP615")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP715")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP415")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1015")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1215")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP915")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1415")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP315")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP815")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1315")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP215")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP515")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "972a51b8-8e1c-47f9-b750-fe198508eaae")
+		(property "Reference" "TP242"
+			(at 58.42 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d5274db-275d-4680-926a-3ab74b9812a3")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP642")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP742")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP442")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1042")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1242")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP942")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1442")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP342")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP842")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1342")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP242")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP542")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b832eab-03d2-428a-a6b0-d9381ad6997a")
+		(property "Reference" "TP255"
+			(at 64.77 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "188f271b-63d1-41a1-844e-b6df0a62cc7a")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP655")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP755")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP455")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1055")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1255")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP955")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1455")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP355")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP855")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1355")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP255")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP555")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0e65f39-91dd-4e04-9c2e-5d7373a50809")
+		(property "Reference" "TP256"
+			(at 64.77 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d02fbdd-2326-4a9a-a974-9399aa0adf09")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP656")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP756")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP456")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1056")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1256")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP956")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1456")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP356")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP856")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1356")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP256")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP556")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2c4a1ec-7b3d-4804-8cb8-6f1c204b5b35")
+		(property "Reference" "TP258"
+			(at 71.12 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41261573-4701-41f0-9769-da9dbf6d1f96")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP658")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP758")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP458")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1058")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1258")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP958")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1458")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP358")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP858")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1358")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP258")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP558")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1158")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a61faf25-e762-4391-9cdd-66265a92c523")
+		(property "Reference" "TP228"
+			(at 45.72 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03cc745f-d760-4463-b9a1-8c5025fc9060")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP628")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP728")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP428")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1028")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1228")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP928")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1428")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP328")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP828")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1328")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP228")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP528")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a82be12c-cef4-4ae4-9029-dad8ca426439")
+		(property "Reference" "TP237"
+			(at 52.07 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb520d1a-63c4-44b5-9b5b-3f2ccdc25a06")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP637")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP737")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP437")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1037")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1237")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP937")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1437")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP337")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP837")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1337")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP237")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP537")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a87e9c05-8b28-4e0e-9c75-583af56832a6")
+		(property "Reference" "TP232"
+			(at 45.72 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5cd89639-2d8e-4de2-93e6-af73cbe5b24a")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP632")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP732")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP432")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1032")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1232")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP932")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1432")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP332")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP832")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1332")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP232")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP532")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acd0ad76-cbe5-4e45-a7cc-f6c08a5a7ced")
+		(property "Reference" "TP301"
+			(at 26.67 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ee7f7c0-0e9c-46ae-a388-0548d45d9ee9")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP601")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP701")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP401")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1001")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1201")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP901")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1401")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP301")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP801")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1301")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP201")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP501")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b19b6179-a3c2-44df-88d9-cd0adab86b65")
+		(property "Reference" "TP263"
+			(at 71.12 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d2b3c98-2922-408f-ab7f-6b746ee83415")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP663")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP763")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP463")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1063")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1263")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP963")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1463")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP363")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP863")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1363")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP263")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP563")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b92f097a-9456-4d77-8528-0d26559123d9")
+		(property "Reference" "TP239"
+			(at 52.07 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73dccfc7-3db7-46a9-9ce7-d802711f47cf")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP639")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP739")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP439")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1039")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1239")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP939")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1439")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP339")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP839")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1339")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP239")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP539")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baf5f0b4-feb6-4210-ad9c-94db12072875")
+		(property "Reference" "TP234"
+			(at 52.07 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7a9d447-bb5d-471f-86d9-451e13a509ce")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP634")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP734")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP434")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1034")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1234")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP934")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1434")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP334")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP834")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1334")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP234")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP534")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bea445c5-7ea4-4c74-aa06-8d5ea786b602")
+		(property "Reference" "TP206"
+			(at 26.67 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6d929e7-f42e-4b13-9419-46833f3cd984")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP606")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP706")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP406")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1006")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1206")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP906")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1406")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP306")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP806")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1306")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP206")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP506")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 63.5 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf350ea2-3c2e-46dc-ac56-49d34a4570af")
+		(property "Reference" "TP254"
+			(at 64.77 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 64.77 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 68.58 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c02c7e37-b228-40f2-b18e-b58364142a1c")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP654")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP754")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP454")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1054")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1254")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP954")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1454")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP354")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP854")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1354")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP254")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP554")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11573f0-5b0c-4582-8aff-b64c4806ecc3")
+		(property "Reference" "TP223"
+			(at 39.37 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4256e116-b5c7-4cc8-86c4-a69bcafbd9b7")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP623")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP723")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP423")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1023")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1223")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP923")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1423")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP323")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP823")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1323")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP223")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP523")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9af150a-019a-4a24-b01c-3c24c518e601")
+		(property "Reference" "TP203"
+			(at 26.67 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67add751-934e-46b6-8a09-55d6f2f76dda")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP603")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP703")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP403")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1003")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1203")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP903")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1403")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP303")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP803")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1303")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP203")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP503")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc5b0a89-790c-4e2a-9968-b6892388a3d0")
+		(property "Reference" "TP259"
+			(at 71.12 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "984a947e-2adc-4c0a-a778-4c1d8e73e8e7")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP659")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP759")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP459")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1059")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1259")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP959")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1459")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP359")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP859")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1359")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP259")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP559")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1159")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd777eb5-f7b8-444d-856b-991a4bd59709")
+		(property "Reference" "TP241"
+			(at 58.42 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71f7715d-cfeb-4050-ae18-9aeeb46eef14")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP641")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP741")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP441")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1041")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1241")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP941")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1441")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP341")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP841")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1341")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP241")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP541")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d09cf845-5953-47de-8d6d-fa452c65dd7b")
+		(property "Reference" "TP221"
+			(at 39.37 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6728694-b6d8-4ee5-945b-877d81a6ca03")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP621")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP721")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP421")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1021")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1221")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP921")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1421")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP321")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP821")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1321")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP221")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP521")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d26dc4b7-2e84-47b3-aa90-4ec81b1f48ac")
+		(property "Reference" "TP264"
+			(at 71.12 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3047af97-dae0-4099-b6ed-a013d7f9c661")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP664")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP764")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP464")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1064")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1264")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP964")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1464")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP364")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP864")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1364")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP264")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP564")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1164")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3425c63-5e20-4f48-953a-8dd625ae4207")
+		(property "Reference" "TP225"
+			(at 45.72 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac4a3476-e064-43c2-b495-7ef77cd86d12")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP625")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP725")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP425")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1025")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1225")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP925")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1425")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP325")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP825")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1325")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP225")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP525")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df2a6330-6c2e-43fe-bb5f-fd84b35f4081")
+		(property "Reference" "TP213"
+			(at 33.02 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d9ed33b-de9d-4fbb-8eea-91797b0cbc83")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP613")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP713")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP413")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1013")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1213")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP913")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1413")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP313")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP813")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1313")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP213")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP513")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0264f2f-a9ef-461f-8ee7-1754571a4bcb")
+		(property "Reference" "TP246"
+			(at 58.42 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a26cb82-fe3c-42ca-87a5-2fffa9a89dfd")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP646")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP746")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP446")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1046")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1246")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP946")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1446")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP346")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP846")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1346")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP246")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP546")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e20db64b-cc02-4f22-b7de-c9a8d2028551")
+		(property "Reference" "TP231"
+			(at 45.72 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "effcff1d-20b5-47ca-a553-424a08270a26")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP631")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP731")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP431")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1031")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1231")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP931")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1431")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP331")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP831")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1331")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP231")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP531")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 57.15 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f244839f-9006-4edb-8b78-679f5750dedd")
+		(property "Reference" "TP247"
+			(at 58.42 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 58.42 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 62.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 57.15 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25fd35dc-9858-4a4d-bdb7-a10a9c09a038")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP647")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP747")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP447")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1047")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1247")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP947")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1447")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP347")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP847")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1347")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP247")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP547")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 31.75 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f26deeba-0002-498c-880b-1bc2c6e0c9fc")
+		(property "Reference" "TP212"
+			(at 33.02 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 33.02 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 36.83 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 31.75 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3a2979c-664c-4098-9e38-ff03134f4e9f")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP612")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP712")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP412")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1012")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1212")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP912")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1412")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP312")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP812")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1312")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP212")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP512")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 38.1 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f29ef955-6df1-43c4-b46f-af06beefa9ce")
+		(property "Reference" "TP222"
+			(at 39.37 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 39.37 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 43.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73c5f985-ab5c-40da-951f-c7e1b4573e92")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP622")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP722")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP422")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1022")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1222")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP922")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1422")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP322")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP822")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1322")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP222")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP522")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2fde900-1b31-4875-b4c5-eb310ba5c59b")
+		(property "Reference" "TP240"
+			(at 52.07 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1e19b66-d92d-4604-a347-7d883554fba4")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP640")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP740")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP440")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1040")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1240")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP940")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1440")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP340")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP840")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1340")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP240")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP540")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 69.85 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f549a469-4a1d-4fda-8baf-cb886ec63db7")
+		(property "Reference" "TP261"
+			(at 71.12 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 71.12 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b6b1e80-3762-43f7-8897-7caf84a3c08b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP661")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP761")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP461")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1061")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1261")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP961")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1461")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP361")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP861")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1361")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP261")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP561")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fae4164c-7419-4992-913f-201dd3e82163")
+		(property "Reference" "TP238"
+			(at 52.07 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5504ff75-2848-4c47-b542-66b3ff894559")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP638")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP738")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP438")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1038")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1238")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP938")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1438")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP338")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP838")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1338")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP238")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP538")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 44.45 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fae49aab-7e66-4432-aad3-dae0c969b5c4")
+		(property "Reference" "TP226"
+			(at 45.72 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 45.72 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 49.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43464832-4067-437f-a9c0-c4047867b645")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP626")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP726")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP426")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1026")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1226")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP926")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1426")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP326")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP826")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1326")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP226")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP526")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 50.8 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fca38eb0-036e-48e9-83a4-86d0e70eb41e")
+		(property "Reference" "TP233"
+			(at 52.07 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 52.07 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 55.88 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78baf2f9-c98f-47ac-b823-b0c056e71653")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP633")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP733")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP433")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1033")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1233")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP933")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1433")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP333")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP833")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1333")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP233")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP533")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 25.4 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffb9682b-8e23-4045-9fa0-11e6ab9b3e42")
+		(property "Reference" "TP204"
+			(at 26.67 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "-"
+			(at 26.67 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66b9b328-6a03-49ef-8f67-a6dde33d013b")
+		)
+		(instances
+			(project "User Expansion"
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/32bd1cf2-ad49-4abf-a8d1-5c62a089347b"
+					(reference "TP604")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/4b653a00-1e27-4a5d-927c-0290257ab4c8"
+					(reference "TP704")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/57672360-c409-45c9-b9cd-c3499d55357b"
+					(reference "TP404")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/5c03e928-bf77-4ee9-a443-3cae9b2e0414"
+					(reference "TP1004")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/6580ba44-4d47-4dac-891c-5bc8634573b2"
+					(reference "TP1204")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/77bb5dfa-660d-4f6a-9cff-44e92a20dca8"
+					(reference "TP904")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1"
+					(reference "TP1404")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/7d951fb1-3f7e-4af4-9d03-7d117a97f802"
+					(reference "TP304")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/89c1545a-666d-4d9e-a255-5c23ae424547"
+					(reference "TP804")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bd964bfd-9e11-476f-b025-1c3a9310a8f9"
+					(reference "TP1304")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/bf962dde-851c-4944-b059-def47b23453b"
+					(reference "TP204")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e47a4ecc-a476-42ff-9e12-e3235c311bc9"
+					(reference "TP504")
+					(unit 1)
+				)
+				(path "/7e70b3e1-f3ce-4bd3-912f-edd04449955a/e4c85d31-bbed-4900-97b0-0fd1a35dfa03"
+					(reference "TP1104")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
