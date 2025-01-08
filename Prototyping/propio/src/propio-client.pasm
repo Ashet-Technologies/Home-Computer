@@ -40,7 +40,6 @@ DAT
     DIRH #UART_TX
     DIRH #UART_RX
 
-
     WAITX #3
 
     WYPIN #$21, #UART_TX
@@ -49,7 +48,60 @@ DAT
     REP @main_loop_end, #0
     TESTP #UART_RX WC
     IF_C JMP #recv_char
+    TESTP #PROPIO_EN WC
+    IF_C JMP #init_propio
   main_loop_end
+
+  init_propio
+    TESTP #PROPIO_DIR WC
+
+    IF_C JMP #perform_receive
+
+  perform_send
+    WYPIN #$53, #UART_TX ' "S"
+
+    JMP #wait_complete
+
+  wait_complete 
+    TESTP #PROPIO_EN WC
+    IF_C JMP #wait_complete
+  propio_done
+    WYPIN #$58, #UART_TX ' "X"
+    JMP #main_loop
+
+  perform_receive
+    WYPIN #$52, #UART_TX ' "R"
+
+  rcv_next_byte
+    MODZ _CLR WZ
+
+  rcv_next_nibble
+
+  rcv_wait_clk_low
+    TESTP #PROPIO_EN WC
+    IF_NC JMP #propio_done
+    TESTP #PROPIO_CLK WC
+    IF_C JMP #rcv_wait_clk_low
+
+    GETNIB databyte, INA, #0
+    ALTD databyte, #hextable
+    WYPIN 0, #UART_TX
+
+  rcv_wait_clk_high
+    TESTP #PROPIO_CLK WC
+    IF_NC JMP #rcv_wait_clk_high
+
+    ' IF_NZ JMP #rcv_next_nibble
+
+    JMP #rcv_next_byte
+
+  databyte
+    LONG 0
+  
+  hextable
+    LONG $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $46
+
+    ALIGNL
 
   recv_char
     OUTNOT #LED_PIN

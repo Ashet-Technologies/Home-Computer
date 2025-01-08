@@ -25,7 +25,7 @@
 |             4 | 59            | D3     | Bi-di      | Don't care | Data bit, L=0, H=1                                                                          | Forced HIGH   |
 |             5 | 60            | CLK    | Bi-di      | High       | The bit clock for D0, D1, D2, D3. Shift in on rising edge                                   | *don't care*  |
 |             6 | 61            | EN     | Downstream | Low        | Determines if a transfer is active. On a rising edge, a new transfer is started             | *don't care*  |
-|             7 | 62            | DIR    | Downstream | Low        | The direction of a transfer. L means towards Downstream, H is towards Upstream              | Boot RX       |
+|             7 | 62            | DIR    | Downstream | Low        | The direction of a transfer. H means towards Downstream, L is towards Upstream              | Boot RX       |
 |             8 | 63            | /REQ   | Upstream   | High       | A falling edge will signal the upstream that an event happened and data is ready to be read | Boot TX       |
 |             9 | RESn          | /RESET | Downstream | High       | Resets the southbridge into initial state                                                   |               |
 
@@ -42,7 +42,7 @@ A transfer is initiated by the upstream setting `DIR` to the desired state, then
 Depending on `DIR`, either a *write* or a *read* operation is performed. For *write* operations, the upstream is the driver for `CLK` and the data pins, on a *read* operation, the downstream drives these signals.
 
 After the transfer setup has been done, pairs of nibbles are transferred. For each nibble, the sender will set up the data pins and pull `CLK` low, afterwards pulling `CLK` high.
-The data must sampled by the receiver on the rising edge of the `CLK` signal. The first transferred nibble contains the lower 4 bit of the octet, the second one contanis the upper 4 bit.
+The data must sampled by the receiver on the rising edge of the `CLK` signal. The first transferred nibble contains the upper 4 bit of the octet, the second one contanis the lower 4 bit.
 
 A transfer is completed on a falling edge of `EN`. `DIR` should remain constant throughout the transfer, but only the state after the rising edge of `EN` defines the transfer direction.
 

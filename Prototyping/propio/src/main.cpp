@@ -62,6 +62,7 @@ struct Driver {
     gpio_set_function(PROPIO_D3, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_CLK, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_EN, GPIO_FUNC_SIO);
+    gpio_set_function(PROPIO_DIR, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_nREQ, GPIO_FUNC_SIO);
 
     gpio_set_dir(PROPIO_D0, GPIO_IN);
@@ -70,6 +71,7 @@ struct Driver {
     gpio_set_dir(PROPIO_D3, GPIO_IN);
     gpio_set_dir(PROPIO_CLK, GPIO_IN);
     gpio_set_dir(PROPIO_EN, GPIO_OUT);
+    gpio_set_dir(PROPIO_DIR, GPIO_OUT);
     gpio_set_dir(PROPIO_nREQ, GPIO_IN);
 
     gpio_put(PROPIO_EN, 0);
@@ -97,6 +99,7 @@ struct Driver {
 
   void start_write_transaction() {
     this->set_dir(GPIO_OUT);
+    gpio_put(PROPIO_CLK, 1);
     gpio_put(PROPIO_EN, 1);
   }
 
@@ -114,8 +117,8 @@ struct Driver {
     uint8_t lo = ((data >> 0) & 0x0F);
     uint8_t hi = ((data >> 4) & 0x0F);
 
-    this->write_nibble(lo);
     this->write_nibble(hi);
+    this->write_nibble(lo);
   }
 
 private:
@@ -125,6 +128,7 @@ private:
     gpio_set_dir(PROPIO_D2, dir);
     gpio_set_dir(PROPIO_D3, dir);
     gpio_set_dir(PROPIO_CLK, dir);
+    gpio_put(PROPIO_DIR, dir); // 1 == write, 0 == read
   }
 
   void write_nibble(uint8_t data) {
