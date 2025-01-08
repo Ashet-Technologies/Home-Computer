@@ -55,6 +55,8 @@ enum {
 // }
 
 struct Driver {
+  uint32_t delay_us = 100;
+
   void init() {
     gpio_set_function(PROPIO_D0, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_D1, GPIO_FUNC_SIO);
@@ -138,9 +140,9 @@ private:
     gpio_put(PROPIO_D3, !!(data & 8));
 
     gpio_put(PROPIO_CLK, 0);
-    sleep_us(100);
+    sleep_us(this->delay_us);
     gpio_put(PROPIO_CLK, 1);
-    sleep_us(100);
+    sleep_us(this->delay_us);
   }
 };
 
@@ -193,6 +195,11 @@ int main(void) {
 
         dri.end_transaction();
         printf("ok.\n");
+        break;
+
+      case '0' ... '9':
+        dri.delay_us = 10 * (cmd - '0');
+        printf("set delay to %lu us\n", dri.delay_us);
         break;
 
       default:

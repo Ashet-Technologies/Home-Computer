@@ -58,7 +58,7 @@ DAT
     IF_C JMP #perform_receive
 
   perform_send
-    WYPIN #$53, #UART_TX ' "S"
+    WYPIN #"S", #UART_TX
 
     JMP #wait_complete
 
@@ -66,43 +66,50 @@ DAT
     TESTP #PROPIO_EN WC
     IF_C JMP #wait_complete
   propio_done
-    WYPIN #$58, #UART_TX ' "X"
+    WYPIN #"]", #UART_TX 
     JMP #main_loop
 
   perform_receive
-    WYPIN #$52, #UART_TX ' "R"
+    WYPIN #"[", #UART_TX
 
   rcv_next_byte
     MODZ _CLR WZ
+    MOV databyte, #0
 
   rcv_next_nibble
 
+  ' wait for the clock to go low, then sample the pins
   rcv_wait_clk_low
     TESTP #PROPIO_EN WC
     IF_NC JMP #propio_done
     TESTP #PROPIO_CLK WC
     IF_C JMP #rcv_wait_clk_low
 
-    GETNIB databyte, INA, #0
-    ALTD databyte, #hextable
-    WYPIN 0, #UART_TX
+    ' clk had a falling edge, let's sample the data:
+    GETNIB tmp, INA, #0
+    IF_NZ SETNIB databyte, tmp, #1 ' first transfer is upper nibble
+    IF_Z  SETNIB databyte, tmp, #0 ' second transfer is lower nibble
 
   rcv_wait_clk_high
+    TESTP #PROPIO_EN WC
+    IF_NC JMP #propio_done
     TESTP #PROPIO_CLK WC
     IF_NC JMP #rcv_wait_clk_high
 
-    ' IF_NZ JMP #rcv_next_nibble
+    ' clk had a rising edge, switch to next nibble or process data:
+    IF_Z JMP #rcv_process_byte
+    MODZ _SET WZ
+    JMP #rcv_next_nibble
+
+  rcv_process_byte
+    ' send response over UART for now
+    WYPIN databyte, #UART_TX
 
     JMP #rcv_next_byte
 
   databyte
     LONG 0
   
-  hextable
-    LONG $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $41, $42, $43, $44, $45, $46
-
-    ALIGNL
-
   recv_char
     OUTNOT #LED_PIN
 
@@ -115,3 +122,4 @@ DAT
 
   tmp
     LONG 0
+    
