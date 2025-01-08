@@ -27,6 +27,7 @@
   - Figure out throughput
     - Parallel Port
     - SPI Port
+  - Select ENC424J600 or ENC624J600
 - Evaluate USB Space
   - Decide if we should use TinyUSB or not
   - Prototype for USB Host Support

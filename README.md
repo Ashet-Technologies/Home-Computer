@@ -2,10 +2,10 @@
 
 ### _The 21st century home computer_
 
-| Project Status           |
-| ------------------------ |
-| ⚠️ **WORK IN PROGRESS** ⚠️ |
-|This README reflects the state of where the project wants to go, not where the project is right now!|
+| Project Status                                                                                       |
+|------------------------------------------------------------------------------------------------------|
+| ⚠️ **WORK IN PROGRESS** ⚠️                                                                             |
+| This README reflects the state of where the project wants to go, not where the project is right now! |
 
 ![A rendering of a concept art](Concept/case-concept.png)
 
@@ -54,27 +54,26 @@ These features are available no matter what expansion cards you have installed.
 
 The following expansion cards are the designated expansion cards which make up the Ashet Home Computer as designed:
 
-1. Framebuffer Video Card
+1. [Framebuffer Video Card](Hardware/Expansions/Framebuffer%20Video/README.md)
     - DVI Video Out (800x480, 60 Hz)
-2. Stereo Sound Card
+2. [PCM Sound Card](Hardware/Expansions/PCM%20Sound/README.md)
     - PCM Audio Out (48 kHz, 16 bit)
     - PCM Audio In (48 kHz, 16 bit)
-3. USB Card
+3. [USB Card](Hardware/Expansions/USB/README.md)
     - 4 USB 1.1 Host Ports
-4. RS232 Card
+4. [RS232 Card](Hardware/Expansions/RS232/README.md)
     - TTL UART (3.3V, 5V, ±12V)
-5. Basic I/O Card
+5. [Basic I/O Card](Hardware/Expansions/Basic%20IO/README.md)
     - Pin Header Connector
     - 8 GPIOs
     - Dedicated I²C
     - 5V and 3.3V power supply available
-6. Commodore Connectivity Card
+6. [Commodore Connectivity Card](Hardware/Expansions/Commodore%20Connectivity/README.md)
     - 2× C64 Serial
-7. User Expansion Card
+7. [User Expansion Card](Hardware/Expansions/User%20Expansion/README.md)
     - Minimal Expansion Card
     - Perfboard For Custom Expansions
     - Pin Header Connector
-    - SUB DE9 Connector
 
 ### Other Expansions
 
@@ -125,7 +124,7 @@ The computer provides a good hands-on experience and allows both creating or und
 The following table shows a comparison to other "small" computers. It should help you get an idea where the Ashet Home Computer is in relation to other projects.
 
 | Feature                      | Ashet                                                              | [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/)   | [Arduino Uno REV3](https://store.arduino.cc/products/arduino-uno-rev3) | [Neotron Pico](https://github.com/neotron-Compute/neotron-Pico)                                                                   | [Cody Computer](https://www.codycomputer.org/)          |
-| ---------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+|------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | CPU Architecture             | Arm Cortex-M33 (32 bit)                                            | Arm Cortex-A72 (64 bit)                                                                         | ATmega328p (8 bit)                                                     | Arm Cortex-M0+ (32 bit)                                                                                                           | 6502                                                    |
 | CPU Model                    | [RapsberryPi RP2350](https://www.raspberrypi.com/products/rp2350/) | [Broadcom BCM2711](https://www.raspberrypi.com/documentation/computers/processors.html#bcm2711) | [ATmega328P](https://www.microchip.com/en-us/product/atmega328p)       | [RapsberryPi RP2040](https://www.raspberrypi.com/products/rp2040/)                                                              1 | [W65C02S](https://wdc65xx.com/integrated-circuit)       |
 | CPU Cores                    | 2                                                                  | 4                                                                                               | 1                                                                      | 2                                                                                                                                 | 1                                                       |
