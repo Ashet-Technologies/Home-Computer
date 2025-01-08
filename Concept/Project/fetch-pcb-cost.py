@@ -1,0 +1,172 @@
+import requests
+import json
+
+
+API_ENDPOINT = "https://cart.jlcpcb.com/api/overseas-shop-cart/v1/shoppingCart/calculationGoodsCostsNew"
+
+REQUEST_BODY = (
+    {
+        "batchNum": None,
+        "achieveDate": None,
+        "calculationCostsType": 1,
+        "steelmeshGoodsRequest": None,
+        "pcbGoodsRequest": {
+            "adornBestrow": 1,
+            "adornColor": "Green",
+            "adornPut": "HASL(with lead)",
+            "backToSingle": False,
+            "charFontColor": "White",
+            "cuprumThickness": 1,
+            "customerSestencilType": 1,
+            "customerSestencilX": None,
+            "customerSestencilY": None,
+            "edaOrderUrl": None,
+            "edgeGrindingFlag": False,
+            "goldFingerBevel": 0,
+            "goldThickness": 1,
+            "goodsType": 1,
+            "halfHole": "no",
+            "halfHoleNumber": None,
+            "impedanceFlag": None,
+            "impedanceTemplateCode": None,
+            "insideCuprumThickness": None,
+            "isAddCustomerCode": "no",
+            "laminationLevels": [],
+            "needTechnics": 0,
+            "orderProductType": 1,
+            "orderRemark": "",
+            "pcbGoodsAccessId": None,
+            "plateType": 1,
+            "sestencilCountX": None,
+            "sestencilCountY": None,
+            "shoppingCartAccessId": None,
+            "stencilCompany": 1,
+            "stencilCounts": 10,
+            "stencilLayer": "2",
+            "stencilLength": "100",
+            "stencilLengthInch": "100",
+            "stencilNumber": 1,
+            "stencilPly": "1.6",
+            "stencilWidth": 70,
+            "stencilWidthInch": 70,
+            "stiffener": "NO",
+            "technicsSize": None,
+            "rowSpacing": 0,
+            "columnSpacing": 0,
+            "rowSpacingInch": 0,
+            "columnSpacingInch": 0,
+            "technicsSizeInch": None,
+            "technologyDiscernRecordId": None,
+            "testProduct": 2,
+            "useNewCalculation": True,
+            "orderPlateBrandName": None,
+            "showTagValue": None,
+            "edaSoftware": None,
+            "markOnPcb": {"markOnPcbType": 2},
+        },
+        "edaLink": None,
+        "orderServiceConfigVos": [
+            {
+                "serviceConfigAccessId": "f83a7517dd02444d900ac527194cea8c",
+                "serviceConfigShow": "Min via hole size/diameter",
+                "configOptionAccessId": "4b54c699cb784c3f85b0fd95c66a3a2b",
+                "configOptionShow": "0.3mm/(0.4/0.45mm)",
+            },
+            {
+                "serviceConfigAccessId": "19b7f8bcc0d445328c3bcd15135c5f35",
+                "serviceConfigShow": "order_plate_brand",
+                "configOptionAccessId": "8841f6b4033a4158a1bb29707a88f945",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "ff69288ae79b4f9eaa6aa663d446ba10",
+                "serviceConfigShow": "Press-Fit Hole",
+                "configOptionAccessId": "5a1eafccaa2c4772abd77e587ee09b3a",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "5a164d5a5cd843a08c89d1cfeb2c3e41",
+                "serviceConfigShow": "4-Wire Kelvin Test",
+                "configOptionAccessId": "43509f3586a1484395defaa016b914df",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "3cca2d658a4b4fcab1d12f89fa006394",
+                "serviceConfigShow": "Material Type",
+                "configOptionAccessId": "8b0ffaca40684210985ec62922ea2bf0",
+                "configOptionShow": "FR4-Standard TG 135-140",
+            },
+            {
+                "serviceConfigAccessId": "c0817330b6494f67983eb5bc0bc6f242",
+                "serviceConfigShow": "Paper between PCBs",
+                "configOptionAccessId": "69cc0b0a7b9446b9bd9b791cdadb4593",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "a8d3cbcfae5c47a3ae9381a52cbc1cee",
+                "serviceConfigShow": "Appearance Quality",
+                "configOptionAccessId": "f6c45c9097fb40d584e24f331748a975",
+                "configOptionShow": "IPC Class 2 Standard",
+            },
+            {
+                "serviceConfigAccessId": "74bc1fde5e13431cb83c5c5a2d9e9a19",
+                "serviceConfigShow": "Confirm Production file",
+                "configOptionAccessId": "7b243f7058fd4c79bc5d865e9ff70410",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "8a9384d3acdf459b806cb353561859f3",
+                "serviceConfigShow": "Silkscreen Technology",
+                "configOptionAccessId": "f87cab772ea24acbbb8efdf14a79362f",
+                "configOptionShow": "Ink-jet/Screen Printing Silkscreen",
+            },
+            {
+                "serviceConfigAccessId": "96e1d3b4ac1f4be2bfcd4b525244b7c9",
+                "serviceConfigShow": "Package Box",
+                "configOptionAccessId": "b3082b7e05ea46cd899b2078f76ef8ed",
+                "configOptionShow": "With JLCPCB logo",
+            },
+            {
+                "serviceConfigAccessId": "775967da198346b68293f7c67edaa5ee",
+                "serviceConfigShow": "Inspection Report",
+                "configOptionAccessId": "6ee58fb34dcf43f1ae6ed31485c84310",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "46f37a541b064100b0a62c2cb6aaba48",
+                "serviceConfigShow": "Board Outline Tolerance",
+                "configOptionAccessId": "76cb84ae9c9a485881136ea02e753717",
+                "configOptionShow": "±0.2mm(Regular)",
+            },
+            {
+                "serviceConfigAccessId": "8630864f4f014dc2a680816bade604bc",
+                "serviceConfigShow": "Edge Plating",
+                "configOptionAccessId": "107743b376514db58f49b672f2fad07f",
+                "configOptionShow": "No",
+            },
+            {
+                "serviceConfigAccessId": "dae19911cec340a584ca3c0c5c21fa6d",
+                "serviceConfigShow": "Need 2D Barcode",
+                "configOptionAccessId": "fa510a5b5dab4a5199fe2d46b7b40bff",
+                "configOptionShow": "Don't Add",
+            },
+        ],
+        "smtGoodRequest": None,
+        "holidayFlag": False,
+    },
+)
+
+resp = requests.post(
+    API_ENDPOINT,
+    json=REQUEST_BODY,
+    headers={
+        "Referer": "https://cart.jlcpcb.com/quote",
+        "Secretkey": "63336233316161392d633038342d346661382d383465302d303932636333313437323539",
+        "Cookie": "jlc_customer_code=6228425A; jlc_session_code=5L5sOoUw9C6mGEZuS%2FTWaQ%3D%3D; client_login_info=%7B%22login_time%22%3A%222023-12-11+17%3A23%3A33%22%2C%22customer_code%22%3A%226228425A%22%7D; expressFlag=D-EU; languageCode=en; languageHq=de; customizationLinkCode=easyedabf; iconCountryFlag=DE; iconCountryExchangeRateFlag=EUR; nowMoneyName=%E2%82%AC; nowExchangeRate=0.965; JLCPCB_SESSION_ID=56324848-ab90-45b4-bbe1-7568ec870b56; acw_tc=41eda4db22ee87723fdd649e313cbb1929ca01ffecdb54fff83cb217111639d2; XSRF-TOKEN=26b927a5-095f-418e-bbbd-e78b0894817d; traceUrl=%7B%22advertisingUrl%22%3A%22https%3A%2F%2Fjlcpcb.com%2F%22%2C%22websiteUrl%22%3A%22https%3A%2F%2Fcart.jlcpcb.com%2Fquote%3ForderType%3D1%26stencilLayer%3D2%26stencilWidth%3D70%26stencilLength%3D100%26stencilCounts%3D5%26spm%3DJlcpcb.Homepage.1010%22%7D; iconCountryExchangeRateFlag=EUR; JSESSIONID=3168D3A917C6BA3ED7254AF61A29C49D",
+        "Origin": "https://cart.jlcpcb.com",
+    },
+)
+
+print(resp)
+
+print(resp.json())

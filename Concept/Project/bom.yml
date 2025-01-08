@@ -1,0 +1,541 @@
+---
+
+assembly:
+  Mechanical: 1
+  Mainboard: 1
+  Backplane: 1
+  E_Perfboard: 1
+  E_SoundCard: 1
+  E_VideoCard: 1
+  # E_VideoCardPro: 1
+  # E_VideoCardAnalog: 1
+  E_RS232: 1
+  E_USBx4: 1
+  E_CBM-IEC: 1
+  E_BASIC-IO: 1
+
+batchsizes:
+  - 1
+  - 10
+  - 50
+  - 75
+  - 100
+  - 150
+  - 250
+  - 500
+  - 750
+  - 1000
+  - 10000
+
+boards:
+  Mechanical:
+    RM2095L: 1
+
+  Mainboard:
+    PCB_MAINBOARD: 1
+    PCB_FRONTPLATE: 1
+    RP2350B: 1
+    RP2040: 1
+    W25Q128JVPIQ: 2
+    ME6211C33M5G-N: 1
+    APS6404L-3SQN: 1
+    MTJ-88ARX1-FSM-LG: 1
+    CU01SAH0S00: 1
+    UJ20-C-H-G-SMT-1-P16-TR: 1
+
+  Backplane:
+    PCB_BACKPLANE: 1
+    P2X8C4M64P: 1
+    TCA9548APWR: 1
+    MCP23017T-E/SO: 1
+    LTC6930CMS8-8.00#PBF: 1
+    10018784-10201TLF: 8
+
+  E_Perfboard:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+
+  E_SoundCard:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    KLPX-0848A-2-R: 2
+    KLPX-0848A-2-B: 2
+
+  E_VideoCard:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    SS-53000-001: 1
+
+  E_VideoCardAnalog:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    KLPX-0848A-2-Y: 2
+    A-HDF15A-KG-TAXB: 1
+
+  E_VideoCardPro:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    A-HDF15A-KG-TAXB: 1
+    KLPX-0848A-2-Y: 1
+    W25Q128JVPIQ: 2
+    RP2350B: 1
+    P2X8C4M64P: 1
+  
+  E_RS232:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    A-DS 09 A/KG-T4S: 2
+    MAX3243EIPWR: 2
+    MCP23S17T-E/SO: 1
+
+  E_USBx4:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    CU01SAH0S00: 4
+  
+  E_CBM-IEC:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    FM6726: 2
+    MCP23S17T-E/SO: 1
+
+  E_BASIC-IO:
+    PCB_EXPSLOT: 1
+    PCB_FRONTPLATE: 1
+    M24256E-FMN6TP: 1
+    302-R241: 1
+
+parts:
+  PCB_BACKPLANE:
+    desc: Four-layer Backplane (250x100)
+    cost:
+      vendor: jlcpcb
+      currency: EUR
+      summed: true
+      5: 52.50
+      10: 66.68
+      50: 179.68
+      75: 213.46
+      100: 269.04
+      150: 381.18
+      250: 603.51
+      500: 1150.67
+      800: 1798.47
+      1000: 2219.02
+      10000: 20898.52
+
+  PCB_MAINBOARD:
+    desc: Four-layer Expansion Slot (100x75)
+    cost:
+      vendor: jlcpcb
+      currency: EUR
+      summed: true
+      5: 22.58
+      10: 28.85
+      50: 80.87
+      75: 91.00
+      100: 107.60
+      150: 140.99
+      250: 207.67
+      500: 375.39
+      800: 575.43
+      1000: 708.79
+      10000: 6452.18
+
+  PCB_EXPSLOT:
+    desc: Two-layer Expansion Slot (100x75)
+    cost:
+      vendor: jlcpcb
+      currency: EUR
+      summed: true
+      5: 33.07
+      10: 36.70
+      50: 61.97
+      75: 73.62
+      100: 85.27
+      150: 108.55
+      250: 155.04
+      500: 271.30
+      800: 411.92
+      1000: 504.89
+      10000: 4278.74
+
+  PCB_FRONTPLATE:
+    desc: Slot Expansion Frontplate (87x28)
+    cost:
+      vendor: jlcpcb
+      currency: EUR
+      summed: true
+      5: 3.86 
+      10: 4.83
+      50: 13.61
+      75: 16.21
+      100: 18.82
+      150: 24.03
+      250: 34.45
+      500: 60.51
+      800: 91.77
+      1000: 112.52
+      10000: 969.83
+
+  RP2040:
+    desc: RaspberryPi RP2040 Microcontroller
+    cost:
+      currency: EUR
+      1: 0.90
+
+  RP2350B:
+    desc: RaspberryPi RP2350B Microcontroller
+    cost:
+      currency: EUR
+      1: 0.90 # guesstimate
+
+  P2X8C4M64P:
+    desc: Propeller 2 P2X8C4M64P Multicore Microcontroller Chip
+    cost:
+      vendor: parallax
+      currency: USD
+      1: 17.95
+      10: 16.16
+      90: 14.36
+      270: 13.82
+      450: 12.74
+
+  M24256E-FMN6TP:
+    desc: EEPROM Speicher IC 256Kbit I2C 1 MHz 450 ns 8-SO
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.28000
+      10: 0.24300
+      25: 0.23160
+      50: 0.22360
+      100: 0.21570
+      250: 0.20564
+      500: 0.19840
+      1_000: 0.19140
+      2_500: 0.18251
+      5_000: 0.17606
+      7_500: 0.17239
+      12_500: 0.16787
+      17_500: 0.16495
+      25_000: 0.16192
+
+  TCA9548APWR:
+    desc: Busschalter 1 x 8:1 24-TSSOP
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.12000
+      10: 0.81100
+      25: 0.73280
+      100: 0.64780
+      250: 0.60716
+      500: 0.58262
+      1_000: 0.56244
+      2_000: 0.54583
+      4_000: 0.53216
+      6_000: 0.52531
+      10_000: 0.51773
+      14_000: 0.51329
+
+  10018784-10201TLF:
+    desc: 64 positionen Buchse Steckverbinder PCI Express™ Gold 0,039" (1,00mm) Schwarz
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.57000
+      10: 0.45800
+      25: 0.42120
+      60: 0.38983
+      120: 0.36667
+      240: 0.34475
+      480: 0.32419
+      960: 0.32171
+  
+  MCP23017T-E/SO:
+    desc: I/O-Erweiterungen 16 I2C 1.7 MHz 28-SOIC
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.55000
+      25: 1.29520
+      100: 1.18970
+      1600: 1.18966
+  
+  MCP23S17T-E/SO:
+    desc: |
+      I/O-Erweiterungen 16 SPI 10 MHz 28-SOIC
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.62
+      25: 1.3432
+      100: 1.228
+      1600: 1.22804
+
+  LTC6930CMS8-8.00#PBF:
+    desc: Oszillator - Silizium IC 8MHz 8-MSOP
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 3.33000
+      10: 2.89300
+      50: 2.62260
+      100: 2.51420
+      500: 2.27964
+      1_000: 2.18560
+      2_500: 2.06737
+
+  RM2095L:
+    desc: |
+      Kasten ABS Grau Geteilte Seiten und Endelement(e) L x B: 9,843" x 7,087" (250,01mm x 180,01mm) X 3,976" (101,00mm)
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 20.12000
+      5: 17.18800
+      10: 16.06200
+      25: 14.68720
+      50: 13.72580
+      100: 13.08380
+
+  W25Q128JVPIQ:
+    desc: FLASH - NOR Speicher IC 128Mbit SPI - Quad-I/O, QPI 133 MHz 8-WSON (6x5)
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.30000
+      10: 1.15600
+      25: 1.10280
+      50: 1.06380
+      100: 1.02630
+      300: 0.96940
+      500: 0.94404
+      1_000: 0.91144
+
+  ME6211C33M5G-N:
+    desc: MICRONE(Nanjing Micro One Elec) ME6211C33M5G-N
+    cost:
+      vendor: lcsc
+      currency: EUR
+      1: 0.0418
+      10: 0.0418
+      100: 0.0341
+      300: 0.0302
+      3_000: 0.027
+      6_000: 0.0258
+      9_000: 0.0251
+
+  APS6404L-3SQN:
+    desc: SRAM IoT RAM 64Mb QSPI (x1,x4) SDR 133MHz, 3V, Ind. Temp., USON8
+    cost:
+      vendor: mouser
+      currency: EUR
+      1: 1.50
+      10: 1.38
+      100: 1.19
+      500: 1.17
+      1000: 1.12
+      2500: 1.05
+      5000: 1.04
+      10000: 1.02
+
+  A-DS 09 A/KG-T4S:
+    desc: |
+      9 Positionen D-Sub Stecker, Steckverbinder Steckverbinder
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.74
+      10: 0.601
+      25: 0.5532
+      40: 0.5305
+      90: 0.49367
+      270: 0.44781
+      450: 0.428
+      990: 0.39909
+      2430: 0.36856
+
+  A-HDF15A-KG-TAXB:
+    desc: |
+      15 Positionen D-Sub, hohe Dichte Buchse, Flanschdose Steckverbinder
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.36
+      10: 1.113
+      25: 1.0256
+      40: 0.9835
+      90: 0.91533
+      270: 0.83037
+      450: 0.7936
+      990: 0.74004
+      2430: 0.68344
+      
+  MTJ-88ARX1-FSM-LG:
+    desc: |
+      Modulare Steckverbinder - Buchsen 8p8c (RJ45, Ethernet) 90°-Winkel (rechts) Geschirmt
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.7
+      10: 0.575
+      25: 0.5296
+      40: 0.50775
+      80: 0.47738
+      230: 0.4347
+      440: 0.41039
+      945: 0.38348
+      2400: 0.35308
+  CU01SAH0S00:
+    desc: |
+      USB-A (USB TYP A) USB 2.0 Buchse Steckverbinder 4 Positionen Durchführungsloch, rechtwinklig
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.41
+      10: 0.334
+      25: 0.3076
+      40: 0.29525
+      150: 0.26247
+      300: 0.2468
+      450: 0.23809
+      1050: 0.22084
+      2400: 0.20523
+  
+  SS-53000-001:
+    desc: |
+      HDMI HDMI 1.4 Buchse Steckverbinder 19 Positionen Oberflächenmontage, rechtwinklig, Durchsteckloch
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.82
+      10: 0.662
+      25: 0.61
+      40: 0.58525
+      80: 0.55025
+      230: 0.50096
+      440: 0.47298
+      1200: 0.43273
+      2400: 0.40694
+
+  UJ20-C-H-G-SMT-1-P16-TR:
+    desc: |
+      USB-C (USB TYP C) USB 2.0 Buchse Steckverbinder 24 (16+8 Blindkomponente) Positionen Oberflächenmontage, rechtwinklig, Durchsteckloch
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.44
+      10: 0.361
+      25: 0.3324
+      50: 0.3124
+      100: 0.2937
+      250: 0.27076
+      800: 0.19538
+      1600: 0.19428
+
+  KLPX-0848A-2-R:
+    desc: |
+      ID 3,20mm, AD 9,00mm (RCA) Cinch(RCA)-Buchse Mono Steckverbinder Geknickter Stift
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.83
+      10: 0.681
+      25: 0.628
+      50: 0.5902
+      100: 0.5551
+      250: 0.51172
+      500: 0.4812
+      1000: 0.45252
+      2500: 0.41722
+
+  KLPX-0848A-2-B:
+    desc: |
+      ID 3,20mm, AD 9,00mm (RCA) Cinch(RCA)-Buchse Mono Steckverbinder Geknickter Stift
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.83
+      10: 0.681
+      25: 0.628
+      50: 0.5902
+      100: 0.5551
+      250: 0.51172
+      500: 0.4812
+      1000: 0.45252
+      2500: 0.41722
+
+  KLPX-0848A-2-Y:
+    desc: |
+      ID 3,20mm, AD 9,00mm (RCA) Cinch(RCA)-Buchse Mono Steckverbinder Geknickter Stift
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.83
+      10: 0.681
+      25: 0.628
+      50: 0.5902
+      100: 0.5551
+      250: 0.51172
+      500: 0.4812
+      1000: 0.45252
+      2500: 0.41722
+  
+  MAX3243EIPWR:
+    desc: |
+      3/5 Transceiver Voll RS232 28-TSSOP
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 1.49
+      10: 1.084
+      25: 0.9844
+      100: 0.8746
+      250: 0.8222
+      500: 0.79062
+      1000: 0.76462
+      2000: 0.74322
+      4000: 0.72561
+      6000: 0.71678
+      10000: 0.70701
+
+  FM6726:
+    desc: |
+      6 Positionen Rundsteckverbinder Buchse, Flanschdose Lötverbindung
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 2.15
+      10: 1.639
+      25: 1.4748
+      50: 1.3636
+      100: 1.2625
+      250: 1.14276
+      500: 1.06186
+      1000: 0.98853
+      2500: 0.90208
+
+  302-R241:
+    desc: |
+      Steckverbinder Steckleiste Durchführungsloch, rechtwinklig 24 positionen 0,100" (2,54mm)
+    cost:
+      vendor: digikey
+      currency: EUR
+      1: 0.97
+      10: 0.734
+      140: 0.54057
+      560: 0.46475
+      980: 0.43826
+      4900: 0.37342
+      10080: 0.34913
+
