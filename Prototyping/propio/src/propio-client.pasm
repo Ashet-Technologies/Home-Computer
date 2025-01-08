@@ -46,8 +46,10 @@ DAT
     WYPIN #$21, #UART_TX
 
   main_loop
+    REP @main_loop_end, #0
     TESTP #UART_RX WC
-    IF_NC JMP #main_loop
+    IF_C JMP #recv_char
+  main_loop_end
 
   recv_char
     OUTNOT #LED_PIN

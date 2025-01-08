@@ -6,7 +6,7 @@ use <models/models.scad>
 // Variants:
 
 USE_PI_VARIANT = false;
-USE_SCENE = false;
+USE_SCENE = true;
 
 WITH_COMPONENTS = true;
 WITH_MODULES = true;
@@ -268,8 +268,8 @@ if(USE_SCENE)
 
 
     // size references:
-    translate([ -40, -45, 0 ]) dev_rpi_4b();
-    translate([ 40, 210, 0 ]) zrotate(30) dev_ikea_vaerdera();
+    # translate([ -40, -45, 0 ]) dev_rpi_4b();
+    # translate([ 40, 210, 0 ]) zrotate(30) dev_ikea_vaerdera();
 
 
 }
