@@ -71,6 +71,8 @@ DAT
 
     WYPIN #$21, #UART_TX
 
+    
+
   main_loop
     REP @main_loop_end, #0
     TESTP #UART_RX WC
@@ -97,6 +99,10 @@ DAT
     JMP #main_loop
 
   perform_receive
+    ' SE1 = falling edge on CLK
+    SETSE1 %010_000000 | PROPIO_CLK
+    ' SE2 = falling edge on EN
+    SETSE2 %010_000000 | PROPIO_EN
     WYPIN #"[", #UART_TX
 
   rcv_next_byte
@@ -107,21 +113,14 @@ DAT
 
   ' wait for the clock to go low, then sample the pins
   rcv_wait_clk_low
-    TESTP #PROPIO_EN WC
-    IF_NC JMP #propio_done
-    TESTP #PROPIO_CLK WC
-    IF_C JMP #rcv_wait_clk_low
+    JSE2 #propio_done
+    JNSE1 #rcv_wait_clk_low
+  .end
 
     ' clk had a falling edge, let's sample the data:
     GETNIB tmp, INA, #0
     IF_NZ SETNIB databyte, tmp, #1 ' first transfer is upper nibble
     IF_Z  SETNIB databyte, tmp, #0 ' second transfer is lower nibble
-
-  rcv_wait_clk_high
-    TESTP #PROPIO_EN WC
-    IF_NC JMP #propio_done
-    TESTP #PROPIO_CLK WC
-    IF_NC JMP #rcv_wait_clk_high
 
     ' clk had a rising edge, switch to next nibble or process data:
     IF_Z JMP #rcv_process_byte

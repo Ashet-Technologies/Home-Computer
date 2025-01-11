@@ -44,8 +44,9 @@ load-rp2350-propio: propio
     picotool load -xfu build/rp2350-propio/rp2350_propio.uf2
 
 load-p2-propio: propio
-    # ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-propio.bin
     ~/projects/experiments/prop2init/loadp2/build/loadp2  -p /dev/ttyUSB0 -b 115200  -v -DTR build/p2-propio.bin 
+    # ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-propio.bin 
+    
 
 p2-serial:
     ./turboprop/zig-out/bin/flexspin -2 -b -o build/p2-serial.bin p2-serial/serial-demo.pasm

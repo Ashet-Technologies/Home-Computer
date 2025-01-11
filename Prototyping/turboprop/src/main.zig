@@ -141,17 +141,17 @@ pub fn main() !u8 {
             std.log.info("load code...", .{});
 
             var b64_buffer: [std.base64.standard.Encoder.calcSize(load_file_buffer.len)]u8 = undefined;
+            const b64_data = std.base64.standard.Encoder.encode(&b64_buffer, checksummed_file);
 
             const chunk_size: usize = cli.options.@"chunk-size";
 
             try port.writeAll("Prop_Txt 0 0 0 0 ");
             {
-                var rest: []const u8 = checksummed_file;
+                var rest: []const u8 = b64_data;
                 while (rest.len > 0) {
                     const chunk = rest[0..@min(rest.len, chunk_size)];
 
-                    const b64_data = std.base64.standard.Encoder.encode(&b64_buffer, chunk);
-                    try port.writeAll(b64_data);
+                    try port.writeAll(chunk);
 
                     rest = rest[chunk.len..];
 
