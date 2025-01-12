@@ -18,7 +18,7 @@
 ### Electrical
 
 | Interface Pin | Propeller Pin | Name   | Direction  | Idle State | Function                                                                                    | Alt. Function |
-|--------------:|---------------|--------|------------|------------|---------------------------------------------------------------------------------------------|---------------|
+| ------------: | ------------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------------------------- | ------------- |
 |             1 | 53            | D0     | Bi-di      | Don't care | Data bit, L=0, H=1                                                                          | -             |
 |             2 | 57            | D1     | Bi-di      | Don't care | Data bit, L=0, H=1                                                                          | -             |
 |             3 | 58            | D2     | Bi-di      | Don't care | Data bit, L=0, H=1                                                                          | -             |
@@ -63,13 +63,28 @@ Required Operations:
 
 ## Memory Map
 
-| Address Range    | Function             |
-|------------------|----------------------|
-| `00000`..`0FFFF` | Expansion Slot 1 RAM |
-| `10000`..`1FFFF` | Expansion Slot 2 RAM |
-| `20000`..`2FFFF` | Expansion Slot 3 RAM |
-| `30000`..`3FFFF` | Expansion Slot 4 RAM |
-| `40000`..`4FFFF` | Expansion Slot 5 RAM |
-| `50000`..`5FFFF` | Expansion Slot 6 RAM |
-| `60000`..`6FFFF` | Expansion Slot 7 RAM |
-| `70000`..`7FFFF` |                      |
+| Address Range    | Size  | Function          |
+| ---------------- | ----- | ----------------- |
+| `00000`..`007FF` | 2048  | Control Core Code |
+| `00800`..`00FFF` | 2048  | Control Core Data                  |
+| `01000`..`017FF` | 2048  | Slot 1 Code       |
+| `01800`..`01FFF` | 2048  | Slot 1 Config     |
+| `02000`..`027FF` | 2048  | Slot 2 Code       |
+| `02800`..`02FFF` | 2048  | Slot 2 Config     |
+| `03000`..`037FF` | 2048  | Slot 3 Code       |
+| `03800`..`03FFF` | 2048  | Slot 3 Config     |
+| `04000`..`047FF` | 2048  | Slot 4 Code       |
+| `04800`..`04FFF` | 2048  | Slot 4 Config     |
+| `05000`..`057FF` | 2048  | Slot 5 Code       |
+| `05800`..`05FFF` | 2048  | Slot 5 Config     |
+| `06000`..`067FF` | 2048  | Slot 6 Code       |
+| `06800`..`06FFF` | 2048  | Slot 6 Config     |
+| `07000`..`077FF` | 2048  | Slot 7 Code       |
+| `07800`..`07FFF` | 2048  | Slot 7 Config     |
+| `10000`..`1FFFF` | 65536 | Slot 1 RAM        |
+| `20000`..`2FFFF` | 65536 | Slot 2 RAM        |
+| `30000`..`3FFFF` | 65536 | Slot 3 RAM        |
+| `40000`..`4FFFF` | 65536 | Slot 4 RAM        |
+| `50000`..`5FFFF` | 65536 | Slot 5 RAM        |
+| `60000`..`6FFFF` | 65536 | Slot 6 RAM        |
+| `70000`..`7FFFF` | 65536 | Slot 7 RAM        |

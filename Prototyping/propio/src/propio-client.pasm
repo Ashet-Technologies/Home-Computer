@@ -11,6 +11,28 @@ CON
   PROPIO_DIR = 6
   PROPIO_nREQ = 7
 
+  PROPIO_DIR_HOST_READ = 0
+  PROPIO_DIR_HOST_WRITE = 1
+
+  GP_0 = 24
+  GP_1 = 25
+  GP_2 = 26
+  GP_3 = 27
+  GP_4 = 28
+  GP_5 = 29
+  GP_6 = 30
+  GP_7 = 31
+
+  ' Lower BYTE of INB/OUTB/DIRB
+  DBG_0 = 32
+  DBG_1 = 33
+  DBG_2 = 34
+  DBG_3 = 35
+  DBG_4 = 36
+  DBG_5 = 37
+  DBG_6 = 38
+  DBG_7 = 39
+
   UART_TX = 62
   UART_RX = 63
 
@@ -51,6 +73,10 @@ DAT
     WAITX   ##20_000_000/100                  ' wait ~10ms for crystal+PLL to stabilize
     HUBSET  ##%0000000_1_000000_0000001001_1111_10_11 ' now switch to PLL running at 200.0 MHz
 
+    ' Setup Debug Port
+    OR DIRB, #$FF
+    OR OUTB, #$FF
+
     ' Debug LED
     DIRH #LED_PIN
     OUTH #LED_PIN
@@ -71,80 +97,147 @@ DAT
 
     WYPIN #$21, #UART_TX
 
-    
+    SETSE1 #(%001_000000 | PROPIO_EN)  ' SE1 = rising edge on EN
+    SETSE2 #(%010_000000 | PROPIO_CLK)  ' SE2 = falling edge on CLK
+
+    MOV IJMP1, #propio_start_transaction
+    MOV IJMP2, #propio_rcv_nibble_hi
+
+    SETINT1 #4 ' SE1
+    SETINT2 #0 ' disabled
+    SETINT3 #0 ' disabled
+
+    SETBYTE OUTB, #$00, #0
+
+    ALLOWI
 
   main_loop
-    REP @main_loop_end, #0
-    TESTP #UART_RX WC
-    IF_C JMP #recv_char
-    TESTP #PROPIO_EN WC
-    IF_C JMP #init_propio
-  main_loop_end
+    SETBYTE OUTB, #$00, #0 ' marks the running of the main loop
+    JMP #main_loop
 
-  init_propio
+  propio_start_transaction
+    SETBYTE OUTB, #$01, #0
     TESTP #PROPIO_DIR WC
+    IF_NC JMP #propio_start_read_transaction
+    ' this is a write transaction, prepare to receive
 
-    IF_C JMP #perform_receive
+    ' Setup INT1 to handle falling EN edges
+    SETSE1 #(%010_000000 | PROPIO_EN)    ' SE1 = falling edge on EN
+    MOV IJMP1, #propio_stop_transaction ' install stop handler
 
-  perform_send
-    WYPIN #"S", #UART_TX
+    ' Setup INT2 to handle falling CLK edges:
+    MOV IJMP2, #propio_rcv_nibble_hi
+    SETINT2 #5 ' SE2
+    
 
-    JMP #wait_complete
-
-  wait_complete 
-    TESTP #PROPIO_EN WC
-    IF_C JMP #wait_complete
-  propio_done
-    WYPIN #"]", #UART_TX 
-    JMP #main_loop
-
-  perform_receive
-    ' SE1 = falling edge on CLK
-    SETSE1 %010_000000 | PROPIO_CLK
-    ' SE2 = falling edge on EN
-    SETSE2 %010_000000 | PROPIO_EN
-    WYPIN #"[", #UART_TX
-
-  rcv_next_byte
-    MODZ _CLR WZ
-    MOV databyte, #0
-
-  rcv_next_nibble
-
-  ' wait for the clock to go low, then sample the pins
-  rcv_wait_clk_low
-    JSE2 #propio_done
-    JNSE1 #rcv_wait_clk_low
-  .end
-
-    ' clk had a falling edge, let's sample the data:
-    GETNIB tmp, INA, #0
-    IF_NZ SETNIB databyte, tmp, #1 ' first transfer is upper nibble
-    IF_Z  SETNIB databyte, tmp, #0 ' second transfer is lower nibble
-
-    ' clk had a rising edge, switch to next nibble or process data:
-    IF_Z JMP #rcv_process_byte
-    MODZ _SET WZ
-    JMP #rcv_next_nibble
-
-  rcv_process_byte
-    ' send response over UART for now
-    WYPIN databyte, #UART_TX
-
-    JMP #rcv_next_byte
-
-  databyte
-    LONG 0
+    SETBYTE OUTB, #$02, #0
+    RETI1
   
-  recv_char
-    OUTNOT #LED_PIN
+  propio_stop_transaction
+    SETBYTE OUTB, #$80, #0
+    SETSE1 #(%001_000000 | PROPIO_EN)    ' SE1 = rising edge on EN
+    SETINT2 #0                           ' disable clock interrupt
+    MOV IJMP1, #propio_start_transaction ' install start handler again
+    
+    RETI1
+  
+  propio_start_read_transaction
+    ' this is a read transaction, prepare to send
+    SETBYTE OUTB, #$40, #0
+    RETI1
+  
+  propio_rcv_nibble_hi
+    SETBYTE OUTB, #$02, #0
+    GETNIB tmp, INA, #0                   ' fetch data from i/o port
+    SETNIB propio_byte_buffer, tmp, #1    ' store upper nibble
+    ' RESI1 ' continue with next line
+    MOV IJMP2, #propio_rcv_nibble_lo
+    RETI2
 
-    RDPIN tmp, #UART_RX   ' read received word
-    SHR tmp, #32-8        ' right-justify it
+  propio_rcv_nibble_lo
+    SETBYTE OUTB, #$04, #0
+    GETNIB tmp, INA, #0                   ' fetch data from i/o port
+    SETNIB propio_byte_buffer, tmp, #0    ' store lower nibble
+    SETBYTE OUTB, propio_byte_buffer, #0  ' debug out
+    WYPIN propio_byte_buffer, #UART_TX
+    MOV IJMP2, #propio_rcv_nibble_hi
+    RETI2
 
-    WYPIN  tmp, #UART_TX  ' echo
+  propio_byte_buffer
+    LONG 0
 
-    JMP #main_loop
+  ' main_loop
+  '   REP @main_loop_end, #0
+  '   TESTP #UART_RX WC
+  '   IF_C JMP #recv_char
+  '   TESTP #PROPIO_EN WC
+  '   IF_C JMP #init_propio
+  ' main_loop_end
+
+  ' init_propio
+  '   TESTP #PROPIO_DIR WC
+
+  '   IF_C JMP #perform_receive
+
+  ' perform_send
+  '   WYPIN #"S", #UART_TX
+
+  '   JMP #wait_complete
+
+  ' wait_complete 
+  '   TESTP #PROPIO_EN WC
+  '   IF_C JMP #wait_complete
+  ' propio_done
+  '   WYPIN #"]", #UART_TX 
+  '   JMP #main_loop
+
+  ' perform_receive
+  '   ' SE1 = falling edge on CLK
+  '   SETSE1 %010_000000 | PROPIO_CLK
+  '   ' SE2 = falling edge on EN
+  '   SETSE2 %010_000000 | PROPIO_EN
+  '   WYPIN #"[", #UART_TX
+
+  ' rcv_next_byte
+  '   MODZ _CLR WZ
+  '   MOV databyte, #0
+
+  ' rcv_next_nibble
+
+  ' ' wait for the clock to go low, then sample the pins
+  ' rcv_wait_clk_low
+  '   JSE2 #propio_done
+  '   JNSE1 #rcv_wait_clk_low
+  ' .end
+
+  '   ' clk had a falling edge, let's sample the data:
+  '   GETNIB tmp, INA, #0
+  '   IF_NZ SETNIB databyte, tmp, #1 ' first transfer is upper nibble
+  '   IF_Z  SETNIB databyte, tmp, #0 ' second transfer is lower nibble
+
+  '   ' clk had a rising edge, switch to next nibble or process data:
+  '   IF_Z JMP #rcv_process_byte
+  '   MODZ _SET WZ
+  '   JMP #rcv_next_nibble
+
+  ' rcv_process_byte
+  '   ' send response over UART for now
+  '   WYPIN databyte, #UART_TX
+
+  '   JMP #rcv_next_byte
+
+  ' databyte
+  '   LONG 0
+  
+  ' recv_char
+  '   OUTNOT #LED_PIN
+
+  '   RDPIN tmp, #UART_RX   ' read received word
+  '   SHR tmp, #32-8        ' right-justify it
+
+  '   WYPIN  tmp, #UART_TX  ' echo
+
+  '   JMP #main_loop
 
   tmp
     LONG 0

@@ -19,7 +19,7 @@ rp2350-hdmi:
         -G Ninja
     cmake --build ./build/rp2350-hdmi
 
-propio:
+propio-rp2350:
     cmake \
         -B ./build/rp2350-propio                               \
         -S ./propio                                            \
@@ -29,10 +29,13 @@ propio:
         -G Ninja
     cmake --build ./build/rp2350-propio
     
+propio-p2:
     ./turboprop/zig-out/bin/flexspin  \
         -2                            \
         -o build/p2-propio.bin        \
         propio/src/propio-client.pasm
+
+propio: propio-rp2350 propio-p2
 
 load-rp2350-psram: rp2350-psram
     picotool load -xfu build/rp2350-psram/rp2350_psram.uf2
@@ -40,10 +43,10 @@ load-rp2350-psram: rp2350-psram
 load-rp2350-hdmi: rp2350-hdmi
     picotool load -xfu build/rp2350-hdmi/rp2350_hdmi.uf2
 
-load-rp2350-propio: propio
+load-rp2350-propio: propio-rp2350
     picotool load -xfu build/rp2350-propio/rp2350_propio.uf2
 
-load-p2-propio: propio
+load-p2-propio: propio-p2
     ~/projects/experiments/prop2init/loadp2/build/loadp2  -p /dev/ttyUSB0 -b 115200  -v -DTR build/p2-propio.bin 
     # ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-propio.bin 
     
