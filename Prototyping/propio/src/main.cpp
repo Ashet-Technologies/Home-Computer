@@ -8,9 +8,10 @@
 #include <pico/stdio_usb.h>
 #include <stdio.h>
 
-// #include "propio.pio.h"
+#include "propio.pio.h"
+#include "uart.pio.h"
 
-enum : uint {
+enum PropioPort : uint {
   PROPIO_BASE = 36,
   PROPIO_D0 = PROPIO_BASE + 0,
   PROPIO_D1 = PROPIO_BASE + 1,
@@ -22,7 +23,18 @@ enum : uint {
   PROPIO_nREQ = PROPIO_BASE + 7,
 };
 
-enum : uint {
+enum DebugPort : uint {
+  DGB_0 = 0,
+  DGB_1 = 1,
+  DGB_2 = 2,
+  DGB_3 = 3,
+  DGB_4 = 4,
+  DGB_5 = 5,
+  DGB_6 = 6,
+  DGB_7 = 7,
+};
+
+enum GeneralPurposePort : uint {
   GP_0 = 24,
   GP_1 = 25,
   GP_2 = 35,
@@ -185,6 +197,8 @@ struct VirtualMachine {
   uint8_t stack[256];
   bool literal_mode = false;
 
+  uint serial_tx_pin = DGB_0;
+
   VirtualMachine(Driver *driver, GeneralIO *io) : driver{driver}, io{io} {
     //
   }
@@ -329,7 +343,70 @@ struct VirtualMachine {
       this->driver->delay_us = 10 * delay;
       printf("set delay to %lu us\n", this->driver->delay_us);
       break;
-    };
+    }
+
+    case 'U': {
+      printf("init uart\n");
+
+      pio_sm_set_enabled(pio0, 0, false);
+
+      pio_add_program_at_offset(pio0, &uart_tx_program, 0);
+
+      uart_tx_program_init(
+        pio0,
+        0, // sm 
+        0, // offset
+        serial_tx_pin,
+        115'200
+      );
+      break;
+    }
+
+    case 'P': {
+      printf("init propio\n");
+
+      pio_sm_set_enabled(pio0, 0, false);
+
+      pio_add_program_at_offset(pio0, &propio_program, 0);
+
+      propio_program_init(
+        pio0,
+        0, // sm 
+        0, // offset
+        serial_tx_pin
+      );
+      gpio_set_slew_rate(this->serial_tx_pin, GPIO_SLEW_RATE_FAST);
+      gpio_set_drive_strength(this->serial_tx_pin, GPIO_DRIVE_STRENGTH_12MA);
+      break;
+    }
+
+    case 'T': {
+      uint8_t pin_id;
+      if(!this->pop(pin_id)) {
+        printf("stack empty\n");
+      break;
+      }
+
+      this->serial_tx_pin = pin_id ? GP_0 : DGB_0;
+
+      printf("Sending UART TX to %s (pin %u)\n",
+      pin_id ? "general purpose" : "debug",
+      this->serial_tx_pin);
+      break;
+    }
+
+    case 'S': {
+      printf("uart_tx[");
+
+      uint8_t byte;
+      while (this->pop(byte)) {
+        // printf("%c", byte);
+        uart_tx_program_putc(pio0, 0, byte);
+      }
+      printf("]\n");
+
+      break;
+    }
     }
   }
 
@@ -350,7 +427,7 @@ struct VirtualMachine {
 
 int main(void) {
 
-  stdio_init_all();
+  stdio_usb_init();
 
   Driver dri;
   GeneralIO gio;
@@ -363,6 +440,9 @@ int main(void) {
       __wfi();
     }
 
+    printf("clk_sys  = %lu Hz\n", clock_get_hz(clk_sys));
+    printf("clk_peri = %lu Hz\n", clock_get_hz(clk_peri));
+    printf("clk_usb  = %lu Hz\n", clock_get_hz(clk_usb));
     printf("ready.\n");
 
     VirtualMachine vm{&dri, &gio};

@@ -63,6 +63,10 @@ CON
   SLOT_6_RAM = $60000
   SLOT_7_RAM = $70000
 
+  CLK_SYS = 300_000_000 ' Hz
+  PROPIO_BAUD = 50_000_000 ' Hz
+  DEBUG_BAUD = 115_200 ' Hz
+
 DAT
   orgh CONTROL_CORE_CODE
   org 0
@@ -71,7 +75,8 @@ DAT
             ' %0000000_E_DDDDDD_MMMMMMMMMM_PPPP_CC_SS
     HUBSET  ##%0000000_1_000000_0000001001_1111_10_00 ' enable crystal+PLL, stay in RCFAST mode
     WAITX   ##20_000_000/100                  ' wait ~10ms for crystal+PLL to stabilize
-    HUBSET  ##%0000000_1_000000_0000001001_1111_10_11 ' now switch to PLL running at 200.0 MHz
+    ' HUBSET  ##%0000000_1_000000_0000001001_1111_10_11 ' now switch to PLL running at 200.0 MHz
+    HUBSET  ##%0000000_1_000000_0000001110_1111_10_11 ' now switch to PLL running at 300.0 MHz
 
     ' Setup Debug Port
     OR DIRB, #$FF
@@ -86,8 +91,8 @@ DAT
     WRPIN #%0000_0000_000_0000000000000_00_11111_0, #UART_RX
 
     ' 115200 @ 8 bit
-    WXPIN ##$06C8_1C07, #UART_TX
-    WXPIN ##$06C8_1C07, #UART_RX
+    WXPIN ##(((CLK_SYS / DEBUG_BAUD * $1_0000) & $FFFFFC00) | (8-1)), #UART_TX
+    WXPIN ##(((CLK_SYS / DEBUG_BAUD * $1_0000) & $FFFFFC00) | (8-1)), #UART_RX
 
     ' Enable debug UART
     DIRH #UART_TX
@@ -95,7 +100,22 @@ DAT
 
     WAITX #3
 
+    WRPIN #%0000_0000_000_0000000000000_00_11111_0, #GP_0 ' GP0 = UART RX
+    WXPIN ##(((CLK_SYS / PROPIO_BAUD * $1_0000) & $FFFFFC00) | (8-1)), #GP_0 
+    DIRH #GP_0 ' turn on smart pin
+
     WYPIN #$21, #UART_TX
+
+    SETSE1 #(%001_000000 | GP_0)  ' SE1 = rising edge on GP_0 => Data Ready
+
+  highspeed_loop
+    WAITSE1
+    RDPIN tmp, #GP_0
+    SHR tmp, #32-8 ' left-align data
+    SETBYTE OUTB, tmp, #0 ' write to debug output
+    WYPIN tmp, #UART_TX
+    JMP #highspeed_loop
+    
 
     SETSE1 #(%001_000000 | PROPIO_EN)  ' SE1 = rising edge on EN
     SETSE2 #(%010_000000 | PROPIO_CLK)  ' SE2 = falling edge on CLK

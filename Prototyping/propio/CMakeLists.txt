@@ -19,6 +19,11 @@ pico_generate_pio_header(
     ${CMAKE_CURRENT_LIST_DIR}/src/propio.pio
 )
 
+pico_generate_pio_header(
+    rp2350_propio 
+    ${CMAKE_CURRENT_LIST_DIR}/src/uart.pio
+)
+
 target_link_libraries(rp2350_propio
     pico_stdlib
     pico_multicore
