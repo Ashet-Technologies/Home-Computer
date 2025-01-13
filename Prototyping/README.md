@@ -46,3 +46,15 @@
   - RS232 Card
   - Commodore Connectivity Card
 - Test rendering and input latency for a simple UI system
+- Create final proof of concepot
+  - hdmi out from RP2350
+  - expansion architecture
+    - southbridge communication
+    - eeprom discovery
+    - card detection
+    - example i/o cards
+      - serial / uart (feature test)
+      - analog video out (bandwidth test)
+      - analog audio out (latency test)
+      - ethernet ()
+  - usb stack usable (keyboard + mouse input)
