@@ -48,25 +48,196 @@ A transfer is completed on a falling edge of `EN`. `DIR` should remain constant 
 
 The `/REQ` signal shall be pulled low by the downstream as long as it has pending outgoing requests. It must be cleared after a rising edge of `EN` when `DIR=H`, but can be enabled again as soon as `EN=L` when another transfer is ready or the previous transfer was not completed.
 
-## Protocol
+### Protocol
 
-Required Operations:
+The protocol has two participants:
 
-- Setup EXP Code
-- Start EXP
-- Shutdown EXP
-- Write to EXP Register
-- Read from EXP Register
-- Write to EXP FIFO
-- Read from EXP FIFO
-- Acknowledge EXP IRQ
+- Host (the RP2350)
+- Device (the Southbridge)
+
+Each participant can send messages at any time and the sequence isn't necessarily in-order and "ping pong" style.
+
+Both parts send messages using this format:
+
+```bfdl
+struct Message
+{
+  type:            u8,
+  length:          u8,
+  payload: [length]u8,
+  crc:             u16,
+};
+```
+
+The `payload` contains the data for `type`, which is a direction-dependent command.
+
+#### Host Messages
+
+These messages are sent by the host to the device.
+
+The following messages are allowed:
+
+| `type` | Message Name         | Short Description                                          |
+| ------ | -------------------- | ---------------------------------------------------------- |
+| 0      | Write Memory         | Writes bytes into hub memory.                              |
+| 1      | Read Memory          | Reads bytes from hub memory.                               |
+| 2      | Start Slot           | Starts the cog for a slot.                                 |
+| 3      | Stop Slot            | Stops the cog for a slot.                                  |
+| 4      | Write To FIFO        | Writes to the output FIFO for a slot.                      |
+| 5      | Request From FIFO    | Requests that the device sends remaining data from a FIFO. |
+| 6      | Configure Input FIFO | Configures FIFO behaviour.                                 |
+| 7      | Acknowledge IRQ      | Clears the IRQ flag for configured slots.                  |
+
+##### Write Memory
+
+```bfdl
+struct Payload
+{
+  address: u32,
+  payload: [*]u8,
+};
+```
+
+##### Read Memory
+
+```bfdl
+struct Payload
+{
+  address: u32,
+  length: u32,
+};
+```
+
+##### Start Slot
+
+```bfdl
+struct Payload
+{
+  slot_id: u8, // 0..6
+};
+```
+
+##### Stop Slot
+
+```bfdl
+struct Payload
+{
+  slot_id: u8, // 0..6
+};
+```
+
+##### Write To FIFO
+
+```bfdl
+struct Payload
+{
+  fifo: u4,
+  slot: u4,
+  data: [*]u8,
+};
+```
+
+##### Request From FIFO
+
+```bfdl
+struct Payload
+{
+  fifo: u4,
+  slot: u4,
+  max_length: u16, // Max number of bytes from FIFO
+};
+```
+
+##### Configure Input FIFO
+
+```bfdl
+struct Payload
+{
+  fifo: u4,
+  slot: u4,
+  threshold: u16, // Minimum number of data bytes in FIFO before auto-flushing. 0 is disabled.
+};
+```
+
+##### Acknowledge IRQ
+
+```bfdl
+struct Payload
+{
+  ack_mask: u8,
+};
+```
+
+#### Device Messages
+
+These messages are sent by the device to the host.
+
+The following messages are allowed:
+
+| `type` | Message Name   | Short Description                                            |
+| ------ | -------------- | ------------------------------------------------------------ |
+| 0      | Status         | Contains system status, is sent periodically and on changes. |
+| 1      | Memory Content | Data from hub memory, is response to "Read Memory".          |
+| 2      | Data From FIFO | Data from an in input FIFO has data.                         |
+| 3      | Cog Started    | A cog has successfully started.                              |
+
+##### Status
+
+```bfdl
+struct Payload
+{
+  slot_mask:          u8, // which slots are active
+  irq_mask:           u8,  // which slots have IRQs pending
+  fifo_cnt:           u8,  // number of non-empty FIFOs
+  fifos:    [fifo_cnt]FIFO_Status,
+};
+
+struct FIFO_Status
+{
+  fifo: u4,
+  slot: u4,
+  level: u16,
+};
+```
+
+##### Memory Content
+
+```bfdl
+struct Payload
+{
+  address:    u32,
+  data:    [*]u8,
+};
+```
+
+##### Data From FIFO
+
+```bfdl
+struct Payload
+{
+  fifo:    u4,
+  slot:    u4,
+  data: [*]u8,
+};
+```
+
+##### Cog Started
+
+```bfdl
+struct Payload
+{
+  cog_id: u8,
+  input_fifo_mask: u16,
+  output_fifo_mask: u16,
+};
+```
 
 ## Memory Map
 
 | Address Range    | Size  | Function          |
 | ---------------- | ----- | ----------------- |
 | `00000`..`007FF` | 2048  | Control Core Code |
-| `00800`..`00FFF` | 2048  | Control Core Data                  |
+| `00800`..`00FFF` | 2048  | Control Core Data |
 | `01000`..`017FF` | 2048  | Slot 1 Code       |
 | `01800`..`01FFF` | 2048  | Slot 1 Config     |
 | `02000`..`027FF` | 2048  | Slot 2 Code       |
@@ -88,3 +259,34 @@ Required Operations:
 | `50000`..`5FFFF` | 65536 | Slot 5 RAM        |
 | `60000`..`6FFFF` | 65536 | Slot 6 RAM        |
 | `70000`..`7FFFF` | 65536 | Slot 7 RAM        |
+
+### Slot RAM
+
+Each slot RAM can be configured as 16 parts, which can be:
+
+- RAM / Registers
+- Input FIFO, which can send data to the host
+- Output FIFO, which can receive data from the host
+
+The memory map for the slot ram looks like this:
+
+| Address Range    | Size |
+| ---------------- | ---- |
+| `x0000`..`x0FFF` | 4096 |
+| `x1000`..`x1FFF` | 4096 |
+| `x2000`..`x2FFF` | 4096 |
+| `x3000`..`x3FFF` | 4096 |
+| `x4000`..`x4FFF` | 4096 |
+| `x5000`..`x5FFF` | 4096 |
+| `x6000`..`x6FFF` | 4096 |
+| `x7000`..`x7FFF` | 4096 |
+| `x8000`..`x8FFF` | 4096 |
+| `x9000`..`x9FFF` | 4096 |
+| `xA000`..`xAFFF` | 4096 |
+| `xB000`..`xBFFF` | 4096 |
+| `xC000`..`xCFFF` | 4096 |
+| `xD000`..`xDFFF` | 4096 |
+| `xE000`..`xEFFF` | 4096 |
+| `xF000`..`xFFFF` | 4096 |
+
+There are up to 8 input and 8 output FIFOs. Each slot can be assigned one of these functions.

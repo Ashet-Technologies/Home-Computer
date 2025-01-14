@@ -83,8 +83,7 @@ DAT
     OR OUTB, #$FF
 
     ' Debug LED
-    DIRH #LED_PIN
-    OUTH #LED_PIN
+    DRVH #LED_PIN
 
     ' Configure UART RX/TX:
     WRPIN #%0000_0000_000_0000000000000_01_11110_0, #UART_TX
