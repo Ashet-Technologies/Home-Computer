@@ -1,0 +1,144 @@
+DAT
+
+// const defines well-defined values:
+
+const CLK = 200_000_000
+
+const CLK_RCFAST = 20_000_000
+
+const PROPIO_D0 = 0
+const PROPIO_D1 = 1
+const PROPIO_D2 = 2
+const PROPIO_D3 = 3
+const PROPIO_CLK = 4
+const PROPIO_EN = 5
+const PROPIO_DIR = 6
+const PROPIO_nREQ = 7
+
+const UART_TX = 62
+const UART_RX = 63
+
+const LED_PIN = 56
+
+_start:
+        HUBSET 0xF0 // Clock=RCFAST
+                // 0b0000000_E_DDDDDD_MMMMMMMMMM_PPPP_CC_SS
+        HUBSET aug(0b0000000_1_000000_0000001001_1111_10_00) // enable crystal+PLL, stay in RCFAST mode
+        HUBSET aug(Hub.clockMode(pll=.on, in_div=1, mul=10, out_div=1, xi=.15pF, sysclk=.rcfast)) // alt usage
+        WAITX  aug(CLK_RCFAST/100)                           // wait ~10ms for crystal+PLL to stabilize
+        HUBSET aug(0b0000000_1_000000_0000001001_1111_10_11) // now switch to PLL running at 200.0 MHz
+        HUBSET aug(Hub.clockMode(
+          pll     = .on, // this is a "enum literal", which can be used instead of 
+          in_div  = 1,
+          mul     = 10,
+          out_div = 1,
+          xi      = .15pF,
+          sysclk  = .pll, // trailing comma makes the function split onto one line per param, aligning assignments
+        )) // alt usage
+
+        // Debug LED
+        DRVH   LED_PIN // braucht kein "#LED_PIN" weil Konstante = "zahl" und erst mal kein register
+
+        // Configure UART RX/TX:
+        
+        WRPIN  0b0000_0000_000_0000000000000_01_11110_0, UART_TX
+        WRPIN  SmartPin.UartTx.mode(dir=.out), UART_TX // alt usage to previous line, has sane defaults (dir=.out is default, but to showcase usage)
+        
+        WRPIN  0b0000_0000_000_0000000000000_00_11111_0, UART_RX
+        WRPIN  SmartPin.UartRx.mode(), UART_RX // alt usage to previous line, has sane defaults
+
+        // 115200 @ 8 bit
+        WXPIN  aug(0x06C8_1C07), UART_TX
+        WXPIN  aug(SmartPin.UartTx.config(baud=115200, bits=8, clk=CLK), UART_TX // alt usage
+
+        WXPIN  aug(0x06C8_1C07), UART_RX
+        WXPIN  aug(SmartPin.UartRx.config(baud=115200, bits=8, clk=CLK), UART_RX // alt usage
+
+        // Enable debug UART
+        DRVH   UART_TX
+
+        WAITX  3
+
+        WYPIN  0x21, UART_TX
+
+// regular label behaves like "const", so is an immediate value
+// using them as a register address, you have to use "*main_loop" (C dereference syntax)
+main_loop:
+        REP    @.end, #0
+        TESTP  UART_RX WC
+   IF_C JMP    recv_char
+        TESTP  PROPIO_EN WC
+   IF_C JMP    init_propio
+.end:
+
+init_propio:
+        TESTP  PROPIO_DIR WC
+   IF_C JMP    perform_receive
+
+perform_send:
+        WYPIN  'S', UART_TX
+
+        JMP    wait_complete
+
+wait_complete:
+        TESTP  PROPIO_EN WC
+   IF_C JMP    wait_complete
+
+propio_done:
+        WYPIN  ']', UART_TX 
+        JMP    main_loop
+
+perform_receive:
+        WYPIN  '[', UART_TX
+
+rcv_next_byte:
+        MODZ   _CLR WZ
+        MOV    databyte, 0
+
+rcv_next_nibble:
+
+// wait for the clock to go low, then sample the pins
+rcv_wait_clk_low:
+        TESTP  PROPIO_EN WC
+  IF_NC JMP    propio_done
+        TESTP  PROPIO_CLK WC
+  IF_C  JMP    rcv_wait_clk_low
+
+  // clk had a falling edge, let's sample the data:
+        GETNIB tmp,      INA, 0
+  IF_NZ SETNIB databyte, tmp, 1 // first transfer is upper nibble
+  IF_Z  SETNIB databyte, tmp, 0 // second transfer is lower nibble
+
+rcv_wait_clk_high:
+        TESTP  PROPIO_EN WC
+  IF_NC JMP    propio_done
+        TESTP  PROPIO_CLK WC
+  IF_NC JMP    rcv_wait_clk_high
+
+  // clk had a rising edge, switch to next nibble or process data:
+   IF_Z JMP  rcv_process_byte
+        MODZ   _SET WZ
+        JMP    rcv_next_nibble
+
+rcv_process_byte:
+        // send response over UART for now
+        WYPIN  databyte, UART_TX
+
+        JMP    rcv_next_byte
+
+var databyte: // "var label:" creates a label which is automatically used as a register address and not as a literal
+        long   0
+        // "var label" can be made literal by using "&databyte" (C address-of syntax)
+
+recv_char:
+        OUTNOT LED_PIN
+
+        RDPIN  tmp, UART_RX  // read received word
+        SHR    tmp, 32-8     // right-justify it
+
+        WYPIN  tmp, UART_TX  // echo
+
+        JMP    main_loop
+
+var tmp:
+        long 0
