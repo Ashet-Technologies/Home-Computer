@@ -66,14 +66,14 @@ _start:
 main_loop:
         REP    @.end, #0
         TESTP  UART_RX WC
-   IF_C JMP    recv_char
+  if(C) JMP    recv_char
         TESTP  PROPIO_EN WC
-   IF_C JMP    init_propio
+  if(C) JMP    init_propio
 .end:
 
 init_propio:
         TESTP  PROPIO_DIR WC
-   IF_C JMP    perform_receive
+  if(C) JMP    perform_receive
 
 perform_send:
         WYPIN  'S', UART_TX
@@ -82,7 +82,7 @@ perform_send:
 
 wait_complete:
         TESTP  PROPIO_EN WC
-   IF_C JMP    wait_complete
+  if(C) JMP    wait_complete
 
 propio_done:
         WYPIN  ']', UART_TX 
@@ -92,7 +92,7 @@ perform_receive:
         WYPIN  '[', UART_TX
 
 rcv_next_byte:
-        MODZ   _CLR WZ
+        MODZ   _CLR -> WZ
         MOV    databyte, 0
 
 rcv_next_nibble:
@@ -100,23 +100,23 @@ rcv_next_nibble:
 // wait for the clock to go low, then sample the pins
 rcv_wait_clk_low:
         TESTP  PROPIO_EN WC
-  IF_NC JMP    propio_done
+ if(!C) JMP    propio_done
         TESTP  PROPIO_CLK WC
-  IF_C  JMP    rcv_wait_clk_low
+ if(C)  JMP    rcv_wait_clk_low
 
   // clk had a falling edge, let's sample the data:
         GETNIB tmp,      INA, 0
-  IF_NZ SETNIB databyte, tmp, 1 // first transfer is upper nibble
-  IF_Z  SETNIB databyte, tmp, 0 // second transfer is lower nibble
+ if(!Z) SETNIB databyte, tmp, 1 // first transfer is upper nibble
+ if(Z)  SETNIB databyte, tmp, 0 // second transfer is lower nibble
 
 rcv_wait_clk_high:
         TESTP  PROPIO_EN WC
-  IF_NC JMP    propio_done
+ if(!C) JMP    propio_done
         TESTP  PROPIO_CLK WC
-  IF_NC JMP    rcv_wait_clk_high
+ if(!C) JMP    rcv_wait_clk_high
 
   // clk had a rising edge, switch to next nibble or process data:
-   IF_Z JMP  rcv_process_byte
+  if(Z) JMP  rcv_process_byte
         MODZ   _SET WZ
         JMP    rcv_next_nibble
 
