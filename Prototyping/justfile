@@ -57,13 +57,21 @@ p2-serial:
 load-p2-serial: p2-serial
     ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-serial.bin
 
+p2-vbs-gen:
+    ./turboprop/zig-out/bin/flexspin -2 -b -o build/p2-vbs-gen.bin p2-vbs-gen/p2-vbs-gen.spin2
+
+load-p2-vbs-gen: p2-vbs-gen
+    ~/projects/experiments/prop2init/loadp2/build/loadp2  -p /dev/ttyUSB0 -b 115200  -v -DTR build/p2-vbs-gen.bin
+
+#    ./turboprop/zig-out/bin/turboprop -P /dev/ttyUSB0 build/p2-vbs-gen.bin
+
 monitor:
     while [ ! -c "/dev/ttyACM0" ]; do  \
         echo -n "." ; \
         sleep 0.1 ; \
     done
     echo "ready."
-    picocom /dev/ttyACM0 
+    picocom --quiet --baud 115200 /dev/ttyACM0 
 
 picotool:
     cmake                                        \

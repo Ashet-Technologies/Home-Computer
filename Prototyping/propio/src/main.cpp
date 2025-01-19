@@ -7,6 +7,7 @@
 #include <pico/stdio.h>
 #include <pico/stdio_usb.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "propio.pio.h"
 #include "uart.pio.h"
@@ -21,6 +22,11 @@ enum PropioPort : uint {
   PROPIO_EN = PROPIO_BASE + 5,
   PROPIO_DIR = PROPIO_BASE + 6,
   PROPIO_nREQ = PROPIO_BASE + 7,
+
+  PROPIO_TX0 = PROPIO_BASE + 0,
+  PROPIO_TX1 = PROPIO_BASE + 1,
+  PROPIO_RX0 = PROPIO_BASE + 2,
+  PROPIO_RX1 = PROPIO_BASE + 3,
 };
 
 enum DebugPort : uint {
@@ -100,9 +106,19 @@ struct GeneralIO {
 // }
 
 struct Driver {
+  virtual void init() = 0;
+
+  virtual void start_write_transaction() = 0;
+  virtual void start_read_transaction() = 0;
+  virtual void end_transaction() = 0;
+
+  virtual void write_byte(uint8_t data) = 0;
+};
+
+struct ParallelDriver : Driver {
   uint32_t delay_us = 100;
 
-  void init() {
+  void init() override {
     gpio_set_function(PROPIO_D0, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_D1, GPIO_FUNC_SIO);
     gpio_set_function(PROPIO_D2, GPIO_FUNC_SIO);
@@ -142,23 +158,23 @@ struct Driver {
     gpio_set_function(PROPIO_nREQ, GPIO_FUNC_NULL);
   }
 
-  void start_write_transaction() {
+  void start_write_transaction() override {
     this->set_dir(GPIO_OUT);
     gpio_put(PROPIO_CLK, 1);
     gpio_put(PROPIO_EN, 1);
   }
 
-  void start_read_transaction() {
+  void start_read_transaction() override {
     this->set_dir(GPIO_IN);
     gpio_put(PROPIO_EN, 1);
   }
 
-  void end_transaction() {
+  void end_transaction() override {
     gpio_put(PROPIO_EN, 0);
     this->set_dir(GPIO_IN);
   }
 
-  void write_byte(uint8_t data) {
+  void write_byte(uint8_t data) override {
     uint8_t lo = ((data >> 0) & 0x0F);
     uint8_t hi = ((data >> 4) & 0x0F);
 
@@ -189,6 +205,117 @@ private:
   }
 };
 
+struct UartDriver : Driver {
+  PIO pio = pio0;
+  uint sm_tx_id = 0;
+  uint pin_tx0 = GP_0;
+
+  void init() override {
+    pio_sm_set_enabled(pio, sm_tx_id, false);
+
+    pio_add_program_at_offset(pio, &propio_program, 0);
+
+    printf("initialize pin %u\n", pin_tx0);
+    propio_program_init(pio,
+                        sm_tx_id, // sm
+                        0,        // offset
+                        pin_tx0);
+    gpio_set_slew_rate(pin_tx0, GPIO_SLEW_RATE_FAST);
+    gpio_set_drive_strength(pin_tx0, GPIO_DRIVE_STRENGTH_12MA);
+  }
+
+  void start_write_transaction() override {
+    //
+  }
+
+  void start_read_transaction() override {
+    //
+  }
+
+  void end_transaction() override {
+    //
+  }
+
+  void write_byte(uint8_t data) override {
+    uart_tx_program_putc(pio, sm_tx_id, data);
+  }
+};
+
+enum ProtocolMessage : uint8_t {
+  MSG_WRITE_MEM = 0,
+  MSG_READ_MEM = 1,
+  MSG_START_SLOT = 2,
+  MSG_STOP_SLOT = 3,
+  MSG_WRITE_FIFO = 4,
+  MSG_READ_FIFO = 5,
+  MSG_CONFIGURE_FIFO = 6,
+  MSG_ACK_IRQ = 7,
+};
+
+struct ProtocolHandler {
+  Driver *driver;
+
+  ProtocolHandler(Driver *driver) : driver(driver) {}
+
+  void start_slot(uint8_t slot)
+  {
+    this->send(MSG_START_SLOT, &slot, 1);
+  }
+
+  void stop_slot(uint8_t slot)
+  {
+    this->send(MSG_START_SLOT, &slot, 1);
+  }
+
+  void write_mem(uint32_t address, uint8_t * const data, uint32_t length) {
+    uint8_t *blocks[2] = {(uint8_t *)&address, data};
+    size_t lengths[2] = {4, length};
+    this->sendv(MSG_WRITE_MEM, blocks, lengths, 2);
+  }
+
+  void read_mem(uint32_t address, uint32_t length) {
+    uint8_t *blocks[2] = {(uint8_t *)&address, (uint8_t *)&length};
+    size_t lengths[2] = {4, 4};
+    this->sendv(MSG_READ_MEM, blocks, lengths, 2);
+  }
+
+  void send(ProtocolMessage type, char const *message) {
+    this->send(type, (uint8_t *)message, strlen(message));
+  }
+
+  void send(ProtocolMessage type, uint8_t const *data, size_t length) {
+    this->sendv(type, &data, &length, 1);
+  }
+
+  void sendv(ProtocolMessage type, uint8_t const *const *data,
+             size_t const *lengths, size_t vec_count) {
+    size_t length = 0;
+    for (size_t i = 0; i < vec_count; i++) {
+      length += lengths[i];
+    }
+
+    hard_assert(length < 256);
+
+    this->driver->start_write_transaction();
+
+    this->driver->write_byte(type);
+    this->driver->write_byte(length);
+
+    for (size_t v = 0; v < vec_count; v++) {
+      uint8_t const *v_data = data[v];
+      size_t v_len = lengths[v];
+      for (size_t i = 0; i < v_len; i++) {
+        this->driver->write_byte(v_data[i]);
+      }
+    }
+
+    this->driver->write_byte(0xAA); // Dummy CRC
+    this->driver->write_byte(0x55); // Dummy CRC
+
+    this->driver->end_transaction();
+  }
+};
+
 struct VirtualMachine {
   Driver *driver;
   GeneralIO *io;
@@ -197,9 +324,9 @@ struct VirtualMachine {
   uint8_t stack[256];
   bool literal_mode = false;
 
-  uint serial_tx_pin = DGB_0;
+  ProtocolHandler protocol;
 
-  VirtualMachine(Driver *driver, GeneralIO *io) : driver{driver}, io{io} {
+  VirtualMachine(Driver *driver, GeneralIO *io) : driver{driver}, io{io}, protocol{driver} {
     //
   }
 
@@ -220,38 +347,10 @@ struct VirtualMachine {
 
     switch (cmd) {
 
-    case '"':
-      this->literal_mode = true;
-      printf("\"");
+    case '.':
+      printf("stack cleared\n");
+      this->stackPtr = 0;
       break;
-
-    case '0' ... '9':
-      this->push(cmd - '0');
-      break;
-
-    case 'a' ... 'f':
-      this->push(cmd - 'a' + 10);
-      break;
-
-    case 'A' ... 'F':
-      this->push(cmd - 'a' + 10);
-      break;
-
-    case 's': {
-      printf("sending[");
-      this->driver->start_write_transaction();
-
-      uint8_t byte;
-      while (this->pop(byte)) {
-        printf("%c", byte);
-        this->driver->write_byte(byte);
-      }
-
-      this->driver->end_transaction();
-      printf("]\n");
-
-      break;
-    }
 
     case '?': {
       if (this->stackPtr == 0) {
@@ -265,148 +364,157 @@ struct VirtualMachine {
       break;
     }
 
-    case 'i': {
-      uint8_t pin;
-      if (!this->pop(pin)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      printf("GP%u = IN\n", pin);
-      this->io->set_dir(pin, GPIO_IN);
-
+    case '"':
+      this->literal_mode = true;
+      printf("\"");
       break;
-    }
+      
 
-    case 'w': {
-      uint8_t level;
-      if (!this->pop(level)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      uint8_t pin;
-      if (!this->pop(pin)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      printf("GP%u = OUT:%u\n", pin, level);
-      this->io->set_dir(pin, GPIO_OUT);
-      this->io->set(pin, level);
+    case '0' ... '9':
+      this->push(cmd - '0');
       break;
-    }
 
-    case 'h': {
-
-      uint8_t pin;
-      if (!this->pop(pin)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      printf("GP%u = OUT:1\n", pin);
-      this->io->set_dir(pin, GPIO_OUT);
-      this->io->set(pin, 1);
+    case 'a' ... 'f':
+      this->push(cmd - 'a' + 10);
       break;
-    }
 
-    case 'l': {
-
-      uint8_t pin;
-      if (!this->pop(pin)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      printf("GP%u = OUT:0\n", pin);
-      this->io->set_dir(pin, GPIO_OUT);
-      this->io->set(pin, 0);
+    case 'A' ... 'F':
+      this->push(cmd - 'a' + 10);
       break;
-    }
 
-    case 'r': {
-      printf("IO:\n");
-      for (uint i = 0; i < 8; i++) {
-        printf("  GP%u = %u\n", i, this->io->get(i));
-      }
+    case 'I':
+      printf("re-initialize driver\n");
+      this->driver->init();
       break;
-    }
 
-    case 't': {
-      uint8_t delay;
-      if (!this->pop(delay)) {
-        printf("stack empty\n");
-        break;
-      }
-
-      this->driver->delay_us = 10 * delay;
-      printf("set delay to %lu us\n", this->driver->delay_us);
-      break;
-    }
-
-    case 'U': {
-      printf("init uart\n");
-
-      pio_sm_set_enabled(pio0, 0, false);
-
-      pio_add_program_at_offset(pio0, &uart_tx_program, 0);
-
-      uart_tx_program_init(
-        pio0,
-        0, // sm 
-        0, // offset
-        serial_tx_pin,
-        115'200
-      );
-      break;
-    }
-
-    case 'P': {
-      printf("init propio\n");
-
-      pio_sm_set_enabled(pio0, 0, false);
-
-      pio_add_program_at_offset(pio0, &propio_program, 0);
-
-      propio_program_init(
-        pio0,
-        0, // sm 
-        0, // offset
-        serial_tx_pin
-      );
-      gpio_set_slew_rate(this->serial_tx_pin, GPIO_SLEW_RATE_FAST);
-      gpio_set_drive_strength(this->serial_tx_pin, GPIO_DRIVE_STRENGTH_12MA);
-      break;
-    }
-
-    case 'T': {
-      uint8_t pin_id;
-      if(!this->pop(pin_id)) {
-        printf("stack empty\n");
-      break;
-      }
-
-      this->serial_tx_pin = pin_id ? GP_0 : DGB_0;
-
-      printf("Sending UART TX to %s (pin %u)\n",
-      pin_id ? "general purpose" : "debug",
-      this->serial_tx_pin);
-      break;
-    }
-
-    case 'S': {
-      printf("uart_tx[");
+    case 's': {
+      printf("sending[");
+      this->driver->start_write_transaction();
 
       uint8_t byte;
-      while (this->pop(byte)) {
-        // printf("%c", byte);
-        uart_tx_program_putc(pio0, 0, byte);
+      for (size_t i = 0; i < this->stackPtr; i++) {
+        printf("%c", this->stack[i]);
+        this->driver->write_byte(this->stack[i]);
       }
+
+      this->driver->end_transaction();
       printf("]\n");
 
       break;
     }
+
+    case 'w':
+    {
+      this->protocol.write_mem(0x0000'0000, (uint8_t*)"hello, world!", 13);
+      break;
+    }
+
+    // case 'i': {
+    //   uint8_t pin;
+    //   if (!this->pop(pin)) {
+    //     printf("stack empty\n");
+    //     break;
+    //   }
+
+    //   printf("GP%u = IN\n", pin);
+    //   this->io->set_dir(pin, GPIO_IN);
+
+    //   break;
+    // }
+
+    // case 'w': {
+    //   uint8_t level;
+    //   if (!this->pop(level)) {
+    //     printf("stack empty\n");
+    //     break;
+    //   }
+
+    //   uint8_t pin;
+    //   if (!this->pop(pin)) {
+    //     printf("stack empty\n");
+    //     break;
+    //   }
+
+    //   printf("GP%u = OUT:%u\n", pin, level);
+    //   this->io->set_dir(pin, GPIO_OUT);
+    //   this->io->set(pin, level);
+    //   break;
+    // }
+
+    // case 'h': {
+
+    //   uint8_t pin;
+    //   if (!this->pop(pin)) {
+    //     printf("stack empty\n");
+    //     break;
+    //   }
+
+    //   printf("GP%u = OUT:1\n", pin);
+    //   this->io->set_dir(pin, GPIO_OUT);
+    //   this->io->set(pin, 1);
+    //   break;
+    // }
+
+    // case 'l': {
+
+    //   uint8_t pin;
+    //   if (!this->pop(pin)) {
+    //     printf("stack empty\n");
+    //     break;
+    //   }
+
+    //   printf("GP%u = OUT:0\n", pin);
+    //   this->io->set_dir(pin, GPIO_OUT);
+    //   this->io->set(pin, 0);
+    //   break;
+    // }
+
+    // case 'r': {
+    //   printf("IO:\n");
+    //   for (uint i = 0; i < 8; i++) {
+    //     printf("  GP%u = %u\n", i, this->io->get(i));
+    //   }
+    //   break;
+    // }
+
+      // case 't': {
+      //   uint8_t delay;
+      //   if (!this->pop(delay)) {
+      //     printf("stack empty\n");
+      //     break;
+      //   }
+
+      //   this->driver->delay_us = 10 * delay;
+      //   printf("set delay to %lu us\n", this->driver->delay_us);
+      //   break;
+      // }
+
+      // case 'U': {
+      //   printf("init uart\n");
+
+      //   pio_sm_set_enabled(pio0, 0, false);
+
+      //   pio_add_program_at_offset(pio0, &uart_tx_program, 0);
+
+      //   uart_tx_program_init(pio0,
+      //                        0, // sm
+      //                        0, // offset
+      //                        DGB_0, 115'200);
+      //   break;
+      // }
+
+      // case 'S': {
+      //   printf("uart_tx[");
+
+      //   uint8_t byte;
+      //   while (this->pop(byte)) {
+      //     // printf("%c", byte);
+      //     uart_tx_program_putc(pio0, 0, byte);
+      //   }
+      //   printf("]\n");
+
+      //   break;
+      // }
     }
   }
 
@@ -429,11 +537,12 @@ int main(void) {
 
   stdio_usb_init();
 
-  Driver dri;
+  // ParallelDriver dri;
+  UartDriver dri;
   GeneralIO gio;
 
   dri.init();
-  gio.init();
+  // gio.init();
 
   while (true) {
     while (!stdio_usb_connected()) {
@@ -443,6 +552,10 @@ int main(void) {
     printf("clk_sys  = %lu Hz\n", clock_get_hz(clk_sys));
     printf("clk_peri = %lu Hz\n", clock_get_hz(clk_peri));
     printf("clk_usb  = %lu Hz\n", clock_get_hz(clk_usb));
+
+    dri.init();
+    // gio.init();
+
     printf("ready.\n");
 
     VirtualMachine vm{&dri, &gio};
