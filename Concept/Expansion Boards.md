@@ -1,17 +1,10 @@
 # List of Expansion Board Ideas
 
-## Core
-
-- Flat Video Out (HDMI bit-banging passthrough)
-- I²S PCM Audio (Stereo in, Stereo out)
-- 4-Port USB Hub
-- Dual-RS232 based on SPI-UART-Bridge
-
 ## Near Future
 
-- WiFi mit ESP32-C3
-- 32 Channel I/O mit Propeller 2
-- PropGPU (Propeller 2 based GPU with 4-16 MB video ram,  HDMI, VGA, FBAS)
+- WiFi via ESP32-C3
+- 32 Channel I/O via Propeller 2
+- PropGPU (Propeller 2 based GPU with 4-16 MB video ram, HDMI, VGA, CVBS)
 - SuperSound (I²S PCM + AY-3-8910 + Analog Mixer)
 - Dual C64 Serial
 - Quad-Channel D-Bus-Controller (TI Calculator Link)
@@ -22,7 +15,7 @@
 
 - Quad-Channel DMX
 - Dual-Channel MIDI
-- Parallelport
+- Parallel Port
 - Retro Joystick (SUB-D 9, C64, Atari, ...)
 - VLSI Video Card (<https://www.vlsi.fi/en/products/vs23s040.html>)
 - VLSI Audio Card (<https://www.vlsi.fi/en/products/vs1053.html>)
