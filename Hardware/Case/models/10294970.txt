@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-26072024-077104";"";
+"REFERENCE";"50M025045G004";"";
+"TraceParts.PartTitle";"Screw Crossed Drive M2.5 4.0 mm Nylon Natural";"";
+"TraceParts.InstanceId";"90-26072024-077104AX6XY1QQK2ZTTJME20J23L9MM";"";
+"SUPPLIER";"Essentra Components";"";
+"DESIGN";"Screw Crossed Drive M2.5 4.0 mm Nylon Natural";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.0";"";

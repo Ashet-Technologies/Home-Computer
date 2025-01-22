@@ -1,0 +1,15 @@
+
+
+render-all: \
+    (render "baseplate") \
+    (render "backplane")
+
+render partname: \
+    (render-2d partname) \
+    (render-3d partname)
+
+render-3d partname:
+    openscad -D RENDER_PART_3D=true --export-format stl -o render/{{partname}}.stl parts/{{partname}}.scad
+
+render-2d partname:
+    openscad -D RENDER_PART_2D=true --export-format dxf -o render/{{partname}}.dxf parts/{{partname}}.scad
