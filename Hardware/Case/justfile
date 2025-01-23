@@ -2,7 +2,18 @@
 
 render-all: \
     (render "baseplate") \
-    (render "backplane")
+    (render "backplane") \
+    (render "frontpanel") \
+    (render "slot_plate") \
+    (render "slot_pcb") \
+    (exp-slot "0") \
+    (exp-slot "1") \
+    (exp-slot "2") \
+    (exp-slot "3") \
+    (exp-slot "4") \
+    (exp-slot "5") \
+    (exp-slot "6") \
+    (exp-slot "7")
 
 render partname: \
     (render-2d partname) \
@@ -13,3 +24,8 @@ render-3d partname:
 
 render-2d partname:
     openscad -D RENDER_PART_2D=true --export-format dxf -o render/{{partname}}.dxf parts/{{partname}}.scad
+
+exp-slot index:
+    openscad -D RENDER_SLOT_2D=true -D SLOT_ID={{index}} -D 'KIND="frontplate"' --export-format dxf -o render/exp_slot_{{index}}_plate.dxf parts/exp_slot_n.scad
+    openscad -D RENDER_SLOT_3D=true -D SLOT_ID={{index}} -D 'KIND="frontplate"' --export-format stl -o render/exp_slot_{{index}}_plate.stl parts/exp_slot_n.scad
+    openscad -D RENDER_SLOT_3D=true -D SLOT_ID={{index}} -D 'KIND="connectorss"' --export-format stl -o render/exp_slot_{{index}}_conn.stl parts/exp_slot_n.scad || true

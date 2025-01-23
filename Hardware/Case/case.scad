@@ -11,7 +11,9 @@ include <parts/frontpanel.scad>
 include <parts/slot_plate.scad>
 include <parts/slot_pcb.scad>
 
-HIDE_TOP = false;
+include <expansions.scad>
+
+HIDE_TOP = true;
 
 baseplate_spread = 41.4;
 
@@ -38,7 +40,7 @@ translate([0,169/2,0])
 
     translate([0,(slot_plate_thickness+frontpanel_thickness)/2,0]) foreach_slot()
     {
-        mat_metal() slot_plate();
+        xcon_slot_plate() xcon_expansion($i);
         
         translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0])  mat_pcb() slot_pcb();
 

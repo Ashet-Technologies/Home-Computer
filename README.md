@@ -7,7 +7,7 @@
 | ⚠️ **WORK IN PROGRESS** ⚠️                                                                             |
 | This README reflects the state of where the project wants to go, not where the project is right now! |
 
-![A rendering of a concept art](Concept/case-concept.png)
+![A rendering of a concept art](Concept/case-rendering.png)
 
 ## Introduction
 

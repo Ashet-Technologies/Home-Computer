@@ -71,9 +71,9 @@ slot_screw_offset = slot_plate_height/2-slot_screw_inset;
 /* Invokes children() once for each slot, offsetted on the X axis, slot center. */
 module foreach_slot()
 {
-    for (i = [0:SLOTS - 1])
+    for ($i = [0:SLOTS - 1])
     {
-        dx = slot_separation * (i - (SLOTS - 1) / 2);
+        dx = slot_separation * ($i - (SLOTS - 1) / 2);
         translate([ dx, 0, 0 ]) children();
     }
 }

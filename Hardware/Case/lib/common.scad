@@ -78,3 +78,17 @@ module zmirror()
     children();
     scale([1,1,-1]) children();
 }
+
+module select_child(i)
+{
+    children(i);
+}
+
+module xdist(dx, rep=1)
+{
+    total = $children * rep;
+    for(i = [0:total-1])
+    {
+        translate([(i-(total-1)/2)*dx,0,0]) children(i % $children);
+    }
+}

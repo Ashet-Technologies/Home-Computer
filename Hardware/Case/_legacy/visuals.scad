@@ -98,10 +98,6 @@ module case()
 
 
 
-module select_child(i)
-{
-    children(i);
-}
 
 module component(cutout)
 {
