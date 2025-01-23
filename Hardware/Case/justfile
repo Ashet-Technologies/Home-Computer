@@ -19,13 +19,16 @@ render partname: \
     (render-2d partname) \
     (render-3d partname)
 
-render-3d partname:
+render-3d partname: output-dir
     openscad -D RENDER_PART_3D=true --export-format stl -o render/{{partname}}.stl parts/{{partname}}.scad
 
-render-2d partname:
+render-2d partname: output-dir
     openscad -D RENDER_PART_2D=true --export-format dxf -o render/{{partname}}.dxf parts/{{partname}}.scad
 
-exp-slot index:
+exp-slot index: output-dir
     openscad -D RENDER_SLOT_2D=true -D SLOT_ID={{index}} -D 'KIND="frontplate"' --export-format dxf -o render/exp_slot_{{index}}_plate.dxf parts/exp_slot_n.scad
     openscad -D RENDER_SLOT_3D=true -D SLOT_ID={{index}} -D 'KIND="frontplate"' --export-format stl -o render/exp_slot_{{index}}_plate.stl parts/exp_slot_n.scad
     openscad -D RENDER_SLOT_3D=true -D SLOT_ID={{index}} -D 'KIND="connectorss"' --export-format stl -o render/exp_slot_{{index}}_conn.stl parts/exp_slot_n.scad || true
+
+output-dir:
+    mkdir -p render
