@@ -1,0 +1,59 @@
+name: Export CAD Files
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  case:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install openscad just
+      
+      - name: Render files
+        run: |
+          cd Hardware/Case
+          just
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: case
+          path: Hardware/Case/render
+
+  eda-pdfs:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install kicad just
+          kicad-cli --version
+      
+      - name: Render Schematics
+        run: |
+          cd Hardware
+          just generate-schematics-pdfs
+        
+      - name: Render PCBs
+        run: |
+          cd Hardware
+          just generate-pcb-pdfs
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Schematics
+          path: Hardware/.render/sch
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PCBs
+          path: Hardware/.render/pcb

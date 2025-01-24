@@ -1,0 +1,31 @@
+name: ERC
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:          
+  drc:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
+          sudo apt-get -y update
+          sudo apt-get -y install --install-recommends kicad just
+          kicad-cli --version
+      
+      - name: Run ERC
+        run: |
+          cd Hardware
+          just erc-schematics
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ERC
+          path: Hardware/.render/erc
+    

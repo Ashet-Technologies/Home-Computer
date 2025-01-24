@@ -1,7 +1,14 @@
-~*.lck
-*-backups/
+
+
 *.bak
 .vscode/
 .venv/
 .zig-cache/
 zig-out/
+
+# KiCAD files:
+*.rpt
+~*.lck
+replicate_layout.log
+*-backups/
+

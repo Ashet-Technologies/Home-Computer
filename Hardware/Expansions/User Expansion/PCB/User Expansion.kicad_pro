@@ -112,7 +112,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.4,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -624,12 +624,12 @@
       "Pin Cluster 11"
     ],
     [
-      "bd964bfd-9e11-476f-b025-1c3a9310a8f9",
-      "Pin Cluster 12"
+      "9a25862a-e06a-4705-b940-1ebd0fc9d2fa",
+      "Connected Row"
     ],
     [
-      "7ce95c6f-31c3-4ba5-ba18-c7cd6cc8a7d1",
-      "Pin Cluster 13"
+      "4bc000af-ea77-415f-b51a-7b5e870d0b75",
+      "Connected Row1"
     ]
   ],
   "text_variables": {}

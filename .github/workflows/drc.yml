@@ -1,0 +1,30 @@
+name: DRC
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:          
+  drc:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install kicad just
+          kicad-cli --version
+      
+      - name: Run DRC
+        run: |
+          cd Hardware
+          just drc-pcbs
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DRC
+          path: Hardware/.render/pcb
+    

@@ -1,0 +1,69 @@
+
+generate-pdfs: \
+    generate-schematics-pdfs \
+    generate-pcb-pdfs
+
+generate-schematics-pdfs: \
+    (generate-schematics-pdf "Expansions/User Expansion/PCB/User Expansion.kicad_sch")
+
+generate-pcb-pdfs: \
+    (generate-pcb-pdf "Expansions/User Expansion/PCB/User Expansion.kicad_pcb")
+
+drc-pcbs: \
+    (run-pcb-drc "Expansions/User Expansion/PCB/User Expansion.kicad_pcb")
+
+erc-schematics: \
+    (run-schematic-erc "Expansions/User Expansion/PCB/User Expansion.kicad_sch")
+
+generate-schematics-pdf path: output-dir
+    kicad-cli sch export pdf \
+        --output ".render/sch/{{file_stem(path)}}.pdf" \
+        "{{path}}"
+
+generate-pcb-pdf path: output-dir
+    kicad-cli pcb export pdf \
+        --output ".render/pcb/{{file_stem(path)}}.pdf" \
+        --layers "F.Silkscreen,F.Cu,B.Silkscreen,B.Cu,Edge.Cuts" \
+        --exclude-refdes \
+        --include-border-title \
+        "{{path}}"
+
+run-pcb-drc path: output-dir
+    printf "%s\n| DRC | %s\n%s\n" \
+        ".=====.=========================================================================" \
+        "{{path}}" \
+        "'====='========================================================================="
+    
+    kicad-cli pcb drc \
+        -o ".render/drc/{{file_stem(path)}}.rpt" \
+        --format "report" \
+        --units  "mm" \
+        --schematic-parity \
+        --severity-error \
+        --exit-code-violations \
+        "{{path}}" \
+        || cat ".render/drc/{{file_stem(path)}}.rpt"
+
+
+run-schematic-erc path: output-dir
+    printf "%s\n| ERC | %s\n%s\n" \
+        ".=====.=========================================================================" \
+        "{{path}}" \
+        "'====='========================================================================="
+    
+    kicad-cli sch erc \
+        -o ".render/erc/{{file_stem(path)}}.rpt" \
+        --format "report" \
+        --units  "mm" \
+        --severity-error \
+        --exit-code-violations \
+        "{{path}}" \
+        || cat ".render/erc/{{file_stem(path)}}.rpt"
+
+output-dir:
+    mkdir -p \
+        .render \
+        .render/pcb \
+        .render/sch \
+        .render/drc \
+        .render/erc
