@@ -32,11 +32,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Update System
         run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
           sudo apt-get -y update
-          sudo apt-get -y install kicad just
-          kicad-cli --version
+      
+      - name: Install Dependencies
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: kicad just
+          version: 1.0
+      
+      - name: KiCAD Version
+        run: |
+          kicad-cli version
       
       - name: Render Schematics
         run: |
