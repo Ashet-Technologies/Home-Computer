@@ -12,3 +12,9 @@ zig-out/
 replicate_layout.log
 *-backups/
 
+*.pcb3d
+_autosave-*.kicad_*
+
+# Blender
+
+*.blend?
