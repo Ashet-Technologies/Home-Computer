@@ -22,7 +22,7 @@ The Expansion Bus has several *optional* features that must not be present on ea
 Each feature might require a certain set of signals to be present:
 
 | Feature  | Standard Signals | Video Signals | Audio Signals |
-|----------|------------------|---------------|---------------|
+| -------- | ---------------- | ------------- | ------------- |
 | Standard | ✅                | ❌             | ❌             |
 | Audio    | ✅                | ❌             | ✅             |
 | Video    | ✅                | ✅             | ❌             |
@@ -30,7 +30,7 @@ Each feature might require a certain set of signals to be present:
 ## Signals
 
 | Signal Name           | Driver    | Type                  | Function                                                                      | Frequency Limit |
-|-----------------------|-----------|-----------------------|-------------------------------------------------------------------------------|-----------------|
+| --------------------- | --------- | --------------------- | ----------------------------------------------------------------------------- | --------------- |
 | *All Variants*        |           |                       |                                                                               |                 |
 | `GND`                 | Backplane | Power                 | Signal Ground                                                                 |                 |
 | `+3V3`                | Backplane | Power                 | 3.3 V power supply                                                            |                 |
@@ -41,7 +41,8 @@ Each feature might require a certain set of signals to be present:
 | `/SLOT_AUDIO`         | Backplane | Static                | This signal is connected to GND if the slot has the *Audio* feature available |                 |
 | `/SLOT_VIDEO`         | Backplane | Static                | This signal is connected to GND if the slot has the *Video* feature available |                 |
 | `/IRQ`                | Card      | Open Collector        | Interrupt request. Card drives this to low for system notification            |                 |
-| `CLK_16MHZ`           | Backplane | Logic                 | Global 16 MHz clock for synchronization                                       | 16 MHz          |
+| `/RESET`              | Backplane | Logic                 | Reset signal. Is driven low when the card should reset itself                 |                 |
+| `CLK`                 | Backplane | Logic                 | Global 8 MHz clock for synchronization                                        | 8 MHz           |
 | `I2C_SCL`             | Bi-di     | Open Collector        | Clock Lane of the System I²C Bus                                              | 100 kHz         |
 | `I2C_SDA`             | Bi-di     | Open Collector        | Data Lane of the System I²C Bus                                               | 100 kHz         |
 | `GP0`...`GP7`         | Bi-di     | Logic or Analog       | General-purpose I/O signals from the Southbridge                              | 150 MHz         |
@@ -69,7 +70,7 @@ This EEPROM must have at an 8-bit memory organization with at least 8K of memory
 The following addresses are reserved on the bus in addition to the specification:
 
 | Address | Use                  |
-|--------:|----------------------|
+| ------: | -------------------- |
 |    0x50 | Metadata EEPROM      |
 |    0x70 | Backplane I²C Switch |
 
@@ -109,41 +110,41 @@ The *Expansion Bus* uses a standard *PCI Express x4* connector with 64 positions
 
 ### Pinout
 
-| Pin | A Side    | B Side      |
-|----:|-----------|-------------|
-|   1 | GND       | GND         |
-|   2 | +3V3      | +12V        |
-|   3 | +3V3      | +12V        |
-|   4 | GND       | +12V        |
-|   5 | SLOT_A0   | +12V        |
-|   6 | SLOT_A1   | +5V         |
-|   7 | SLOT_A2   | +5V         |
-|   8 | SLOT_A3   | GND         |
-|   9 | I2C_SCL   | /SLOT_AUDIO |
-|  10 | I2C_SDA   | /SLOT_VIDEO |
-|  11 | /IRQ      | /PDET       |
-| Key | -         | -           |
-|  12 | I2S_SDIN  | I2S_MCLK    |
-|  13 | I2S_SDOUT | I2S_BCLK    |
-|  14 | CLK_16MHZ | I2S_WCLK    |
-|  15 | GND       | GND         |
-|  16 | GP0       | GND         |
-|  17 | GP1       | GND         |
-|  18 | GP2       | GND         |
-|  19 | GP3       | GND         |
-|  20 | GP4       | GND         |
-|  21 | GP5       | GND         |
-|  22 | GP6       | GND         |
-|  23 | GP7       | GND         |
-|  24 | GND       | GND         |
-|  25 | HSTX0     | HSTX1       |
-|  26 | GND       | GND         |
-|  27 | HSTX2     | HSTX3       |
-|  28 | GND       | GND         |
-|  29 | HSTX4     | HSTX5       |
-|  30 | GND       | GND         |
-|  31 | HSTX6     | HSTX7       |
-|  32 | GND       | GND         |
+|  Pin | A Side     | B Side      |
+| ---: | ---------- | ----------- |
+|    1 | GND        | GND         |
+|    2 | +3V3       | +12V        |
+|    3 | +3V3       | +12V        |
+|    4 | GND        | +12V        |
+|    5 | SLOT_A0    | +12V        |
+|    6 | SLOT_A1    | +5V         |
+|    7 | SLOT_A2    | +5V         |
+|    8 | SLOT_A3    | GND         |
+|    9 | I2C_SCL    | /PDET       |
+|   10 | I2C_SDA    | /SLOT_AUDIO |
+|   11 | /IRQ       | /SLOT_VIDEO |
+|  Key | -          | -           |
+|   12 | GND        | GND         |
+|   13 | CLK        | HSTX0       |
+|   14 | GND        | HSTX1       |
+|   15 | GP0        | GND         |
+|   16 | GP1        | HSTX2       |
+|   17 | GP2        | HSTX3       |
+|   18 | GP3        | GND         |
+|   19 | GP4        | HSTX4       |
+|   20 | GP5        | HSTX5       |
+|   21 | GP6        | GND         |
+|   22 | GP7        | HSTX6       |
+|   23 | *reserved* | HSTX7       |
+|   24 | *reserved* | GND         |
+|   25 | *reserved* | I2S_MCLK    |
+|   26 | *reserved* | GND         |
+|   27 | *reserved* | I2S_BCLK    |
+|   28 | *reserved* | I2S_WCLK    |
+|   29 | *reserved* | GND         |
+|   30 | *reserved* | I2S_SDIN    |
+|   31 | /RESET     | I2S_SDOUT   |
+|   32 | GND        | GND         |
 
 ## Module Descriptor Data
 
@@ -154,7 +155,7 @@ The Module Descriptor Data describes the expansion card and provides a low-level
 The data is located at the start of the EEPROM and follows the following memory layout:
 
 | Address Range  | Function                |
-|----------------|-------------------------|
+| -------------- | ----------------------- |
 | `0000`..`01FF` | Metadata Block          |
 | `0200`..`07FF` | *reserved*              |
 | `0800`..`0FFF` | Module Card Icon        |
@@ -165,7 +166,7 @@ The data is located at the start of the EEPROM and follows the following memory 
 The metadata block encodes generic information about the expansion card that can be processed by the host system.
 
 | Offset | Field             | Type     | Function                                                |
-|--------|-------------------|----------|---------------------------------------------------------|
+| ------ | ----------------- | -------- | ------------------------------------------------------- |
 | `0000` | Vendor ID         | `u32`    | Unique ID for the vendor of the expansion card          |
 | `0004` | Product ID        | `u32`    | Vendor-unique ID for the expansion card                 |
 | `0008` | Serial Number     | `[8]u8`  | Serial number of the expansion card. Can be zero-padded |
@@ -195,7 +196,7 @@ All icons share the same color palette, which can have up to 63 colors and a tra
 The icon memory block is organized as such:
 
 | Address Range  | Function                                    |
-|----------------|---------------------------------------------|
+| -------------- | ------------------------------------------- |
 | `0000`..`00FF` | 8-bit pixel data for 16x16 icon             |
 | `0100`..`04FF` | 8-bit pixel data for 32x32 icon             |
 | `0500`..`0BFF` | 8-bit pixel data for 24x24 icon             |
@@ -207,7 +208,7 @@ The icon memory block is organized as such:
 Each *Configuration Field* is a bit field with the following items:
 
 |  Bit | Function                                               |
-|-----:|--------------------------------------------------------|
+| ---: | ------------------------------------------------------ |
 | 0..5 | Number of palette entries. Zero means icon is disabled |
 | 6..7 | *reserved, must be zero*                               |
 

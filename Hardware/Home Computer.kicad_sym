@@ -5233,37 +5233,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PCIe Connector"
-			(at 56.896 51.816 0)
+		(property "Description" "Ashet Home Computer Slot"
+			(at 0 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
-			(at -39.624 -12.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "MANUFACTURER" "AMPHENOL"
-			(at 46.228 49.022 0)
+			(at 10.16 -54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5354,10 +5334,10 @@
 					)
 				)
 			)
-			(pin output line
+			(pin power_in line
 				(at -17.78 10.16 0)
 				(length 5.08)
-				(name "I²S_{SDIN}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5375,7 +5355,7 @@
 			(pin input line
 				(at -17.78 7.62 0)
 				(length 5.08)
-				(name "I²S_{SDOUT}"
+				(name "CLK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5390,10 +5370,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -17.78 5.08 0)
 				(length 5.08)
-				(name "CLK_{16MHz}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5408,10 +5388,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -17.78 2.54 0)
 				(length 5.08)
-				(name "GND"
+				(name "GP0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5429,7 +5409,7 @@
 			(pin bidirectional line
 				(at -17.78 0 0)
 				(length 5.08)
-				(name "GP0"
+				(name "GP1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5447,7 +5427,7 @@
 			(pin bidirectional line
 				(at -17.78 -2.54 0)
 				(length 5.08)
-				(name "GP1"
+				(name "GP2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5465,7 +5445,7 @@
 			(pin bidirectional line
 				(at -17.78 -5.08 0)
 				(length 5.08)
-				(name "GP2"
+				(name "GP3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5483,7 +5463,7 @@
 			(pin bidirectional line
 				(at -17.78 -7.62 0)
 				(length 5.08)
-				(name "GP3"
+				(name "GP4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5501,7 +5481,7 @@
 			(pin power_in line
 				(at -17.78 38.1 0)
 				(length 5.08)
-				(name "+3V3"
+				(name "+3V3_{RI}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5519,7 +5499,7 @@
 			(pin bidirectional line
 				(at -17.78 -10.16 0)
 				(length 5.08)
-				(name "GP4"
+				(name "GP5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5537,7 +5517,7 @@
 			(pin bidirectional line
 				(at -17.78 -12.7 0)
 				(length 5.08)
-				(name "GP5"
+				(name "GP6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5555,7 +5535,7 @@
 			(pin bidirectional line
 				(at -17.78 -15.24 0)
 				(length 5.08)
-				(name "GP6"
+				(name "GP7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5570,10 +5550,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin no_connect line
 				(at -17.78 -17.78 0)
 				(length 5.08)
-				(name "GP7"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5588,10 +5568,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin no_connect line
 				(at -17.78 -20.32 0)
 				(length 5.08)
-				(name "GND"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5606,10 +5586,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -17.78 -22.86 0)
 				(length 5.08)
-				(name "HSTX_{0}"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5624,10 +5604,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -17.78 -25.4 0)
 				(length 5.08)
-				(name "HSTX_{1}"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5642,10 +5622,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin no_connect line
 				(at -17.78 -27.94 0)
 				(length 5.08)
-				(name "GND"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5660,10 +5640,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -17.78 -30.48 0)
 				(length 5.08)
-				(name "HSTX_{4}"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5678,10 +5658,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -17.78 -33.02 0)
 				(length 5.08)
-				(name "HSTX_{5}"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5714,10 +5694,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin no_connect line
 				(at -17.78 -35.56 0)
 				(length 5.08)
-				(name "GND"
+				(name "RES"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5897,7 +5877,7 @@
 			(pin input line
 				(at 17.78 17.78 180)
 				(length 5.08)
-				(name "~{SLOT_{VIDEO}}"
+				(name "~{SLOT_{AUDIO}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5912,10 +5892,10 @@
 					)
 				)
 			)
-			(pin open_collector line
+			(pin input line
 				(at 17.78 15.24 180)
 				(length 5.08)
-				(name "~{PDET}"
+				(name "~{SLOT_{VIDEO}}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5930,10 +5910,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 17.78 10.16 180)
 				(length 5.08)
-				(name "I²S_{MCLK}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5951,7 +5931,7 @@
 			(pin input line
 				(at 17.78 7.62 180)
 				(length 5.08)
-				(name "I²S_{BCLK}"
+				(name "HSTX_{0}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5969,7 +5949,7 @@
 			(pin input line
 				(at 17.78 5.08 180)
 				(length 5.08)
-				(name "I²S_{WCLK}"
+				(name "HSTX_{1}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6002,10 +5982,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 0 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{2}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6020,10 +6000,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -2.54 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{3}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6056,10 +6036,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -7.62 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{4}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6077,7 +6057,7 @@
 			(pin power_in line
 				(at 17.78 38.1 180)
 				(length 5.08)
-				(name "+12V"
+				(name "+12V_{RI}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6092,10 +6072,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -10.16 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{5}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6128,10 +6108,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -15.24 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{6}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6146,10 +6126,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -17.78 180)
 				(length 5.08)
-				(name "GND"
+				(name "HSTX_{7}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6185,7 +6165,7 @@
 			(pin input line
 				(at 17.78 -22.86 180)
 				(length 5.08)
-				(name "HSTX_{2}"
+				(name "I²S_{MCLK}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6200,10 +6180,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 17.78 -25.4 180)
 				(length 5.08)
-				(name "HSTX_{3}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6218,10 +6198,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -27.94 180)
 				(length 5.08)
-				(name "GND"
+				(name "I²S_{WCLK}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6239,7 +6219,7 @@
 			(pin input line
 				(at 17.78 -30.48 180)
 				(length 5.08)
-				(name "HSTX_{6}"
+				(name "I²S_{BCLK}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6254,10 +6234,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 17.78 -33.02 180)
 				(length 5.08)
-				(name "HSTX_{7}"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6290,10 +6270,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin output line
 				(at 17.78 -35.56 180)
 				(length 5.08)
-				(name "GND"
+				(name "I²S_{SDIN}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6308,10 +6288,10 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at 17.78 -38.1 180)
 				(length 5.08)
-				(name "GND"
+				(name "I²S_{SDOUT}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6383,7 +6363,7 @@
 			(pin power_in line
 				(at 17.78 27.94 180)
 				(length 5.08)
-				(name "+5V"
+				(name "+5V_{RI}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6434,10 +6414,10 @@
 					)
 				)
 			)
-			(pin input line
+			(pin open_collector line
 				(at 17.78 20.32 180)
 				(length 5.08)
-				(name "~{SLOT_{AUDIO}}"
+				(name "~{PDET}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6445,6 +6425,177 @@
 					)
 				)
 				(number "B9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "AP3445LW6-7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -5.08 -6.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "AP3445LW6-7 "
+			(at 0 6.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/115/DIOD_S_A0005045874_1-2542728.pdf"
+			(at 34.29 -47.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.6V 1 Output 2A"
+			(at 27.432 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "AP3445LW6-7_1_1"
+			(rectangle
+				(start -5.08 6.35)
+				(end 5.08 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -8.89 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 3.81 180)
+				(length 2.54)
+				(name "LX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 3.81 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at -7.62 -3.81 0)
+				(length 2.54)
+				(name "PG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -3.81 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6536,6 +6687,234 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+		)
+	)
+	(symbol "LTC6930CMS8-8.00#PBF"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -6.35 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTC6930CMS8-8.00#PBF"
+			(at 19.05 15.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 1.27 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/6930fe.pdf"
+			(at 12.065 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8.00MHz Precision µPower Oscillator"
+			(at 6.985 20.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "oscillator fixed frequency divider silicon"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LTC6930CMS8-8.00#PBF_1_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 1.27) (xy 3.81 1.27) (xy 3.81 2.54) (xy 4.445 2.54) (xy 4.445 1.27) (xy 5.08 1.27) (xy 5.08 2.54)
+					(xy 5.715 2.54) (xy 5.715 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -1.27 10.16 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -1.27 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "DIVA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "DIVB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "DIVC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 1.27 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 1.27 10.16 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
@@ -8562,6 +8941,159 @@
 					(effects
 						(font
 							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SN74LVC1G08DBVR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0.635 5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SN74LVC1G08DBVR"
+			(at 0.635 -5.715 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at -1.27 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
+			(at 1.27 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single 2-Input Positive-AND Gate"
+			(at -1.27 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SN74LVC1G08DBVR_1_1"
+			(rectangle
+				(start -3.81 5.08)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -6.35 2.54 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -6.35 -2.54 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 6.35 0 180)
+				(length 2.54)
+				(name "Y"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)

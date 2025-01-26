@@ -125,7 +125,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -462,7 +462,13 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "+12V": "Power",
+      "+1V8": "Power",
+      "+3V3": "Power",
+      "+5V": "Power",
+      "GND": "Power"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -610,6 +616,46 @@
     [
       "de0a9853-8d2d-4021-a172-17dfe1844021",
       "Module Slot 7"
+    ],
+    [
+      "a6aaca62-686e-49f0-9767-a5ba81511d00",
+      "Power"
+    ],
+    [
+      "830eb735-4083-4e97-a24b-40cca75ad59b",
+      "Builtins"
+    ],
+    [
+      "50c65fc9-71ad-406b-a67c-9fe60e10adc6",
+      "Reset Gate"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
+    ],
+    [
+      "0a06f79e-2371-44d6-ba59-f8569181be44",
+      "Reset Gate1"
     ]
   ],
   "text_variables": {}

@@ -1,4 +1,8 @@
 
+
+# https://github.com/openscopeproject/InteractiveHtmlBom
+# https://gitlab.com/dennevi/Board2Pdf/
+
 generate-pdfs: \
     generate-schematics-pdfs \
     generate-pcb-pdfs
@@ -67,3 +71,4 @@ output-dir:
         .render/sch \
         .render/drc \
         .render/erc
+
