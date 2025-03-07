@@ -1,0 +1,350 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7e0c4139-a672-43d5-9c59-7fc556730ecf")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 114.3 139.7)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "229c53cf-5483-40de-833b-14c89c46d780")
+		(property "Sheetname" "Connector 8"
+			(at 114.3 138.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 114.3 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 63.5)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2aaafa2a-2b3b-4a0e-bfba-84c3bd41585d")
+		(property "Sheetname" "Connector 5"
+			(at 114.3 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 114.3 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 114.3)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5a283851-53d7-4748-9614-0d16d3c09d99")
+		(property "Sheetname" "Connector 7"
+			(at 114.3 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 114.3 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 88.9)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5a6afa64-8f53-4635-9e9b-4e6f5cbabb4d")
+		(property "Sheetname" "Connector 6"
+			(at 114.3 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 114.3 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 88.9)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "60ce6e98-f784-45e9-9983-203ef3c3c72c")
+		(property "Sheetname" "Connector 2"
+			(at 63.5 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 63.5 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 114.3)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b8ad3708-9099-4cf2-a528-551712ecfec6")
+		(property "Sheetname" "Connector 3"
+			(at 63.5 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 63.5 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 139.7)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bee89f82-0558-4600-8aa2-d4911534043a")
+		(property "Sheetname" "Connector 4"
+			(at 63.5 138.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 63.5 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 63.5)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d4735d3f-14bd-4f1a-ba54-2806d43cee94")
+		(property "Sheetname" "Connector 1"
+			(at 63.5 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connector.kicad_sch"
+			(at 63.5 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/7e0c4139-a672-43d5-9c59-7fc556730ecf"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
