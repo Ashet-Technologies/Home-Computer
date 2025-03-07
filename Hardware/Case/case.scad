@@ -25,13 +25,14 @@ if(!HIDE_TOP)
 }
 
 translate([0,backplane_offset,0]) {
-   mat_pcb() xrotate(90) backplane();
+//    mat_pcb() xrotate(90) backplane();
 
-   foreach_slot()
-   {
-        zadjust = 5;
-        translate([slot_pcb_offset,0,-slot_pcb_conn_offset+zadjust]) xrotate(-90) conn_pcie_x4();
-   }
+//    foreach_slot()
+//    {
+//         zadjust = 5;
+//         translate([slot_pcb_offset,0,-slot_pcb_conn_offset+zadjust]) xrotate(-90) conn_pcie_x4();
+//    }
+    translate([0,-0.8,0]) yrotate(180) xrotate(-90) import("../Mechanical Prototype/Backplane/Backplane.stl");
 }
 
 translate([0,169/2,0])
@@ -40,9 +41,12 @@ translate([0,169/2,0])
 
     translate([0,(slot_plate_thickness+frontpanel_thickness)/2,0]) foreach_slot()
     {
-        xcon_slot_plate() xcon_expansion($i);
+        // translate([0,-0.8,0]) yrotate(180) xrotate(-90) 
+         translate([slot_pcb_offset-slot_pcb_thickness/2,-slot_plate_thickness/2,0])
+        zrotate(-90) xrotate(-90) import("../Mechanical Prototype/Expansion Board/Expansion Board.stl");
+        // xcon_slot_plate() xcon_expansion($i);
         
-        translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0])  mat_pcb() slot_pcb();
+        // translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0])  mat_pcb() slot_pcb();
 
         zmirror() translate([0,slot_plate_thickness/2,slot_screw_offset]) xrotate(90) screw_m2_5_4mm(); // screw_model(slot_screw_type, slot_screw_length );
     }
