@@ -5,6 +5,7 @@ render-all: \
     (render "backplane") \
     (render "frontpanel") \
     (render "slot_plate") \
+    (render "slot_plate_dummy") \
     (render "slot_pcb") \
     (exp-slot "0") \
     (exp-slot "1") \

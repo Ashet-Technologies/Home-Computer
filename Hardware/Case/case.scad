@@ -44,7 +44,7 @@ translate([0,169/2,0])
         // translate([0,-0.8,0]) yrotate(180) xrotate(-90) 
          translate([slot_pcb_offset-slot_pcb_thickness/2,-slot_plate_thickness/2,0])
         zrotate(-90) xrotate(-90) import("../Mechanical Prototype/Expansion Board/Expansion Board.stl");
-        // xcon_slot_plate() xcon_expansion($i);
+        xcon_slot_plate() xcon_expansion_dummy($i);
         
         // translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0])  mat_pcb() slot_pcb();
 

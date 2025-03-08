@@ -1,6 +1,17 @@
 
 include <parts/slot_plate.scad>
 
+
+
+module xcon_expansion_dummy(i)
+{
+    if($cutout_mode) {
+        union() {
+            xmirror() translate([slot_mount_screw_dist/2,slot_pcb_thickness/2+slot_mount_screw_pcb_dist]) circle(d=slow_mount_screw_type[1],$fn=20);
+        }
+    }
+}
+
 module xcon_expansion(i)
 {
     select_child(i)

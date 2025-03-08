@@ -2957,7 +2957,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical Prototype:MountingBracket_612"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2965,22 +2965,22 @@
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingBracket_612"
+				(at 0 -5.842 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Mechanical Prototype:MountingBracket_612_M3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2989,7 +2989,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p118.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2999,7 +2999,7 @@
 				)
 			)
 			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
+				(at 0 -9.525 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3025,12 +3025,205 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
+			(symbol "MountingBracket_612_0_1"
+				(polyline
+					(pts
+						(xy -3.048 2.032) (xy -3.048 -3.048)
+					)
 					(stroke
-						(width 1.27)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 2.032) (xy -0.508 5.207)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.016 1.778)
+					(mid -1.0814 0.8582)
+					(end -1.778 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.254)
+					(mid -2.0846 0.2758)
+					(end -2.286 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -4.318) (xy 3.302 -4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 -4.318)
+					(mid -2.676 -3.946)
+					(end -3.048 -3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 2.032)
+					(mid -1.2174 2.0102)
+					(end -1.016 1.778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.286 0.508)
+					(mid -2.2206 1.4278)
+					(end -1.524 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 5.207) (xy -0.508 0.127) (xy -3.048 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.762 -1.143)
+					(mid -0.136 -0.771)
+					(end -0.508 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.143) (xy -1.778 -4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.143) (xy 5.842 -1.143)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.651 -3.429)
+					(mid 1.202 -3.243)
+					(end 1.016 -2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.921 -2.794)
+					(mid 2.4175 -3.3745)
+					(end 1.651 -3.429)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 -2.794)
+					(mid 1.837 -2.082)
+					(end 2.921 -2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.921 -2.159)
+					(mid 3.0525 -2.4765)
+					(end 2.921 -2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -4.318) (xy 5.842 -1.143)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -3840,8 +4033,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 76.2 63.5 0)
+		(lib_id "Mechanical Prototype:MountingBracket_612")
+		(at 76.2 57.15 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -3849,7 +4042,7 @@
 		(dnp no)
 		(uuid "1f8c7522-3566-4600-a640-08932c8979c0")
 		(property "Reference" "H102"
-			(at 79.248 62.2299 0)
+			(at 79.248 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,17 +4050,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
-			(at 79.248 64.7699 0)
+		(property "Value" "MountingBracket_612"
+			(at 76.2 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 76.2 63.5 0)
+		(property "Footprint" "Mechanical Prototype:MountingBracket_612_M3"
+			(at 76.2 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,8 +4067,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 76.2 63.5 0)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p118.pdf"
+			(at 76.2 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,7 +4077,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 76.2 63.5 0)
+			(at 76.2 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4157,7 +4349,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical Prototype:MountingBracket_612")
 		(at 76.2 69.85 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -4167,7 +4359,7 @@
 		(fields_autoplaced yes)
 		(uuid "483c30e7-1784-45e7-97f8-2212dbdbbd01")
 		(property "Reference" "H101"
-			(at 79.248 68.5799 0)
+			(at 83.82 68.1354 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4175,8 +4367,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3"
-			(at 79.248 71.1199 0)
+		(property "Value" "MountingBracket_612"
+			(at 83.82 70.6754 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4184,7 +4376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+		(property "Footprint" "Mechanical Prototype:MountingBracket_612_M3"
 			(at 76.2 69.85 0)
 			(effects
 				(font
@@ -4193,7 +4385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p118.pdf"
 			(at 76.2 69.85 0)
 			(effects
 				(font
@@ -4203,7 +4395,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 76.2 69.85 0)
+			(at 76.2 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)

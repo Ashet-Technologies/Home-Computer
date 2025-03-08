@@ -1,7 +1,8 @@
 // Metadata
 
-M2_5 = [2.5, 2.7, 5.0, 2.0]; // screw thickness, hole diameter, nut dia, nut height
-M3   = [3.0, 3.2, 5.5, 2.4]; // screw thickness, hole diameter, nut dia, nut height
+M2_5     = [2.5,   2.7, 5.0, 2.0]; // screw thickness, hole diameter, nut dia, nut height
+M3       = [3.0,   3.2, 5.5, 2.4]; // screw thickness, hole diameter, nut dia, nut height
+UNC_4_40 = [2.845, 3.0, 4.0, 2.0]; // screw thickness, hole diameter, nut dia, nut height
 
 // Configuration
 
@@ -41,6 +42,11 @@ slot_pcb_offset = -9;
 
 assert(slot_pcb_offset + slot_pcb_thickness / 2 < slot_hole_width/2)
 assert(slot_pcb_height < slot_hole_height);
+
+// Distance between the two mounting screw points on the PCB
+slot_mount_screw_dist = 60; // mm
+slot_mount_screw_pcb_dist = 6.4; // mm distance from the PCB top
+slow_mount_screw_type = UNC_4_40;
 
 // Baseplate
 baseplate_thickness = 2.0;
