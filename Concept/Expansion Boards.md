@@ -32,3 +32,8 @@
 - [Shugart Bus](https://en.wikipedia.org/wiki/Floppy_disk_drive_interface) Floppy Driver
 - TOSLINK for Communications Network
 - Wireless Multi-Channel Device (LoRa, Bluetooth, Matter, ...)
+- EtherCAT
+- Sercos III
+- [CAN FD](https://en.wikipedia.org/wiki/CAN_FD)
+- [IO Link](https://en.wikipedia.org/wiki/IO-Link)
+- [HART](https://en.wikipedia.org/wiki/Highway_Addressable_Remote_Transducer_Protocol)
