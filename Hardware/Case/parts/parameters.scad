@@ -49,7 +49,8 @@ slot_mount_screw_pcb_dist = 6.4; // mm distance from the PCB top
 slow_mount_screw_type = UNC_4_40;
 
 // Baseplate
-baseplate_thickness = 2.0;
+baseplate_thickness = 2.0; // Thickness of the baseplate
+baseplate_spread = 41.4; // Distance between "center" and baseplate surface
 
 // Backplane
 
@@ -64,6 +65,17 @@ backplane_inset_height = 80.5;
 // Frontpanel
 frontpanel_thickness = 2.0;
 
+// PCB Sliders
+
+pcb_slider_pcb_margin = 0.15;
+pcb_slider_height = 6.6; // mm
+pcb_slider_width_top = 4; // mm
+pcb_slider_width_bot = 5; // mm
+pcb_slider_holes = 3;
+pcb_slider_hole_margin = 10; // mm
+pcb_slider_case_margin = 5; // mm
+pcb_slider_hole_screw = M2_5;
+
 // Automation Variables:
 RENDER_PART_2D = false;
 RENDER_PART_3D = false;
@@ -71,6 +83,14 @@ RENDER_PART_3D = false;
 // Derived parameters
 
 slot_screw_offset = slot_plate_height/2-slot_screw_inset;
+
+pcb_slider_depth = baseplate_spread - baseplate_thickness/2 - slot_pcb_height / 2 - pcb_slider_pcb_margin; // mm
+pcb_slider_notch_width_top = slot_pcb_thickness + 4 * pcb_slider_pcb_margin; // mm
+pcb_slider_notch_width_bot = slot_pcb_thickness + 2 * pcb_slider_pcb_margin; // mm
+pcb_slider_length = slot_pcb_length - 2 * pcb_slider_case_margin; // mm
+
+echo(pcb_slider_depth, pcb_slider_height);
+assert(pcb_slider_depth < pcb_slider_height);
 
 // Utility modules
 

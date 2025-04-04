@@ -6,6 +6,7 @@ render-all: \
     (render "frontpanel") \
     (render "slot_plate") \
     (render "slot_plate_dummy") \
+    (render "pcb_slider") \
     (render "slot_pcb") \
     (exp-slot "0") \
     (exp-slot "1") \
