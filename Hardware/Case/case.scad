@@ -41,17 +41,17 @@ translate([0,169/2,0])
 
     translate([0,(slot_plate_thickness+frontpanel_thickness)/2,0]) foreach_slot()
     {
-        // translate([0,-0.8,0]) yrotate(180) xrotate(-90) 
-         translate([slot_pcb_offset-slot_pcb_thickness/2,-slot_plate_thickness/2,0])
-        color("green") zrotate(-90) xrotate(-90) import("../Mechanical Prototype/Expansion Board/Expansion Board.stl");
+        translate([slot_pcb_offset-slot_pcb_thickness/2,-slot_plate_thickness/2,0]) color("green") zrotate(-90) xrotate(-90) import("../Mechanical Prototype/Expansion Board/Expansion Board.stl");
+        
+        // translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0]) mat_pcb() slot_pcb();
         
         xcon_slot_plate() xcon_expansion_dummy($i);
+        
 
         color("gray") zmirror() translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,-baseplate_spread + baseplate_thickness/2]) pcb_slider();
         
-        // translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,0])  mat_pcb() slot_pcb();
 
-        zmirror() translate([0,slot_plate_thickness/2,slot_screw_offset]) xrotate(90) screw_m2_5_4mm(); // screw_model(slot_screw_type, slot_screw_length );
+        zmirror() translate([0,slot_plate_thickness/2,slot_screw_offset]) xrotate(90) screw_m2_5_4mm();
     }
 }
 

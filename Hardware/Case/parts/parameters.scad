@@ -67,14 +67,17 @@ frontpanel_thickness = 2.0;
 
 // PCB Sliders
 
-pcb_slider_pcb_margin = 0.15;
+pcb_slider_pcb_vmargin = 0.4;
+pcb_slider_pcb_hmargin = 0.2;
 pcb_slider_height = 6.6; // mm
-pcb_slider_width_top = 4; // mm
-pcb_slider_width_bot = 5; // mm
+pcb_slider_width_top = 4.5; // mm
+pcb_slider_width_bot = 5.5; // mm
 pcb_slider_holes = 3;
 pcb_slider_hole_margin = 10; // mm
 pcb_slider_case_margin = 5; // mm
 pcb_slider_hole_screw = M2_5;
+pcb_slider_bevel_len = 10; // mm
+pcb_slider_bevel_angle = 7.5; // deg
 
 // Automation Variables:
 RENDER_PART_2D = false;
@@ -84,9 +87,9 @@ RENDER_PART_3D = false;
 
 slot_screw_offset = slot_plate_height/2-slot_screw_inset;
 
-pcb_slider_depth = baseplate_spread - baseplate_thickness/2 - slot_pcb_height / 2 - pcb_slider_pcb_margin; // mm
-pcb_slider_notch_width_top = slot_pcb_thickness + 4 * pcb_slider_pcb_margin; // mm
-pcb_slider_notch_width_bot = slot_pcb_thickness + 2 * pcb_slider_pcb_margin; // mm
+pcb_slider_depth = baseplate_spread - baseplate_thickness/2 - slot_pcb_height / 2 - pcb_slider_pcb_vmargin; // mm
+pcb_slider_notch_width_top = slot_pcb_thickness + 4 * pcb_slider_pcb_hmargin; // mm
+pcb_slider_notch_width_bot = slot_pcb_thickness + 2 * pcb_slider_pcb_hmargin; // mm
 pcb_slider_length = slot_pcb_length - 2 * pcb_slider_case_margin; // mm
 
 echo(pcb_slider_depth, pcb_slider_height);
