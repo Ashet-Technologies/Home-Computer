@@ -19,7 +19,7 @@ HIDE_TOP = true;
 
 translate([0,0,-baseplate_spread]) mat_glass() baseplate_mount_plate();
 
-if(!HIDE_TOP)
+if(HIDE_TOP)
 {
     translate([0,0,baseplate_spread]) mat_glass() baseplate_mount_plate();
 }

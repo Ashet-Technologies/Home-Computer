@@ -1,0 +1,258 @@
+#define ALTERED (0-0) ' placeholder for augment/set/...
+
+CON
+  CLK = 300_000_000 ' Hz
+
+  PS2_CLK_MIN = 10_000 ' Hz
+  PS2_CLK_MAX = 16_666 ' Hz
+  
+  PS2_RX_WORD_SIZE = 11 ' 1 Start + 8 Data + 1 Parity + 1 Stop
+  PS2_TX_WORD_SIZE = 12 ' 1 Start + 8 Data + 1 Parity + 1 Stop + 1 Acknowledge
+
+  ' Number of cpu clocks until a true timeout is detected
+  PS2_BIT_RCV_TIMEOUT_TICKS = 2_500 * (CLK / 1_000_000) ' 25ms
+
+  USART_RX_MODE = P_TRUE_A|P_LOCAL_A|P_INVERT_B|P_PLUS2_B|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_10|P_SYNC_RX
+  CLOCK_TIMEOUT_MODE = P_TRUE_A|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_EVENTS_TICKS
+  OPEN_DRAIN_MODE = P_TRUE_A|P_LOCAL_A|P_TRUE_B|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_NORMAL
+
+  RTS_DELAY_TICKS = 100 * (CLK / 1_000_000) ' 100us
+
+#include "fifo.h"
+
+DAT
+  org 0
+
+  entry
+    MOV config_base, PTRB ' MODULE.CODE_BASE
+    ADD config_base, ##$800
+
+    MOV fifo, #input_fifo
+    MOV fifo_address, config_base ' MODULE.FIFO[0]
+    CALL #fifo_init
+
+    MOV fifo, #output_fifo
+    MOV fifo_address, config_base
+    ADD fifo_address, #4 * FIFO_CONFIG_SIZE ' MODULE.FIFO[4]
+    CALL #fifo_init
+
+    ' compute the I/O pins from COGID
+    COGID PS2_DAT
+    SUB PS2_DAT, #1 ' subtract 1 as we're using pins 0...7 with module 1
+    SHL PS2_DAT, #3 ' multiply with 8 to get base pin
+    ADD PS2_DAT, #4 ' 32 => 36
+
+    MOV   PS2_CLK, PS2_DAT
+    ADD   PS2_CLK, #2 ' 36 => 38
+
+    CALL #setup_rx_mode
+
+
+  main_loop
+    TESTP PS2_CLK WC ' poll for CLK timeout
+    IF_C JMP #reset_usart
+
+    TESTP PS2_DAT WC ' poll for data
+    IF_C JMP #receive_word
+
+
+    MOV fifo, #input_fifo
+    CALL #fifo_read_nonblocking
+    IF_NZ JMP #receive_out_data
+
+    JMP #main_loop
+
+  '''
+  ''' Receives and queues data from RXD into the FIFO
+  '''
+  receive_out_data
+    ' mark the send buffer as ready, ignoring previously
+    ' stored bytes:
+    MOV send_buffer_ready, #1
+    MOV send_buffer, fifo_data
+
+    JMP #main_loop
+  
+  '''
+  ''' Resets the USART when a timeout was detected by PS2_CLK
+  '''
+  reset_usart
+    AKPIN PS2_CLK
+
+    ' disable smart pin receiver, then check if we have data to send 
+    ' (synchronously)
+    DIRL PS2_DAT
+    
+    CMP send_buffer_ready, #0 WZ
+    IF_NZ CALL #send_word
+    
+    ' Enable smart-pin receiver again:
+    DIRH PS2_DAT
+
+    JMP #main_loop
+
+  '''
+  ''' Sends the word stored in 'send_buffer'
+  '''
+  send_word
+    ' switch to bitbang mode:
+    CALL #setup_io_mode
+    
+    DRVL PS2_CLK
+
+    WAITX ##RTS_DELAY_TICKS
+
+    DRVL PS2_DAT
+    DRVH PS2_CLK
+    
+    WAITX ##5 * (CLK / 1_000_000) ' 5us
+
+    ONES INA, send_buffer WC       ' compute parity
+    BITNC send_buffer, #8           ' set parity bit
+    BITH send_buffer, #9 addbits 1 ' set stop bit and "ack" bit high
+
+    MOV tmp, #11 ' We transfer 8 data bits + 1 parity bit + 1 stop bit + 1 ack bit
+  .word_loop
+
+  .wait_low
+    TESTP PS2_CLK WC
+    IF_C JMP #.wait_low
+
+
+    SHR send_buffer, #1 WC
+    DRVC PS2_DAT
+
+  .wait_high
+    TESTP PS2_CLK WC
+    IF_NC JMP #.wait_high
+
+    DJNZ tmp, #.word_loop
+
+    TESTPN PS2_DAT WC
+    ' TODO: Evaluate ACK!
+
+    ' mark the word as sent:
+    MOV send_buffer_ready, #0
+
+    ' switch back to regular receive mode by using a tail call:
+    JMP #setup_rx_mode
+
+  '''
+  ''' Reads the received word from the USART in PS2_DAT and sends it out over TXD.
+  '''
+  receive_word
+
+    ' Data comes in left-aligned
+    RDPIN data, PS2_DAT
+    SHR data, #32 - PS2_RX_WORD_SIZE ' right-align
+
+    MOV tmp, data
+    AND tmp, ##%1_0_00000000_1    ' mask both start and stop bit
+    CMP tmp, ##%1_0_00000000_0 WZ ' mask with start = 0 and stop = 1
+    IF_NZ JMP #receive_word_format_err
+
+    ONES INA, data WC           ' discard result and compute parity into C
+    IF_C JMP #receive_word_parity_err ' check for even number of bits
+
+    SHR data, #1   ' drop start bit
+    AND data, #$FF ' mask out rest of the bits
+
+
+    MOV fifo, #output_fifo
+    MOV fifo_data, data
+    CALL #fifo_write_nonblocking
+
+    JMP #main_loop
+
+  '''
+  ''' Handle invalid frame format
+  '''
+  receive_word_format_err
+    ' TODO: Implement error handling
+    JMP #main_loop
+  
+  '''
+  ''' Handle invalid partiy error
+  '''
+  receive_word_parity_err
+    ' TODO: Implement error handling
+    JMP #main_loop
+
+  setup_io_mode
+    DIRL PS2_CLK
+    DIRL PS2_DAT
+
+    WRPIN ##OPEN_DRAIN_MODE, PS2_CLK
+    WRPIN ##OPEN_DRAIN_MODE, PS2_DAT
+
+    DRVH PS2_CLK
+    DRVH PS2_DAT
+    RET 
+
+  setup_rx_mode
+    DIRL PS2_CLK
+    DIRL PS2_DAT
+
+    ' this runs the timeout detector
+    '
+    ' HIGH = float
+    ' LOW  = logic
+    ' A    = ! SELF
+    '
+    ' Timeout on X Clocks Of Missing A-Input High/Rise/Edge (%10010 AND Y[2])
+    '   X[31:0] establishes how many clocks before a timeout due to no A-input high/rise/edge occurring.
+    '   Y[1:0] establishes A-input high/rise/edge sensitivity:
+    '     %01 = A-input rise
+
+    ' WRPIN ##P_INVERT_A|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_ASYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_NORMAL, PS2_CLK
+    WRPIN ##CLOCK_TIMEOUT_MODE,        PS2_CLK
+    WXPIN ##PS2_BIT_RCV_TIMEOUT_TICKS, PS2_CLK ' clocks until timeout
+    WYPIN #%1_01,                      PS2_CLK ' Timeout on A-input rise
+
+    ' this runs the USART.
+    '
+    ' HIGH = float
+    ' LOW  = logic
+    ' A    = SELF
+    ' B    = ! PS2_CLK
+    '
+    ' Synchronous Serial Receive (%11101)
+    '   CLK = PS2_CLK
+    '   BITS = 11
+    '   X[5] selects the A input sample position relative to the B input edge:
+    '     0 => 0 selects the A input sample just before the B input edge was registered. This requires no hold time on the part of the sender.
+    '   X[4:0] sets the number of bits, minus 1. For example, a value of 7 will set the word size to 8 bits.
+    '     10 => 11 bit
+    '
+    WRPIN ##USART_RX_MODE,     PS2_DAT
+    WXPIN #PS2_RX_WORD_SIZE-1, PS2_DAT ' Word Size - 1
+    WYPIN #0,                  PS2_DAT ' unused
+
+    ' Enable both timeout and usart RX
+    DIRH PS2_CLK
+    DIRH PS2_DAT
+
+    RET 
+
+  data
+    long 0
+
+  tmp
+    long 0
+
+  send_buffer_ready
+    long 0
+
+  send_buffer
+    long 0
+
+  config_base LONG 0    ' base address of config data
+
+  input_fifo  LONG 0, 0 ' base address, config address
+  output_fifo LONG 0, 0 ' base address, config address
+
+
+  PS2_DAT LONG 0 ' 36 ' CLK= +2
+  PS2_CLK LONG 0 ' 38 ' DAT= -2
+
+#include "fifo.impl"

@@ -1,0 +1,11 @@
+
+
+
+ps2-input: (compile-expansion "./PS2 Input")
+
+
+
+compile-expansion folder:
+    propan -o "{{folder}}/firmware.bin" "{{folder}}/firmware.propan" 
+    ashet-exp encode -o "{{folder}}/eeprom.bin" --firmware "{{folder}}/firmware.bin" "{{folder}}/eeprom.json"
+    hexdump -C "{{folder}}/eeprom.bin" > "{{folder}}/eeprom.hex"

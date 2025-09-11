@@ -1,0 +1,400 @@
+const CLK = 300_000_000 // Hz
+
+const PS2_CLK_MIN = 10_000 // Hz
+const PS2_CLK_MAX = 16_666 // Hz
+
+const PS2_RX_WORD_SIZE = 11 // 1 Start + 8 Data + 1 Parity + 1 Stop
+const PS2_TX_WORD_SIZE = 12 // 1 Start + 8 Data + 1 Parity + 1 Stop + 1 Acknowledge
+
+// Number of cpu clocks until a true timeout is detected
+const PS2_BIT_RCV_TIMEOUT_TICKS = ticks(CLK, us=2500) 
+
+const USART_RX_MODE      = P_TRUE_A|P_LOCAL_A|P_INVERT_B|P_PLUS2_B|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_10|P_SYNC_RX
+const CLOCK_TIMEOUT_MODE = P_TRUE_A|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_EVENTS_TICKS
+const OPEN_DRAIN_MODE    = P_TRUE_A|P_LOCAL_A|P_TRUE_B|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_SYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_NORMAL
+
+const RTS_DELAY_TICKS = ticks(CLK, us=100)
+
+// #include "fifo.h"
+const SLOT_RX_FIFO_WPTR_B  = 0 // write pointer
+const SLOT_RX_FIFO_RPTR_B  = 1 // read pointer 
+const SLOT_RX_FIFO_LIMIT_W = 1 // number of elements
+ 
+const FIFO_CONFIG_SIZE = 8 // bytes
+
+const FIFO_ALTx_BASE = 0
+const FIFO_ALTx_CONFIG = 1
+// #endinclude "fifo.h"
+
+.cogexec
+
+entry:
+  MOV config_base, PTRB // MODULE.CODE_BASE
+  ADD config_base, aug(0x800)
+
+  MOV  fifo, &input_fifo
+  MOV  fifo_address, config_base // MODULE.FIFO[0]
+  CALL fifo_init
+
+  MOV  fifo, &output_fifo
+  MOV  fifo_address, config_base
+  ADD  fifo_address, 4 * FIFO_CONFIG_SIZE // MODULE.FIFO[4]
+  CALL fifo_init
+
+  // compute the I/O pins from COGID
+  COGID PS2_DAT
+  SUB   PS2_DAT, 1 // subtract 1 as we're using pins 0...7 with module 1
+  SHL   PS2_DAT, 3 // multiply with 8 to get base pin
+  ADD   PS2_DAT, 4 // 32 => 36
+
+  MOV   PS2_CLK, PS2_DAT
+  ADD   PS2_CLK, 2 // 36 => 38
+
+  CALL setup_rx_mode
+
+main_loop:
+  TESTP PS2_CLK :wc // poll for CLK timeout
+  if(c) JMP reset_usart
+
+  TESTP PS2_DAT :wc // poll for data
+  if(c) JMP receive_word
+
+
+  MOV  fifo, &input_fifo
+  CALL fifo_read_nonblocking
+  if(!z) JMP receive_out_data
+
+  JMP main_loop
+
+///
+/// Receives and queues data from RXD into the FIFO
+///
+receive_out_data:
+  // mark the send buffer as ready, ignoring previously
+  // stored bytes:
+  MOV send_buffer_ready, 1
+  MOV send_buffer, fifo_data
+
+  JMP main_loop
+  
+///
+/// Resets the USART when a timeout was detected by PS2_CLK
+///
+reset_usart:
+  AKPIN PS2_CLK
+
+  // disable smart pin receiver, then check if we have data to send 
+  // (synchronously)
+  DIRL PS2_DAT
+  
+  CMP send_buffer_ready, 0 :wz
+  if(!z) CALL send_word
+  
+  // Enable smart-pin receiver again:
+  DIRH PS2_DAT
+
+  JMP main_loop
+
+///
+/// Sends the word stored in 'send_buffer'
+///
+send_word:
+  // switch to bitbang mode:
+  CALL setup_io_mode
+  
+  DRVL PS2_CLK
+
+  WAITX aug(RTS_DELAY_TICKS)
+
+  DRVL PS2_DAT
+  DRVH PS2_CLK
+  
+  WAITX aug(ticks(CLK, us=5))
+
+  ONES  INA, send_buffer :wc         // compute parity
+  BITNC send_buffer, 8               // set parity bit
+  BITH  send_buffer, bitrange(9, 10) // set stop bit and "ack" bit high
+
+  MOV tmp, 11 // We transfer 8 data bits + 1 parity bit + 1 stop bit + 1 ack bit
+.word_loop:
+
+.wait_low:
+  TESTP PS2_CLK :wc
+  if(c) JMP .wait_low
+
+  SHR send_buffer, 1 :wc
+  DRVC PS2_DAT
+
+.wait_high:
+  TESTP PS2_CLK :wc
+  if(!c) JMP .wait_high
+
+  DJNZ tmp, .word_loop
+
+  TESTPN PS2_DAT :wc
+  // TODO: Evaluate ACK!
+
+  // mark the word as sent:
+  MOV send_buffer_ready, 0
+
+  // switch back to regular receive mode by using a tail call:
+  JMP setup_rx_mode
+
+///
+/// Reads the received word from the USART in PS2_DAT and sends it out over TXD.
+///
+receive_word:
+  // Data comes in left-aligned
+  RDPIN data, PS2_DAT
+  SHR   data, 32 - PS2_RX_WORD_SIZE // right-align
+
+  MOV tmp, data
+  AND tmp, aug(0b1_0_00000000_1)     // mask both start and stop bit
+  CMP tmp, aug(0b1_0_00000000_0) :wz // mask with start = 0 and stop = 1
+  if(!z) JMP receive_word_format_err
+
+  ONES INA, data :wc                // discard result and compute parity into C
+  if(c) JMP receive_word_parity_err // check for even number of bits
+
+  SHR data, 1    // drop start bit
+  AND data, 0xFF // mask out rest of the bits
+
+  MOV  fifo, &output_fifo
+  MOV  fifo_data, data
+  CALL fifo_write_nonblocking
+
+  JMP main_loop
+
+///
+/// Handle invalid frame format
+///
+receive_word_format_err:
+  // TODO: Implement error handling
+  JMP main_loop
+  
+///
+/// Handle invalid partiy error
+///
+receive_word_parity_err:
+  // TODO: Implement error handling
+  JMP main_loop
+
+setup_io_mode:
+  DIRL PS2_CLK
+  DIRL PS2_DAT
+
+  WRPIN aug(OPEN_DRAIN_MODE), PS2_CLK
+  WRPIN aug(OPEN_DRAIN_MODE), PS2_DAT
+
+  DRVH PS2_CLK
+  DRVH PS2_DAT
+  RET
+
+///
+/// Sets up receiver mode which runs a timeout detector on PS2_CLK and a USART RX on PS2_DAT
+///
+setup_rx_mode:
+  DIRL PS2_CLK
+  DIRL PS2_DAT
+
+  // this runs the timeout detector
+  //
+  // HIGH = float
+  // LOW  = logic
+  // A    = ! SELF
+  //
+  // Timeout on X Clocks Of Missing A-Input High/Rise/Edge (%10010 AND Y[2])
+  //   X[31:0] establishes how many clocks before a timeout due to no A-input high/rise/edge occurring.
+  //   Y[1:0] establishes A-input high/rise/edge sensitivity:
+  //     %01 = A-input rise
+
+  // WRPIN ##P_INVERT_A|P_LOCAL_A|P_PASS_AB|P_LOGIC_A|P_ASYNC_IO|P_TRUE_IN|P_TRUE_OUTPUT|P_HIGH_FLOAT|P_LOW_FAST|P_TT_00|P_NORMAL, PS2_CLK
+  WRPIN aug(CLOCK_TIMEOUT_MODE),        PS2_CLK
+  WXPIN aug(PS2_BIT_RCV_TIMEOUT_TICKS), PS2_CLK // clocks until timeout
+  WYPIN 0b1_01,                         PS2_CLK // Timeout on A-input rise
+
+  // this runs the USART.
+  //
+  // HIGH = float
+  // LOW  = logic
+  // A    = SELF
+  // B    = ! PS2_CLK
+  //
+  // Synchronous Serial Receive (%11101)
+  //   CLK = PS2_CLK
+  //   BITS = 11
+  //   X[5] selects the A input sample position relative to the B input edge:
+  //     0 => 0 selects the A input sample just before the B input edge was registered. This requires no hold time on the part of the sender.
+  //   X[4:0] sets the number of bits, minus 1. For example, a value of 7 will set the word size to 8 bits.
+  //     10 => 11 bit
+  //
+  WRPIN aug(USART_RX_MODE), PS2_DAT
+  WXPIN PS2_RX_WORD_SIZE-1, PS2_DAT // Word Size - 1
+  WYPIN 0,                  PS2_DAT // unused
+
+  // Enable both timeout and usart RX
+  DIRH PS2_CLK
+  DIRH PS2_DAT
+
+  RET 
+
+var data:              LONG 0
+var tmp:               LONG 0
+var send_buffer_ready: LONG 0
+var send_buffer:       LONG 0
+
+var config_base:       LONG 0    // base address of config data
+var input_fifo:        LONG 0, 0 // base address, config address
+var output_fifo:       LONG 0, 0 // base address, config address
+
+var PS2_DAT:           LONG 0    // 36 ' CLK= +2
+var PS2_CLK:           LONG 0    // 38 ' DAT= -2
+
+
+// #include "fifo.impl"
+
+/// struct FIFO {
+///   buffer: *u8, // pointer to the fifo buffer
+///   config: *Config, // pointer to the fifo config
+/// }
+/// struct Config {
+///   wptr: u8,
+///   rptr: u8,
+///   limit: u16,
+/// }
+
+///
+/// fifo_init(
+///   in fifo: *reg FIFO, 
+///   in fifo_address: *hub Config
+/// )
+///
+fifo_init:
+  RDLONG fifo_tmp, fifo_address
+  
+  ALTR fifo, 0
+  ADD  fifo_tmp, PTRA // MODULE.RAM_BASE
+
+  ALTR fifo, 1
+  ADD  fifo_address, 4
+
+  RET
+
+///
+/// fifo_write_blocking(
+///   in  fifo:      *reg FIFO, 
+///   in  fifo_data: u8,
+/// )
+/// destroys C, Z
+///
+fifo_write_blocking:
+  MODC _CLR :wc
+  JMP  fifo_write_configurable
+
+///
+/// fifo_write_nonblocking(
+///   in  fifo:      *reg FIFO, 
+///   in  fifo_data: u8,
+///   out Z:         flag,
+/// )
+/// Z=0 => write successful
+/// Z=1 => write would block
+/// destroys C
+///
+fifo_write_nonblocking:
+  MODC _SET :wc
+  JMP  fifo_write_configurable
+
+///
+/// fifo_write_configurable(
+///   in  fifo:      *reg FIFO, 
+///   in  fifo_data: u8,
+///   in  C:         flag,
+///   out Z:         flag,
+/// )
+/// C=0 => blocking
+/// C=1 => non-blocking
+/// Z=0 => write successful
+/// Z=1 => write would block
+///
+fifo_write_configurable:
+  ALTS    fifo,       FIFO_ALTx_CONFIG
+  RDLONG  fifo_tmp,   altered
+  GETBYTE fifo_rptr,  fifo_tmp, SLOT_RX_FIFO_RPTR_B
+  GETBYTE fifo_wptr,  fifo_tmp, SLOT_RX_FIFO_WPTR_B
+  GETWORD fifo_limit, fifo_tmp, SLOT_RX_FIFO_LIMIT_W
+
+  // check if the FIFO would overflow:
+  SUB    fifo_limit, 1 // adjust to "last index" instead of "length"
+  INCMOD fifo_wptr, fifo_limit
+  CMP    fifo_rptr, fifo_wptr :wz
+  if(z & c)  RET
+  if(z & !c) JMP fifo_write_configurable
+  
+  // write fifo_data to (fifo.BASE + fifo_wptr)
+  GETBYTE fifo_tmp,  fifo_tmp, SLOT_RX_FIFO_WPTR_B
+  ALTS    fifo,      FIFO_ALTx_BASE
+  ADD     fifo_tmp,  altered
+  WRBYTE  fifo_data, fifo_tmp
+
+  // write back fifo_wptr
+  ALTS   fifo,      FIFO_ALTx_CONFIG
+  MOV    fifo_tmp,  altered
+  ADD    fifo_tmp,  SLOT_RX_FIFO_WPTR_B
+  WRBYTE fifo_wptr, fifo_tmp
+
+// #ifndef FIFO_MASTER_IMPL
+  COGATN (1<<0) // call the main controller
+// #endif
+
+  RET 
+
+///
+/// fifo_read_nonblocking(
+///   in  fifo:      *reg FIFO, 
+///   out fifo_data: u8,
+///   out Z:         flag,
+/// )
+///
+/// Z=0 => read successful
+/// Z=1 => read would block
+///
+fifo_read_nonblocking:
+  ALTS    fifo,       FIFO_ALTx_CONFIG
+  RDLONG  fifo_tmp,   altered
+  GETBYTE fifo_rptr,  fifo_tmp, SLOT_RX_FIFO_RPTR_B
+  GETBYTE fifo_wptr,  fifo_tmp, SLOT_RX_FIFO_WPTR_B
+  
+  CMP fifo_rptr, fifo_wptr :wz // Check if FIFO is empty
+  if(==) RET
+
+  GETWORD fifo_limit, fifo_tmp, SLOT_RX_FIFO_LIMIT_W
+
+  MOV fifo_tmp, fifo_rptr
+  
+  SUB fifo_limit, 1 // adjust to "last index" instead of "length"
+  INCMOD fifo_tmp, fifo_limit
+
+  ALTS   fifo,      FIFO_ALTx_BASE
+  ADD    fifo_rptr, altered
+  RDBYTE fifo_data, fifo_rptr
+
+  ALTS   fifo, FIFO_ALTx_CONFIG
+  MOV    fifo_rptr, altered
+  ADD    fifo_rptr, SLOT_RX_FIFO_RPTR_B
+  WRBYTE fifo_tmp,  fifo_rptr
+
+  RET
+
+// public variables:
+var fifo:         LONG 0
+var fifo_address: LONG 0
+var fifo_data:    LONG 0
+
+// private variables:
+var fifo_tmp:   LONG 0
+var fifo_limit: LONG 0
+var fifo_rptr:  LONG 0
+var fifo_wptr:  LONG 0
+
+// #endinclude "fifo.impl"
