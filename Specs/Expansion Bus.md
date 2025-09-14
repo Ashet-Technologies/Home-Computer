@@ -71,10 +71,14 @@ The following addresses are reserved on the bus in addition to the specification
 
 | Address | Use                  |
 | ------: | -------------------- |
-|    0x50 | Metadata EEPROM      |
+|    0x57 | Metadata EEPROM      |
 |    0x70 | Backplane I²C Switch |
 
 All other addresses on the I²C bus are available to the expansion card and will not be occupied by the host system.
+
+> **LORE:**
+> The *Metadata EEPROM* uses the address `0x57` instead of `0x50`, as `0x50` is the default for EEPROMs and these might already be taken by other
+> EEPROM systems like the [DDC](https://en.wikipedia.org/wiki/Display_Data_Channel) [EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data) EEPROM.
 
 ### General Purpose I/O
 
