@@ -19,6 +19,7 @@
 - Retro Joystick (SUB-D 9, C64, Atari, ...)
 - VLSI Video Card (<https://www.vlsi.fi/en/products/vs23s040.html>)
 - VLSI Audio Card (<https://www.vlsi.fi/en/products/vs1053.html>)
+- RaspberryPi Compute Module carrier ("SuperCPU")
 
 ## Community
 
