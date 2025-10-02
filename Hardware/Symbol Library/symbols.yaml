@@ -1,0 +1,632 @@
+---
+
+symbols:
+  CH32V003:
+    description:
+
+    width: 3
+    pinout:
+      VDD:
+        type: power-input
+        position: T2
+      VSS:
+        type: power-input
+        position: B2
+      PA1:
+        type: logic-inout
+        position: R10
+      PA2:
+        type: logic-inout
+        position: R11
+      PD0:
+        type: logic-inout
+        position: R1
+      PD1:
+        type: logic-inout
+        position: R2
+      PD2:
+        type: logic-inout
+        position: R3
+      PD3:
+        type: logic-inout
+        position: R4
+      PD4:
+        type: logic-inout
+        position: R5
+      PD5:
+        type: logic-inout
+        position: R6
+      PD6:
+        type: logic-inout
+        position: R7
+      PD7:
+        type: logic-inout
+        position: R8
+      PC0:
+        type: logic-inout
+        position: L1
+      PC1:
+        type: logic-inout
+        position: L2
+      PC2:
+        type: logic-inout
+        position: L3
+      PC3:
+        type: logic-inout
+        position: L4
+      PC4:
+        type: logic-inout
+        position: L5
+      PC5:
+        type: logic-inout
+        position: L6
+      PC6:
+        type: logic-inout
+        position: L7
+      PC7:
+        type: logic-inout
+        position: L8
+
+    variants:
+      CH32V003F4P6:
+        footprint: ~ # TSSOP20
+        pinout:
+          1: PD4
+          2: PD5
+          3: PD6
+          4: PD7
+          5: PA1
+          6: PA2
+          7: VSS
+          8: PD0
+          9: VDD
+          10: PC0
+          11: PC1
+          12: PC2
+          13: PC3
+          14: PC4
+          15: PC5
+          16: PC6
+          17: PC7
+          18: PD1
+          19: PD2
+          20: PD3
+        distributors:
+          lcsc:
+            url: https://www.lcsc.com/product-detail/C5187096.html
+            partno: C5187096
+
+      CH32V003F4U6:
+        footprint: ~ # QFN20
+        pinout:
+          0: VSS # exposed pad?
+          1: PD7
+          2: PA1
+          3: PA2
+          4: VSS
+          5: PD0
+          6: VDD
+          7: PC0
+          8: PC1
+          9: PC2
+          10: PC3
+          11: PC4
+          12: PC5
+          13: PC6
+          14: PC7
+          15: PD1
+          16: PD2
+          17: PD3
+          18: PD4
+          19: PD5
+          20: PD6
+        distributors:
+          lcsc:
+            url: https://www.lcsc.com/product-detail/C5299908.html
+            partno: C5299908
+
+      CH32V003A4M6:
+        footprint: ~ # SOP16
+        pinout:
+          1: PC1
+          2: PC2
+          3: PC3
+          4: PC4
+          5: PC6
+          6: PC7
+          7: PD1
+          8: PD4
+          9: PD5
+          10: PD6
+          11: PD7
+          12: PA1
+          13: PA2
+          14: VSS
+          15: VDD
+          16: PC0
+        distributors:
+          lcsc:
+            url: https://www.lcsc.com/product-detail/C5346357.html
+            partno: C5346357
+
+      CH32V003J4M6:
+        footprint: ~ # SOP8
+        pinout:
+          1: PD5 # multi-mapping: PD5, PA1
+          2: VSS 
+          3: PA2
+          4: VDD
+          5: PC1
+          6: PC2
+          7: PC4
+          8: PD4 # multi-mapping: PD4, PD5, PD1
+        distributors:
+          lcsc:
+            url: https://www.lcsc.com/product-detail/C5346354.html
+            partno: C5346354
+
+
+  DS1307+:
+    description: 64 x 8, Serial, I2C Real-Time Clock
+
+    width: 5
+    pinout:
+      GND:
+        type: power-input
+        position: B3
+      VCC:
+        type: power-input
+        position: T2
+      V_{BAT}:
+        type: power-input
+        position: T4
+      X1:
+        type: passive
+        position: L4
+      X2:
+        type: passive
+        position: L5
+      SCL:
+        type: open-collector
+        position: L1
+      SDA:
+        type: open-collector
+        position: L2
+      SQW/OUT:
+        type: logic-output
+        position: R3
+
+    variants:
+      DS1307Z+:
+        footprint: # 8 SO (150 mils)
+        pinout:
+          1: X1
+          2: X2
+          3: V_{BAT}
+          4: GND
+          5: SDA
+          6: SCL
+          7: SQW/OUT
+          8: VCC
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/analog-devices-inc-maxim-integrated/DS1307Z/956882
+            partno: DS1307Z+-ND
+
+  LTC6930CMS8-8.00#PBF-ND:
+    description: 8 MHz Precision µPower Oscillators
+
+    width: 4
+    pinout:
+      VCC_{1}:
+        type:     power-input
+        position: T2
+      VCC_{2}:
+        type:     power-input
+        position: T3
+      GND_{1}:
+        type:     power-input
+        position: B2
+      GND_{2}:
+        type:     power-input
+        position: B3
+      DIVA:
+        type:     logic-input
+        position: L1
+      DIVB:
+        type:     logic-input
+        position: L2
+      DIVC:
+        type:     logic-input
+        position: L3
+      OUT:
+        type:     logic-output
+        position: R2
+
+    variants:
+      LTC6930CMS8-8.00#PBF-ND:
+        footprint: ~ # MS8 PACKAGE 8-LEAD PLASTIC MSOP
+        pinout:
+          1: VCC_{1}
+          2: GND_{1}
+          3: DIVA
+          4: DIVB
+          5: DIVC
+          6: GND_{2}
+          7: OUT
+          8: VCC_{2}
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/analog-devices-inc/LTC6930CMS8-8-00-PBF/1927829
+            partno: LTC6930CMS8-8.00#PBF-ND
+
+  SMD1206B050TF/15:
+    description: SMD 1206 PTC Resettable Fuse, 0.5 A, 0.015 Ω
+    ref: F
+    pinout:
+      1:
+        type:     passive
+        position: L1
+      2:        
+        type:     passive
+        position: R1
+    variants:
+      SMD1206B050TF/15:
+        graphic: "polyfuse"
+        footprint: "Fuse:Fuse_1206_3216Metric"
+        pinout:
+          1: 1
+          2: 2
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/yageo/SMD1206B050TF-15/13689651
+            partno: 13-SMD1206B050TF/15CT-ND
+
+  SN74LVC1G08:
+    description: Single 2-Input Positive-AND Gate
+
+    pinout:
+      VCC:
+        type:     power-input
+        position: T1
+      GND:
+        type:     power-input
+        position: B1
+      A:
+        type:     logic-input
+        position: L1
+      B:
+        type:     logic-input
+        position: L3
+      Y:
+        type:     logic-output
+        position: R2
+
+    variants:
+      SN74LVC1G08DBVR:
+        footprint: ~ # SOT-23
+        pinout:
+          1: A
+          2: B
+          3: GND
+          4: Y
+          5: VCC
+
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/texas-instruments/SN74LVC1G08DBVR/385718
+            partno: 296-11601-1-ND
+
+  NC7SZ125M5X:
+    description: TinyLogic UHS Buffer with Three-State Output
+
+    pinout:
+      VCC:
+        type:     power-input
+        position: T1
+      GND:
+        type:     power-input
+        position: B1
+      ~{OE}: 
+        type:     power-input
+        position: L3
+      A:
+        type:     power-input
+        position: L1
+      Y:
+        type:     power-input
+        position: R2
+
+    variants:
+      NC7SZ125M5X:
+        footprint: ~ # SOT-23
+        pinout:
+          1: ~{OE}
+          2: A
+          3: GND
+          4: Y
+          5: VCC
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/onsemi/NC7SZ125M5X/673365
+            partno: NC7SZ125M5XCT-ND
+
+  TCA9548A:
+    description: Low-Voltage 8-Channel I2C Switch with Reset
+    width: 5
+    pinout:
+      VCC:
+        type:     power-input
+        position: T3
+      GND:
+        type:     power-input
+        position: B3
+      SDA:
+        type: open-collector
+        position: L1
+      SCL:
+        type: open-collector
+        position: L2
+      ~{RESET}:
+        type: logic-input
+        position: L4
+      A0:
+        type: logic-input
+        position: L6
+      A1:
+        type: logic-input
+        position: L7
+      A2:
+        type: logic-input
+        position: L8
+      SD0:
+        type: open-collector
+        position: R1
+      SC0:
+        type: open-collector
+        position: R2
+      SD1:
+        type: open-collector
+        position: R4
+      SC1:
+        type: open-collector
+        position: R5
+      SD2:
+        type: open-collector
+        position: R7
+      SC2:
+        type: open-collector
+        position: R8
+      SD3:
+        type: open-collector
+        position: R10
+      SC3:
+        type: open-collector
+        position: R11
+      SD4:
+        type: open-collector
+        position: R13
+      SC4:
+        type: open-collector
+        position: R14
+      SD5:
+        type: open-collector
+        position: R16
+      SC5:
+        type: open-collector
+        position: R17
+      SD6:
+        type: open-collector
+        position: R19
+      SC6:
+        type: open-collector
+        position: R20
+      SD7:
+        type: open-collector
+        position: R22
+      SC7:
+        type: open-collector
+        position: R23
+
+    variants:
+      TCA9548APWR:
+        footprint: ~ # TSSOP-24 (PW)
+        pinout:
+          1: A0
+          2: A1
+          3: ~{RESET}
+          4: SD0
+          5: SC0
+          6: SD1
+          7: SC1
+          8: SD2
+          9: SC2
+          10: SD3
+          11: SC3
+          12: GND
+          13: SD4
+          14: SC4
+          15: SD5
+          16: SC5
+          17: SD6
+          18: SC6
+          19: SD7
+          20: SC7
+          21: A2
+          22: SCL
+          23: SDA
+          24: VCC
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/texas-instruments/TCA9548APWR/3615458
+            partno: 296-34905-1-ND
+
+  CD74HC221:
+    description: High-Speed CMOS Logic Dual Monostable Multivibrator with Reset
+
+    width: 7
+
+    pinout:
+      VCC:
+        type:     power-input
+        position: T4
+      GND:
+        type:     power-input
+        position: B4
+      ~{1A}:
+        type:     logic-input
+        position: L1
+      1B:
+        type:     logic-input
+        position: L2
+      ~{1R}:
+        type:     logic-input
+        position: L3
+      1Q:
+        type:     logic-output
+        position: R1
+      ~{1Q}:
+        type:     logic-output
+        position: R2
+        style: inverted
+      1C_{X}R_{X}:
+        type:     passive
+        position: T3
+      1C_{X}:
+        type:     passive
+        position: T2
+      ~{2A}:
+        type:     logic-input
+        position: L5
+      2B:
+        type:     logic-input
+        position: L6
+      ~{2R}:
+        type:     logic-input
+        position: L7
+      2Q:
+        type:     logic-output
+        position: R5
+      ~{2Q}:
+        type:     logic-output
+        position: R6
+        style: inverted
+      2C_{X}R_{X}:
+        type:     passive
+        position: T5
+      2C_{X}:
+        type:     passive
+        position: T6
+
+    variants:
+      CD74HC221M96:
+        footprint: # 16-SOIC (0,154", 3,90mm Breite)
+        pinout:
+          1: ~{1A}
+          2: 1B
+          3: ~{1R}
+          4: ~{1Q}
+          5: 2Q
+          6: 2C_{X}
+          7: 2C_{X}R_{X}
+          8: GND
+          9: ~{2A}
+          10: 2B
+          11: ~{2R}
+          12: ~{2Q}
+          13: 1Q
+          14: 1C_{X}
+          15: 1C_{X}R_{X}
+          16: VCC
+        distributors:
+          digikey:
+            url: https://www.digikey.de/de/products/detail/texas-instruments/CD74HC221M96/1242188
+            partno: 296-17789-1-ND
+          lcsc:
+            url: https://www.lcsc.com/product-detail/C133954.html
+            partno: C133954
+          mouser:
+            url: https://www.mouser.de/ProductDetail/Texas-Instruments/CD74HC221M96?qs=gb35HGp1gQKI%2FNBn99hmtQ%3D%3D
+            partno: 595-CD74HC221M96
+
+
+footprints:
+  dummy: ~
+
+graphics:
+  polyfuse:
+    pins:
+      - 1
+      - 2
+    code: |
+      (polyline
+          (pts
+              (xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
+          )
+          (stroke
+              (width 0)
+              (type default)
+          )
+          (fill
+              (type none)
+          )
+      )
+      (rectangle
+          (start -0.508 1.27)
+          (end 0.508 -1.27)
+          (stroke
+              (width 0)
+              (type default)
+          )
+          (fill
+                  (type none)
+          )
+      )
+      (polyline
+          (pts
+              (xy 0 2.54) (xy 0 -2.54)
+          )
+          (stroke
+              (width 0)
+              (type default)
+          )
+          (fill
+              (type none)
+          )
+      )
+      (pin passive line
+          (at 0 2.54 270)
+          (length 0.635)
+          (name "~"
+              (effects
+                  (font
+                      (size 1.27 1.27)
+                  )
+              )
+          )
+          (number "1"
+              (effects
+                  (font
+                      (size 1.27 1.27)
+                  )
+              )
+          )
+      )
+      (pin passive line
+          (at 0 -2.54 90)
+          (length 0.635)
+          (name "~"
+              (effects
+                  (font
+                      (size 1.27 1.27)
+                  )
+              )
+          )
+          (number "2"
+              (effects
+                  (font
+                      (size 1.27 1.27)
+                  )
+              )
+          )
+      )

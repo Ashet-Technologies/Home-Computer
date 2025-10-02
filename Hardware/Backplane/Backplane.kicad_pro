@@ -487,19 +487,94 @@
     "net_colors": null,
     "netclass_assignments": {
       "+12V": [
-        "Power"
+        "Power_500mA"
       ],
       "+1V8": [
-        "Power"
+        "Power_500mA"
       ],
       "+3V3": [
-        "Power"
+        "Power_500mA"
       ],
       "+5V": [
-        "Power"
+        "Power_500mA"
+      ],
+      "/Module Slot 1/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 1/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 1/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 2/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 2/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 2/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 3/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 3/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 3/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 4/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 4/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 4/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 5/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 5/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 5/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 6/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 6/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 6/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 7/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Module Slot 7/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Module Slot 7/MOD_+5V": [
+        "Power_500mA"
       ],
       "GND": [
-        "Power"
+        "Power_500mA"
+      ],
+      "MAIN_+12V": [
+        "Power_2A"
+      ],
+      "MAIN_+3V3": [
+        "Power_2A"
+      ],
+      "MAIN_+5V": [
+        "Power_2A"
+      ],
+      "MAIN_GND": [
+        "Power_2A"
       ]
     },
     "netclass_patterns": []
