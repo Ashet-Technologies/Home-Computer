@@ -2381,6 +2381,86 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "+1"
+		(exclude_from_sim no)
+		(at 40.64 60.325 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "04002af5-a0ed-4739-8922-2a5546b4101f")
+	)
+	(text "+3"
+		(exclude_from_sim no)
+		(at 40.64 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "157728c6-b376-464c-ab1c-114ed74400f2")
+	)
+	(text "+0"
+		(exclude_from_sim no)
+		(at 74.295 60.325 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "53521eec-55dd-4472-842d-ad390cac35e7")
+	)
+	(text "+5"
+		(exclude_from_sim no)
+		(at 40.64 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8e7cbd78-89f3-4a99-8a67-b1d5a688e5e5")
+	)
+	(text "+7"
+		(exclude_from_sim no)
+		(at 40.64 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "993261e6-324a-4226-b33d-8d8ac6fa01f8")
+	)
+	(text "+6"
+		(exclude_from_sim no)
+		(at 74.295 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "be36cb8f-1225-4efd-951c-34f88c4a1c24")
+	)
+	(text "+4"
+		(exclude_from_sim no)
+		(at 74.295 55.245 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c27cef4d-690c-48c0-82f2-0310b63af31b")
+	)
+	(text "+2"
+		(exclude_from_sim no)
+		(at 74.295 57.785 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dc62684c-ae94-4425-81b1-dc9c99be7d30")
+	)
 	(junction
 		(at 88.9 38.1)
 		(diameter 0)

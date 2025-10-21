@@ -16,7 +16,7 @@ compile-expansion folder pid:
     {{root_dir}}/Scripts/ExpCard.py \
         --output "{{folder}}/eeprom.json" \
         "{{vendor_id}}" "{{pid}}" "{{dummy_serial}}"
-    
+
     [ -f "{{folder}}/firmware.propan" ] && propan \
         --output "{{folder}}/firmware.bin" \
         --format flat \
@@ -29,7 +29,7 @@ compile-expansion folder pid:
     [ -f "{{folder}}/firmware.propan" ] || ashet-exp encode \
         --output "{{folder}}/eeprom.bin" \
         "{{folder}}/eeprom.json" || true 
-    
+
     [ -f "{{folder}}/eeprom.json" ]
 
     hexdump -C "{{folder}}/eeprom.bin" \
