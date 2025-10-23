@@ -17,18 +17,24 @@ compile-expansion folder pid:
         --output "{{folder}}/eeprom.json" \
         "{{vendor_id}}" "{{pid}}" "{{dummy_serial}}"
 
-    [ -f "{{folder}}/firmware.propan" ] && propan \
-        --output "{{folder}}/firmware.bin" \
-        --format flat \
-        "{{folder}}/firmware.propan" || true 
+    rm -f "{{folder}}/eeprom.bin"
+    rm -f "{{folder}}/firmware.bin"
 
-    [ -f "{{folder}}/firmware.propan" ] && ashet-exp encode \
-        --output "{{folder}}/eeprom.bin" \
-        --firmware "{{folder}}/firmware.bin" \
-        "{{folder}}/eeprom.json" || true 
-    [ -f "{{folder}}/firmware.propan" ] || ashet-exp encode \
-        --output "{{folder}}/eeprom.bin" \
-        "{{folder}}/eeprom.json" || true 
+    [ -f "{{folder}}/firmware.propan" ] \
+        && propan \
+            --output "{{folder}}/firmware.bin" \
+            --format flat \
+            "{{folder}}/firmware.propan" \
+        && [ -f "{{folder}}/firmware.bin" ]
+
+    [ -f "{{folder}}/firmware.propan" ] \
+        && ashet-exp encode \
+            --output "{{folder}}/eeprom.bin" \
+            --firmware "{{folder}}/firmware.bin" \
+            "{{folder}}/eeprom.json" \
+        || ashet-exp encode \
+            --output "{{folder}}/eeprom.bin" \
+            "{{folder}}/eeprom.json"
 
     [ -f "{{folder}}/eeprom.json" ]
 

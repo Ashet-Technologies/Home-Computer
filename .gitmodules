@@ -7,3 +7,6 @@
 [submodule "Hardware/Case/lib/ScrewsMetric"]
 	path = Hardware/Case/lib/ScrewsMetric
 	url = https://github.com/More-Wrong/ScrewsMetric
+[submodule "Hardware/Debug Probe/debugprobe"]
+	path = Hardware/Debug Probe/debugprobe
+	url = https://github.com/raspberrypi/debugprobe

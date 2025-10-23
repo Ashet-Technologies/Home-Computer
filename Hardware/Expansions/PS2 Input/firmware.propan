@@ -7,7 +7,7 @@ const PS2_RX_WORD_SIZE = 11 // 1 Start + 8 Data + 1 Parity + 1 Stop
 const PS2_TX_WORD_SIZE = 12 // 1 Start + 8 Data + 1 Parity + 1 Stop + 1 Acknowledge
 
 // Number of cpu clocks until a true timeout is detected
-const PS2_BIT_RCV_TIMEOUT_TICKS = ticks(CLK, us=2500) 
+const PS2_BIT_RCV_TIMEOUT_TICKS = ticks(CLK, us=2500)
 
 const USART_RX_MODE      = P_TRUE_A | P_LOCAL_A | P_INVERT_B | P_PLUS1_B | P_PASS_AB | P_LOGIC_A | P_SYNC_IO | P_TRUE_IN | P_TRUE_OUTPUT | P_HIGH_FLOAT | P_LOW_FAST | P_TT_10 | P_SYNC_RX
 const CLOCK_TIMEOUT_MODE = P_TRUE_A | P_LOCAL_A | P_PASS_AB  | P_LOGIC_A | P_SYNC_IO | P_TRUE_IN | P_TRUE_OUTPUT | P_HIGH_FLOAT | P_LOW_FAST | P_TT_00 | P_EVENTS_TICKS
@@ -32,51 +32,144 @@ entry:
   MOV config_base, PTRB // MODULE.CODE_BASE
   ADD config_base, aug(0x800)
 
-  MOV  fifo, &input_fifo
-  MOV  fifo_address, config_base // MODULE.FIFO[0]
+  MOV  fifo, &input_fifo0
+  MOV  fifo_address, config_base      // MODULE.FIFO[0]
   CALL fifo_init
 
-  MOV  fifo, &output_fifo
-  MOV  fifo_address, config_base
-  ADD  fifo_address, 4 * FIFO_CONFIG_SIZE // MODULE.FIFO[4]
+  MOV  fifo, &input_fifo1
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[1]
+  CALL fifo_init
+
+  MOV  fifo, &input_fifo2
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[2]
+  CALL fifo_init
+
+  MOV  fifo, &input_fifo3
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[3]
+  CALL fifo_init
+
+  MOV  fifo, &output_fifo0
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[4]
+  CALL fifo_init
+
+  MOV  fifo, &output_fifo1
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[5]
+  CALL fifo_init
+
+  MOV  fifo, &output_fifo2
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[6]
+  CALL fifo_init
+
+  MOV  fifo, &output_fifo3
+  ADD  fifo_address, FIFO_CONFIG_SIZE // MODULE.FIFO[7]
   CALL fifo_init
 
   // compute the I/O pins from COGID
-  COGID PS2_DAT
-  SUB   PS2_DAT, 1 // subtract 1 as we're using pins 0...7 with module 1
-  SHL   PS2_DAT, 3 // multiply with 8 to get base pin
-  ADD   PS2_DAT, 0 // 32 => 36
+  COGID PS2_DAT_BASE
+  SUB   PS2_DAT_BASE, 1 // subtract 1 as we're using pins 0...7 with module 1
+  SHL   PS2_DAT_BASE, 3 // multiply with 8 to get base pin
+  ADD   PS2_DAT_BASE, 0 // 32 => 36
 
-  MOV   PS2_CLK, PS2_DAT
-  ADD   PS2_CLK, 1 // 32 => 33
+  MOV   PS2_CLK_BASE, PS2_DAT_BASE
+  ADD   PS2_CLK_BASE, 1 // 32 => 33
 
-  CALL setup_rx_mode
+  MOV   PS2_DAT, PS2_DAT_BASE
+  MOV   PS2_CLK, PS2_CLK_BASE
+  CALL  setup_rx_mode
+
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  CALL  setup_rx_mode
+
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  CALL  setup_rx_mode
+
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  CALL  setup_rx_mode
 
 main_loop:
+  // group 0
+  MOV   PS2_DAT, PS2_DAT_BASE
+  MOV   PS2_CLK, PS2_CLK_BASE
+  MOV   send_buffer, send_buffer0
+  MOV   output_fifo, &output_fifo0
+
   TESTP PS2_CLK :wc // poll for CLK timeout
-  if(c) JMP reset_usart
+  if(c) CALL reset_usart
 
   TESTP PS2_DAT :wc // poll for data
-  if(c) JMP receive_word
+  if(c) CALL receive_word
 
+  MOV   send_buffer0, send_buffer
 
-  MOV  fifo, &input_fifo
+  // group 1
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  MOV   send_buffer, send_buffer1
+  MOV   output_fifo, &output_fifo1
+
+  TESTP PS2_CLK :wc // poll for CLK timeout
+  if(c) CALL reset_usart
+
+  TESTP PS2_DAT :wc // poll for data
+  if(c) CALL receive_word
+
+  MOV   send_buffer1, send_buffer
+
+  // group 2
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  MOV   send_buffer, send_buffer2
+  MOV   output_fifo, &output_fifo2
+
+  TESTP PS2_CLK :wc // poll for CLK timeout
+  if(c) CALL reset_usart
+
+  TESTP PS2_DAT :wc // poll for data
+  if(c) CALL receive_word
+
+  MOV   send_buffer2, send_buffer
+
+  // group 3
+  ADD   PS2_DAT, 2
+  ADD   PS2_CLK, 2
+  MOV   send_buffer, send_buffer3
+  MOV   output_fifo, &output_fifo3
+
+  TESTP PS2_CLK :wc // poll for CLK timeout
+  if(c) CALL reset_usart
+
+  TESTP PS2_DAT :wc // poll for data
+  if(c) CALL receive_word
+
+  MOV   send_buffer3, send_buffer
+
+  // fetch data
+
+  MOV  fifo, &input_fifo0
   CALL fifo_read_nonblocking
-  if(!z) JMP receive_out_data
+  if(!z) MOV  send_buffer0, fifo_data
+  if(!z) BITH send_buffer0, 31 // set MSB
+
+  MOV  fifo, &input_fifo1
+  CALL fifo_read_nonblocking
+  if(!z) MOV  send_buffer1, fifo_data
+  if(!z) BITH send_buffer1, 31 // set MSB
+
+  MOV  fifo, &input_fifo2
+  CALL fifo_read_nonblocking
+  if(!z) MOV  send_buffer2, fifo_data
+  if(!z) BITH send_buffer2, 31 // set MSB
+
+  MOV  fifo, &input_fifo3
+  CALL fifo_read_nonblocking
+  if(!z) MOV  send_buffer3, fifo_data
+  if(!z) BITH send_buffer3, 31 // set MSB
 
   JMP main_loop
 
-///
-/// Receives and queues data from RXD into the FIFO
-///
-receive_out_data:
-  // mark the send buffer as ready, ignoring previously
-  // stored bytes:
-  MOV send_buffer_ready, 1
-  MOV send_buffer, fifo_data
-
-  JMP main_loop
-  
 ///
 /// Resets the USART when a timeout was detected by PS2_CLK
 ///
@@ -87,13 +180,13 @@ reset_usart:
   // (synchronously)
   DIRL PS2_DAT
   
-  CMP send_buffer_ready, 0 :wz
-  if(!z) CALL send_word
+  BITL send_buffer, 31 :wcz // test and clear "marker" bit
+  if(c) CALL send_word
   
   // Enable smart-pin receiver again:
   DIRH PS2_DAT
 
-  JMP main_loop
+  RET
 
 ///
 /// Sends the word stored in 'send_buffer'
@@ -115,10 +208,14 @@ send_word:
   BITNC send_buffer, 8               // set parity bit
   BITH  send_buffer, bitrange(9, 10) // set stop bit and "ack" bit high
 
+  GETCT tmp
+  ADDCT1 tmp, aug(ticks(CLK, us=1500))
+
   MOV tmp, 11 // We transfer 8 data bits + 1 parity bit + 1 stop bit + 1 ack bit
 .word_loop:
 
 .wait_low:
+  JCT1 .tx_timeout
   TESTP PS2_CLK :wc
   if(c) JMP .wait_low
 
@@ -126,6 +223,7 @@ send_word:
   DRVC PS2_DAT
 
 .wait_high:
+  JCT1 .tx_timeout
   TESTP PS2_CLK :wc
   if(!c) JMP .wait_high
 
@@ -134,10 +232,12 @@ send_word:
   TESTPN PS2_DAT :wc
   // TODO: Evaluate ACK!
 
-  // mark the word as sent:
-  MOV send_buffer_ready, 0
-
   // switch back to regular receive mode by using a tail call:
+  JMP setup_rx_mode
+
+.tx_timeout:
+  // TODO: Handle timeout
+
   JMP setup_rx_mode
 
 ///
@@ -159,25 +259,31 @@ receive_word:
   SHR data, 1    // drop start bit
   AND data, 0xFF // mask out rest of the bits
 
-  MOV  fifo, &output_fifo
+  MOV  fifo, output_fifo
   MOV  fifo_data, data
   CALL fifo_write_nonblocking
 
-  JMP main_loop
+  RET
 
 ///
 /// Handle invalid frame format
 ///
 receive_word_format_err:
   // TODO: Implement error handling
-  JMP main_loop
+  MOV  fifo, output_fifo
+  MOV  fifo_data, 0xFF
+  CALL fifo_write_nonblocking
+  RET
   
 ///
 /// Handle invalid partiy error
 ///
 receive_word_parity_err:
   // TODO: Implement error handling
-  JMP main_loop
+  MOV  fifo, output_fifo
+  MOV  fifo_data, 0xFE
+  CALL fifo_write_nonblocking
+  RET
 
 setup_io_mode:
   DIRL PS2_CLK
@@ -240,16 +346,32 @@ setup_rx_mode:
 
 var data:              LONG 0
 var tmp:               LONG 0
-var send_buffer_ready: LONG 0
+
+var send_buffer0:      LONG 0
+var send_buffer1:      LONG 0
+var send_buffer2:      LONG 0
+var send_buffer3:      LONG 0
+
 var send_buffer:       LONG 0
+var output_fifo:       LONG 0
 
 var config_base:       LONG 0    // base address of config data
-var input_fifo:        LONG 0, 0 // base address, config address
-var output_fifo:       LONG 0, 0 // base address, config address
 
-var PS2_DAT:           LONG 0    // 36 ' CLK= +2
-var PS2_CLK:           LONG 0    // 38 ' DAT= -2
+var input_fifo0:       LONG 0, 0 // base address, config address
+var input_fifo1:       LONG 0, 0 // base address, config address
+var input_fifo2:       LONG 0, 0 // base address, config address
+var input_fifo3:       LONG 0, 0 // base address, config address
 
+var output_fifo0:      LONG 0, 0 // base address, config address
+var output_fifo1:      LONG 0, 0 // base address, config address
+var output_fifo2:      LONG 0, 0 // base address, config address
+var output_fifo3:      LONG 0, 0 // base address, config address
+
+var PS2_DAT:           LONG 0    // 36 ' CLK= +1
+var PS2_CLK:           LONG 0    // 37 ' DAT= -1
+
+var PS2_DAT_BASE:      LONG 0    // 36 ' CLK= +1
+var PS2_CLK_BASE:      LONG 0    // 37 ' DAT= -1
 
 // #include "fifo.impl"
 
