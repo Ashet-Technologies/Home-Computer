@@ -7,6 +7,7 @@
 - [ESP32-C3](https://www.espressif.com/en/products/socs/esp32-c3)
 - [FT232H](https://ftdichip.com/products/ft232hq/)
 - [Parallax Propeller 2](https://www.parallax.com/propeller-2/)
+- [XS3A2467PWJ](https://www.digikey.de/de/products/detail/nexperia-usa-inc/XS3A2467PWJ/16186760) (Dual low-ohmic double-pole double-throw analog switch)
 
 ## Prototyping
 
