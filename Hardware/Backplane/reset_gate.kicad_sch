@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "1c5dc727-85b4-4c2f-8e21-6a057be7c261")
 	(paper "A4")
+	(title_block
+		(title "Clock and Reset Gate")
+		(company "Ashet Technologies")
+		(comment 1 "This sheet contains the facilities to provide a locally triggerable ~{RESET} signal and")
+		(comment 2 "a buffered version of the global clock signal")
+	)
 	(lib_symbols
 		(symbol "74xGxx:NC7SZ125M5X"
 			(exclude_from_sim no)
@@ -744,9 +750,33 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Use a buffer to both gate the clock if not required,\nbut also prevent the any card from doing something bad\nto our global clock signal"
+	(rectangle
+		(start 69.85 28.575)
+		(end 117.475 63.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0f582a20-de6d-473c-b8cc-a1fb8cee9e73)
+	)
+	(rectangle
+		(start 25.4 28.575)
+		(end 63.5 63.5)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9e8f34cd-d97a-4e78-bfd0-489ad6b848d8)
+	)
+	(text "Use a buffer to both gate the clock if not\nrequired, but also prevent the any card from\ndoing something bad to our global clock signal"
 		(exclude_from_sim no)
-		(at 120.65 43.18 0)
+		(at 70.485 64.135 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -755,21 +785,63 @@
 		)
 		(uuid "6b445fb3-5ce2-4a45-b2fb-f7e0e63ed90b")
 	)
+	(text_box "Clock Gate/Buffer"
+		(exclude_from_sim no)
+		(at 69.85 25.4 0)
+		(size 47.625 3.175)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9f22d25d-d3af-4760-9cd0-63f16bc398f8")
+	)
+	(text_box "Global/Local Reset Merger"
+		(exclude_from_sim no)
+		(at 25.4 25.4 0)
+		(size 38.1 3.175)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "bd1311d0-9e39-4f9f-ab2c-7681cb9ac66e")
+	)
 	(junction
-		(at 127 40.64)
+		(at 107.95 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22257107-e18b-459d-b2e0-cf0cf35ff7cf")
 	)
 	(junction
-		(at 101.6 40.64)
+		(at 82.55 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2a0c3c6-b53a-46c5-b8eb-eb3338af6f04")
 	)
 	(wire
 		(pts
-			(xy 101.6 40.64) (xy 104.14 40.64)
+			(xy 82.55 45.72) (xy 85.09 45.72)
 		)
 		(stroke
 			(width 0)
@@ -779,17 +851,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 53.34) (xy 114.3 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1635a8f6-be6f-4617-817e-83b44e38cc8a")
-	)
-	(wire
-		(pts
-			(xy 101.6 29.21) (xy 127 29.21)
+			(xy 82.55 31.75) (xy 107.95 31.75)
 		)
 		(stroke
 			(width 0)
@@ -799,7 +861,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 40.64) (xy 101.6 40.64)
+			(xy 80.01 45.72) (xy 82.55 45.72)
 		)
 		(stroke
 			(width 0)
@@ -809,7 +871,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 45.72) (xy 104.14 45.72)
+			(xy 80.01 50.8) (xy 85.09 50.8)
 		)
 		(stroke
 			(width 0)
@@ -819,7 +881,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 29.21) (xy 127 40.64)
+			(xy 107.95 31.75) (xy 107.95 45.72)
 		)
 		(stroke
 			(width 0)
@@ -829,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 40.64) (xy 129.54 40.64)
+			(xy 107.95 45.72) (xy 110.49 45.72)
 		)
 		(stroke
 			(width 0)
@@ -839,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 40.64) (xy 127 40.64)
+			(xy 105.41 45.72) (xy 107.95 45.72)
 		)
 		(stroke
 			(width 0)
@@ -849,7 +911,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 45.085) (xy 55.88 45.085)
+			(xy 31.75 48.26) (xy 36.83 48.26)
 		)
 		(stroke
 			(width 0)
@@ -859,7 +921,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 42.545) (xy 69.85 42.545)
+			(xy 49.53 45.72) (xy 50.8 45.72)
 		)
 		(stroke
 			(width 0)
@@ -869,17 +931,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 25.4) (xy 114.3 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d36fcdb5-3ff7-4889-b913-96be15d423e6")
-	)
-	(wire
-		(pts
-			(xy 101.6 31.75) (xy 101.6 29.21)
+			(xy 82.55 36.83) (xy 82.55 31.75)
 		)
 		(stroke
 			(width 0)
@@ -889,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 39.37) (xy 101.6 40.64)
+			(xy 82.55 44.45) (xy 82.55 45.72)
 		)
 		(stroke
 			(width 0)
@@ -899,7 +951,7 @@
 	)
 	(global_label "CLOCK"
 		(shape input)
-		(at 96.52 40.64 180)
+		(at 80.01 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -909,7 +961,7 @@
 		)
 		(uuid "5f6484b0-a3da-4ba6-80a8-86c1c88e14cc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.3662 40.64 0)
+			(at 70.8562 45.72 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -921,7 +973,7 @@
 	)
 	(global_label "~{RESET}"
 		(shape input)
-		(at 55.88 40.005 180)
+		(at 36.83 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -931,7 +983,7 @@
 		)
 		(uuid "850ca52a-b252-4d83-a907-dcc1b3af73c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.1497 40.005 0)
+			(at 28.0997 43.18 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -943,7 +995,7 @@
 	)
 	(hierarchical_label "~{CLK_EN}"
 		(shape input)
-		(at 96.52 45.72 180)
+		(at 80.01 50.8 180)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -954,7 +1006,7 @@
 	)
 	(hierarchical_label "~{IN}"
 		(shape input)
-		(at 50.8 45.085 180)
+		(at 31.75 48.26 180)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -965,7 +1017,7 @@
 	)
 	(hierarchical_label "CLK"
 		(shape output)
-		(at 129.54 40.64 0)
+		(at 110.49 45.72 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -976,7 +1028,7 @@
 	)
 	(hierarchical_label "~{OUT}"
 		(shape output)
-		(at 69.85 42.545 0)
+		(at 50.8 45.72 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -987,16 +1039,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 62.23 50.165 0)
+		(at 43.18 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "06f5ff23-4cff-4832-ab4e-6af34af31548")
 		(property "Reference" "#PWR01102"
-			(at 62.23 56.515 0)
+			(at 43.18 59.69 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1005,7 +1056,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 55.245 0)
+			(at 43.18 57.15 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1013,7 +1064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 50.165 0)
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1022,7 +1073,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 50.165 0)
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1031,7 +1082,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 62.23 50.165 0)
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1081,7 +1132,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 62.23 34.925 0)
+		(at 43.18 38.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1090,7 +1141,7 @@
 		(dnp no)
 		(uuid "2bd8a970-ec80-489a-9a6f-856fba0618d1")
 		(property "Reference" "#PWR01101"
-			(at 62.23 38.735 0)
+			(at 43.18 41.91 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1099,7 +1150,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 62.23 31.75 90)
+			(at 43.18 34.925 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1108,7 +1159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 34.925 0)
+			(at 43.18 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1117,7 +1168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 34.925 0)
+			(at 43.18 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1126,7 +1177,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 62.23 34.925 0)
+			(at 43.18 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1176,7 +1227,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 114.3 25.4 0)
+		(at 95.25 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1184,7 +1235,7 @@
 		(dnp no)
 		(uuid "2c3fb0f9-5131-4269-9882-49b22f59f21c")
 		(property "Reference" "#PWR01103"
-			(at 114.3 29.21 0)
+			(at 95.25 41.91 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1193,7 +1244,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 114.3 22.225 0)
+			(at 95.25 34.925 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1202,7 +1253,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 25.4 0)
+			(at 95.25 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1211,7 +1262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 25.4 0)
+			(at 95.25 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1220,7 +1271,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 114.3 25.4 0)
+			(at 95.25 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,16 +1321,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 55.88 0)
+		(at 95.25 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "477ba9c6-2090-44b3-9cdf-874a440a703a")
 		(property "Reference" "#PWR01104"
-			(at 114.3 62.23 0)
+			(at 95.25 64.77 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1288,7 +1338,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 60.96 0)
+			(at 95.25 62.23 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1296,7 +1346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 55.88 0)
+			(at 95.25 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1305,7 +1355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 55.88 0)
+			(at 95.25 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1314,7 +1364,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 55.88 0)
+			(at 95.25 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1364,7 +1414,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 101.6 35.56 270)
+		(at 82.55 40.64 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1372,17 +1422,17 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8495d8d6-c373-42c4-b967-b6e9a20f174b")
-		(property "Reference" "JP1201"
-			(at 99.06 35.5599 90)
+		(property "Reference" "JP1101"
+			(at 83.82 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 105.41 35.56 0)
+			(at 86.36 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1441,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 101.6 35.56 0)
+			(at 82.55 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1400,7 +1450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 35.56 0)
+			(at 82.55 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1409,7 +1459,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 101.6 35.56 0)
+			(at 82.55 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1423,10 +1473,46 @@
 		(pin "2"
 			(uuid "d4dcc207-0e95-4ff7-bedf-ccae3de876da")
 		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/50c65fc9-71ad-406b-a67c-9fe60e10adc6"
+					(reference "JP1101")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/1a72b562-b374-42f7-9675-d69ad55f0ee3/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1701")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/51cd8e93-cd1c-4686-bc6f-5ee712165889/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1501")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/58d27b07-4dc5-4035-a4cc-e2edbe424767/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1601")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/75f5bf2b-cae9-41fc-95c9-e5109fcf3957/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1401")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/de0a9853-8d2d-4021-a172-17dfe1844021/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1801")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/e09cd553-1ab8-4f68-be82-b6b3b295ca8c/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1201")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc8eca16-66d0-4021-950c-0054f8a34b69/0a06f79e-2371-44d6-ba59-f8569181be44"
+					(reference "JP1301")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Home Computer:SN74LVC1G08DBVR")
-		(at 62.23 42.545 0)
+		(at 43.18 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1434,7 +1520,7 @@
 		(dnp no)
 		(uuid "a9214171-2943-46e0-a952-75e2489d7263")
 		(property "Reference" "U1101"
-			(at 66.04 35.56 0)
+			(at 46.99 38.735 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1442,7 +1528,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1G08DBVR"
-			(at 71.12 49.53 0)
+			(at 52.07 52.705 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1450,7 +1536,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 60.96 70.485 0)
+			(at 41.91 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1459,7 +1545,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
-			(at 63.5 66.675 0)
+			(at 44.45 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,7 +1554,7 @@
 			)
 		)
 		(property "Description" "Single 2-Input Positive-AND Gate"
-			(at 60.96 67.945 0)
+			(at 41.91 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,7 +1616,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:NC7SZ125M5X")
-		(at 114.3 43.18 0)
+		(at 95.25 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1538,23 +1624,25 @@
 		(dnp no)
 		(uuid "fa8a78fc-5d0e-47c2-91b8-ed36dd4f160f")
 		(property "Reference" "U1102"
-			(at 116.84 36.83 0)
+			(at 95.885 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
 		(property "Value" "NC7SZ125M5X"
-			(at 105.41 50.8 0)
+			(at 95.885 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 130.81 49.53 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1563,7 +1651,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/nc7sz125-d.pdf"
-			(at 114.3 43.18 0)
+			(at 95.25 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1572,7 +1660,7 @@
 			)
 		)
 		(property "Description" "TinyLogic UHS Buffer, Tri-State Output, SOT-23-5"
-			(at 114.3 43.18 0)
+			(at 95.25 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "95799e19-000d-4c46-8b8d-cb0eaa0a1cbd")
 	(paper "A4")
+	(title_block
+		(title "Power Management")
+		(company "Ashet Technologies")
+		(comment 1 "This sheet contains all parts related to system-wide power management.")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -8095,7 +8100,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "058467c4-a34c-4a5e-bbca-6607c378ef35")
 		(property "Reference" "C917"
 			(at 29.2037 110.49 90)
@@ -8107,12 +8111,11 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 29.2037 113.03 90)
+			(at 29.21 119.38 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -13585,7 +13588,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c48d4785-0ec7-4a5e-a114-5da5c7aa4a55")
 		(property "Reference" "C934"
 			(at 72.3963 110.49 90)
@@ -13597,12 +13599,11 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 72.3963 113.03 90)
+			(at 72.39 119.38 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
