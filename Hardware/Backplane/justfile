@@ -1,0 +1,22 @@
+
+file:="Backplane.kicad_sch"
+
+export:
+    mkdir -p export
+
+    kicad-cli sch export bom {{file}} \
+        --output 'export/backplane-bom.csv' \
+        --fields 'Reference,Value,Footprint,${QUANTITY},${DNP},${DATASHEET}' \
+        --labels 'Refs,Value,Footprint,Qty,DNP,Datasheet'
+    
+    kicad-cli sch export netlist {{file}} \
+        --output 'export/backplane.net' \
+        --format kicadsexpr
+
+    rm -rf export/sheets
+    mkdir export/sheets
+    kicad-cli sch export svg {{file}} \
+        --output 'export/sheets' \
+    
+
+    mogrify -density 300 -format png export/sheets/*.svg

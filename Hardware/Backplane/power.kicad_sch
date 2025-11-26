@@ -4679,17 +4679,6 @@
 		)
 		(uuid "ca7069ec-04f4-4eaf-bc8e-f316c25c80c0")
 	)
-	(text "Keep system in\nreset while 1.8V\nis not stable."
-		(exclude_from_sim no)
-		(at 51.435 53.975 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left)
-		)
-		(uuid "dd730a18-9e3f-4917-b6ae-7b5f1e80756d")
-	)
 	(text "We split between MAIN_+XX and\n+XX so we can apply different\npower classes to the nets."
 		(exclude_from_sim no)
 		(at 198.755 26.035 0)
@@ -4711,6 +4700,27 @@
 			(justify left)
 		)
 		(uuid "fb494d23-6dbd-473f-b1f8-00f45d2331e4")
+	)
+	(text_box "Keep system in\nreset while 1.8V\nis not stable."
+		(exclude_from_sim no)
+		(at 31.75 50.6348 0)
+		(size 13.335 6.5152)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "e47b7f43-7ddf-4032-93bb-6de8f743df3c")
 	)
 	(junction
 		(at 25.4 83.82)
@@ -5820,16 +5830,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 53.975) (xy 50.8 53.975)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39bbbf5d-3e8a-406c-8188-72a8acdd6eda")
-	)
-	(wire
-		(pts
 			(xy 74.93 88.9) (xy 76.2 88.9)
 		)
 		(stroke
@@ -5930,7 +5930,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 42.545) (xy 50.8 42.545)
+			(xy 55.88 42.545) (xy 53.975 42.545)
 		)
 		(stroke
 			(width 0)
@@ -6350,7 +6350,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 42.545) (xy 50.8 53.975)
+			(xy 53.975 42.545) (xy 53.975 53.975)
 		)
 		(stroke
 			(width 0)
@@ -6437,16 +6437,6 @@
 			(type default)
 		)
 		(uuid "7e45613c-5e29-4e52-ab18-ac44457f98d3")
-	)
-	(wire
-		(pts
-			(xy 38.1 53.975) (xy 40.64 53.975)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f207359-8503-4d0b-88ce-a4468a400dd1")
 	)
 	(wire
 		(pts
@@ -7180,6 +7170,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.705 53.975) (xy 53.975 53.975)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca43609-6041-4a88-b5a2-d9ec9ca03718")
+	)
+	(wire
+		(pts
 			(xy 33.02 114.3) (xy 31.75 114.3)
 		)
 		(stroke
@@ -7674,7 +7674,7 @@
 	)
 	(global_label "~{RESET}"
 		(shape input)
-		(at 38.1 53.975 180)
+		(at 52.705 53.975 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7684,7 +7684,7 @@
 		)
 		(uuid "a66e507a-8173-4c18-954d-3b836e5a184c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.3697 53.975 0)
+			(at 43.9747 53.975 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10185,73 +10185,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/a6aaca62-686e-49f0-9767-a5ba81511d00"
 					(reference "#PWR0904")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 44.45 53.975 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "52af466a-efcc-4ec5-befc-641e491402fa")
-		(property "Reference" "R901"
-			(at 44.45 52.07 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 44.45 53.975 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 44.45 55.753 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 44.45 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5ca94ed3-18e6-4620-815c-76c95bb63a25")
-		)
-		(pin "1"
-			(uuid "f05f9ace-c2c4-4294-a447-3f418c6ee5dd")
-		)
-		(instances
-			(project ""
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/a6aaca62-686e-49f0-9767-a5ba81511d00"
-					(reference "R901")
 					(unit 1)
 				)
 			)
