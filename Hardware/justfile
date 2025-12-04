@@ -8,7 +8,8 @@ generate-pdfs: \
     generate-pcb-pdfs
 
 generate-schematics-pdfs: \
-    (generate-schematics-pdf "Expansions/User Expansion/PCB/User Expansion.kicad_sch")
+    (generate-schematics-pdf "Expansions/User Expansion/PCB/User Expansion.kicad_sch") \
+    (generate-schematics-pdf "Backplane/Backplane.kicad_sch")
 
 generate-pcb-pdfs: \
     (generate-pcb-pdf "Expansions/User Expansion/PCB/User Expansion.kicad_pcb")
