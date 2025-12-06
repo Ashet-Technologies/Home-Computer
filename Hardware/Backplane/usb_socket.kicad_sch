@@ -1155,10 +1155,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "cf6e8b2e-fcbf-4d67-9e5a-5b481f51f428")
+			(uuid "77e2e56e-f253-4948-9ea4-1dfe58a65fe3")
 		)
 		(pin "1"
-			(uuid "403dcf96-d2b5-4e4e-b3f9-37d036cde17e")
+			(uuid "3e2e5389-3ab8-433c-9ba5-26c922ead40c")
 		)
 		(instances
 			(project "Backplane"
@@ -1230,19 +1230,19 @@
 			)
 		)
 		(pin "3"
-			(uuid "136deff4-c42a-48b4-b54c-1778a6761d42")
+			(uuid "80252cbf-6d67-428f-acfc-7cc5bc65cfd5")
 		)
 		(pin "1"
-			(uuid "496f6a13-6cec-4210-9678-a93cf765ea09")
+			(uuid "759bd7ec-f19c-42f3-a404-05ac363e5b49")
 		)
 		(pin "4"
-			(uuid "d86f0a69-427e-4d19-82ee-ef04f6a13dc5")
+			(uuid "dbb54006-dbec-4d3a-8a95-19cf8b588042")
 		)
 		(pin "5"
-			(uuid "dbdf9c63-6a4a-45e1-9d8a-e8d44b7088cf")
+			(uuid "2fb48eb6-47ab-4415-9376-29a62e87c845")
 		)
 		(pin "2"
-			(uuid "1710144d-18ff-4777-b0ae-7561cb198b99")
+			(uuid "326fb8cc-143c-4c9e-81b5-650c49fa338c")
 		)
 		(instances
 			(project "Backplane"
@@ -1312,7 +1312,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "78f94391-a7bf-4352-a1f5-1f028c23a9de")
+			(uuid "118af620-39d9-41d5-8491-229628c8b3dd")
 		)
 		(instances
 			(project "Backplane"
@@ -1383,7 +1383,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0704787b-a27f-422e-b077-37b1fb875348")
+			(uuid "d1c1a430-057d-40a7-9b76-e5eb5fbbcf54")
 		)
 		(instances
 			(project "Backplane"
@@ -1454,7 +1454,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d87ff4b5-a172-469c-bb8f-863a822e0ff9")
+			(uuid "832441d1-730f-41a3-a826-ea2bf4e075ae")
 		)
 		(instances
 			(project "Backplane"
@@ -1525,7 +1525,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3685fda3-1b62-401c-8424-a159db1c98ab")
+			(uuid "054e1844-7018-4871-9236-5b04231197f5")
 		)
 		(instances
 			(project "Backplane"
@@ -1594,10 +1594,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "c1cd7658-2152-4dcc-8d45-d4b0998a0ef7")
+			(uuid "dff6b99f-a51b-4471-a8df-7585ed141ef4")
 		)
 		(pin "1"
-			(uuid "571b28bb-2ca1-476e-b664-cb764d597e1c")
+			(uuid "70d42da4-7183-48d8-8dd8-b4c918eee40f")
 		)
 		(instances
 			(project "Backplane"
@@ -1664,10 +1664,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "7200109b-5393-48f4-a7bc-62c28c7cf1f0")
+			(uuid "f5e083a0-fd2e-4771-a8c7-f2541b98e793")
 		)
 		(pin "1"
-			(uuid "f27148b2-bdde-468c-9cbe-61e1925f73e7")
+			(uuid "0ada1fd8-6ade-4f98-9f5c-264b454b0275")
 		)
 		(instances
 			(project "Backplane"

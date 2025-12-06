@@ -498,6 +498,69 @@
       "+5V": [
         "Power_500mA"
       ],
+      "/Expansions/Module Slot 1/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 1/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 1/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 2/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 2/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 2/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 3/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 3/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 3/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 4/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 4/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 4/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 5/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 5/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 5/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 6/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 6/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 6/MOD_+5V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 7/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 7/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 7/MOD_+5V": [
+        "Power_500mA"
+      ],
       "/Module Slot 1/MOD_+12V": [
         "Power_500mA"
       ],
@@ -808,72 +871,56 @@
       "Root"
     ],
     [
-      "e09cd553-1ab8-4f68-be82-b6b3b295ca8c",
+      "d370d472-fb74-4f37-8fa2-2407b7fec231",
+      "Clock"
+    ],
+    [
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
+    ],
+    [
+      "d3047f77-c81c-4381-bf90-1d561e67b161",
       "Module Slot 1"
     ],
     [
-      "fc8eca16-66d0-4021-950c-0054f8a34b69",
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
+    ],
+    [
+      "7d41f401-6937-4ed5-bf65-a9e5054d31b2",
+      "Clock Gate 0 & 1"
+    ],
+    [
+      "34608737-04ee-4097-a679-eb9474de83e9",
       "Module Slot 2"
     ],
     [
-      "75f5bf2b-cae9-41fc-95c9-e5109fcf3957",
-      "Module Slot 3"
-    ],
-    [
-      "51cd8e93-cd1c-4686-bc6f-5ee712165889",
-      "Module Slot 4"
-    ],
-    [
-      "58d27b07-4dc5-4035-a4cc-e2edbe424767",
-      "Module Slot 5"
-    ],
-    [
-      "1a72b562-b374-42f7-9675-d69ad55f0ee3",
-      "Module Slot 6"
-    ],
-    [
-      "de0a9853-8d2d-4021-a172-17dfe1844021",
-      "Module Slot 7"
-    ],
-    [
-      "a6aaca62-686e-49f0-9767-a5ba81511d00",
-      "Power"
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
     ],
     [
       "830eb735-4083-4e97-a24b-40cca75ad59b",
       "Builtins"
     ],
     [
-      "50c65fc9-71ad-406b-a67c-9fe60e10adc6",
-      "Expansion Gate"
+      "bd4b3b9b-7d85-45b4-9d95-7f7631822eea",
+      "Module Slot 3"
     ],
     [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
     ],
     [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
+      "0b76639d-ed2e-4d92-9374-970ebfad4ce9",
+      "Module Slot 4"
     ],
     [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
     ],
     [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
-    ],
-    [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
-    ],
-    [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
-    ],
-    [
-      "0a06f79e-2371-44d6-ba59-f8569181be44",
-      "Expansion Gate"
+      "6a80605b-8ea1-4c9f-9925-195ca4829ff1",
+      "Module Slot 5"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -888,32 +935,56 @@
       "USB A Socket 1"
     ],
     [
+      "f94c2515-5da6-4862-ba30-6d4a39ae8639",
+      "Module Slot 6"
+    ],
+    [
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
+    ],
+    [
+      "c4424f84-74bb-4fe6-9366-b0d1f638ed10",
+      "Module Slot 7"
+    ],
+    [
+      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
+      "Management Controller"
+    ],
+    [
       "d722aa70-6517-4527-99e3-acc9d055bb81",
       "USB A Socket 2"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "93d4b54a-5803-4e6c-bdc3-018f393c405d",
+      "Power"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "fc524bed-e1de-43ff-9b23-75610ded7ea1",
+      "Expansions"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
     ],
     [
-      "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
-      "Management Controller"
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
+    ],
+    [
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
+    ],
+    [
+      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
+      "Clock Gate 0 & 1"
     ]
   ],
   "text_variables": {}
