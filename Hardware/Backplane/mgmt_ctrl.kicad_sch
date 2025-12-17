@@ -2527,7 +2527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 187.325 50.8 0)
 			(effects
 				(font
@@ -2624,7 +2624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 212.725 50.8 0)
 			(effects
 				(font
@@ -2721,7 +2721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 238.125 50.8 0)
 			(effects
 				(font
@@ -3007,7 +3007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 50.8 0)
 			(effects
 				(font
@@ -3198,7 +3198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 177.8 50.8 0)
 			(effects
 				(font
@@ -3390,7 +3390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 50.8 0)
 			(effects
 				(font
@@ -3487,7 +3487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 203.2 38.1 0)
 			(effects
 				(font
@@ -3679,7 +3679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 145.415 31.115 0)
 			(effects
 				(font
@@ -3963,7 +3963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 66.675 100.33 0)
 			(effects
 				(font
@@ -4155,7 +4155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 228.6 38.1 0)
 			(effects
 				(font
@@ -4315,7 +4315,7 @@
 		(at 145.415 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a1d528d4-30c7-4164-b900-1f3a29cc0c44")
@@ -4451,6 +4451,15 @@
 			)
 		)
 		(property "Description" "CH32V003 series are industrial-grade general-purpose microcontrollers designed based on 32-bit RISC-V instruction set and architecture. It adopts QingKe V2A core, RV32EC instruction set, and supports 2 levels of interrupt nesting. The series are mounted with rich peripheral interfaces and function modules. Its internal organizational structure meets the low-cost and low-power embedded application scenarios."
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "1188-SMDICCH32V003F4P6-ND"
 			(at 95.25 50.8 0)
 			(effects
 				(font
@@ -4780,7 +4789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -4940,7 +4949,7 @@
 		(at 145.415 84.455 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "cbd09557-a678-4fe5-b2af-0630f7961875")
@@ -5264,6 +5273,15 @@
 		)
 		(property "Description" "Single 2-Input Positive-AND Gate"
 			(at 81.28 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "296-11601-1-ND"
+			(at 82.55 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)

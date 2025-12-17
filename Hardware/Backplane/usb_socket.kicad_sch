@@ -1136,7 +1136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 83.82 74.295 0)
 			(effects
 				(font
@@ -1211,7 +1211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 60.325 0)
 			(effects
 				(font
@@ -1332,7 +1332,7 @@
 		(at 120.65 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2c4cf90f-aecc-4012-9e24-90a51ab2b8a0")
@@ -1403,7 +1403,7 @@
 		(at 120.65 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "7b5c05c1-5616-4423-b4ee-fe82f0699606")
@@ -1474,7 +1474,7 @@
 		(at 120.65 53.975 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "908a05c9-e82c-41b3-a47c-b665766edfed")
@@ -1575,7 +1575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 86.36 74.295 0)
 			(effects
 				(font

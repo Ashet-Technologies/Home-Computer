@@ -1309,7 +1309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 110.49 42.545 0)
 			(effects
 				(font

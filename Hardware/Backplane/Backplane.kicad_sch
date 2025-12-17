@@ -1241,75 +1241,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 89.535 22.225 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1b1d8ce1-01d3-40bd-babd-6728e4d90e63")
-		(property "Reference" "R104"
-			(at 90.805 22.225 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify top)
-			)
-		)
-		(property "Value" "10K"
-			(at 89.535 22.225 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 87.757 22.225 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 89.535 22.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 89.535 22.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f876e0c3-7bf1-433b-8eb2-1b4229bdc390")
-		)
-		(pin "2"
-			(uuid "25ed2b51-c28a-4534-919f-03ef43ca5da2")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
-					(reference "R104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 85.725 22.225 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1343,7 +1274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 85.725 22.225 0)
 			(effects
 				(font
@@ -1609,7 +1540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 123.825 0)
 			(effects
 				(font
@@ -1702,6 +1633,74 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
 					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 89.535 22.225 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de5b0b56-d9dc-46d6-ac1f-3f2322f30f10")
+		(property "Reference" "R102"
+			(at 88.265 22.225 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "10K"
+			(at 89.535 22.225 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 91.313 22.225 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 89.535 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 89.535 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d9e5cd1-e681-4c86-8431-d807d6b4fc4d")
+		)
+		(pin "2"
+			(uuid "f4da62ab-d420-4414-a74a-3b73fdb0d533")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
+					(reference "R102")
 					(unit 1)
 				)
 			)

@@ -4416,7 +4416,7 @@
 		)
 		(uuid "91e1563d-5908-4a37-97d6-5b370960f29e")
 	)
-	(text "TODO:  Select fitting\nfuses here (2A? 3A?)"
+	(text "TODO:  Select fitting\nfuses here (4A)"
 		(exclude_from_sim no)
 		(at 176.53 45.72 0)
 		(effects
@@ -7779,7 +7779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 99.06 0)
 			(effects
 				(font
@@ -7849,7 +7849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 104.14 0)
 			(effects
 				(font
@@ -7918,7 +7918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 116.84 0)
 			(effects
 				(font
@@ -7989,7 +7989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 78.74 0)
 			(effects
 				(font
@@ -8059,7 +8059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 93.98 0)
 			(effects
 				(font
@@ -8194,7 +8194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 78.74 0)
 			(effects
 				(font
@@ -8265,7 +8265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 91.44 0)
 			(effects
 				(font
@@ -8552,7 +8552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 86.36 0)
 			(effects
 				(font
@@ -8688,7 +8688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 104.14 0)
 			(effects
 				(font
@@ -8759,7 +8759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 96.52 0)
 			(effects
 				(font
@@ -8931,7 +8931,7 @@
 		(at 22.86 188.595 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "29bccafe-d46b-4dfc-8d38-8cdd48fca782")
@@ -9028,7 +9028,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 120.65 47.625 0)
 			(effects
 				(font
@@ -9501,7 +9501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 83.82 0)
 			(effects
 				(font
@@ -9572,7 +9572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -9907,7 +9907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 114.3 0)
 			(effects
 				(font
@@ -9978,7 +9978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 101.6 0)
 			(effects
 				(font
@@ -10182,7 +10182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 86.36 0)
 			(effects
 				(font
@@ -10517,7 +10517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 96.52 0)
 			(effects
 				(font
@@ -10653,7 +10653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 34.925 41.275 0)
 			(effects
 				(font
@@ -10741,133 +10741,12 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Parallax Inc."
+		(property "Digikey Part No" "149-P2X8C4M64P-ND"
 			(at 50.8 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.2mm"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/P2X8C4M64P/Parallax/view-part/?ref=eda"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "2022/11/01"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/P2X8C4M64P/Parallax/view-part/?ref=snap"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "P2X8C4M64P"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            P2X8C4M64P Propeller™ Microcontroller IC 32-Bit 8-Core 180MHz 544KB (544K x 8) RAM 100-TQFP-EP (14x14)\n                        \n"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "P2X8C4M64P"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Parallax Inc."
-			(at 50.8 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -11220,7 +11099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 99.06 0)
 			(effects
 				(font
@@ -11356,7 +11235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 161.925 38.1 90)
 			(effects
 				(font
@@ -11366,24 +11245,6 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 161.925 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 161.925 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 161.925 38.1 0)
 			(effects
 				(font
@@ -11513,7 +11374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 81.28 0)
 			(effects
 				(font
@@ -11649,7 +11510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 88.9 0)
 			(effects
 				(font
@@ -11819,7 +11680,7 @@
 		(at 29.21 188.595 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8e87ac3e-8215-49c3-93a4-e59190ec32a2")
@@ -12116,7 +11977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 28.575 41.275 0)
 			(effects
 				(font
@@ -12185,7 +12046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 161.925 40.64 90)
 			(effects
 				(font
@@ -12195,24 +12056,6 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 161.925 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 161.925 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 161.925 40.64 0)
 			(effects
 				(font
@@ -12404,7 +12247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 109.22 0)
 			(effects
 				(font
@@ -12539,7 +12382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 101.6 0)
 			(effects
 				(font
@@ -12610,7 +12453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 114.3 0)
 			(effects
 				(font
@@ -12746,7 +12589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 88.9 38.735 0)
 			(effects
 				(font
@@ -12884,7 +12727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 93.98 0)
 			(effects
 				(font
@@ -12954,7 +12797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 91.44 0)
 			(effects
 				(font
@@ -13089,7 +12932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 114.3 47.625 0)
 			(effects
 				(font
@@ -13127,7 +12970,7 @@
 		(at 35.56 188.595 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bda8e294-5c52-4fc5-a900-ef8ee83f02f4")
@@ -13290,7 +13133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 189.23 43.18 0)
 			(effects
 				(font
@@ -13367,7 +13210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 116.84 0)
 			(effects
 				(font
@@ -13502,7 +13345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 106.68 0)
 			(effects
 				(font
@@ -13740,7 +13583,7 @@
 		(at 41.91 188.595 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d11b3afe-6246-4588-95de-894a224eccf2")
@@ -13971,7 +13814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 88.9 0)
 			(effects
 				(font
@@ -14039,7 +13882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 82.55 34.925 0)
 			(effects
 				(font
@@ -14109,7 +13952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 81.28 0)
 			(effects
 				(font
@@ -14180,7 +14023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 109.22 0)
 			(effects
 				(font
@@ -14250,7 +14093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 111.76 0)
 			(effects
 				(font
@@ -14401,6 +14244,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey Part No" "AP3445LW6-7DICT-ND"
+			(at 63.5 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9493b9b8-e283-4d21-a791-20338324d594")
 		)
@@ -14433,7 +14285,7 @@
 		(at 48.26 189.865 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e3c5b669-4e69-4602-adcb-13cc307db74a")
@@ -14597,7 +14449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 111.76 0)
 			(effects
 				(font
@@ -14797,7 +14649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 72.39 83.82 0)
 			(effects
 				(font
@@ -14933,7 +14785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 161.925 43.18 90)
 			(effects
 				(font
@@ -14943,24 +14795,6 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 161.925 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 161.925 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 161.925 43.18 0)
 			(effects
 				(font
