@@ -7275,7 +7275,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/cd74hc221.pdf?"
 			(at 231.775 62.23 0)
 			(effects
 				(font

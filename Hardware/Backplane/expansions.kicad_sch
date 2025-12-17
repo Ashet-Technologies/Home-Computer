@@ -7737,7 +7737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.parallax.com/package/propeller-2-p2x8c4m64p-datasheet/"
 			(at 251.46 64.77 0)
 			(effects
 				(font
@@ -8647,7 +8647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9548a.pdf"
 			(at 184.15 124.46 0)
 			(effects
 				(font
