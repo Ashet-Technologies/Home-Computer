@@ -1628,6 +1628,12 @@
 		(uuid "2e25d245-5387-48dd-8285-03fa61a510ae")
 	)
 	(junction
+		(at 212.725 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ca52941-3e98-4544-b0da-0365a97e79c3")
+	)
+	(junction
 		(at 66.675 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1640,10 +1646,22 @@
 		(uuid "7ebb1e74-b0fd-4619-9bb5-a0fc9b03bb48")
 	)
 	(junction
+		(at 187.325 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bd3eaaf-eb81-4cb7-aa83-6b9d0f645349")
+	)
+	(junction
 		(at 203.2 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a65130c6-fecc-4136-b130-196e0652c9ad")
+	)
+	(junction
+		(at 238.125 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c299d8d7-1e26-483b-b859-091e9510c07b")
 	)
 	(no_connect
 		(at 105.41 63.5)
@@ -1842,6 +1860,16 @@
 			(type default)
 		)
 		(uuid "614d49af-e82d-403b-bc20-d4c47958471a")
+	)
+	(wire
+		(pts
+			(xy 238.125 44.45) (xy 241.935 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dc4f86-4553-4219-abbc-ef9fc5291317")
 	)
 	(wire
 		(pts
@@ -2065,6 +2093,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.325 44.45) (xy 191.135 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c79016a3-0772-43eb-bb9c-869fa45a872d")
+	)
+	(wire
+		(pts
 			(xy 228.6 44.45) (xy 238.125 44.45)
 		)
 		(stroke
@@ -2155,6 +2193,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.725 44.45) (xy 216.535 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe8ee42-cb6b-4a5d-bb0f-c66d5928b5e3")
+	)
+	(wire
+		(pts
 			(xy 45.72 97.79) (xy 45.72 100.33)
 		)
 		(stroke
@@ -2174,12 +2222,12 @@
 		(uuid "0f201ab5-908c-4ca4-8bfe-e0ced5d37d09")
 	)
 	(label "MEAS_+5V"
-		(at 204.47 44.45 0)
+		(at 216.535 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "3d0ab3df-c30a-4c3e-93cb-2c2d9e1a189e")
 	)
@@ -2224,12 +2272,12 @@
 		(uuid "b4e4ada8-829f-4c8e-93db-4966fcae37eb")
 	)
 	(label "MEAS_+3V3"
-		(at 229.87 44.45 0)
+		(at 241.935 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b9f5e26a-73b4-4336-ad6f-23b9daea6546")
 	)
@@ -2284,12 +2332,12 @@
 		(uuid "fd1f010e-6a07-455b-89e1-9b9adf2f744b")
 	)
 	(label "MEAS_+12V"
-		(at 179.07 44.45 0)
+		(at 191.135 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fee3801e-f836-4380-9606-266718e43bd3")
 	)
@@ -2527,7 +2575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 187.325 50.8 0)
 			(effects
 				(font
@@ -2537,6 +2585,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 187.325 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
 			(at 187.325 50.8 0)
 			(effects
 				(font
@@ -2624,7 +2681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 212.725 50.8 0)
 			(effects
 				(font
@@ -2634,6 +2691,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 212.725 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
 			(at 212.725 50.8 0)
 			(effects
 				(font
@@ -2721,7 +2787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 238.125 50.8 0)
 			(effects
 				(font
@@ -2731,6 +2797,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 238.125 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
 			(at 238.125 50.8 0)
 			(effects
 				(font
@@ -2784,7 +2859,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 145.415 33.655 0)
+		(at 105.41 29.845 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2794,7 +2869,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b4f72b0-9ece-47cc-bab3-6bb02300165b")
 		(property "Reference" "#PWR0508"
-			(at 145.415 40.005 0)
+			(at 105.41 36.195 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2803,7 +2878,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 145.415 38.735 0)
+			(at 105.41 34.925 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2811,7 +2886,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 145.415 33.655 0)
+			(at 105.41 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,7 +2895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 145.415 33.655 0)
+			(at 105.41 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +2904,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 145.415 33.655 0)
+			(at 105.41 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2989,7 +3064,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2K7"
+		(property "Value" "1K8 1%"
 			(at 204.47 52.07 0)
 			(effects
 				(font
@@ -3007,7 +3082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application/pdf"
 			(at 203.2 50.8 0)
 			(effects
 				(font
@@ -3017,6 +3092,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RG16P1.8KBCT-ND"
 			(at 203.2 50.8 0)
 			(effects
 				(font
@@ -3180,7 +3264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K8"
+		(property "Value" "1K8 1%"
 			(at 179.07 52.07 0)
 			(effects
 				(font
@@ -3198,7 +3282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application/pdf"
 			(at 177.8 50.8 0)
 			(effects
 				(font
@@ -3208,6 +3292,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 177.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RG16P1.8KBCT-ND"
 			(at 177.8 50.8 0)
 			(effects
 				(font
@@ -3261,7 +3354,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 145.415 28.575 0)
+		(at 105.41 24.765 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3270,7 +3363,7 @@
 		(dnp no)
 		(uuid "3014aeb7-1d40-4d24-afdf-342a610b4d07")
 		(property "Reference" "#PWR0507"
-			(at 145.415 32.385 0)
+			(at 105.41 28.575 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3279,7 +3372,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 145.415 25.4 0)
+			(at 105.41 21.59 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3288,7 +3381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 145.415 28.575 0)
+			(at 105.41 24.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 145.415 28.575 0)
+			(at 105.41 24.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +3399,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 145.415 28.575 0)
+			(at 105.41 24.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,7 +3465,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K8"
+		(property "Value" "1K8 1%"
 			(at 229.87 52.07 0)
 			(effects
 				(font
@@ -3390,7 +3483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application/pdf"
 			(at 228.6 50.8 0)
 			(effects
 				(font
@@ -3400,6 +3493,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 228.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RG16P1.8KBCT-ND"
 			(at 228.6 50.8 0)
 			(effects
 				(font
@@ -3469,7 +3571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2K7"
+		(property "Value" "1K8 1%"
 			(at 204.47 39.37 0)
 			(effects
 				(font
@@ -3487,7 +3589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application/pdf"
 			(at 203.2 38.1 0)
 			(effects
 				(font
@@ -3497,6 +3599,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 203.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RG16P1.8KBCT-ND"
 			(at 203.2 38.1 0)
 			(effects
 				(font
@@ -3644,7 +3755,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 145.415 31.115 0)
+		(at 105.41 27.305 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3653,7 +3764,7 @@
 		(dnp no)
 		(uuid "7517dd67-db32-4c78-9410-4a756c2b4dad")
 		(property "Reference" "C501"
-			(at 144.78 29.845 0)
+			(at 104.775 26.035 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3662,7 +3773,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 144.78 32.385 0)
+			(at 104.775 28.575 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3671,7 +3782,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 145.415 31.115 0)
+			(at 105.41 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,8 +3790,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 145.415 31.115 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
+			(at 105.41 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3689,7 +3800,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 145.415 31.115 0)
+			(at 105.41 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 105.41 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3946,7 +4066,7 @@
 				(justify top)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "10K"
 			(at 66.675 100.33 90)
 			(effects
 				(font
@@ -3963,7 +4083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 66.675 100.33 0)
 			(effects
 				(font
@@ -3974,6 +4094,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 66.675 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-10.0KHRCT-ND"
+			(at 66.675 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4137,7 +4266,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "560"
+		(property "Value" "560 1%"
 			(at 229.87 39.37 0)
 			(effects
 				(font
@@ -4155,7 +4284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
 			(at 228.6 38.1 0)
 			(effects
 				(font
@@ -4165,6 +4294,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 228.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RR08P560DCT-ND"
 			(at 228.6 38.1 0)
 			(effects
 				(font
@@ -4771,7 +4909,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6K8"
+		(property "Value" "6K8 1%"
 			(at 179.07 39.37 0)
 			(effects
 				(font
@@ -4789,7 +4927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition01_en.pdf&type=application/pdf"
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -4799,6 +4937,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RG16P6.8KBCT-ND"
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -5379,7 +5526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/530/53047/530470310_sd.pdf?inline"
 			(at 45.72 92.71 0)
 			(effects
 				(font
@@ -5390,6 +5537,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "WM1732-ND"
+			(at 45.72 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)

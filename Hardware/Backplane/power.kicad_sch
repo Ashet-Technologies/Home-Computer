@@ -7779,7 +7779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 99.06 0)
 			(effects
 				(font
@@ -7790,6 +7790,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7849,7 +7858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 104.14 0)
 			(effects
 				(font
@@ -7860,6 +7869,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7918,7 +7936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 116.84 0)
 			(effects
 				(font
@@ -7929,6 +7947,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7989,7 +8016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 78.74 0)
 			(effects
 				(font
@@ -8000,6 +8027,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8059,7 +8095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 93.98 0)
 			(effects
 				(font
@@ -8070,6 +8106,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8194,7 +8239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 78.74 0)
 			(effects
 				(font
@@ -8205,6 +8250,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8265,7 +8319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 91.44 0)
 			(effects
 				(font
@@ -8276,6 +8330,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8365,89 +8428,13 @@
 	)
 	(symbol
 		(lib_id "Symbol Library:SMD1206B050TF/15")
-		(at 177.8 40.64 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1db5ef00-8573-4274-b907-0879215aa0c5")
-		(property "Reference" "F2902"
-			(at 181.61 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SMD1206B050TF/15"
-			(at 177.8 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/Resource%20Library/Datasheet/SMD1206_1.pdf"
-			(at 177.8 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part No" "13-SMD1206B050TF/15TR-ND"
-			(at 177.8 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dde7fb71-b913-4102-8ca6-7431143a008b")
-		)
-		(pin "1"
-			(uuid "c5334a21-91ea-41df-b17e-a5df787f8bd5")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/93d4b54a-5803-4e6c-bdc3-018f393c405d"
-					(reference "F2902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Symbol Library:SMD1206B050TF/15")
 		(at 177.8 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1ec286a5-d628-4ceb-b2fe-b0ac421b5f73")
+		(uuid "205af7e2-f78f-494c-af15-8ba67229e121")
 		(property "Reference" "F2903"
 			(at 181.61 41.91 90)
 			(effects
@@ -8456,7 +8443,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD1206B050TF/15"
+		(property "Value" "0ZCF0400FF2A"
 			(at 177.8 39.37 90)
 			(effects
 				(font
@@ -8465,7 +8452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
 			(at 177.8 43.18 0)
 			(effects
 				(font
@@ -8474,7 +8461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/content/Resource%20Library/Datasheet/SMD1206_1.pdf"
+		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcf-series.pdf"
 			(at 177.8 43.18 0)
 			(effects
 				(font
@@ -8483,15 +8470,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polymeric PTC Resettable Fuse 16V 4 A Ih Surface Mount 2920 (7351 Metric), Concave"
 			(at 177.8 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "13-SMD1206B050TF/15TR-ND"
+		(property "Digikey Part No" "5923-0ZCF0400FF2ACT-ND"
 			(at 177.8 43.18 90)
 			(effects
 				(font
@@ -8501,10 +8489,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "238f0985-9de0-4fa0-b667-a564f452a20e")
+			(uuid "37129d56-bd54-4001-ba19-cbec54c00eb8")
 		)
 		(pin "1"
-			(uuid "98c56a97-93d6-41a1-a78c-0cc1488d5e36")
+			(uuid "0d71572a-4003-4022-9a06-a5baa5c9b7a4")
 		)
 		(instances
 			(project "Backplane"
@@ -8552,7 +8540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 86.36 0)
 			(effects
 				(font
@@ -8563,6 +8551,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8688,7 +8685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 104.14 0)
 			(effects
 				(font
@@ -8699,6 +8696,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,7 +8765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 96.52 0)
 			(effects
 				(font
@@ -8770,6 +8776,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9019,7 +9034,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.6848 43.815 0)
 			(effects
 				(font
@@ -9028,7 +9043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2901/CL10A226MP8NUNC_Spec.pdf"
 			(at 120.65 47.625 0)
 			(effects
 				(font
@@ -9038,6 +9053,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 120.65 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "1276-1274-1-ND"
 			(at 120.65 47.625 0)
 			(effects
 				(font
@@ -9078,7 +9102,7 @@
 				)
 			)
 		)
-		(property "Value" "SMD1206B050TF/15"
+		(property "Value" "0ZCF0400FF2A"
 			(at 177.8 34.29 90)
 			(effects
 				(font
@@ -9087,7 +9111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -9096,7 +9120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageogroup.com/content/Resource%20Library/Datasheet/SMD1206_1.pdf"
+		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcf-series.pdf"
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -9105,15 +9129,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polymeric PTC Resettable Fuse 16V 4 A Ih Surface Mount 2920 (7351 Metric), Concave"
 			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "13-SMD1206B050TF/15TR-ND"
+		(property "Digikey Part No" "5923-0ZCF0400FF2ACT-ND"
 			(at 177.8 38.1 90)
 			(effects
 				(font
@@ -9501,7 +9526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 83.82 0)
 			(effects
 				(font
@@ -9512,6 +9537,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9572,7 +9606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 106.68 0)
 			(effects
 				(font
@@ -9583,6 +9617,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9907,7 +9950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 114.3 0)
 			(effects
 				(font
@@ -9918,6 +9961,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9978,7 +10030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 101.6 0)
 			(effects
 				(font
@@ -9989,6 +10041,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10072,6 +10133,83 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/93d4b54a-5803-4e6c-bdc3-018f393c405d"
 					(reference "#PWR02909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Symbol Library:SMD1206B050TF/15")
+		(at 177.8 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "54bd655e-dc20-4c02-8c1c-3a596aa89b9b")
+		(property "Reference" "F2902"
+			(at 181.61 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0ZCF0400FF2A"
+			(at 177.8 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+			(at 177.8 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0zcf-series.pdf"
+			(at 177.8 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polymeric PTC Resettable Fuse 16V 4 A Ih Surface Mount 2920 (7351 Metric), Concave"
+			(at 177.8 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "5923-0ZCF0400FF2ACT-ND"
+			(at 177.8 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "07560fea-e42c-42e0-82db-d34d5f0e1ef1")
+		)
+		(pin "1"
+			(uuid "1a982e90-d266-4680-984b-dfcdc0b36f67")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/93d4b54a-5803-4e6c-bdc3-018f393c405d"
+					(reference "F2902")
 					(unit 1)
 				)
 			)
@@ -10182,7 +10320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 86.36 0)
 			(effects
 				(font
@@ -10193,6 +10331,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10314,7 +10461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
 			(at 101.6 38.735 0)
 			(effects
 				(font
@@ -10325,6 +10472,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 101.6 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "RR08P75.0KDCT-ND"
+			(at 101.6 38.735 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10517,7 +10673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 96.52 0)
 			(effects
 				(font
@@ -10528,6 +10684,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +10818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 34.925 41.275 0)
 			(effects
 				(font
@@ -10663,6 +10828,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 34.925 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
 			(at 34.925 41.275 0)
 			(effects
 				(font
@@ -11099,7 +11273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 99.06 0)
 			(effects
 				(font
@@ -11110,6 +11284,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11303,7 +11486,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 171.45 48.26 0)
 			(effects
 				(font
@@ -11314,6 +11497,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 171.45 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-0.0GRCT-ND"
+			(at 171.45 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11374,7 +11566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 81.28 0)
 			(effects
 				(font
@@ -11385,6 +11577,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11510,7 +11711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 88.9 0)
 			(effects
 				(font
@@ -11521,6 +11722,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11642,7 +11852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf"
 			(at 101.6 47.625 0)
 			(effects
 				(font
@@ -11653,6 +11863,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 101.6 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "P36KDBCT-ND"
+			(at 101.6 47.625 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11776,7 +11995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 180.34 29.21 0)
 			(effects
 				(font
@@ -11787,6 +12006,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 180.34 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-0.0GRCT-ND"
+			(at 180.34 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11968,7 +12196,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 29.5402 37.465 0)
 			(effects
 				(font
@@ -11977,7 +12205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR60J227ME11-01.pdf"
 			(at 28.575 41.275 0)
 			(effects
 				(font
@@ -11987,6 +12215,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 28.575 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "490-13970-1-ND"
 			(at 28.575 41.275 0)
 			(effects
 				(font
@@ -12247,7 +12484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 109.22 0)
 			(effects
 				(font
@@ -12258,6 +12495,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12382,7 +12628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 101.6 0)
 			(effects
 				(font
@@ -12393,6 +12639,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12453,7 +12708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 114.3 0)
 			(effects
 				(font
@@ -12464,6 +12719,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12580,7 +12844,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 87.9348 34.925 0)
 			(effects
 				(font
@@ -12589,7 +12853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10C330JB8NNN"
 			(at 88.9 38.735 0)
 			(effects
 				(font
@@ -12599,6 +12863,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 88.9 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "1276-1070-1-ND"
 			(at 88.9 38.735 0)
 			(effects
 				(font
@@ -12727,7 +13000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 93.98 0)
 			(effects
 				(font
@@ -12738,6 +13011,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12797,7 +13079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 91.44 0)
 			(effects
 				(font
@@ -12808,6 +13090,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12923,7 +13214,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 115.2652 43.815 0)
 			(effects
 				(font
@@ -12932,7 +13223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2901/CL10A226MP8NUNC_Spec.pdf"
 			(at 114.3 47.625 0)
 			(effects
 				(font
@@ -12942,6 +13233,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 114.3 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "1276-1274-1-ND"
 			(at 114.3 47.625 0)
 			(effects
 				(font
@@ -13210,7 +13510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 116.84 0)
 			(effects
 				(font
@@ -13221,6 +13521,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13345,7 +13654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 106.68 0)
 			(effects
 				(font
@@ -13356,6 +13665,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13545,7 +13863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 180.34 25.4 0)
 			(effects
 				(font
@@ -13556,6 +13874,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 180.34 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-0.0GRCT-ND"
+			(at 180.34 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13744,7 +14071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 180.34 33.02 0)
 			(effects
 				(font
@@ -13755,6 +14082,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 180.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-0.0GRCT-ND"
+			(at 180.34 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13814,7 +14150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 88.9 0)
 			(effects
 				(font
@@ -13825,6 +14161,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13952,7 +14297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 81.28 0)
 			(effects
 				(font
@@ -13963,6 +14308,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14023,7 +14377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 109.22 0)
 			(effects
 				(font
@@ -14034,6 +14388,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14093,7 +14456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 111.76 0)
 			(effects
 				(font
@@ -14104,6 +14467,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14449,7 +14821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 29.21 111.76 0)
 			(effects
 				(font
@@ -14460,6 +14832,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 29.21 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 29.21 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14649,7 +15030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 72.39 83.82 0)
 			(effects
 				(font
@@ -14660,6 +15041,15 @@
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 72.39 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
+			(at 72.39 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)

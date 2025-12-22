@@ -1003,7 +1003,7 @@
 	)
 	(text_box "This Quad-Channel AND is used as a booster driver to replicate the clock to 3 distinct output drivers.\n\nThe 1B input is driven by the low drive power oscillator. 1Y drives the three other logic gates as buffers and creates a root of the clock net."
 		(exclude_from_sim no)
-		(at 97.79 60.325 0)
+		(at 98.425 70.485 0)
 		(size 38.735 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1029,7 +1029,7 @@
 		(uuid "25963ba1-754b-436b-96bf-2c0b568a7773")
 	)
 	(junction
-		(at 107.315 40.005)
+		(at 107.95 50.165)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c3bcf9a-69d6-4992-af52-bb5959e53ab9")
@@ -1041,7 +1041,7 @@
 		(uuid "47ed043b-25a5-4c22-b3a5-5a88c79186d0")
 	)
 	(junction
-		(at 104.775 36.195)
+		(at 105.41 46.355)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "656271d8-9c81-4e36-9f93-cb52e9f6be5a")
@@ -1053,26 +1053,26 @@
 		(uuid "6e8ae8ea-0397-4c53-8eea-f9e3622946d3")
 	)
 	(junction
-		(at 104.775 42.545)
+		(at 105.41 52.705)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f577c22-4cf7-4dc3-9a47-7ac7df3a7977")
 	)
 	(junction
-		(at 107.315 33.655)
+		(at 107.95 43.815)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0ec0bf9-fd1e-4074-85d4-e0be4d760cb2")
 	)
 	(junction
-		(at 107.315 27.305)
+		(at 107.95 37.465)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3028575-f5be-4ac6-98ff-7b7401ef4546")
 	)
 	(wire
 		(pts
-			(xy 104.775 42.545) (xy 104.775 48.895)
+			(xy 105.41 52.705) (xy 105.41 59.055)
 		)
 		(stroke
 			(width 0)
@@ -1092,7 +1092,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 27.305) (xy 109.22 27.305)
+			(xy 107.95 37.465) (xy 109.855 37.465)
 		)
 		(stroke
 			(width 0)
@@ -1102,7 +1102,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 33.655) (xy 109.22 33.655)
+			(xy 107.95 43.815) (xy 109.855 43.815)
 		)
 		(stroke
 			(width 0)
@@ -1112,7 +1112,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 27.305) (xy 107.315 33.655)
+			(xy 107.95 37.465) (xy 107.95 43.815)
 		)
 		(stroke
 			(width 0)
@@ -1122,7 +1122,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 33.655) (xy 107.315 40.005)
+			(xy 107.95 43.815) (xy 107.95 50.165)
 		)
 		(stroke
 			(width 0)
@@ -1132,7 +1132,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 46.355) (xy 109.22 46.355)
+			(xy 107.95 56.515) (xy 109.855 56.515)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1142,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 41.275) (xy 133.35 41.275)
+			(xy 126.365 51.435) (xy 133.985 51.435)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1152,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 21.59) (xy 127 21.59)
+			(xy 105.41 31.75) (xy 127.635 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1172,7 +1172,7 @@
 	)
 	(wire
 		(pts
-			(xy 117.475 19.05) (xy 117.475 22.86)
+			(xy 118.11 19.05) (xy 118.11 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1192,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 19.05) (xy 107.315 27.305)
+			(xy 107.95 19.05) (xy 107.95 21.59)
 		)
 		(stroke
 			(width 0)
@@ -1222,7 +1222,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 48.895) (xy 109.22 48.895)
+			(xy 105.41 59.055) (xy 109.855 59.055)
 		)
 		(stroke
 			(width 0)
@@ -1242,7 +1242,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 36.195) (xy 109.22 36.195)
+			(xy 105.41 46.355) (xy 109.855 46.355)
 		)
 		(stroke
 			(width 0)
@@ -1252,7 +1252,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 28.575) (xy 127 21.59)
+			(xy 127.635 38.735) (xy 127.635 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1272,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 21.59) (xy 104.775 36.195)
+			(xy 105.41 31.75) (xy 105.41 46.355)
 		)
 		(stroke
 			(width 0)
@@ -1282,7 +1282,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 40.005) (xy 107.315 46.355)
+			(xy 107.95 50.165) (xy 107.95 56.515)
 		)
 		(stroke
 			(width 0)
@@ -1292,17 +1292,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 29.845) (xy 109.22 29.845)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b939f70f-c956-4cb0-9789-8d3a307915b1")
-	)
-	(wire
-		(pts
-			(xy 104.775 42.545) (xy 109.22 42.545)
+			(xy 105.41 52.705) (xy 109.855 52.705)
 		)
 		(stroke
 			(width 0)
@@ -1312,7 +1302,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.315 40.005) (xy 109.22 40.005)
+			(xy 107.95 50.165) (xy 109.855 50.165)
 		)
 		(stroke
 			(width 0)
@@ -1322,7 +1312,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 47.625) (xy 133.3344 47.625)
+			(xy 126.365 57.785) (xy 133.9694 57.785)
 		)
 		(stroke
 			(width 0)
@@ -1342,7 +1332,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 40.005) (xy 82.55 40.005)
+			(xy 71.12 40.005) (xy 109.855 40.005)
 		)
 		(stroke
 			(width 0)
@@ -1359,6 +1349,16 @@
 			(type default)
 		)
 		(uuid "d5d1ea44-b7aa-484d-81e1-548f34d1a6af")
+	)
+	(wire
+		(pts
+			(xy 107.95 29.21) (xy 107.95 37.465)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d79c3cc2-d1d8-49f8-b89f-4c5ccafc1100")
 	)
 	(wire
 		(pts
@@ -1392,7 +1392,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 28.575) (xy 125.73 28.575)
+			(xy 127.635 38.735) (xy 126.365 38.735)
 		)
 		(stroke
 			(width 0)
@@ -1412,7 +1412,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 34.925) (xy 133.35 34.925)
+			(xy 126.365 45.085) (xy 133.985 45.085)
 		)
 		(stroke
 			(width 0)
@@ -1422,7 +1422,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 36.195) (xy 104.775 42.545)
+			(xy 105.41 46.355) (xy 105.41 52.705)
 		)
 		(stroke
 			(width 0)
@@ -1461,7 +1461,7 @@
 		(uuid "10d78bf3-155e-469f-8cf6-f992c225397f")
 	)
 	(label "CLK_RAW"
-		(at 95.25 29.845 0)
+		(at 95.885 40.005 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1470,31 +1470,9 @@
 		)
 		(uuid "6595d43b-53a2-4916-8018-9a74e0db845a")
 	)
-	(global_label "CLOCK"
-		(shape input)
-		(at 78.105 26.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "2f4b824b-09c1-4d8d-910d-fbc20fd67bcb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.2588 26.67 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "CLKTREE1"
 		(shape output)
-		(at 133.35 41.275 0)
+		(at 133.985 51.435 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1505,7 +1483,7 @@
 	)
 	(hierarchical_label "CLKTREE2"
 		(shape output)
-		(at 133.35 47.625 0)
+		(at 133.985 57.785 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1516,7 +1494,7 @@
 	)
 	(hierarchical_label "CLKTREE0"
 		(shape output)
-		(at 133.35 34.925 0)
+		(at 133.985 45.085 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1562,7 +1540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 28.575 41.275 0)
 			(effects
 				(font
@@ -1572,6 +1550,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 28.575 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C104M4RACTUCT-ND"
 			(at 28.575 41.275 0)
 			(effects
 				(font
@@ -1665,7 +1652,7 @@
 	)
 	(symbol
 		(lib_id "Home Computer:SN74LVC7001APWR")
-		(at 118.11 38.1 0)
+		(at 118.745 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1673,7 +1660,7 @@
 		(dnp no)
 		(uuid "0ae6c8bd-1617-48f2-b54e-219313388cf9")
 		(property "Reference" "U202"
-			(at 118.11 24.765 0)
+			(at 118.745 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1682,7 +1669,7 @@
 			)
 		)
 		(property "Value" "SN74LVC7001A"
-			(at 118.11 50.8 0)
+			(at 118.745 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1691,7 +1678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 38.1 0)
+			(at 118.745 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1700,7 +1687,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc7001a.pdf?ts=1710954051460"
-			(at 123.698 61.214 0)
+			(at 124.333 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +1696,7 @@
 			)
 		)
 		(property "Description" "Quad 2-Input AND Gates with Schmitt-Trigger Inputs"
-			(at 144.018 9.652 0)
+			(at 144.653 19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1718,7 +1705,7 @@
 			)
 		)
 		(property "Digikey Part No" "296-SN74LVC7001APWRTR-ND"
-			(at 152.146 17.018 0)
+			(at 152.781 27.178 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1813,7 +1800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/KEM_C1002_X7R_SMD"
 			(at 34.925 41.275 0)
 			(effects
 				(font
@@ -1823,6 +1810,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 34.925 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "399-C0603C103K5RACTUCT-ND"
 			(at 34.925 41.275 0)
 			(effects
 				(font
@@ -2132,7 +2128,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 117.475 52.705 0)
+		(at 118.11 62.865 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2140,7 +2136,7 @@
 		(dnp no)
 		(uuid "513c9e87-b359-4169-9956-c99d39fabeed")
 		(property "Reference" "#PWR0209"
-			(at 117.475 59.055 0)
+			(at 118.11 69.215 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2149,7 +2145,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 117.475 56.515 0)
+			(at 118.11 66.675 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2157,7 +2153,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 117.475 52.705 0)
+			(at 118.11 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2166,7 +2162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 117.475 52.705 0)
+			(at 118.11 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2175,7 +2171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 117.475 52.705 0)
+			(at 118.11 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,6 +2186,83 @@
 			(project ""
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "#PWR0209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 107.95 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75d6d01a-aeaf-4131-9973-ed10f5a4963e")
+		(property "Reference" "R203"
+			(at 106.68 25.4 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "10K"
+			(at 107.95 25.4 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 109.728 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 107.95 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 107.95 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey Part No" "311-10.0KHRCT-ND"
+			(at 107.95 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2e723ad-8bb3-4949-8968-d28866046fc2")
+		)
+		(pin "2"
+			(uuid "f850e78c-ab23-4896-9d97-5eb5bd05779e")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -2392,7 +2465,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 117.475 19.05 0)
+		(at 118.11 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2400,7 +2473,7 @@
 		(dnp no)
 		(uuid "d245f35e-d9da-4691-9b4e-6ccf2b1d32db")
 		(property "Reference" "#PWR0208"
-			(at 117.475 22.86 0)
+			(at 118.11 22.86 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2409,7 +2482,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 117.475 15.875 0)
+			(at 118.11 15.875 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2418,7 +2491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 117.475 19.05 0)
+			(at 118.11 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2427,7 +2500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 117.475 19.05 0)
+			(at 118.11 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2436,7 +2509,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 117.475 19.05 0)
+			(at 118.11 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,7 +2597,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 107.315 19.05 0)
+		(at 107.95 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2532,7 +2605,7 @@
 		(dnp no)
 		(uuid "e17c1599-f109-431b-937d-bea7af9c5f8e")
 		(property "Reference" "#PWR0207"
-			(at 107.315 22.86 0)
+			(at 107.95 22.86 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2541,7 +2614,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 107.315 15.875 0)
+			(at 107.95 15.875 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2550,7 +2623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.315 19.05 0)
+			(at 107.95 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2559,7 +2632,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.315 19.05 0)
+			(at 107.95 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,7 +2641,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 107.315 19.05 0)
+			(at 107.95 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
