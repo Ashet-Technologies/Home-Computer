@@ -20,3 +20,4 @@ production/
 # Blender
 
 *.blend?
+__pycache__/
