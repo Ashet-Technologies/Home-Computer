@@ -6920,6 +6920,487 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "NL17SZS11DFT2G-Q"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0.254 5.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "NL17SZS11DFT2G-Q"
+			(at 10.16 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 52.832 -52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
+			(at 55.626 -43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
+			(at 41.402 -42.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part No" "488-NL17SZS11DFT2G-QCT-ND"
+			(at 74.676 -35.814 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "NL17SZS11DFT2G-Q_0_1"
+			(rectangle
+				(start -3.81 5.08)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(arc
+				(start -2.286 3.302)
+				(mid -2.1064 3.2276)
+				(end -2.032 3.048)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.286 0.762)
+				(mid -2.1064 0.6876)
+				(end -2.032 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.286 -1.778)
+				(mid -2.1064 -1.8524)
+				(end -2.032 -2.032)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 2.286) (xy -2.032 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.254) (xy -2.032 0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -2.794) (xy -2.032 -2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 3.302) (xy -2.286 3.302)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 3.302)
+				(mid -1.5984 3.2276)
+				(end -1.524 3.048)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 2.032)
+				(mid -1.9576 2.1064)
+				(end -2.032 2.286)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 0.762) (xy -2.286 0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 0.762)
+				(mid -1.5984 0.6876)
+				(end -1.524 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 -0.508)
+				(mid -1.9576 -0.4336)
+				(end -2.032 -0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -1.778) (xy -2.286 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 -1.778)
+				(mid -1.5984 -1.8524)
+				(end -1.524 -2.032)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 -3.048)
+				(mid -1.9576 -2.9736)
+				(end -2.032 -2.794)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 3.048) (xy -1.524 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 0.508) (xy -1.524 -0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 -2.032) (xy -1.524 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.27 2.032)
+				(mid -1.4496 2.1064)
+				(end -1.524 2.286)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.032) (xy -1.778 2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.27 -0.508)
+				(mid -1.4496 -0.4336)
+				(end -1.524 -0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -0.508) (xy -1.778 -0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.27 -3.048)
+				(mid -1.4496 -2.9736)
+				(end -1.524 -2.794)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -3.048) (xy -1.778 -3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "NL17SZS11DFT2G-Q_1_1"
+			(text "&"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(pin input line
+				(at -6.35 2.54 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -6.35 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -6.35 -2.54 0)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 6.35 0 180)
+				(length 2.54)
+				(name "Y"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "OSC48M-3.3I/S3-20T"
 		(pin_names
 			(offset 0.254)

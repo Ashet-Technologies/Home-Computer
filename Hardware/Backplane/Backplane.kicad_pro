@@ -799,10 +799,6 @@
       "Clock"
     ],
     [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
       "d3047f77-c81c-4381-bf90-1d561e67b161",
       "Module Slot 1"
     ],
@@ -885,30 +881,6 @@
     [
       "fc524bed-e1de-43ff-9b23-75610ded7ea1",
       "Expansions"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
-    ],
-    [
-      "71933e45-8de0-45ce-b14c-87bdb8fc5e3e",
-      "Clock Gate 0 & 1"
     ]
   ],
   "text_variables": {}
