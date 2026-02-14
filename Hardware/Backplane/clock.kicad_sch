@@ -1143,6 +1143,16 @@
 		)
 		(uuid 8f8d157a-3cbc-4917-ba6f-8e75371321cf)
 	)
+	(text "TODO: Make footprint"
+		(exclude_from_sim no)
+		(at 76.2 27.94 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "15871e48-09c1-402f-843f-0cf56957bb5e")
+	)
 	(text "Global Clock Generator"
 		(exclude_from_sim no)
 		(at 19.685 20.955 0)

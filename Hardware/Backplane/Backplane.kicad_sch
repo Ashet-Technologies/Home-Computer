@@ -1871,15 +1871,35 @@
 		)
 		(uuid "3ed88d4a-9fba-40b6-b986-235557e0971b")
 	)
-	(text "Programming Edge Conncetor for faster production?\n"
+	(text "TODO: Programming Edge Conncetor for faster production?\n"
 		(exclude_from_sim no)
-		(at 159.385 140.97 0)
+		(at 185.42 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "48b930c0-6afd-4d5a-92f0-659fb80411e6")
+	)
+	(text "TODO: Create a single library for the project"
+		(exclude_from_sim no)
+		(at 179.07 104.14 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "4b466b24-f237-40a0-bcf2-6949bd8b1dbf")
+	)
+	(text "TODO: Fix connector, make spec compliant"
+		(exclude_from_sim no)
+		(at 144.145 23.495 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "9c8404d8-8a43-48d1-a068-93f0e92ad644")
 	)
 	(text_box "Pull to defaults even if no mainboard is available"
 		(exclude_from_sim no)

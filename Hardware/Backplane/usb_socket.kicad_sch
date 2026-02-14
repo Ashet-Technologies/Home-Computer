@@ -1202,7 +1202,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "USB_A"
+		(property "Value" "Molex 105057"
 			(at 87.63 60.3249 0)
 			(effects
 				(font
@@ -1211,7 +1211,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_A_Receptacle_GCT_USB1046"
+		(property "Footprint" "Connector_USB:USB_A_Molex_105057_Vertical"
 			(at 77.47 60.325 0)
 			(effects
 				(font
@@ -1220,7 +1220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://gct.co/files/specs/usb1046-spec.pdf"
+		(property "Datasheet" "https://www.molex.com/pdm_docs/ps/PS-105057-001.pdf"
 			(at 77.47 60.325 0)
 			(effects
 				(font
@@ -1229,7 +1229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB Type A connector"
+		(property "Description" "USB-A (USB TYPE-A) USB 2.0 Receptacle Connector 4 Position Through Hole"
 			(at 81.28 59.055 0)
 			(effects
 				(font
@@ -1238,7 +1238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "2073-USB1046-GF-0190-L-B-ACT-ND"
+		(property "Digikey Part No" "WM8672-ND"
 			(at 81.28 59.055 0)
 			(effects
 				(font

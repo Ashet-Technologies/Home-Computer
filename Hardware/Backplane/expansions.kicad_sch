@@ -3673,6 +3673,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Fix footprint"
+		(exclude_from_sim no)
+		(at 184.785 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3df23b0e-e60e-4145-b33f-a9c02bb0d425")
+	)
 	(text_box "Even if the Propeller 2 and the Mainboard are not clock-gated, we still pass the clock signal through an additional buffer to keep the number of AND gates per clock path identical for each clock consumer.\n\nThis way, we prevent strong phase shift of \"one propagation delay\" and replace it with only the differences in the propagation delay."
 		(exclude_from_sim no)
 		(at 80.01 152.4 0)

@@ -4703,6 +4703,16 @@
 		)
 		(uuid "91e1563d-5908-4a37-97d6-5b370960f29e")
 	)
+	(text "TODO: Select part"
+		(exclude_from_sim no)
+		(at 82.55 27.94 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "e79b02f5-5891-4726-88e7-913d33ad7ef4")
+	)
 	(text_box "NOTE: Using color coded signals to increase readability."
 		(exclude_from_sim no)
 		(at 158.75 25.4 0)
