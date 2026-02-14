@@ -1154,10 +1154,10 @@
 		)
 		(uuid "15c1f343-15a7-448f-a990-3dd91b69d3e6")
 	)
-	(text_box "This Quad-Channel AND is used as a booster driver to replicate the clock to 3 distinct output drivers.\n\nThe 1B input is driven by the low drive power oscillator. 1Y drives the three other logic gates as buffers and creates a root of the clock net."
+	(text_box "This 3-Input-AND is used throughout the system to either boost clock signals or gate them.\n\nAs the oscillator itself has only a fairly weak drive strength (15 pF), we're using the AND-Gate U203 to boost the drive strength to and span a clock tree to gain 3 separate clock signals which have drive strength enough to keep a clean signal over the whole board."
 		(exclude_from_sim no)
-		(at 98.425 70.485 0)
-		(size 38.735 15.24)
+		(at 63.5 63.5 0)
+		(size 63.5 25.4)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1176,12 +1176,6 @@
 		(uuid "81989b31-07a0-4825-bc56-2101c8663dc6")
 	)
 	(junction
-		(at 107.95 34.925)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2393afff-277a-43f5-85a5-da3fc14ea88a")
-	)
-	(junction
 		(at 31.75 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1194,16 +1188,74 @@
 		(uuid "47ed043b-25a5-4c22-b3a5-5a88c79186d0")
 	)
 	(junction
+		(at 136.525 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "599d4d01-b959-4df1-9d92-6f0cea13221d")
+	)
+	(junction
+		(at 136.525 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63b8a296-ac5b-4e6e-b0a6-f59a9df5075c")
+	)
+	(junction
 		(at 31.75 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e8ae8ea-0397-4c53-8eea-f9e3622946d3")
 	)
 	(junction
+		(at 136.525 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4bd9153-eace-45c6-80cf-b9480b740c9f")
+	)
+	(junction
+		(at 107.95 42.545)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a937370d-b1e0-4ffd-9a04-6888c85a8b59")
+	)
+	(junction
+		(at 133.35 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac7ddeee-5e9a-41ef-b73d-7213e6913c28")
+	)
+	(junction
+		(at 136.525 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8781253-9f58-4e76-8f4b-8674c1cc9b79")
+	)
+	(junction
+		(at 133.35 42.545)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8e188f7-eb77-411a-98fb-156fca978dac")
+	)
+	(junction
+		(at 136.525 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f82ed134-1db8-41f3-8e94-6c5f3b756fbb")
+	)
+	(junction
 		(at 107.95 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbbacd69-0924-4770-9a7f-e8671f4ba4e2")
+	)
+	(wire
+		(pts
+			(xy 107.95 42.545) (xy 107.95 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02305b91-c0a1-47cd-bbdd-d59e000fb5be")
 	)
 	(wire
 		(pts
@@ -1217,13 +1269,43 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 27.94) (xy 158.75 27.94)
+			(xy 136.525 43.18) (xy 136.525 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e1d962-ab72-40c8-bf4a-c258c1d26bf2")
+	)
+	(wire
+		(pts
+			(xy 136.525 27.94) (xy 136.525 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd56396-ee6a-4534-ba5c-72cee743c1b7")
+	)
+	(wire
+		(pts
+			(xy 107.95 27.94) (xy 136.525 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1cb8245c-6aae-421c-96c2-8bebbacfea3e")
+	)
+	(wire
+		(pts
+			(xy 136.525 68.58) (xy 136.525 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285fad8e-e0e2-4fc5-8e95-efce0b2724ba")
 	)
 	(wire
 		(pts
@@ -1237,13 +1319,53 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 27.94) (xy 107.95 34.925)
+			(xy 133.35 66.04) (xy 133.35 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45a22251-78fb-405c-aa6b-e79d3c3fef0e")
+		(uuid "2c9f5dd7-9a6c-4357-b4a8-b968d72eb937")
+	)
+	(wire
+		(pts
+			(xy 136.525 96.52) (xy 139.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "338a419e-5f74-4594-9691-49b5c4980fcd")
+	)
+	(wire
+		(pts
+			(xy 136.525 93.98) (xy 136.525 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aaee297-75aa-4c7d-aa01-b22b56cb8c10")
+	)
+	(wire
+		(pts
+			(xy 107.95 45.085) (xy 109.855 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e64de2-9ab6-4a31-8eb8-9d7d37101342")
+	)
+	(wire
+		(pts
+			(xy 139.7 91.44) (xy 133.35 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e101d12-2783-401e-8f56-5589da62a789")
 	)
 	(wire
 		(pts
@@ -1264,6 +1386,16 @@
 			(type default)
 		)
 		(uuid "5c2d29a7-f45c-4d67-ab53-fe405c71a1e0")
+	)
+	(wire
+		(pts
+			(xy 136.525 45.72) (xy 136.525 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5debf48b-3a60-4c94-a78b-38bfdb9cdc78")
 	)
 	(wire
 		(pts
@@ -1297,6 +1429,26 @@
 	)
 	(wire
 		(pts
+			(xy 136.525 71.12) (xy 136.525 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c6e5d8-884c-47c6-9053-0e00882b4d87")
+	)
+	(wire
+		(pts
+			(xy 139.7 43.18) (xy 136.525 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74eaf299-e6ca-420c-a9f5-921fb7837c2f")
+	)
+	(wire
+		(pts
 			(xy 50.8 48.895) (xy 50.8 50.8)
 		)
 		(stroke
@@ -1317,23 +1469,63 @@
 	)
 	(wire
 		(pts
-			(xy 116.205 19.05) (xy 116.205 29.845)
+			(xy 139.7 68.58) (xy 136.525 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a79eb27b-ad52-4184-8a63-d8a3fe18b685")
+		(uuid "9aebf502-6875-419c-8225-b8bac56f6745")
 	)
 	(wire
 		(pts
-			(xy 107.95 34.925) (xy 109.855 34.925)
+			(xy 139.7 40.64) (xy 133.35 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d356534-4f6e-41af-b845-5b7a25223472")
+	)
+	(wire
+		(pts
+			(xy 133.35 66.04) (xy 139.7 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d8c40db-05b8-4a29-8b14-6a722fda053a")
+	)
+	(wire
+		(pts
+			(xy 71.12 40.005) (xy 109.855 40.005)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be88081f-aba6-4b31-aa4e-147ada7b25a3")
+	)
+	(wire
+		(pts
+			(xy 136.525 71.12) (xy 139.7 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c373e9a1-695d-43d4-a903-37b7639e1a86")
+	)
+	(wire
+		(pts
+			(xy 133.35 40.64) (xy 133.35 42.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7904cae-8f33-45ec-907c-227c572b51e1")
 	)
 	(wire
 		(pts
@@ -1347,13 +1539,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 40.005) (xy 109.855 40.005)
+			(xy 136.525 45.72) (xy 139.7 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d35c22ee-26fd-4b45-8d96-cb7689a97cb1")
+		(uuid "d570b29c-c452-4251-a64a-5c51849b6ab3")
+	)
+	(wire
+		(pts
+			(xy 133.35 91.44) (xy 133.35 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d598e2fa-b000-4d33-85f0-993514c354bd")
 	)
 	(wire
 		(pts
@@ -1397,7 +1599,17 @@
 	)
 	(wire
 		(pts
-			(xy 109.855 37.465) (xy 107.95 37.465)
+			(xy 139.7 93.98) (xy 136.525 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4a12ae4-5767-4c1d-9521-3e617869daa8")
+	)
+	(wire
+		(pts
+			(xy 109.855 42.545) (xy 107.95 42.545)
 		)
 		(stroke
 			(width 0)
@@ -1417,7 +1629,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 34.925) (xy 107.95 37.465)
+			(xy 107.95 27.94) (xy 107.95 42.545)
 		)
 		(stroke
 			(width 0)
@@ -1437,6 +1649,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 42.545) (xy 122.555 42.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f77cc917-9bf5-4a89-82d7-4861f48691b0")
+	)
+	(wire
+		(pts
 			(xy 28.575 36.83) (xy 28.575 37.465)
 		)
 		(stroke
@@ -1446,40 +1668,28 @@
 		(uuid "fcb2caa4-b0ae-4685-a26b-626137ff2507")
 	)
 	(label "CLK_RAW"
-		(at 82.55 40.005 180)
+		(at 71.12 40.005 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "10d78bf3-155e-469f-8cf6-f992c225397f")
 	)
-	(hierarchical_label "CLKTREE1"
-		(shape output)
-		(at 180.34 43.18 0)
+	(label "CLK_SPAN"
+		(at 123.19 42.545 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "1dae81bd-8b38-410f-9d00-4dcddd96aa7e")
-	)
-	(hierarchical_label "CLKTREE2"
-		(shape output)
-		(at 180.34 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "27f5725c-b0b4-48f2-83b8-588f27e687ca")
+		(uuid "50f0f82e-f305-4ac5-b1d0-f01cb361d726")
 	)
 	(hierarchical_label "CLKTREE0"
 		(shape output)
-		(at 152.4 38.1 0)
+		(at 152.4 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1487,6 +1697,28 @@
 			(justify left)
 		)
 		(uuid "7ea62404-4d19-44c2-b17c-04daa5e284b7")
+	)
+	(hierarchical_label "CLKTREE1"
+		(shape output)
+		(at 152.4 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a08397f1-c2e0-4880-b6d0-4770f2859730")
+	)
+	(hierarchical_label "CLKTREE2"
+		(shape output)
+		(at 152.4 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0e823f9-82bd-48c9-9112-33aac7d8f221")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1574,7 +1806,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "0757567b-5001-43be-a4b4-2ee00c754a1a")
 		(property "Reference" "R201"
 			(at 49.53 34.925 90)
@@ -1620,6 +1852,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey Part No" ""
+			(at 50.8 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "63ed70a2-691e-4fca-86d3-5c1683538c79")
 		)
@@ -1630,6 +1871,71 @@
 			(project ""
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "R201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08fad2a1-4dc3-4692-b5c1-6e57fecf44f1")
+		(property "Reference" "#PWR0217"
+			(at 146.05 107.95 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 105.41 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81b214bd-2727-4ef1-a6f9-e1f30287ad05")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -1715,7 +2021,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 116.205 19.05 0)
+		(at 116.205 34.925 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1723,7 +2029,7 @@
 		(dnp no)
 		(uuid "22234e0b-0fe2-4937-9284-0ef2c7828dff")
 		(property "Reference" "#PWR0208"
-			(at 116.205 22.86 0)
+			(at 116.205 38.735 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1732,7 +2038,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 116.205 15.875 0)
+			(at 116.205 31.75 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1741,7 +2047,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.205 19.05 0)
+			(at 116.205 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +2056,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.205 19.05 0)
+			(at 116.205 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1759,7 +2065,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 116.205 19.05 0)
+			(at 116.205 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1781,7 +2087,7 @@
 	)
 	(symbol
 		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
-		(at 146.05 38.1 0)
+		(at 146.05 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1789,7 +2095,7 @@
 		(dnp no)
 		(uuid "237da334-8ca2-4511-bcc2-e7f4ca83b2b2")
 		(property "Reference" "U202"
-			(at 146.685 32.385 0)
+			(at 146.685 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,7 +2104,7 @@
 			)
 		)
 		(property "Value" "NL17SZS11DFT2G-Q"
-			(at 160.655 34.5692 0)
+			(at 160.655 39.6492 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +2113,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 198.882 90.17 0)
+			(at 198.882 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1816,7 +2122,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
-			(at 201.676 82.042 0)
+			(at 201.676 87.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1825,7 +2131,7 @@
 			)
 		)
 		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
-			(at 187.452 80.264 0)
+			(at 187.452 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,7 +2140,7 @@
 			)
 		)
 		(property "DigiKey Part No" "488-NL17SZS11DFT2G-QCT-ND"
-			(at 220.726 73.914 0)
+			(at 220.726 78.994 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2230,16 +2536,61 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 116.205 45.085 0)
+		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
+		(at 146.05 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7aff5384-a85f-4eda-a8a3-45d0abe0cf70")
-		(property "Reference" "#PWR0209"
-			(at 116.205 51.435 0)
+		(uuid "728c7251-0039-4e4c-837c-15c69b4d4492")
+		(property "Reference" "U205"
+			(at 146.685 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "NL17SZS11DFT2G-Q"
+			(at 160.655 90.4492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 198.882 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
+			(at 201.676 137.922 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
+			(at 187.452 136.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part No" "488-NL17SZS11DFT2G-QCT-ND"
+			(at 220.726 129.794 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2247,16 +2598,62 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 116.205 48.895 0)
+		(pin "2"
+			(uuid "65880774-4427-497c-82c6-ddb826dc0792")
+		)
+		(pin "1"
+			(uuid "04f86c55-94f3-4fd1-9211-8024c9785fd2")
+		)
+		(pin "4"
+			(uuid "65734801-954e-4f51-8c38-11d97bef32ae")
+		)
+		(pin "3"
+			(uuid "70b537c9-10b7-422f-8433-13db1f670e64")
+		)
+		(pin "6"
+			(uuid "911c8ae7-4c49-4bfe-9c00-1d4530a6fb73")
+		)
+		(pin "5"
+			(uuid "050aee35-791a-4a68-a33a-3426c88bdac6")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "U205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 146.05 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "777380bf-76d5-4bf0-b0b2-1413ce10d3cf")
+		(property "Reference" "#PWR0214"
+			(at 146.05 64.77 0)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 146.05 57.785 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
-			(at 116.205 45.085 0)
+			(at 146.05 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,7 +2662,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.205 45.085 0)
+			(at 146.05 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 146.05 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a32a393-a80e-42e5-b60e-53e074570147")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "#PWR0214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.205 50.165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7aff5384-a85f-4eda-a8a3-45d0abe0cf70")
+		(property "Reference" "#PWR0209"
+			(at 116.205 56.515 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.205 53.975 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.205 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.205 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,7 +2736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.205 45.085 0)
+			(at 116.205 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,6 +2816,71 @@
 			(project ""
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "#PWR0202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87ca81ce-1331-402a-936e-0885f7c8961b")
+		(property "Reference" "#PWR0215"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 80.01 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a5219f2-5e40-4adb-854e-0440225dfdee")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -2491,7 +3018,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 146.05 30.48 0)
+		(at 146.05 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2499,7 +3026,7 @@
 		(dnp no)
 		(uuid "b6726090-66b2-49a1-8a89-6c6c2027dfdc")
 		(property "Reference" "#PWR0210"
-			(at 146.05 34.29 0)
+			(at 146.05 39.37 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2508,7 +3035,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 146.05 27.305 0)
+			(at 146.05 32.385 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2517,7 +3044,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 30.48 0)
+			(at 146.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +3053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 30.48 0)
+			(at 146.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,7 +3062,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 30.48 0)
+			(at 146.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,6 +3077,72 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "#PWR0210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 146.05 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b954f8d8-6fd9-43db-9840-35ce7480b5e5")
+		(property "Reference" "#PWR0216"
+			(at 146.05 90.17 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 146.05 83.185 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 146.05 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72813abf-ce04-409b-8d79-e864908c7d63")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -2689,15 +3282,15 @@
 	)
 	(symbol
 		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
-		(at 116.205 37.465 0)
+		(at 146.05 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f6a9d926-e178-47be-b19b-ad6b314fcf68")
-		(property "Reference" "U203"
-			(at 116.84 31.75 0)
+		(uuid "ed70d741-3822-4c0f-be37-4c755b312957")
+		(property "Reference" "U204"
+			(at 146.685 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,7 +3299,7 @@
 			)
 		)
 		(property "Value" "NL17SZS11DFT2G-Q"
-			(at 130.81 33.9342 0)
+			(at 160.655 65.0492 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +3308,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 169.037 89.535 0)
+			(at 198.882 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +3317,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
-			(at 171.831 81.407 0)
+			(at 201.676 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +3326,7 @@
 			)
 		)
 		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
-			(at 157.607 79.629 0)
+			(at 187.452 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,7 +3335,97 @@
 			)
 		)
 		(property "DigiKey Part No" "488-NL17SZS11DFT2G-QCT-ND"
-			(at 190.881 73.279 0)
+			(at 220.726 104.394 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bc1aa4d0-afb6-441f-90b3-206459ef2af6")
+		)
+		(pin "1"
+			(uuid "99f302d7-1fb0-4bbc-8ef6-30583ff944df")
+		)
+		(pin "4"
+			(uuid "9e047208-7e10-433c-902c-29a9450136c7")
+		)
+		(pin "3"
+			(uuid "4f001d65-eafb-446b-b47b-9a565411dec7")
+		)
+		(pin "6"
+			(uuid "8be553ed-1eec-4dd8-a2b7-fd949b68a052")
+		)
+		(pin "5"
+			(uuid "d282e920-6f48-4a96-8b76-0ce3bc3e6342")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "U204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
+		(at 116.205 42.545 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6a9d926-e178-47be-b19b-ad6b314fcf68")
+		(property "Reference" "U203"
+			(at 116.84 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "NL17SZS11DFT2G-Q"
+			(at 130.81 39.0142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 169.037 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
+			(at 171.831 86.487 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
+			(at 157.607 84.709 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part No" "488-NL17SZS11DFT2G-QCT-ND"
+			(at 190.881 78.359 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2772,6 +3455,71 @@
 			(project ""
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "U203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6d91cca-e96d-4b50-8909-fa25070c1f42")
+		(property "Reference" "#PWR0213"
+			(at 146.05 57.15 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 54.61 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2650950-30e5-47a3-903b-8cfca961a7c7")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)

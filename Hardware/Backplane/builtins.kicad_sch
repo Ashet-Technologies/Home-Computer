@@ -7709,7 +7709,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7fc18dc0-5215-4c1d-a4a5-e1504a20cc50")
 		(property "Reference" "#PWR01004"
 			(at 30.48 158.75 0)
@@ -7721,7 +7720,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 22.86 158.7499 90)
+			(at 23.495 158.75 90)
 			(effects
 				(font
 					(size 1.016 1.016)

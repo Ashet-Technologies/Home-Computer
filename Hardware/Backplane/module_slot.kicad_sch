@@ -4163,17 +4163,6 @@
 		)
 		(uuid "0616efa5-2e55-4064-b35a-9ed19603261a")
 	)
-	(text "To enable/disable the slot function,\nwe provide an optional resistor that\nplaced to enable the function"
-		(exclude_from_sim no)
-		(at 94.615 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "105f9011-8273-40e4-800c-01953cd90c6a")
-	)
 	(text "Power Indicator"
 		(exclude_from_sim no)
 		(at 212.09 125.095 0)
@@ -4217,7 +4206,7 @@
 	)
 	(text_box "We use an AND gate to enable/disable the clock signal on the card.\nThis gives us the benefit that the clock is defined GND when disabled instead of floating."
 		(exclude_from_sim no)
-		(at 169.545 16.51 0)
+		(at 171.45 15.875 0)
 		(size 25.4 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4338,6 +4327,27 @@
 		)
 		(uuid "c2fac417-1c77-46ef-920a-95c5d8266b0e")
 	)
+	(text_box "To enable/disable the slot function, we provide an optional resistor that placed to enable the function"
+		(exclude_from_sim no)
+		(at 106.68 31.75 0)
+		(size 19.05 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "d6ca6751-2e55-4c49-905b-1a971e7da142")
+	)
 	(junction
 		(at 186.055 72.39)
 		(diameter 0)
@@ -4452,7 +4462,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 39.37) (xy 87.63 39.37)
+			(xy 95.25 39.37) (xy 99.06 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4472,16 +4482,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 34.29) (xy 68.58 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "082726d2-383b-4553-8fe4-27283f723e63")
-	)
-	(wire
-		(pts
 			(xy 198.755 53.975) (xy 195.58 53.975)
 		)
 		(stroke
@@ -4492,7 +4492,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 44.45) (xy 87.63 44.45)
+			(xy 74.93 44.45) (xy 85.725 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4802,6 +4802,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 36.83) (xy 90.17 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48948244-e8a6-41a9-a2a5-3938111dd7ed")
+	)
+	(wire
+		(pts
 			(xy 50.165 166.37) (xy 52.705 166.37)
 		)
 		(stroke
@@ -5052,7 +5062,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 41.91) (xy 87.63 41.91)
+			(xy 95.25 41.91) (xy 99.06 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5142,7 +5152,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 36.83) (xy 87.63 36.83)
+			(xy 95.25 36.83) (xy 99.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5179,6 +5189,16 @@
 			(type default)
 		)
 		(uuid "8e12abd3-4790-467e-b5e6-4f37cac5f630")
+	)
+	(wire
+		(pts
+			(xy 68.58 34.29) (xy 90.17 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e23e346-c8cd-435c-abe0-f50c1b56fc23")
 	)
 	(wire
 		(pts
@@ -5352,7 +5372,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 39.37) (xy 68.58 39.37)
+			(xy 90.17 39.37) (xy 68.58 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5452,7 +5472,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 34.29) (xy 87.63 34.29)
+			(xy 95.25 34.29) (xy 99.06 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5502,7 +5522,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 24.13) (xy 88.9 24.13)
+			(xy 68.58 24.13) (xy 85.09 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5552,17 +5572,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 36.83) (xy 68.58 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc8013ae-c120-4c29-9bba-f4f840132bcb")
-	)
-	(wire
-		(pts
-			(xy 88.9 29.21) (xy 68.58 29.21)
+			(xy 85.09 29.21) (xy 68.58 29.21)
 		)
 		(stroke
 			(width 0)
@@ -5572,7 +5582,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 26.67) (xy 88.9 26.67)
+			(xy 68.58 26.67) (xy 85.09 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5612,7 +5622,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 41.91) (xy 68.58 41.91)
+			(xy 90.17 41.91) (xy 68.58 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5741,7 +5751,7 @@
 		(uuid "123a3181-e95b-4c6c-afa3-5e600fd45d2d")
 	)
 	(label "~{PRESENT}"
-		(at 87.63 44.45 180)
+		(at 85.725 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5911,7 +5921,7 @@
 		(uuid "8f3b5b0f-79fc-4acb-a702-eb37709ecf04")
 	)
 	(label "MOD_+3V3"
-		(at 88.9 29.21 180)
+		(at 85.09 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5951,7 +5961,7 @@
 		(uuid "ae6b6b79-c567-4468-953e-c64db3ecb719")
 	)
 	(label "HAS_AUDIO"
-		(at 80.01 34.29 180)
+		(at 85.725 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5991,7 +6001,7 @@
 		(uuid "c000fcc2-b2f3-430c-8598-383800c7f409")
 	)
 	(label "HAS_VIDEO"
-		(at 80.01 36.83 180)
+		(at 85.725 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6011,7 +6021,7 @@
 		(uuid "d762e9ae-8dfe-488b-a562-f6ca748482f9")
 	)
 	(label "MOD_+12V"
-		(at 88.9 24.13 180)
+		(at 85.09 24.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6051,7 +6061,7 @@
 		(uuid "f45589b4-2424-4439-8fe7-a69a238f09da")
 	)
 	(label "MOD_+5V"
-		(at 88.9 26.67 180)
+		(at 85.09 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7257,7 +7267,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 83.82 41.91 90)
+		(at 92.71 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7265,7 +7275,7 @@
 		(dnp yes)
 		(uuid "0de25efa-b1f2-4ca1-bdf3-a87a5b989ed1")
 		(property "Reference" "R405"
-			(at 83.82 41.91 90)
+			(at 92.71 41.91 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -7273,7 +7283,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 83.82 39.37 90)
+			(at 92.71 39.37 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -7282,7 +7292,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.82 41.91 0)
+			(at 92.71 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7291,7 +7301,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 83.82 41.91 0)
+			(at 92.71 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7300,7 +7310,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 83.82 41.91 0)
+			(at 92.71 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7309,7 +7319,7 @@
 			)
 		)
 		(property "Digikey Part No" "311-0.0GRCT-ND"
-			(at 83.82 41.91 90)
+			(at 92.71 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8711,7 +8721,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 41.91 90)
+		(at 99.06 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8720,7 +8730,7 @@
 		(fields_autoplaced yes)
 		(uuid "59ce2a03-08ad-468a-a26a-f9695d6abadc")
 		(property "Reference" "#PWR0426"
-			(at 93.98 41.91 0)
+			(at 105.41 41.91 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8729,7 +8739,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.805 41.9099 90)
+			(at 102.235 41.9099 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -8738,7 +8748,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 41.91 0)
+			(at 99.06 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8747,7 +8757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 41.91 0)
+			(at 99.06 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8756,7 +8766,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 41.91 0)
+			(at 99.06 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9962,7 +9972,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 34.29 90)
+		(at 99.06 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9971,7 +9981,7 @@
 		(fields_autoplaced yes)
 		(uuid "7dd18082-28e0-4532-b028-b979eeb8341d")
 		(property "Reference" "#PWR0423"
-			(at 93.98 34.29 0)
+			(at 105.41 34.29 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9980,7 +9990,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.805 34.2899 90)
+			(at 102.235 34.2899 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9989,7 +9999,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 34.29 0)
+			(at 99.06 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9998,7 +10008,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 34.29 0)
+			(at 99.06 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10007,7 +10017,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 34.29 0)
+			(at 99.06 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10528,7 +10538,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 36.83 90)
+		(at 99.06 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10537,7 +10547,7 @@
 		(fields_autoplaced yes)
 		(uuid "96eff843-3911-4aaa-9e27-a58a8c2e72a7")
 		(property "Reference" "#PWR0424"
-			(at 93.98 36.83 0)
+			(at 105.41 36.83 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10546,7 +10556,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.805 36.8299 90)
+			(at 102.235 36.8299 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10555,7 +10565,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 36.83 0)
+			(at 99.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10564,7 +10574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 36.83 0)
+			(at 99.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10573,7 +10583,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 36.83 0)
+			(at 99.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11111,7 +11121,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 83.82 34.29 90)
+		(at 92.71 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11119,7 +11129,7 @@
 		(dnp yes)
 		(uuid "a6c6fc18-f4dc-4acb-93c5-e5b6d1de561e")
 		(property "Reference" "R402"
-			(at 83.82 34.29 90)
+			(at 92.71 34.29 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -11127,7 +11137,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 83.82 31.75 90)
+			(at 92.71 31.75 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -11136,7 +11146,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.82 34.29 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11145,7 +11155,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 83.82 34.29 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11154,7 +11164,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 83.82 34.29 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11163,7 +11173,7 @@
 			)
 		)
 		(property "Digikey Part No" "311-0.0GRCT-ND"
-			(at 83.82 34.29 90)
+			(at 92.71 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12456,7 +12466,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 39.37 90)
+		(at 99.06 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12465,7 +12475,7 @@
 		(fields_autoplaced yes)
 		(uuid "d66247c0-a0ab-4571-ac9e-34ed5aa39c74")
 		(property "Reference" "#PWR0425"
-			(at 93.98 39.37 0)
+			(at 105.41 39.37 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12474,7 +12484,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.805 39.3699 90)
+			(at 102.235 39.3699 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -12483,7 +12493,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 39.37 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12492,7 +12502,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 39.37 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12501,7 +12511,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 39.37 0)
+			(at 99.06 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13195,7 +13205,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 83.82 39.37 90)
+		(at 92.71 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13203,7 +13213,7 @@
 		(dnp yes)
 		(uuid "ea2b76ce-d20d-412d-8e50-86366b33f045")
 		(property "Reference" "R404"
-			(at 83.82 39.37 90)
+			(at 92.71 39.37 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13211,7 +13221,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 83.82 36.83 90)
+			(at 92.71 36.83 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -13220,7 +13230,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.82 39.37 0)
+			(at 92.71 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13229,7 +13239,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 83.82 39.37 0)
+			(at 92.71 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13238,7 +13248,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 83.82 39.37 0)
+			(at 92.71 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13247,7 +13257,7 @@
 			)
 		)
 		(property "Digikey Part No" "311-0.0GRCT-ND"
-			(at 83.82 39.37 90)
+			(at 92.71 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13478,7 +13488,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 83.82 36.83 90)
+		(at 92.71 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13486,7 +13496,7 @@
 		(dnp yes)
 		(uuid "eeb98a0d-d36d-4347-8430-32bc0d24a3a0")
 		(property "Reference" "R403"
-			(at 83.82 36.83 90)
+			(at 92.71 36.83 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13494,7 +13504,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 83.82 34.29 90)
+			(at 92.71 34.29 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -13503,7 +13513,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.82 36.83 0)
+			(at 92.71 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13512,7 +13522,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 83.82 36.83 0)
+			(at 92.71 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13521,7 +13531,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 83.82 36.83 0)
+			(at 92.71 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13530,7 +13540,7 @@
 			)
 		)
 		(property "Digikey Part No" "311-0.0GRCT-ND"
-			(at 83.82 36.83 90)
+			(at 92.71 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)

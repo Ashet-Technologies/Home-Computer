@@ -1902,33 +1902,6 @@
 		)
 		(uuid "9b050fa1-5979-4aef-965a-8c533b23fa83")
 	)
-	(text_box "Hold backplane in reset until the mainboard unresets it."
-		(exclude_from_sim no)
-		(at 84.455 120.65 0)
-		(size 19.685 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 255 255 255 1)
-		)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left top)
-		)
-		(uuid "ee73e358-102b-4793-8950-2a4cdbe2bdef")
-	)
-	(junction
-		(at 82.55 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3030fe0d-4b77-47a2-850e-90cecb97bbe3")
-	)
 	(junction
 		(at 89.535 31.75)
 		(diameter 0)
@@ -1969,7 +1942,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 116.84) (xy 115.57 116.84)
+			(xy 76.2 116.84) (xy 115.57 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2239,16 +2212,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 116.84) (xy 82.55 120.015)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e75d586-d2fa-4714-9879-4515e275bc95")
-	)
-	(wire
-		(pts
 			(xy 144.145 57.785) (xy 197.485 57.785)
 		)
 		(stroke
@@ -2306,16 +2269,6 @@
 			(type default)
 		)
 		(uuid "839eedc1-1ddc-4cfa-a40f-6784a32e4f99")
-	)
-	(wire
-		(pts
-			(xy 82.55 133.35) (xy 82.55 127.635)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85e87594-5652-4dc6-869a-9cce06d13a41")
 	)
 	(wire
 		(pts
@@ -2529,16 +2482,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 116.84) (xy 82.55 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3830475-10cf-44a9-9faa-a3b65d24f885")
-	)
-	(wire
-		(pts
 			(xy 76.2 50.165) (xy 118.745 50.165)
 		)
 		(stroke
@@ -2721,72 +2664,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
 					(reference "R103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 82.55 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6042859d-e7e0-49a4-8d21-b0f340395d08")
-		(property "Reference" "#PWR0107"
-			(at 82.55 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 137.795 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1521ca5-93c2-4385-bc4e-9df856fa9ec3")
-		)
-		(instances
-			(project ""
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
-					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -3053,83 +2930,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
 					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 82.55 123.825 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9260ffaf-f30f-4c69-ba48-df98c6a97755")
-		(property "Reference" "R101"
-			(at 81.28 123.825 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify top)
-			)
-		)
-		(property "Value" "10K"
-			(at 82.55 123.825 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 84.328 123.825 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 82.55 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 82.55 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey Part No" "311-10.0KHRCT-ND"
-			(at 82.55 123.825 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe41d041-5533-40df-a08c-c9d11995ed84")
-		)
-		(pin "2"
-			(uuid "b61a6a75-fee6-4a48-8094-d8a6bb701add")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
-					(reference "R101")
 					(unit 1)
 				)
 			)

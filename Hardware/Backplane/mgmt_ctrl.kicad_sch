@@ -2380,6 +2380,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 60.325) (xy 66.675 60.325)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "017bd001-abaa-42eb-a781-d561ba2ec788")
+	)
+	(wire
+		(pts
 			(xy 76.2 43.18) (xy 85.09 43.18)
 		)
 		(stroke
@@ -3356,7 +3366,7 @@
 	)
 	(hierarchical_label "OUT_{OC}"
 		(shape output)
-		(at 63.5 60.325 90)
+		(at 66.675 60.325 0)
 		(effects
 			(font
 				(size 1.27 1.27)
