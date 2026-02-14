@@ -9722,7 +9722,7 @@
 				)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "560"
 			(at 85.09 174.625 90)
 			(effects
 				(font
@@ -9739,7 +9739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
 			(at 82.55 174.625 0)
 			(effects
 				(font
@@ -9757,7 +9757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "RMCF0603FT270RCT-ND"
+		(property "Digikey Part No" "RR08P560DCT-ND"
 			(at 82.55 174.625 90)
 			(effects
 				(font
@@ -10062,7 +10062,7 @@
 				)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "560"
 			(at 121.92 174.625 90)
 			(effects
 				(font
@@ -10079,7 +10079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
 			(at 119.38 174.625 0)
 			(effects
 				(font
@@ -10097,7 +10097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "RMCF0603FT270RCT-ND"
+		(property "Digikey Part No" "RR08P560DCT-ND"
 			(at 119.38 174.625 90)
 			(effects
 				(font

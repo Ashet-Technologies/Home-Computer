@@ -2476,7 +2476,7 @@
 				)
 			)
 		)
-		(property "Value" "270"
+		(property "Value" "560"
 			(at 99.06 22.86 90)
 			(effects
 				(font
@@ -2493,7 +2493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
 			(at 101.6 22.86 0)
 			(effects
 				(font
@@ -2511,7 +2511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey Part No" "RMCF0603FT270RCT-ND"
+		(property "Digikey Part No" "RR08P560DCT-ND"
 			(at 101.6 22.86 90)
 			(effects
 				(font

@@ -741,6 +741,12 @@
           "label": "Digikey Part No",
           "name": "Digikey Part No",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Part No",
+          "name": "DigiKey Part No",
+          "show": false
         }
       ],
       "filter_string": "",
