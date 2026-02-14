@@ -2952,7 +2952,7 @@
 	)
 	(text "This should be in the \"unreset\" state, as we\ndo want the system to power up"
 		(exclude_from_sim no)
-		(at 47.625 158.75 0)
+		(at 50.8 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3510,7 +3510,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 158.75) (xy 46.99 158.75)
+			(xy 35.56 158.75) (xy 48.26 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4689,7 +4689,7 @@
 		(uuid "d3a00b52-5696-46bd-bdfe-a46d9135082c")
 	)
 	(label "BRD_RESET"
-		(at 46.99 158.75 180)
+		(at 48.26 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)

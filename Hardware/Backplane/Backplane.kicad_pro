@@ -628,16 +628,22 @@
         "Power_500mA"
       ],
       "MAIN_+12V": [
-        "Power_2A"
+        "Power_4A"
       ],
       "MAIN_+3V3": [
-        "Power_2A"
+        "Power_4A"
       ],
       "MAIN_+5V": [
-        "Power_2A"
+        "Power_4A"
       ],
       "MAIN_GND": [
-        "Power_2A"
+        "Power_4A"
+      ],
+      "Net-(TP2906-A)": [
+        "Power_500mA"
+      ],
+      "Net-(U2902-LX)": [
+        "Power_500mA"
       ]
     },
     "netclass_patterns": []
