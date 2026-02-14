@@ -498,6 +498,15 @@
       "+5V": [
         "Power_500mA"
       ],
+      "/Expansions/Module Slot 0/MOD_+12V": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 0/MOD_+3V3": [
+        "Power_500mA"
+      ],
+      "/Expansions/Module Slot 0/MOD_+5V": [
+        "Power_500mA"
+      ],
       "/Expansions/Module Slot 1/MOD_+12V": [
         "Power_500mA"
       ],
@@ -806,7 +815,7 @@
     ],
     [
       "d3047f77-c81c-4381-bf90-1d561e67b161",
-      "Module Slot 1"
+      "Module Slot 0"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -814,7 +823,7 @@
     ],
     [
       "34608737-04ee-4097-a679-eb9474de83e9",
-      "Module Slot 2"
+      "Module Slot 1"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -826,7 +835,7 @@
     ],
     [
       "bd4b3b9b-7d85-45b4-9d95-7f7631822eea",
-      "Module Slot 3"
+      "Module Slot 2"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -834,7 +843,7 @@
     ],
     [
       "0b76639d-ed2e-4d92-9374-970ebfad4ce9",
-      "Module Slot 4"
+      "Module Slot 3"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -842,7 +851,7 @@
     ],
     [
       "6a80605b-8ea1-4c9f-9925-195ca4829ff1",
-      "Module Slot 5"
+      "Module Slot 4"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -858,7 +867,7 @@
     ],
     [
       "f94c2515-5da6-4862-ba30-6d4a39ae8639",
-      "Module Slot 6"
+      "Module Slot 5"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
@@ -866,7 +875,7 @@
     ],
     [
       "c4424f84-74bb-4fe6-9366-b0d1f638ed10",
-      "Module Slot 7"
+      "Module Slot 6"
     ],
     [
       "8c0db8fc-3591-4cdc-ae49-7339c5352f54",
