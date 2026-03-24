@@ -16,6 +16,7 @@ replicate_layout.log
 _autosave-*.kicad_*
 
 production/
+.history/
 
 # Blender
 
