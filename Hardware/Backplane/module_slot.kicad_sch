@@ -594,7 +594,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Home Computer:AHC-MODCONN-GEN1 Socket"
+		(symbol "Home Computer:AHC-CONN-MOD"
 			(pin_names
 				(offset 1.016)
 			)
@@ -648,7 +648,7 @@
 					)
 				)
 			)
-			(property "Description" "Ashet Home Computer Slot"
+			(property "Description" "Ashet Home Computer Expansion Slot"
 				(at 0 50.8 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -659,7 +659,7 @@
 					)
 				)
 			)
-			(symbol "AHC-MODCONN-GEN1 Socket_0_0"
+			(symbol "AHC-CONN-MOD_0_0"
 				(rectangle
 					(start -12.7 43.18)
 					(end 12.7 -43.18)
@@ -672,7 +672,7 @@
 					)
 				)
 			)
-			(symbol "AHC-MODCONN-GEN1 Socket_0_1"
+			(symbol "AHC-CONN-MOD_0_1"
 				(polyline
 					(pts
 						(xy -12.7 12.7) (xy 12.7 12.7)
@@ -686,7 +686,7 @@
 					)
 				)
 			)
-			(symbol "AHC-MODCONN-GEN1 Socket_1_1"
+			(symbol "AHC-CONN-MOD_1_1"
 				(pin power_in line
 					(at -17.78 40.64 0)
 					(length 5.08)
@@ -813,10 +813,10 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin output line
 					(at -17.78 22.86 0)
 					(length 5.08)
-					(name "RESERVED7"
+					(name "MOD_SENSE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3905,10 +3905,6 @@
 		(uuid "af826659-08a9-4bbe-afc0-19af070dbcc4")
 	)
 	(no_connect
-		(at 33.02 39.37)
-		(uuid "c07ed898-ef9b-46f4-ba52-be3716d5c315")
-	)
-	(no_connect
 		(at 68.58 97.79)
 		(uuid "e12bb617-be0e-432c-b879-f019dc5435e4")
 	)
@@ -4013,16 +4009,6 @@
 			(type default)
 		)
 		(uuid "1523956d-ee8a-4398-80cd-a203844881e1")
-	)
-	(wire
-		(pts
-			(xy 260.35 129.54) (xy 273.05 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a5d5535-df8b-43cb-8037-feb29891c3ae")
 	)
 	(wire
 		(pts
@@ -4336,13 +4322,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 133.35) (xy 273.05 133.35)
+			(xy 16.51 39.37) (xy 26.035 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66a3bc62-2d66-4dcb-a8b5-afbf585404fc")
+		(uuid "69a91f95-8062-4d62-a55d-d04a7c2b701e")
 	)
 	(wire
 		(pts
@@ -4363,16 +4349,6 @@
 			(type default)
 		)
 		(uuid "6a997ca2-9d26-4190-a63b-5408b7671a92")
-	)
-	(wire
-		(pts
-			(xy 260.35 125.73) (xy 273.05 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b7b5c1b-2d12-40c7-bd5a-22a2c0f167f8")
 	)
 	(wire
 		(pts
@@ -4556,7 +4532,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.145 41.91) (xy 33.02 41.91)
+			(xy 16.51 41.91) (xy 33.02 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4794,6 +4770,16 @@
 		)
 		(uuid "c6bbc0d0-0c43-42ee-83af-82b9d7915961")
 	)
+	(wire
+		(pts
+			(xy 31.115 39.37) (xy 33.02 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c871a84b-42c9-4042-b1c0-ce91fab9690d")
+	)
 	(polyline
 		(pts
 			(xy 128.905 183.515) (xy 128.905 180.34)
@@ -5028,7 +5014,7 @@
 		(at 85.725 44.45 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
@@ -5058,7 +5044,7 @@
 		(at 16.51 26.67 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
@@ -5073,16 +5059,6 @@
 			(justify right bottom)
 		)
 		(uuid "37ca0332-afe2-4b84-872a-4e7fab8c3847")
-	)
-	(label "MEAS_+5V"
-		(at 260.35 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "470c4dd3-7327-400c-b83b-83b50760ce8b")
 	)
 	(label "~{PRESENT}"
 		(at 99.06 79.375 0)
@@ -5108,7 +5084,7 @@
 		(at 16.51 46.99 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
@@ -5165,7 +5141,7 @@
 		(uuid "752cc926-e127-449f-8715-96750edd5d00")
 	)
 	(label "~{CARD_RESET}"
-		(at 17.145 41.91 0)
+		(at 16.51 41.91 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -5198,7 +5174,7 @@
 		(at 85.09 29.21 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
@@ -5238,21 +5214,11 @@
 		(at 85.725 34.29 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
 		(uuid "b5449193-3eeb-4ad8-8ff9-fc3ca5575a1a")
-	)
-	(label "MEAS_+3V3"
-		(at 260.35 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b978209b-c6f9-4541-858d-94800f867f78")
 	)
 	(label "MOD_+5V"
 		(at 241.3 88.9 180)
@@ -5268,37 +5234,37 @@
 		(at 16.51 29.21 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
 		(uuid "c000fcc2-b2f3-430c-8598-383800c7f409")
 	)
+	(label "MOD_+3V3"
+		(at 16.51 39.37 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0f10ca8-c3f6-40c8-a89a-ea7031b847c2")
+	)
 	(label "HAS_VIDEO"
 		(at 85.725 36.83 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
 		(uuid "d448b08d-dfd6-4dca-9a0d-885226997a5e")
 	)
-	(label "MEAS_+12V"
-		(at 260.35 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d762e9ae-8dfe-488b-a562-f6ca748482f9")
-	)
 	(label "MOD_+12V"
 		(at 85.09 24.13 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
@@ -5328,7 +5294,7 @@
 		(at 16.51 24.13 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify left bottom)
 		)
@@ -5338,7 +5304,7 @@
 		(at 85.09 26.67 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 			(justify right bottom)
 		)
@@ -7839,109 +7805,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 273.05 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4e0b6daa-5c9d-4759-a1e5-4549c1c24269")
-		(property "Reference" "TP406"
-			(at 274.32 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 274.32 134.6199 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 278.13 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 278.13 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 273.05 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "919a0376-341b-48f9-b5c2-31134ac8fbd8")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/0b76639d-ed2e-4d92-9374-970ebfad4ce9"
-					(reference "TP1406")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/34608737-04ee-4097-a679-eb9474de83e9"
-					(reference "TP706")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/6a80605b-8ea1-4c9f-9925-195ca4829ff1"
-					(reference "TP1706")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/bd4b3b9b-7d85-45b4-9d95-7f7631822eea"
-					(reference "TP1106")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/c4424f84-74bb-4fe6-9366-b0d1f638ed10"
-					(reference "TP2506")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d3047f77-c81c-4381-bf90-1d561e67b161"
-					(reference "TP406")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/f94c2515-5da6-4862-ba30-6d4a39ae8639"
-					(reference "TP2209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 68.58 21.59 90)
 		(unit 1)
@@ -8789,7 +8652,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Home Computer:AHC-MODCONN-GEN1 Socket")
+		(lib_id "Home Computer:AHC-CONN-MOD")
 		(at 50.8 62.23 0)
 		(unit 1)
 		(body_style 1)
@@ -8843,8 +8706,8 @@
 				)
 			)
 		)
-		(property "Description" "Ashet Home Computer Slot"
-			(at 50.8 62.23 0)
+		(property "Description" "Ashet Home Computer Expansion Slot"
+			(at 50.8 11.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11131,6 +10994,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 28.575 39.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfff23bf-9699-48e0-8726-56a4c8f42fdf")
+		(property "Reference" "R414"
+			(at 28.575 39.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 28.575 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 28.575 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 28.575 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 28.575 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part No" "311-10.0KHRCT-ND"
+			(at 28.575 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "107e20c5-34aa-42c5-a35d-2d35fa32f170")
+		)
+		(pin "1"
+			(uuid "3bc6a448-9b70-4af5-9ffd-4e87a8cc4f4c")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/0b76639d-ed2e-4d92-9374-970ebfad4ce9"
+					(reference "R417")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/34608737-04ee-4097-a679-eb9474de83e9"
+					(reference "R415")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/6a80605b-8ea1-4c9f-9925-195ca4829ff1"
+					(reference "R418")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/bd4b3b9b-7d85-45b4-9d95-7f7631822eea"
+					(reference "R416")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/c4424f84-74bb-4fe6-9366-b0d1f638ed10"
+					(reference "R420")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d3047f77-c81c-4381-bf90-1d561e67b161"
+					(reference "R414")
+					(unit 1)
+				)
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/f94c2515-5da6-4862-ba30-6d4a39ae8639"
+					(reference "R419")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 101.6 152.4 0)
 		(unit 1)
@@ -12524,109 +12502,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 273.05 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e2d2511d-d591-4d28-a2fb-280f06a79f36")
-		(property "Reference" "TP404"
-			(at 274.32 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 274.32 126.9999 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 278.13 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 278.13 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 273.05 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d262482a-a609-453e-b7b1-9cdc036aef02")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/0b76639d-ed2e-4d92-9374-970ebfad4ce9"
-					(reference "TP1404")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/34608737-04ee-4097-a679-eb9474de83e9"
-					(reference "TP704")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/6a80605b-8ea1-4c9f-9925-195ca4829ff1"
-					(reference "TP1704")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/bd4b3b9b-7d85-45b4-9d95-7f7631822eea"
-					(reference "TP1104")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/c4424f84-74bb-4fe6-9366-b0d1f638ed10"
-					(reference "TP2504")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d3047f77-c81c-4381-bf90-1d561e67b161"
-					(reference "TP404")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/f94c2515-5da6-4862-ba30-6d4a39ae8639"
-					(reference "TP2207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 68.58 67.31 90)
 		(unit 1)
@@ -13492,109 +13367,6 @@
 				)
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/f94c2515-5da6-4862-ba30-6d4a39ae8639"
 					(reference "R2213")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 273.05 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f4546f63-5a01-48a9-b56d-365a18352b8e")
-		(property "Reference" "TP405"
-			(at 274.32 129.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 274.32 130.8099 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 278.13 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 278.13 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 273.05 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82a715c4-e224-43e8-8737-094caa85bdf0")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/0b76639d-ed2e-4d92-9374-970ebfad4ce9"
-					(reference "TP1405")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/34608737-04ee-4097-a679-eb9474de83e9"
-					(reference "TP705")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/6a80605b-8ea1-4c9f-9925-195ca4829ff1"
-					(reference "TP1705")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/bd4b3b9b-7d85-45b4-9d95-7f7631822eea"
-					(reference "TP1105")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/c4424f84-74bb-4fe6-9366-b0d1f638ed10"
-					(reference "TP2505")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d3047f77-c81c-4381-bf90-1d561e67b161"
-					(reference "TP405")
-					(unit 1)
-				)
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/f94c2515-5da6-4862-ba30-6d4a39ae8639"
-					(reference "TP2208")
 					(unit 1)
 				)
 			)

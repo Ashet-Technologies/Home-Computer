@@ -6292,7 +6292,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -6318,7 +6318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243"
 			(at 254 140.335 0)
 			(hide yes)
 			(show_name no)
@@ -6340,7 +6340,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Tactile Switch SPST-NO Top Actuated Through Hole"
 			(at 254 145.415 0)
 			(hide yes)
 			(show_name no)
@@ -6351,7 +6351,7 @@
 				)
 			)
 		)
-		(property "Digikey Part No" ""
+		(property "Digikey Part No" "679-2452-ND"
 			(at 254 145.415 0)
 			(hide yes)
 			(show_name no)
@@ -6703,6 +6703,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 38.1 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "37dca446-4ce7-4f03-be87-63c5fefd5ee4")
+		(property "Reference" "J1006"
+			(at 40.005 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "BM04B-SRSS-TB"
+			(at 40.005 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+			(at 38.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+			(at 38.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
+			(at 38.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
+			(at 38.1 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9e2be0ca-c89b-4e29-b1fb-7f14e6bcfcff")
+		)
+		(pin "3"
+			(uuid "e65dc7d3-c1ea-40f0-94da-5d882f53d7b3")
+		)
+		(pin "4"
+			(uuid "4f732fa4-0c8e-4cb8-a6b6-e52dba387866")
+		)
+		(pin "1"
+			(uuid "41511847-5ef0-43bf-9c13-92fb29593ca0")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "J1006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Home Computer:S3134K")
 		(at 260.35 54.61 0)
 		(unit 1)
@@ -6792,6 +6890,104 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
 					(reference "Q1005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 127 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "3d182ef7-4662-407e-815f-cd40bab9c8bf")
+		(property "Reference" "J1004"
+			(at 128.905 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "BM04B-SRSS-TB"
+			(at 128.905 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+			(at 127 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+			(at 127 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
+			(at 127 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
+			(at 127 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "552dfaa5-756f-4a81-ab72-6129b8ba421d")
+		)
+		(pin "3"
+			(uuid "56c91f7e-7ccf-4e3f-960c-0e3faa6ef2b8")
+		)
+		(pin "4"
+			(uuid "98eec51b-3968-4137-ae33-29b7b9c2c065")
+		)
+		(pin "1"
+			(uuid "c1fbc605-1d11-4fa5-aad8-40dbdff28dbb")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "J1004")
 					(unit 1)
 				)
 			)
@@ -7432,104 +7628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 127 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "56e0966d-dd6e-4e65-af2a-e49dddc5d5f1")
-		(property "Reference" "J1002"
-			(at 128.905 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "SM04B-SRSS-TB"
-			(at 128.905 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 127 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 4 position 0.039\" (1.00mm)"
-			(at 127 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part No" "455-SM04B-SRSS-TBCT-ND"
-			(at 127 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "37e7d374-ac36-4aa5-9852-4d9e4e9ad119")
-		)
-		(pin "3"
-			(uuid "59bdc508-9b96-4cf8-a6fa-7f0f4ef0b1d3")
-		)
-		(pin "4"
-			(uuid "59caf645-dba6-4ca7-bd39-52b6d95e0bd3")
-		)
-		(pin "1"
-			(uuid "176f201c-da29-41ec-bc39-6dcd86d4e861")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
-					(reference "J1002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 98.425 127 270)
 		(unit 1)
@@ -7967,6 +8065,104 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
 					(reference "R1006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 82.55 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "62bdbb14-eaac-463a-893c-9f9582b0c650")
+		(property "Reference" "J1005"
+			(at 84.455 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "BM04B-SRSS-TB"
+			(at 84.455 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
+			(at 82.55 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "26983d49-f6d8-43d9-b2e6-70d82c4e40eb")
+		)
+		(pin "3"
+			(uuid "fa82c22f-a40d-4350-a95e-3690cd59b5ea")
+		)
+		(pin "4"
+			(uuid "47cc5120-649b-4551-b764-85fb6dc0036d")
+		)
+		(pin "1"
+			(uuid "ff0b014b-4332-42e1-ae8d-9b6ab21cd88f")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "J1005")
 					(unit 1)
 				)
 			)
@@ -9422,104 +9618,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 82.55 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b58e9d0e-1e17-468a-947d-6a0a7bfe1aab")
-		(property "Reference" "J1001"
-			(at 84.455 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "SM04B-SRSS-TB"
-			(at 84.455 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 82.55 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 4 position 0.039\" (1.00mm)"
-			(at 82.55 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part No" "455-SM04B-SRSS-TBCT-ND"
-			(at 82.55 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4c35a0fb-8d09-4b49-8f17-9159b4e36967")
-		)
-		(pin "3"
-			(uuid "21684807-7d4c-4d71-aa32-13673300fcac")
-		)
-		(pin "4"
-			(uuid "936490df-ebb8-40e7-885a-e16a76657b75")
-		)
-		(pin "1"
-			(uuid "ef3ed1c7-1db2-4fc5-8e81-87974dcd8f8d")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
-					(reference "J1001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 142.875 130.81 0)
 		(unit 1)
@@ -10583,104 +10681,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 38.1 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e4b9f164-ad19-404c-803a-2a9ba07e1ae5")
-		(property "Reference" "J1005"
-			(at 40.005 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "SM04B-SRSS-TB"
-			(at 40.005 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 38.1 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 4 position 0.039\" (1.00mm)"
-			(at 38.1 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part No" "455-SM04B-SRSS-TBCT-ND"
-			(at 38.1 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "61c3bf8b-b28c-4926-a558-d03db0aaf8a0")
-		)
-		(pin "3"
-			(uuid "e61434c7-a7b6-4251-8706-4805fac25ba7")
-		)
-		(pin "4"
-			(uuid "0c502be1-a50a-4972-b9fa-481e044635b2")
-		)
-		(pin "1"
-			(uuid "15f44c74-3ae6-4559-84ab-bfeaeddd0413")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
-					(reference "J1005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:LD271")
 		(at 106.68 139.7 0)
 		(mirror y)
@@ -11092,10 +11092,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f2e1558e-b081-44d2-ac9e-94cf39a6d6af")
 		(property "Reference" "J1003"
 			(at 173.355 25.4 0)
@@ -11108,7 +11108,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "SM04B-SRSS-TB"
+		(property "Value" "BM04B-SRSS-TB"
 			(at 173.355 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11119,7 +11119,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
 			(at 171.45 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11141,7 +11141,7 @@
 				)
 			)
 		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 4 position 0.039\" (1.00mm)"
+		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
 			(at 171.45 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11152,7 +11152,7 @@
 				)
 			)
 		)
-		(property "Digikey Part No" "455-SM04B-SRSS-TBCT-ND"
+		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
 			(at 171.45 29.21 0)
 			(hide yes)
 			(show_name no)

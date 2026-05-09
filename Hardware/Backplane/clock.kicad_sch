@@ -2395,7 +2395,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8AIG-4Pin_3.2x2.5mm"
 			(at 64.77 40.005 0)
 			(hide yes)
 			(show_name no)
@@ -2417,7 +2417,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "48 MHz XO (Standard) CMOS Oscillator 3.3V Enable/Disable 4-SMD, No Lead"
 			(at 64.77 40.005 0)
 			(hide yes)
 			(show_name no)
