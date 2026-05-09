@@ -6109,6 +6109,17 @@
 	)
 	(wire
 		(pts
+			(xy 174.625 57.15) (xy 179.07 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 132 132 1)
+		)
+		(uuid "21f4afd5-6cb4-4785-a126-8cc0105e9a5e")
+	)
+	(wire
+		(pts
 			(xy 172.72 45.72) (xy 180.975 45.72)
 		)
 		(stroke
@@ -6229,6 +6240,17 @@
 			(color 0 132 132 1)
 		)
 		(uuid "295195c9-b2f2-4677-91ea-f4c44b4fc0ef")
+	)
+	(wire
+		(pts
+			(xy 180.975 45.72) (xy 180.975 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "2a240119-b5e1-4309-8a62-cb7b2dc102dd")
 	)
 	(wire
 		(pts
@@ -6718,6 +6740,17 @@
 	)
 	(wire
 		(pts
+			(xy 177.165 35.56) (xy 177.165 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "5e81ed9d-1883-4c75-b109-68d2ee1a887d")
+	)
+	(wire
+		(pts
 			(xy 107.95 101.6) (xy 111.76 101.6)
 		)
 		(stroke
@@ -6958,6 +6991,17 @@
 			(type default)
 		)
 		(uuid "7e45613c-5e29-4e52-ab18-ac44457f98d3")
+	)
+	(wire
+		(pts
+			(xy 174.625 58.42) (xy 180.975 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "7e917b54-9e8e-48bb-8a1f-f225f7b1a336")
 	)
 	(wire
 		(pts
@@ -7388,6 +7432,17 @@
 			(type default)
 		)
 		(uuid "a248d74d-0cdc-4a8d-8c9a-b7771abe0115")
+	)
+	(wire
+		(pts
+			(xy 174.625 55.88) (xy 177.165 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "a4289cd7-42c8-4c54-8f1e-4d4fe2415556")
 	)
 	(wire
 		(pts
@@ -8068,6 +8123,17 @@
 			(type default)
 		)
 		(uuid "e4c3aae2-b936-4a2a-b346-e58b4fa315f8")
+	)
+	(wire
+		(pts
+			(xy 179.07 40.64) (xy 179.07 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 132 132 1)
+		)
+		(uuid "e68fd391-d13c-4791-8903-8c2a95ebf697")
 	)
 	(wire
 		(pts
@@ -8871,6 +8937,54 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 174.625 57.15 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad59ac5c-de6d-4041-a034-9b8795bca0d3")
+		(property "Net Class" "Power_4A"
+			(at 171.45 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 174.625 58.42 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8aae242-32de-4cb4-9da3-c540ccf25243")
+		(property "Net Class" "Power_4A"
+			(at 171.45 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 107.95 101.6 0)
 		(effects
 			(font
@@ -8888,6 +9002,30 @@
 					(size 1.016 1.016)
 					(italic yes)
 				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 174.625 55.88 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd441d55-3da8-47f9-9e0f-1ddc406ef2ff")
+		(property "Net Class" "Power_4A"
+			(at 171.45 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(italic yes)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -9668,7 +9806,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+		(property "Footprint" "Home Computer:FUSER_0ZCF0400FF2A"
 			(at 170.18 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10724,7 +10862,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+		(property "Footprint" "Home Computer:FUSER_0ZCF0400FF2A"
 			(at 170.18 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -16435,7 +16573,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
+		(property "Footprint" "Home Computer:FUSER_0ZCF0400FF2A"
 			(at 170.18 45.72 0)
 			(hide yes)
 			(show_name no)

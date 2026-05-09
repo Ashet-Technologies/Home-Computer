@@ -53,7 +53,13 @@
           "min_clearance": 0.4
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -125,22 +131,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.15,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.2,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -188,7 +194,12 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.15,
+        0.5,
+        1.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -215,7 +226,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -486,7 +506,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -497,11 +517,33 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.15,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.5,
+        "name": "Power_4A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "tuning_profile": "",
+        "via_diameter": 1.0,
+        "via_drill": 0.5
+      },
+      {
+        "clearance": 0.25,
+        "name": "Power_500mA",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.7,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -670,6 +712,78 @@
       ],
       "MAIN_GND": [
         "Power_4A"
+      ],
+      "Net-(J2902-Pin_1)": [
+        "Power_4A"
+      ],
+      "Net-(J2902-Pin_11)": [
+        "Power_4A"
+      ],
+      "Net-(J2902-Pin_12)": [
+        "Power_4A"
+      ],
+      "Net-(Q1102-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1103-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1104-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1402-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1403-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1404-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1702-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1703-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q1704-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2202-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2203-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2204-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2502-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2503-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q2504-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q402-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q403-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q404-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q702-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q703-S)": [
+        "Power_500mA"
+      ],
+      "Net-(Q704-S)": [
+        "Power_500mA"
       ],
       "Net-(TP2906-A)": [
         "Power_500mA"
@@ -846,7 +960,7 @@
         "uuid": "c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
       }
     ],
-    "used_designators": "D1006,#PWR119,#PWR130-132,#PWR437-440,#PWR1013-1019,#PWR1023,#PWR1026,#PWR1037,#PWR1041-1052,J1,J1004-1006,TP2005-2028,R414-427,R1012",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
