@@ -8,6 +8,129 @@
 		(company "Ashet Technologies")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1272,6 +1395,12 @@
 		(uuid "81989b31-07a0-4825-bc56-2101c8663dc6")
 	)
 	(junction
+		(at 86.36 40.005)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "214876a9-61e0-466c-bc0a-b7f01f71521b")
+	)
+	(junction
 		(at 31.75 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1284,28 +1413,10 @@
 		(uuid "47ed043b-25a5-4c22-b3a5-5a88c79186d0")
 	)
 	(junction
-		(at 136.525 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "599d4d01-b959-4df1-9d92-6f0cea13221d")
-	)
-	(junction
-		(at 136.525 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63b8a296-ac5b-4e6e-b0a6-f59a9df5075c")
-	)
-	(junction
 		(at 31.75 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e8ae8ea-0397-4c53-8eea-f9e3622946d3")
-	)
-	(junction
-		(at 136.525 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4bd9153-eace-45c6-80cf-b9480b740c9f")
 	)
 	(junction
 		(at 107.95 42.545)
@@ -1314,34 +1425,10 @@
 		(uuid "a937370d-b1e0-4ffd-9a04-6888c85a8b59")
 	)
 	(junction
-		(at 133.35 66.04)
+		(at 131.445 42.545)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac7ddeee-5e9a-41ef-b73d-7213e6913c28")
-	)
-	(junction
-		(at 136.525 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8781253-9f58-4e76-8f4b-8674c1cc9b79")
-	)
-	(junction
-		(at 133.35 42.545)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8e188f7-eb77-411a-98fb-156fca978dac")
-	)
-	(junction
-		(at 136.525 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f82ed134-1db8-41f3-8e94-6c5f3b756fbb")
-	)
-	(junction
-		(at 107.95 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbbacd69-0924-4770-9a7f-e8671f4ba4e2")
+		(uuid "fe1eac2d-85f8-4eea-85a8-d26d7c07f452")
 	)
 	(wire
 		(pts
@@ -1365,46 +1452,6 @@
 	)
 	(wire
 		(pts
-			(xy 136.525 43.18) (xy 136.525 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09e1d962-ab72-40c8-bf4a-c258c1d26bf2")
-	)
-	(wire
-		(pts
-			(xy 136.525 27.94) (xy 136.525 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dd56396-ee6a-4534-ba5c-72cee743c1b7")
-	)
-	(wire
-		(pts
-			(xy 107.95 27.94) (xy 136.525 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cb8245c-6aae-421c-96c2-8bebbacfea3e")
-	)
-	(wire
-		(pts
-			(xy 136.525 68.58) (xy 136.525 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "285fad8e-e0e2-4fc5-8e95-efce0b2724ba")
-	)
-	(wire
-		(pts
 			(xy 101.6 27.94) (xy 107.95 27.94)
 		)
 		(stroke
@@ -1415,33 +1462,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 66.04) (xy 133.35 42.545)
+			(xy 86.36 40.005) (xy 86.36 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c9f5dd7-9a6c-4357-b4a8-b968d72eb937")
-	)
-	(wire
-		(pts
-			(xy 136.525 96.52) (xy 139.7 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "338a419e-5f74-4594-9691-49b5c4980fcd")
-	)
-	(wire
-		(pts
-			(xy 136.525 93.98) (xy 136.525 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aaee297-75aa-4c7d-aa01-b22b56cb8c10")
+		(uuid "3bff9fca-7f73-4876-a306-5882595f5d94")
 	)
 	(wire
 		(pts
@@ -1452,16 +1479,6 @@
 			(type default)
 		)
 		(uuid "47e64de2-9ab6-4a31-8eb8-9d7d37101342")
-	)
-	(wire
-		(pts
-			(xy 139.7 91.44) (xy 133.35 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e101d12-2783-401e-8f56-5589da62a789")
 	)
 	(wire
 		(pts
@@ -1482,16 +1499,6 @@
 			(type default)
 		)
 		(uuid "5c2d29a7-f45c-4d67-ab53-fe405c71a1e0")
-	)
-	(wire
-		(pts
-			(xy 136.525 45.72) (xy 136.525 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5debf48b-3a60-4c94-a78b-38bfdb9cdc78")
 	)
 	(wire
 		(pts
@@ -1525,26 +1532,6 @@
 	)
 	(wire
 		(pts
-			(xy 136.525 71.12) (xy 136.525 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71c6e5d8-884c-47c6-9053-0e00882b4d87")
-	)
-	(wire
-		(pts
-			(xy 139.7 43.18) (xy 136.525 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74eaf299-e6ca-420c-a9f5-921fb7837c2f")
-	)
-	(wire
-		(pts
 			(xy 50.8 48.895) (xy 50.8 50.8)
 		)
 		(stroke
@@ -1552,6 +1539,26 @@
 			(type default)
 		)
 		(uuid "80d1fcfe-180b-4332-af25-a8901c8eabe3")
+	)
+	(wire
+		(pts
+			(xy 86.36 40.005) (xy 109.855 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "816e197a-bbde-47bb-8ad0-29a93e596944")
+	)
+	(wire
+		(pts
+			(xy 131.445 42.545) (xy 131.445 36.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8793c6e6-9712-4f20-8866-b5fea776d2c1")
 	)
 	(wire
 		(pts
@@ -1565,63 +1572,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 68.58) (xy 136.525 68.58)
+			(xy 131.445 42.545) (xy 139.7 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9aebf502-6875-419c-8225-b8bac56f6745")
+		(uuid "a30dd12d-93b5-4191-8b01-fc7c046918ca")
 	)
 	(wire
 		(pts
-			(xy 139.7 40.64) (xy 133.35 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d356534-4f6e-41af-b845-5b7a25223472")
-	)
-	(wire
-		(pts
-			(xy 133.35 66.04) (xy 139.7 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d8c40db-05b8-4a29-8b14-6a722fda053a")
-	)
-	(wire
-		(pts
-			(xy 71.12 40.005) (xy 109.855 40.005)
+			(xy 71.12 40.005) (xy 86.36 40.005)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be88081f-aba6-4b31-aa4e-147ada7b25a3")
-	)
-	(wire
-		(pts
-			(xy 136.525 71.12) (xy 139.7 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c373e9a1-695d-43d4-a903-37b7639e1a86")
-	)
-	(wire
-		(pts
-			(xy 133.35 40.64) (xy 133.35 42.545)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7904cae-8f33-45ec-907c-227c572b51e1")
 	)
 	(wire
 		(pts
@@ -1632,26 +1599,6 @@
 			(type default)
 		)
 		(uuid "cfa6311a-b5dc-47da-96c7-db5306691690")
-	)
-	(wire
-		(pts
-			(xy 136.525 45.72) (xy 139.7 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d570b29c-c452-4251-a64a-5c51849b6ab3")
-	)
-	(wire
-		(pts
-			(xy 133.35 91.44) (xy 133.35 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d598e2fa-b000-4d33-85f0-993514c354bd")
 	)
 	(wire
 		(pts
@@ -1695,16 +1642,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 93.98) (xy 136.525 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4a12ae4-5767-4c1d-9521-3e617869daa8")
-	)
-	(wire
-		(pts
 			(xy 109.855 42.545) (xy 107.95 42.545)
 		)
 		(stroke
@@ -1745,7 +1682,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 42.545) (xy 122.555 42.545)
+			(xy 122.555 42.545) (xy 131.445 42.545)
 		)
 		(stroke
 			(width 0)
@@ -1773,41 +1710,9 @@
 		)
 		(uuid "10d78bf3-155e-469f-8cf6-f992c225397f")
 	)
-	(label "CLK_SPAN"
-		(at 123.19 42.545 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "50f0f82e-f305-4ac5-b1d0-f01cb361d726")
-	)
-	(hierarchical_label "CLKTREE0"
-		(shape output)
-		(at 152.4 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7ea62404-4d19-44c2-b17c-04daa5e284b7")
-	)
-	(hierarchical_label "CLKTREE1"
-		(shape output)
-		(at 152.4 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a08397f1-c2e0-4880-b6d0-4770f2859730")
-	)
 	(hierarchical_label "CLKTREE2"
 		(shape output)
-		(at 152.4 93.98 0)
+		(at 139.7 42.545 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2001,39 +1906,41 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 146.05 101.6 0)
+		(lib_id "Connector:TestPoint_Small")
+		(at 131.445 36.195 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "08fad2a1-4dc3-4692-b5c1-6e57fecf44f1")
-		(property "Reference" "#PWR0217"
-			(at 146.05 107.95 0)
+		(uuid "0ff73edd-851b-46c0-81b6-dec422ce27a3")
+		(property "Reference" "TP409"
+			(at 132.08 34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 132.7149 34.925 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 146.05 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 101.6 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 131.445 31.115 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2044,7 +1951,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 101.6 0)
+			(at 131.445 31.115 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2054,8 +1961,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 101.6 0)
+		(property "Description" "test point"
+			(at 131.445 36.195 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2066,12 +1973,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "81b214bd-2727-4ef1-a6f9-e1f30287ad05")
+			(uuid "2b80d78f-365b-4b08-9067-555182697539")
 		)
 		(instances
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0217")
+					(reference "TP409")
 					(unit 1)
 				)
 			)
@@ -2242,121 +2149,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "#PWR0208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
-		(at 146.05 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "237da334-8ca2-4511-bcc2-e7f4ca83b2b2")
-		(property "Reference" "U202"
-			(at 146.685 37.465 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "NL17SZS11DFT2G-Q"
-			(at 160.655 39.6492 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 198.882 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
-			(at 201.676 87.122 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
-			(at 187.452 85.344 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part No" ""
-			(at 220.726 78.994 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Digikey Part No" "488-NL17SZS11DFT2G-QCT-ND"
-			(at 146.05 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "196dffd9-06fa-425f-b6ac-adc43260fb6c")
-		)
-		(pin "1"
-			(uuid "2bf2295d-5c33-4204-8c1c-4e95be171991")
-		)
-		(pin "4"
-			(uuid "b0fe1da5-0ba8-482d-afbd-08ce112fd481")
-		)
-		(pin "3"
-			(uuid "217ea981-a95a-4891-aecb-daea3b7962c7")
-		)
-		(pin "6"
-			(uuid "38c248ad-2af6-487d-ad24-dfe7afedb97d")
-		)
-		(pin "5"
-			(uuid "896bccbd-a14f-4a58-91f2-8fd146cea21d")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "U202")
 					(unit 1)
 				)
 			)
@@ -2787,199 +2579,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
-		(at 146.05 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "728c7251-0039-4e4c-837c-15c69b4d4492")
-		(property "Reference" "U205"
-			(at 146.685 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "NL17SZS11DFT2G-Q"
-			(at 160.655 90.4492 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 198.882 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
-			(at 201.676 137.922 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
-			(at 187.452 136.144 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part No" ""
-			(at 220.726 129.794 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Digikey Part No" "488-NL17SZS11DFT2G-QCT-ND"
-			(at 146.05 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "65880774-4427-497c-82c6-ddb826dc0792")
-		)
-		(pin "1"
-			(uuid "04f86c55-94f3-4fd1-9211-8024c9785fd2")
-		)
-		(pin "4"
-			(uuid "65734801-954e-4f51-8c38-11d97bef32ae")
-		)
-		(pin "3"
-			(uuid "70b537c9-10b7-422f-8433-13db1f670e64")
-		)
-		(pin "6"
-			(uuid "911c8ae7-4c49-4bfe-9c00-1d4530a6fb73")
-		)
-		(pin "5"
-			(uuid "050aee35-791a-4a68-a33a-3426c88bdac6")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "U205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 146.05 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "777380bf-76d5-4bf0-b0b2-1413ce10d3cf")
-		(property "Reference" "#PWR0214"
-			(at 146.05 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 146.05 57.785 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a32a393-a80e-42e5-b60e-53e074570147")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0214")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 116.205 50.165 0)
 		(unit 1)
@@ -3128,83 +2727,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "#PWR0202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 146.05 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "87ca81ce-1331-402a-936e-0885f7c8961b")
-		(property "Reference" "#PWR0215"
-			(at 146.05 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 146.05 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a5219f2-5e40-4adb-854e-0440225dfdee")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -3365,40 +2887,41 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 146.05 35.56 0)
+		(lib_id "Connector:TestPoint_Small")
+		(at 86.36 33.655 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b6726090-66b2-49a1-8a89-6c6c2027dfdc")
-		(property "Reference" "#PWR0210"
-			(at 146.05 39.37 0)
+		(uuid "c2a27d57-8a7e-4d17-ae1c-666559818bb6")
+		(property "Reference" "TP410"
+			(at 86.995 32.385 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 87.6299 32.385 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 146.05 32.385 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 35.56 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 86.36 28.575 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3409,7 +2932,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 35.56 0)
+			(at 86.36 28.575 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3419,86 +2942,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0b0db19-5fa5-460e-a66a-12b913bcad57")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0210")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 146.05 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b954f8d8-6fd9-43db-9840-35ce7480b5e5")
-		(property "Reference" "#PWR0216"
-			(at 146.05 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 146.05 83.185 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 86.36 0)
+		(property "Description" "test point"
+			(at 86.36 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3509,12 +2954,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "72813abf-ce04-409b-8d79-e864908c7d63")
+			(uuid "e250290d-5e96-4da1-a22a-6f3de849869d")
 		)
 		(instances
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0216")
+					(reference "TP410")
 					(unit 1)
 				)
 			)
@@ -3678,121 +3123,6 @@
 	)
 	(symbol
 		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
-		(at 146.05 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ed70d741-3822-4c0f-be37-4c755b312957")
-		(property "Reference" "U204"
-			(at 146.685 62.865 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "NL17SZS11DFT2G-Q"
-			(at 160.655 65.0492 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 198.882 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl17szs11-d.pdf"
-			(at 201.676 112.522 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AND Gate IC 1 Channel Schmitt Trigger Input SC-88/SC70-6/SOT-363"
-			(at 187.452 110.744 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part No" ""
-			(at 220.726 104.394 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Digikey Part No" "488-NL17SZS11DFT2G-QCT-ND"
-			(at 146.05 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bc1aa4d0-afb6-441f-90b3-206459ef2af6")
-		)
-		(pin "1"
-			(uuid "99f302d7-1fb0-4bbc-8ef6-30583ff944df")
-		)
-		(pin "4"
-			(uuid "9e047208-7e10-433c-902c-29a9450136c7")
-		)
-		(pin "3"
-			(uuid "4f001d65-eafb-446b-b47b-9a565411dec7")
-		)
-		(pin "6"
-			(uuid "8be553ed-1eec-4dd8-a2b7-fd949b68a052")
-		)
-		(pin "5"
-			(uuid "d282e920-6f48-4a96-8b76-0ce3bc3e6342")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "U204")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Home Computer:NL17SZS11DFT2G-Q")
 		(at 116.205 42.545 0)
 		(unit 1)
 		(body_style 1)
@@ -3857,17 +3187,6 @@
 				)
 			)
 		)
-		(property "DigiKey Part No" ""
-			(at 190.881 78.359 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
 		(property "Digikey Part No" "488-NL17SZS11DFT2G-QCT-ND"
 			(at 116.205 42.545 0)
 			(hide yes)
@@ -3901,83 +3220,6 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
 					(reference "U203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 146.05 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f6d91cca-e96d-4b50-8909-fa25070c1f42")
-		(property "Reference" "#PWR0213"
-			(at 146.05 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 146.05 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d2650950-30e5-47a3-903b-8cfca961a7c7")
-		)
-		(instances
-			(project "Backplane"
-				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/fc524bed-e1de-43ff-9b23-75610ded7ea1/d370d472-fb74-4f37-8fa2-2407b7fec231"
-					(reference "#PWR0213")
 					(unit 1)
 				)
 			)

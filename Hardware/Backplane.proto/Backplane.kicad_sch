@@ -3212,6 +3212,16 @@
 		)
 		(uuid "fd5c76b8-1283-4f14-9ccb-aa4bdbd3aa3a")
 	)
+	(label "FAB_{5}"
+		(at 81.915 139.7 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "005fca09-285f-45cb-ad74-965525cc9cb0")
+	)
 	(label "USB_{0}_D+"
 		(at 221.615 95.885 0)
 		(effects
@@ -3221,6 +3231,16 @@
 			(justify left bottom)
 		)
 		(uuid "0b5cf325-20da-439d-be8b-773a31c9d569")
+	)
+	(label "FAB_{5}"
+		(at 168.275 83.185 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ff3b542-1894-4029-a7f7-b5dd3cfe9d5e")
 	)
 	(label "I2C^{FAB}_{SCL}"
 		(at 111.125 45.085 180)
@@ -3242,6 +3262,26 @@
 		)
 		(uuid "3070b853-fdcc-4d70-acff-dc943c08ea15")
 	)
+	(label "FAB_{3}"
+		(at 81.915 134.62 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c2da0ab-7a06-4f47-a405-a0490c0d7064")
+	)
+	(label "FAB_{6}"
+		(at 81.915 142.24 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "45fdf5f2-cb82-425b-a636-dd5d0925081a")
+	)
 	(label "USB_{1}_D-"
 		(at 221.615 114.3 0)
 		(effects
@@ -3251,6 +3291,16 @@
 			(justify left bottom)
 		)
 		(uuid "5d1e80cd-2d9a-4353-b10a-f3f43ac8dec7")
+	)
+	(label "FAB_{3}"
+		(at 168.275 75.565 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ecca50b-7a83-419c-a41c-b4ede953c205")
 	)
 	(label "USB_{1}_D+"
 		(at 221.615 111.76 0)
@@ -3262,6 +3312,56 @@
 		)
 		(uuid "647eda4d-a614-46bd-b08f-ecd2557da77a")
 	)
+	(label "FAB_{6}"
+		(at 168.275 88.265 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "93bbaf05-88b8-4514-8463-2b06ea902291")
+	)
+	(label "FAB_{1}"
+		(at 81.9228 129.54 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3c4a0ee-3aee-4355-b84d-d67a7b899ec1")
+	)
+	(label "FAB_{4}"
+		(at 168.275 80.645 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7f6df3e-5209-42a7-a5d2-6907a1a39a61")
+	)
+	(label "FAB_{0}"
+		(at 168.275 65.405 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "aab51d0e-5d4c-446a-9d1f-87202b4444ce")
+	)
+	(label "FAB_{7}"
+		(at 168.275 90.805 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "d7edbd46-7825-455f-b3b0-cbe5519be618")
+	)
 	(label "USB_{0}_D-"
 		(at 221.615 98.425 0)
 		(effects
@@ -3271,6 +3371,66 @@
 			(justify left bottom)
 		)
 		(uuid "dbc7186b-3f0e-4f30-b58a-90d6dbc4eebe")
+	)
+	(label "FAB_{4}"
+		(at 81.915 137.16 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "e270b72a-7d4f-4ca1-b684-a1b007bb6ae5")
+	)
+	(label "FAB_{2}"
+		(at 81.915 132.08 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4e537ee-736d-453b-ab0e-4d9ee44dbde0")
+	)
+	(label "FAB_{0}"
+		(at 81.915 127 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "e72b3acf-1649-44c5-9a76-a26d089d7113")
+	)
+	(label "FAB_{2}"
+		(at 168.275 73.025 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "f20ca126-b60e-42ab-b62c-609821640397")
+	)
+	(label "FAB_{7}"
+		(at 81.915 144.78 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8c048d9-54fb-47b2-993e-430a39e342db")
+	)
+	(label "FAB_{1}"
+		(at 168.275 67.945 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbc5dab4-ac5f-4493-87cf-191220bd4a35")
 	)
 	(global_label "~{RESET}"
 		(shape input)
