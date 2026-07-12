@@ -8706,7 +8706,7 @@
 			(justify left bottom)
 		)
 		(uuid "21165771-f365-4319-9e7f-258406123731")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 107.95 78.105 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8729,7 +8729,7 @@
 			(justify left bottom)
 		)
 		(uuid "2bca3ceb-2cd1-4632-88e7-e282afe0ec07")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 120.65 69.215 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8763,7 +8763,7 @@
 			(justify left bottom)
 		)
 		(uuid "369e96e2-47c3-4f65-8fc6-190923e64610")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 107.95 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8786,7 +8786,7 @@
 			(justify left bottom)
 		)
 		(uuid "4956c2b0-236a-4c85-b33e-d70fb7924672")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 74.93 31.115 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8820,7 +8820,7 @@
 			(justify left bottom)
 		)
 		(uuid "6fd5bfd8-101f-4bc7-9b48-58142d2cdb80")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 95.25 31.115 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8854,7 +8854,7 @@
 			(justify left bottom)
 		)
 		(uuid "8c72b841-2aaf-495f-bb11-757b23aaea15")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 120.65 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8888,7 +8888,7 @@
 			(justify left bottom)
 		)
 		(uuid "a1b79da3-e5fd-4bc9-b761-03aba6044651")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 133.35 31.115 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8922,7 +8922,7 @@
 			(justify left bottom)
 		)
 		(uuid "a917f192-3af7-45cf-af28-c66ac40feb14")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 107.95 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8945,7 +8945,7 @@
 			(justify left bottom)
 		)
 		(uuid "ad59ac5c-de6d-4041-a034-9b8795bca0d3")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 171.45 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8969,7 +8969,7 @@
 			(justify left bottom)
 		)
 		(uuid "b8aae242-32de-4cb4-9da3-c540ccf25243")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 171.45 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8993,7 +8993,7 @@
 			(justify left bottom)
 		)
 		(uuid "d57dfaf9-bb3c-40b5-9ae7-5a4629195236")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 107.95 97.155 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9016,7 +9016,7 @@
 			(justify left bottom)
 		)
 		(uuid "dd441d55-3da8-47f9-9e0f-1ddc406ef2ff")
-		(property "Net Class" "Power_4A"
+		(property "Netclass" "Power_4A"
 			(at 171.45 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9040,7 +9040,7 @@
 			(justify left bottom)
 		)
 		(uuid "f52cf0ef-3e9c-4c83-82d4-8976daa46b6b")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 120.65 88.265 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9074,7 +9074,7 @@
 			(justify left bottom)
 		)
 		(uuid "fc40a36d-1891-4e8b-b2e3-c409dbda01bf")
-		(property "Net Class" "Power_500mA"
+		(property "Netclass" "Power_500mA"
 			(at 120.65 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)

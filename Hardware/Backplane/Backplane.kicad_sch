@@ -2544,6 +2544,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 168.275) (xy 82.55 168.275)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dda8cca-c89e-4c19-b234-0b2af3a2eb09")
+	)
+	(wire
+		(pts
 			(xy 212.09 114.3) (xy 249.555 114.3)
 		)
 		(stroke
@@ -2671,6 +2681,16 @@
 			(type default)
 		)
 		(uuid "3e6a94e8-9436-4619-8f47-44fa3726e580")
+	)
+	(wire
+		(pts
+			(xy 82.55 168.275) (xy 82.55 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4277856f-7d24-4207-9510-2b01badad5b1")
 	)
 	(wire
 		(pts
@@ -2941,6 +2961,16 @@
 			(type default)
 		)
 		(uuid "9c71307d-6315-4edd-9f20-cf5c541e8d94")
+	)
+	(wire
+		(pts
+			(xy 76.2 152.4) (xy 82.55 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a1bb79-ee17-412b-af6b-b16022877fd2")
 	)
 	(wire
 		(pts
@@ -6833,8 +6863,8 @@
 		)
 	)
 	(sheet
-		(at 234.95 19.05)
-		(size 12.7 12.7)
+		(at 44.45 165.1)
+		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6849,7 +6879,7 @@
 		)
 		(uuid "830eb735-4083-4e97-a24b-40cca75ad59b")
 		(property "Sheetname" "Builtins"
-			(at 234.95 18.4654 0)
+			(at 44.45 164.5154 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6860,7 +6890,7 @@
 			)
 		)
 		(property "Sheetfile" "builtins.kicad_sch"
-			(at 234.95 32.233 0)
+			(at 44.45 178.283 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6869,6 +6899,16 @@
 					(size 1.016 1.016)
 				)
 				(justify left top)
+			)
+		)
+		(pin "~{RESET_I2C}" output
+			(at 76.2 168.275 0)
+			(uuid "1b67ab32-1238-4a26-94b4-48e02640c387")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -6880,8 +6920,8 @@
 		)
 	)
 	(sheet
-		(at 215.9 19.05)
-		(size 12.7 12.7)
+		(at 44.45 180.975)
+		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6896,7 +6936,7 @@
 		)
 		(uuid "93d4b54a-5803-4e6c-bdc3-018f393c405d")
 		(property "Sheetname" "Power"
-			(at 215.9 18.4654 0)
+			(at 44.45 180.3904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6907,7 +6947,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 215.9 32.233 0)
+			(at 44.45 194.158 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7338,6 +7378,16 @@
 		(pin "MAIN_CLK" output
 			(at 76.2 57.785 0)
 			(uuid "8e96e8e3-aefc-488c-b155-ba580c99b382")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{RESET_I2C}" input
+			(at 76.2 152.4 0)
+			(uuid "6cdad3d9-a138-40ed-9dd6-d2066d97c53b")
 			(effects
 				(font
 					(size 1.27 1.27)
