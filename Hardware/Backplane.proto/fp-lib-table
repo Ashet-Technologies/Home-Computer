@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Home Computer")(type "KiCad")(uri "/home/felix/projects/ashet/home-computer/Hardware/Home Computer.pretty")(options "")(descr ""))
+)
