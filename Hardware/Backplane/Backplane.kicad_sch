@@ -3222,6 +3222,26 @@
 		)
 		(uuid "0b5cf325-20da-439d-be8b-773a31c9d569")
 	)
+	(label "FAB4"
+		(at 82.55 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1329e451-e862-4db3-af4b-495b87f5705f")
+	)
+	(label "FAB3"
+		(at 82.55 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1a7f5c80-e78f-4b61-a829-e770b2045041")
+	)
 	(label "I2C^{FAB}_{SCL}"
 		(at 111.125 45.085 180)
 		(effects
@@ -3252,6 +3272,26 @@
 		)
 		(uuid "5d1e80cd-2d9a-4353-b10a-f3f43ac8dec7")
 	)
+	(label "FAB5"
+		(at 168.275 83.185 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ebd057e-96d1-4c68-863b-6615e53cf16c")
+	)
+	(label "FAB1"
+		(at 168.275 67.945 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "5eced181-36d8-4e97-b759-c288476c2aa3")
+	)
 	(label "USB_{1}_D+"
 		(at 221.615 111.76 0)
 		(effects
@@ -3262,6 +3302,96 @@
 		)
 		(uuid "647eda4d-a614-46bd-b08f-ecd2557da77a")
 	)
+	(label "FAB3"
+		(at 168.275 75.565 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "65bd3f33-0104-49d1-a512-b340b02a71a0")
+	)
+	(label "FAB7"
+		(at 168.275 90.805 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "7310757d-d86c-4574-81c9-e6a189fdca45")
+	)
+	(label "FAB0"
+		(at 168.275 65.405 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "848a16ce-0312-47b5-aaf3-0abb332d5572")
+	)
+	(label "FAB5"
+		(at 82.55 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "93dc4207-06f3-4908-bcfa-56d4693ba507")
+	)
+	(label "FAB2"
+		(at 82.55 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d9c4b91-9ab1-47eb-846b-06eafefa8150")
+	)
+	(label "FAB6"
+		(at 168.275 88.265 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0de7570-8479-4af4-bcfd-1376403d2c75")
+	)
+	(label "FAB0"
+		(at 82.55 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ccd5bf58-3ed5-49b8-ac9c-36689ff70989")
+	)
+	(label "FAB1"
+		(at 82.55 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ce0c06f2-844e-4cb0-9e3d-96d88a5c73ac")
+	)
+	(label "FAB2"
+		(at 168.275 73.025 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4466b91-faac-49f3-b25f-a9df5d823c04")
+	)
 	(label "USB_{0}_D-"
 		(at 221.615 98.425 0)
 		(effects
@@ -3271,6 +3401,36 @@
 			(justify left bottom)
 		)
 		(uuid "dbc7186b-3f0e-4f30-b58a-90d6dbc4eebe")
+	)
+	(label "FAB6"
+		(at 82.55 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e1d7870a-a499-42f2-902d-00479f727b8a")
+	)
+	(label "FAB4"
+		(at 168.275 80.645 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "e876d5f8-fa15-432f-875a-dc4069493f97")
+	)
+	(label "FAB7"
+		(at 82.55 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ff3e4412-d241-46eb-b0af-bb850ae46944")
 	)
 	(global_label "~{RESET}"
 		(shape input)
@@ -5098,6 +5258,85 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
 					(reference "#PWR0126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 32.385 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95235878-3c55-47d8-a209-b64885c88349")
+		(property "Reference" "#PWR01036"
+			(at 165.1 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.925 32.385 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc55ec4c-70fc-4bcc-a02c-8d567367c69c")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
+					(reference "#PWR01036")
 					(unit 1)
 				)
 			)

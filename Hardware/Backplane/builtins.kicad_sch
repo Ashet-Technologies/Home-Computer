@@ -1214,6 +1214,226 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Home Computer:24LC256"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "24LC256"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA256-24LC256-24FC256-256K-I2C-Serial-EEPROM-DS20001203.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "256-KBit I²C Serial EEPROM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "24LC256_1_1"
+				(polyline
+					(pts
+						(xy -3.81 -5.08) (xy 3.81 -5.08) (xy 3.81 5.08) (xy 0.635 5.08) (xy 0 4.445) (xy -0.635 5.08)
+						(xy -3.81 5.08) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -6.35 3.81 0)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 1.27 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 -1.27 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -6.35 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 6.35 -3.81 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 6.35 -1.27 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 6.35 1.27 180)
+					(length 2.54)
+					(name "WP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Home Computer:PCF8523T/1"
 			(pin_names
 				(offset 0.254)
@@ -3095,6 +3315,18 @@
 		(uuid "42d718bf-3a2d-4a15-b771-e1aae56d6c74")
 	)
 	(rectangle
+		(start 47.625 66.675)
+		(end 120.65 100.965)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4d0a1f5d-234b-4561-b504-8ddd774fbe3a")
+	)
+	(rectangle
 		(start 19.05 152.4)
 		(end 120.65 190.5)
 		(stroke
@@ -3186,6 +3418,48 @@
 			(justify left)
 		)
 		(uuid "f9bbd4ec-6b41-41ff-88bf-2bd6cc997477")
+	)
+	(text_box "Address\n0x57"
+		(exclude_from_sim no)
+		(at 51.435 78.7399 0)
+		(size 9.525 6.3501)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "00c35e6d-ae08-4f26-92df-0233708bdc2e")
+	)
+	(text_box "←Open Collector"
+		(exclude_from_sim no)
+		(at 79.375 132.08 0)
+		(size 19.05 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1e1ad2b5-b590-40fb-90a0-6158e8275bbe")
 	)
 	(text_box "Real Time Clock"
 		(exclude_from_sim no)
@@ -3355,6 +3629,27 @@
 		)
 		(uuid "779f9969-a755-48e8-bcd5-5e1681a1bcdd")
 	)
+	(text_box "Board Identity"
+		(exclude_from_sim no)
+		(at 47.625 63.5 0)
+		(size 73.025 3.1749)
+		(margins 0.9525 0 0.9525 0)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9e0c1a3a-66e0-4499-b9ef-ac623f7d61f9")
+	)
 	(text_box "Reset Duration Keeper + Power-On Reset"
 		(exclude_from_sim no)
 		(at 196.85 19.05 0)
@@ -3439,10 +3734,10 @@
 		)
 		(uuid "e75c2021-936b-417f-ba48-4617ef30528c")
 	)
-	(text_box "The minimum value of external resistance, R_{X}, is typically 500Ω.\nThe minimum value of external capacitance, C_{X}, is 0pF.\nThe calculation for the pulse width is tW = 0.7 R_{X}C_{X} at VCC = 4.5V.\n\n0.7 * 100 kΩ * 1 uF = 0.07 s = 70 ms"
+	(text_box "The minimum value of external resistance, R_{X}, is typically 500Ω.\nThe minimum value of external capacitance, C_{X}, is 0pF.\nThe calculation for the pulse width is tW = 0.7 R_{X}C_{X} at VCC = 4.5V.\n\n0.7 * 10 kΩ * 10 uF = 0.07 s = 70 ms"
 		(exclude_from_sim no)
 		(at 242.57 24.13 0)
-		(size 35.56 14.605)
+		(size 35.56 14.9894)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3471,6 +3766,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35d6010e-20b3-4fca-868b-5c4213a071d5")
+	)
+	(junction
+		(at 68.58 81.915)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35d6557a-a584-4722-aa1d-ff459e43c466")
 	)
 	(junction
 		(at 227.965 43.18)
@@ -3552,6 +3853,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 86.995) (xy 66.675 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05f21d4d-0b43-4a72-936c-2de7b8cb059b")
+	)
+	(wire
+		(pts
 			(xy 69.85 114.3) (xy 94.615 114.3)
 		)
 		(stroke
@@ -3579,6 +3890,26 @@
 			(type default)
 		)
 		(uuid "09477db5-b62c-4a51-9089-1d279d04613e")
+	)
+	(wire
+		(pts
+			(xy 65.405 80.645) (xy 65.405 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e63bc7-af2b-4c67-a81a-d45dbaf43611")
+	)
+	(wire
+		(pts
+			(xy 82.55 81.915) (xy 85.725 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbf388b-2442-4aad-9efc-0973005ebcc8")
 	)
 	(wire
 		(pts
@@ -3612,6 +3943,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 81.915) (xy 69.85 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d9297c-27d1-4d95-9f5c-6c404517069f")
+	)
+	(wire
+		(pts
 			(xy 245.11 101.6) (xy 245.11 102.87)
 		)
 		(stroke
@@ -3619,6 +3960,16 @@
 			(type default)
 		)
 		(uuid "1316a91b-7f12-4576-8dc8-ba4106b231fb")
+	)
+	(wire
+		(pts
+			(xy 65.405 81.915) (xy 68.58 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ff8591-65f4-4ec8-bc0e-3cbc2134faf9")
 	)
 	(wire
 		(pts
@@ -3672,6 +4023,26 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 86.995) (xy 88.9 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26e97ee7-aa2f-4fd2-9bc8-c1fb76dd0db2")
+	)
+	(wire
+		(pts
+			(xy 69.85 79.375) (xy 68.58 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a80c2c-e7bb-4798-b8fd-3640e2331fcc")
+	)
+	(wire
+		(pts
 			(xy 214.63 31.75) (xy 214.63 34.925)
 		)
 		(stroke
@@ -3719,6 +4090,16 @@
 			(type default)
 		)
 		(uuid "339ea2c8-8c7a-4512-b4fc-f0a0dcd6f886")
+	)
+	(wire
+		(pts
+			(xy 82.55 79.375) (xy 85.725 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f39d30-3952-44b4-9ac8-6aeba16f5e41")
 	)
 	(wire
 		(pts
@@ -3812,6 +4193,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.675 86.995) (xy 66.675 89.535)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b32bcdd-1c9d-47bf-9bb2-fee6f32b58cb")
+	)
+	(wire
+		(pts
 			(xy 120.65 34.29) (xy 120.65 37.465)
 		)
 		(stroke
@@ -3869,6 +4260,16 @@
 			(type default)
 		)
 		(uuid "50d0f464-d22e-4b50-bcb1-9a76eab5a998")
+	)
+	(wire
+		(pts
+			(xy 68.58 79.375) (xy 68.58 81.915)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "551de9a8-8ceb-4f94-90c0-9df07d0caae1")
 	)
 	(wire
 		(pts
@@ -4212,6 +4613,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 81.915) (xy 68.58 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8824e2e9-a33b-4a0e-bc44-b64fbf437d3f")
+	)
+	(wire
+		(pts
 			(xy 227.965 43.18) (xy 227.965 42.545)
 		)
 		(stroke
@@ -4342,6 +4753,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 84.455) (xy 69.85 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e1a8684-8446-4e5c-88fc-67366a238cef")
+	)
+	(wire
+		(pts
 			(xy 50.8 114.935) (xy 57.15 114.935)
 		)
 		(stroke
@@ -4409,6 +4830,16 @@
 			(type default)
 		)
 		(uuid "ab8667c5-ca87-44e9-8bf1-c9a8fc046ab2")
+	)
+	(wire
+		(pts
+			(xy 85.725 76.835) (xy 85.725 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e890cd-b688-4584-a5b7-7092632c9ce6")
 	)
 	(wire
 		(pts
@@ -4489,6 +4920,16 @@
 			(type default)
 		)
 		(uuid "c6dd6cf5-e255-4592-8ada-b24bb9bd49eb")
+	)
+	(wire
+		(pts
+			(xy 82.55 84.455) (xy 88.9 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7cd00f7-7fdf-4f1e-8c72-7f3826ac4560")
 	)
 	(wire
 		(pts
@@ -4679,6 +5120,16 @@
 			(type default)
 		)
 		(uuid "eb9ac26c-6045-458e-b291-a435c97339f5")
+	)
+	(wire
+		(pts
+			(xy 85.725 81.915) (xy 85.725 89.535)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb2207a-5c00-447a-b22c-29dc45906dcd")
 	)
 	(wire
 		(pts
@@ -5058,6 +5509,30 @@
 			)
 		)
 	)
+	(global_label "I2C^{BRD}_{SDA}"
+		(shape input)
+		(at 88.9 86.995 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "45af3b55-0cd3-418b-a136-e398e229b9dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.5179 86.995 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "I2C^{BRD}_{SCL}"
 		(shape input)
 		(at 76.2 26.67 180)
@@ -5191,6 +5666,30 @@
 		(uuid "7de452f3-5f6a-4038-92c6-d0a0deabab15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.334 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "I2C^{BRD}_{SCL}"
+		(shape input)
+		(at 88.9 84.455 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "8989b07b-ac59-4583-b372-34513b858f49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.4792 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5926,6 +6425,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 65.405 76.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10f1dc6a-2874-4c93-85ac-88c12e2a4533")
+		(property "Reference" "R1008"
+			(at 62.865 76.835 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "560"
+			(at 67.945 76.835 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 63.627 76.835 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"
+			(at 65.405 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 65.405 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part No" "RR08P560DCT-ND"
+			(at 65.405 76.835 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a7f4f286-6721-4a7a-8b8a-8f5b60ea5e75")
+		)
+		(pin "1"
+			(uuid "b0b7d4dd-17e0-422a-8b45-9e4c0a4a61d1")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "R1008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 37.465 0)
 		(unit 1)
@@ -6232,6 +6821,84 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
 					(reference "#PWR01024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.675 89.535 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e2ffa72-3bee-45eb-8751-e77e11d85289")
+		(property "Reference" "#PWR01054"
+			(at 66.675 95.885 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.675 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.675 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.675 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.675 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7b1bf66-fdf1-49d4-ad7d-e7c0391bfe31")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "#PWR01054")
 					(unit 1)
 				)
 			)
@@ -6655,7 +7322,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 38.1 29.21 0)
+		(at 38.1 31.75 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6665,7 +7333,7 @@
 		(dnp yes)
 		(uuid "37dca446-4ce7-4f03-be87-63c5fefd5ee4")
 		(property "Reference" "J1006"
-			(at 40.005 25.4 0)
+			(at 40.005 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6676,7 +7344,7 @@
 			)
 		)
 		(property "Value" "BM04B-SRSS-TB"
-			(at 40.005 35.56 0)
+			(at 40.005 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6687,7 +7355,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
-			(at 38.1 29.21 0)
+			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6698,7 +7366,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 38.1 29.21 0)
+			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6709,7 +7377,7 @@
 			)
 		)
 		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
-			(at 38.1 29.21 0)
+			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6720,7 +7388,7 @@
 			)
 		)
 		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
-			(at 38.1 29.21 0)
+			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6746,6 +7414,84 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
 					(reference "J1006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.725 89.535 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b8ff769-a5d5-4686-acf2-6ef75db98480")
+		(property "Reference" "#PWR01055"
+			(at 85.725 95.885 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.725 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.725 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.725 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.725 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0081bf2f-faff-487f-9a87-6804c397570b")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "#PWR01055")
 					(unit 1)
 				)
 			)
@@ -6848,7 +7594,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 127 29.21 0)
+		(at 127 31.75 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6858,7 +7605,7 @@
 		(dnp yes)
 		(uuid "3d182ef7-4662-407e-815f-cd40bab9c8bf")
 		(property "Reference" "J1004"
-			(at 128.905 25.4 0)
+			(at 128.905 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6869,7 +7616,7 @@
 			)
 		)
 		(property "Value" "BM04B-SRSS-TB"
-			(at 128.905 35.56 0)
+			(at 128.905 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6880,7 +7627,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
-			(at 127 29.21 0)
+			(at 127 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6891,7 +7638,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 127 29.21 0)
+			(at 127 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6902,7 +7649,7 @@
 			)
 		)
 		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
-			(at 127 29.21 0)
+			(at 127 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6913,7 +7660,7 @@
 			)
 		)
 		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
-			(at 127 29.21 0)
+			(at 127 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7762,7 +8509,8 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 57.15 114.935 270)
+		(at 57.15 121.285 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7772,7 +8520,7 @@
 		(dnp no)
 		(uuid "5b6c5b76-9739-4f34-ace9-b5208c66c542")
 		(property "Reference" "#PWR01027"
-			(at 53.34 114.935 0)
+			(at 53.34 121.285 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7783,7 +8531,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 60.325 114.935 90)
+			(at 60.325 121.285 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7794,7 +8542,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 114.935 0)
+			(at 57.15 121.285 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7805,7 +8553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 114.935 0)
+			(at 57.15 121.285 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7816,7 +8564,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 57.15 114.935 0)
+			(at 57.15 121.285 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8023,7 +8771,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 82.55 29.21 0)
+		(at 82.55 31.75 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8033,7 +8782,7 @@
 		(dnp yes)
 		(uuid "62bdbb14-eaac-463a-893c-9f9582b0c650")
 		(property "Reference" "J1005"
-			(at 84.455 25.4 0)
+			(at 84.455 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8044,7 +8793,7 @@
 			)
 		)
 		(property "Value" "BM04B-SRSS-TB"
-			(at 84.455 35.56 0)
+			(at 84.455 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8055,7 +8804,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
-			(at 82.55 29.21 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8066,7 +8815,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 82.55 29.21 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8077,7 +8826,7 @@
 			)
 		)
 		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
-			(at 82.55 29.21 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8088,7 +8837,7 @@
 			)
 		)
 		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
-			(at 82.55 29.21 0)
+			(at 82.55 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9149,6 +9898,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Home Computer:24LC256")
+		(at 76.2 83.185 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dce7983-3d0d-4de4-9847-c77b1cb0b11e")
+		(property "Reference" "U1"
+			(at 76.2 73.025 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24LC256"
+			(at 76.2 75.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 76.2 83.185 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA256-24LC256-24FC256-256K-I2C-Serial-EEPROM-DS20001203.pdf"
+			(at 76.2 83.185 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "256-KBit I²C Serial EEPROM"
+			(at 76.2 83.185 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81314cf2-6b66-40c3-aa05-f70d9277b474")
+		)
+		(pin "5"
+			(uuid "6320d293-8a72-4f17-9692-7844c8ab5d46")
+		)
+		(pin "4"
+			(uuid "2a15cda1-ace7-4b88-9389-c5005d3c15d7")
+		)
+		(pin "6"
+			(uuid "ed14e9fe-ac49-49a7-a61b-fa71fc4ae594")
+		)
+		(pin "2"
+			(uuid "17cb6345-c500-4874-a1fa-2b2b695d9c93")
+		)
+		(pin "8"
+			(uuid "cd2cb8dd-5b4b-49f9-92b3-57b33a660cf6")
+		)
+		(pin "3"
+			(uuid "50247b50-acc3-4464-ac2f-54f19a9ca1d1")
+		)
+		(pin "7"
+			(uuid "2a012221-3579-4eac-ba0e-7758fdf762cb")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 120.65 31.75 90)
 		(unit 1)
@@ -9742,6 +10589,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 65.405 73.025 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bffc41a6-7290-4cfe-a8d0-9472f99458f6")
+		(property "Reference" "#PWR01053"
+			(at 65.405 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 65.405 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 65.405 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 65.405 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 65.405 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bae3d5b8-41fb-4be1-a1c8-a85a63deed86")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "#PWR01053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 139.7 90.17 0)
 		(mirror y)
@@ -9816,6 +10741,84 @@
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
 					(reference "TP1001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 85.725 76.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c6b9e7a3-68be-4d1c-ae80-634694447080")
+		(property "Reference" "#PWR01052"
+			(at 85.725 80.645 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 85.725 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.725 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.725 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 85.725 76.835 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "625e9f8c-560f-46a8-ab3f-c9301d15e684")
+		)
+		(instances
+			(project "Backplane"
+				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b"
+					(reference "#PWR01052")
 					(unit 1)
 				)
 			)
@@ -10059,7 +11062,8 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 57.15 121.285 270)
+		(at 57.15 114.935 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10069,7 +11073,7 @@
 		(dnp no)
 		(uuid "daba152a-0053-49f9-81c6-ae865957e713")
 		(property "Reference" "#PWR01029"
-			(at 53.34 121.285 0)
+			(at 53.34 114.935 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10080,7 +11084,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 60.325 121.285 90)
+			(at 60.325 114.935 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10091,7 +11095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 121.285 0)
+			(at 57.15 114.935 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10102,7 +11106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 121.285 0)
+			(at 57.15 114.935 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10113,7 +11117,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 57.15 121.285 0)
+			(at 57.15 114.935 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10790,7 +11794,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 171.45 29.21 0)
+		(at 171.45 31.75 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10800,7 +11805,7 @@
 		(dnp yes)
 		(uuid "f2e1558e-b081-44d2-ac9e-94cf39a6d6af")
 		(property "Reference" "J1003"
-			(at 173.355 25.4 0)
+			(at 173.355 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10811,7 +11816,7 @@
 			)
 		)
 		(property "Value" "BM04B-SRSS-TB"
-			(at 173.355 35.56 0)
+			(at 173.355 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10822,7 +11827,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical"
-			(at 171.45 29.21 0)
+			(at 171.45 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10833,7 +11838,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 171.45 29.21 0)
+			(at 171.45 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10844,7 +11849,7 @@
 			)
 		)
 		(property "Description" "Connector Header Surface Mount 4 position 0.039\" (1.00mm)"
-			(at 171.45 29.21 0)
+			(at 171.45 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10855,7 +11860,7 @@
 			)
 		)
 		(property "Digikey Part No" "455-BM04B-SRSS-TBCT-ND"
-			(at 171.45 29.21 0)
+			(at 171.45 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

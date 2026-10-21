@@ -976,7 +976,7 @@
         "uuid": "c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
       }
     ],
-    "used_designators": "R3003-3004,#PWR2927,#PWR2930,#PWR3007",
+    "used_designators": "U1,R425-431,R1008,R1114,R3003-3004,#PWR432-434,#PWR441-444,#PWR1036,#PWR1052-1055,#PWR2927,#PWR2930-2931,#PWR2935,#PWR3007",
     "variants": []
   },
   "sheets": [
