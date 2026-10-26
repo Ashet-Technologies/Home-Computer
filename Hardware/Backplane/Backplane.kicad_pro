@@ -714,6 +714,18 @@
       "/Module Slot 7/MOD_+5V": [
         "Power_500mA"
       ],
+      "/USB A Socket 1/VBUS": [
+        "Power_500mA"
+      ],
+      "/USB A Socket 1/VBUS_UNFUSED": [
+        "Power_500mA"
+      ],
+      "/USB A Socket 2/VBUS": [
+        "Power_500mA"
+      ],
+      "/USB A Socket 2/VBUS_UNFUSED": [
+        "Power_500mA"
+      ],
       "GND": [
         "Power_500mA"
       ],
@@ -729,6 +741,27 @@
       "MAIN_GND": [
         "Power_4A"
       ],
+      "Net-(F1101-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F1401-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F1701-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F2202-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F2501-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F401-Pad2)": [
+        "Power_500mA"
+      ],
+      "Net-(F701-Pad2)": [
+        "Power_500mA"
+      ],
       "Net-(J2902-Pin_1)": [
         "Power_4A"
       ],
@@ -736,6 +769,9 @@
         "Power_4A"
       ],
       "Net-(J2902-Pin_12)": [
+        "Power_4A"
+      ],
+      "Net-(J2902-Pin_5)": [
         "Power_4A"
       ],
       "Net-(Q1102-S)": [
@@ -804,7 +840,49 @@
       "Net-(TP2906-A)": [
         "Power_500mA"
       ],
+      "Net-(U10-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U11-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U12-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U13-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U14-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U15-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U2-IN)": [
+        "Power_500mA"
+      ],
       "Net-(U2902-LX)": [
+        "Power_500mA"
+      ],
+      "Net-(U3-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U4-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U5-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U6-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U7-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U8-IN)": [
+        "Power_500mA"
+      ],
+      "Net-(U9-IN)": [
         "Power_500mA"
       ]
     },
@@ -976,7 +1054,7 @@
         "uuid": "c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
       }
     ],
-    "used_designators": "U1,R425-431,R1008,R1114,R3003-3004,#PWR432-434,#PWR441-444,#PWR1036,#PWR1052-1055,#PWR2927,#PWR2930-2931,#PWR2935,#PWR3007",
+    "used_designators": "#FLG402-440,NT1-23,D1-3,D402-403,C102-103,U1-18,R425-440,R1008,R1017-1018,R1114,R3003-3004,#PWR1-2,#PWR113,#PWR115,#PWR432-434,#PWR441-458,#PWR1036,#PWR1052-1057,#PWR2110-2111,#PWR2927,#PWR2930-2931,#PWR2935-2937,#PWR3007",
     "variants": []
   },
   "sheets": [
