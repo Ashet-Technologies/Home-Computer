@@ -10,7 +10,7 @@ module slot_plate_2d()
     {
         square(size, true);
 
-        ymirror() translate([ 0, slot_screw_offset, 0 ]) screw_hole_2d(slot_screw_type);
+        //  ymirror() translate([ 0, slot_screw_offset, 0 ]) screw_hole_2d(slot_screw_type);
     }
 }
 

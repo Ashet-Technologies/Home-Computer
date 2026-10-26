@@ -19,7 +19,7 @@ HIDE_TOP = true;
 
 translate([0,0,-baseplate_spread]) mat_glass() baseplate_mount_plate();
 
-if(HIDE_TOP)
+if(!HIDE_TOP)
 {
     translate([0,0,baseplate_spread]) mat_glass() baseplate_mount_plate();
 }
@@ -51,7 +51,7 @@ translate([0,169/2,0])
         color("gray") zmirror() translate([slot_pcb_offset,-slot_pcb_length/2-slot_plate_thickness/2,-baseplate_spread + baseplate_thickness/2]) pcb_slider();
         
 
-        zmirror() translate([0,slot_plate_thickness/2,slot_screw_offset]) xrotate(90) screw_m2_5_4mm();
+        // zmirror() translate([0,slot_plate_thickness/2,slot_screw_offset]) xrotate(90) screw_m2_5_4mm();
     }
 }
 

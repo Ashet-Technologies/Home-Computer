@@ -18,15 +18,15 @@ slot_plate_height = 85;
 slot_plate_thickness = 1.0;
 
 // slot panel screw
-slot_screw_type = M2_5;
-slot_screw_inset = 3.0;
-slot_screw_length = 4.5;
+// slot_screw_type = M2_5;
+// slot_screw_inset = 1.0;
+// slot_screw_length = 4.5;
 
 assert(slot_plate_width < slot_separation);
 
 // size of the slot cutout
 slot_hole_width = 24;
-slot_hole_height = 73;
+slot_hole_height = 81;
 
 assert(slot_hole_width < slot_plate_width);
 assert(slot_hole_height < slot_plate_height);
@@ -45,7 +45,7 @@ assert(slot_pcb_height < slot_hole_height);
 
 // Distance between the two mounting screw points on the PCB
 slot_mount_screw_dist = 60; // mm
-slot_mount_screw_pcb_dist = 6.4; // mm distance from the PCB top
+slot_mount_screw_pcb_dist = 2.3; // mm distance from the PCB top
 slow_mount_screw_type = UNC_4_40;
 
 // Baseplate
@@ -85,7 +85,7 @@ RENDER_PART_3D = false;
 
 // Derived parameters
 
-slot_screw_offset = slot_plate_height/2-slot_screw_inset;
+// slot_screw_offset = slot_plate_height/2-slot_screw_inset;
 
 pcb_slider_depth = baseplate_spread - baseplate_thickness/2 - slot_pcb_height / 2 - pcb_slider_pcb_vmargin; // mm
 pcb_slider_notch_width_top = slot_pcb_thickness + 4 * pcb_slider_pcb_hmargin; // mm
