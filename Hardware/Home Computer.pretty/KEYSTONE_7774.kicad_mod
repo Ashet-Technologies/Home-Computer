@@ -1,0 +1,240 @@
+(footprint "KEYSTONE_7774"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2.975 -5.7375 0)
+		(layer "F.SilkS")
+		(uuid "ca458d61-a99f-4774-ad00-4c482a3bd3cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "KEYSTONE_7774"
+		(at 2.105 5.7375 0)
+		(layer "F.Fab")
+		(uuid "b1dd846a-69ef-45a4-be4a-e680a0ac0f89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p73.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5758cb75-2d37-4e92-b649-bef9b7fb219d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "4 Pin Screw Terminal, Power Tap 4-40 Through Hole, Right Angle"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c351853f-a7cb-412c-b693-222ffda74658")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.9 -3.175)
+		(end -5.9 3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dd8a8fe5-a2fb-4595-975b-5676c06f1c68")
+	)
+	(fp_line
+		(start -5.9 3.175)
+		(end -4.3525 3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "636c5cfa-6ce5-4505-ac62-107cf7ba7a48")
+	)
+	(fp_line
+		(start -4.3525 -3.175)
+		(end -5.9 -3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e869d08-3319-46e7-b6a5-0be5108b19ae")
+	)
+	(fp_line
+		(start -1.0875 -3.175)
+		(end 1.0875 -3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dd3a5be8-dbe0-4bba-92a4-95b94851e8cb")
+	)
+	(fp_line
+		(start -1.0875 3.175)
+		(end 1.0875 3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aba2e8f9-c6bf-4e07-aebb-61620b8f0e25")
+	)
+	(fp_line
+		(start 2.99 -0.9075)
+		(end 2.99 0.9075)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5483d48e-e8e2-456d-9918-ed73067c5439")
+	)
+	(fp_line
+		(start -6.15 -4.1025)
+		(end -6.15 4.1025)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6d90640f-4da8-464c-be63-be82da2c88be")
+	)
+	(fp_line
+		(start -6.15 4.1025)
+		(end 4.2825 4.1025)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0f3a4148-46f2-4758-9585-e0b8bf254804")
+	)
+	(fp_line
+		(start 4.2825 -4.1025)
+		(end -6.15 -4.1025)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d82d7053-4b40-4e79-903a-df61a5c77897")
+	)
+	(fp_line
+		(start 4.2825 4.1025)
+		(end 4.2825 -4.1025)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9d8c47f9-97b0-4ff9-886c-2e61f20cdf40")
+	)
+	(fp_line
+		(start -5.9 -3.175)
+		(end -5.9 3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "08e1b93a-79f0-4e8e-8d93-9753e3486925")
+	)
+	(fp_line
+		(start -5.9 3.175)
+		(end 2.99 3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d9bd756a-4f6d-470e-9f8f-a18f216f75d1")
+	)
+	(fp_line
+		(start 2.99 -3.175)
+		(end -5.9 -3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fa72585a-18e9-4d48-9507-d82313adec00")
+	)
+	(fp_line
+		(start 2.99 3.175)
+		(end 2.99 -3.175)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4ea05fcb-c2b3-459c-b697-a0a37066ec55")
+	)
+	(pad "1_1" thru_hole circle
+		(at -2.72 2.54)
+		(size 2.625 2.625)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "b3844e73-5f56-480b-a81a-55ddd69ad106")
+	)
+	(pad "1_2" thru_hole circle
+		(at 2.72 2.54)
+		(size 2.625 2.625)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "0e067645-8c34-4ae8-9c0f-843dad349831")
+	)
+	(pad "1_3" thru_hole circle
+		(at 2.72 -2.54)
+		(size 2.625 2.625)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "b396ee11-fe4f-4ad0-8afd-254231286a02")
+	)
+	(pad "1_4" thru_hole circle
+		(at -2.72 -2.54)
+		(size 2.625 2.625)
+		(drill 1.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "31aafdb5-b39e-4a4f-a9fa-020ab05531bc")
+	)
+	(embedded_fonts no)
+	(model "/home/felix/projects/ashet/home-computer/Hardware/Home Computer.pretty/7774.step"
+		(offset
+			(xyz -5.75 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)
