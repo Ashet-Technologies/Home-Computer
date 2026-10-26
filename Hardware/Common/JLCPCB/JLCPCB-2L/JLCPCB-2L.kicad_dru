@@ -1,0 +1,92 @@
+(version 1)
+
+# Reusable fabrication rules; import the companion project settings as well.
+
+# 2-layer FR-4, 1 oz outer copper, green mask, routed edges.
+
+# Source: https://jlcpcb.com/capabilities/pcb-capabilities
+
+# Retrieved 2026-10-24. See ../README.md for scope and preferences.
+
+# Global project minima and netclasses must be imported with these rules.
+
+# PTH component-pad rings and via rings intentionally have different limits.
+
+# Manufacturing geometry only; electrical spacing and impedance need design-specific rules.
+
+(rule "JLCPCB: through vias only"
+  (constraint disallow micro_via blind_via buried_via))
+
+(rule "JLCPCB: via annular ring - preferred process allowance"
+  (condition "A.Type == 'Via'")
+  (constraint annular_width (min 0.075mm)))
+
+(rule "JLCPCB: via drill - regular service"
+  (condition "A.Type == 'Via'")
+  (constraint hole_size (min 0.20mm) (max 6.30mm)))
+
+(rule "JLCPCB: via diameter - regular service"
+  (condition "A.Type == 'Via'")
+  (constraint via_diameter (min 0.45mm)))
+
+(rule "JLCPCB: PTH component annular ring"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint annular_width (min 0.18mm)))
+
+(rule "JLCPCB: round PTH drill"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Hole_Size_X == A.Hole_Size_Y")
+  (constraint hole_size (min 0.20mm) (max 6.30mm)))
+
+(rule "JLCPCB: plated slot minor dimension - conservative common process"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Hole_Size_X != A.Hole_Size_Y")
+  (constraint hole_size (min 0.50mm)))
+
+(rule "JLCPCB: plated slot length"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Hole_Size_X != A.Hole_Size_Y")
+  (constraint assertion "(A.Hole_Size_X >= 2 * A.Hole_Size_Y) || (A.Hole_Size_Y >= 2 * A.Hole_Size_X)"))
+
+(rule "JLCPCB: round NPTH drill"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && A.Hole_Size_X == A.Hole_Size_Y")
+  (constraint hole_size (min 0.50mm)))
+
+(rule "JLCPCB: NPTH slot minor dimension"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && A.Hole_Size_X != A.Hole_Size_Y")
+  (constraint hole_size (min 1.00mm)))
+
+(rule "JLCPCB: via to via drill separation"
+  (condition "A.Type == 'Via' && B.Type == 'Via'")
+  (constraint hole_to_hole (min 0.20mm)))
+
+(rule "JLCPCB: pad to drill separation"
+  (condition "A.Type == 'Pad' || B.Type == 'Pad'")
+  (constraint hole_to_hole (min 0.45mm)))
+
+(rule "JLCPCB: drilled hole to other-net copper"
+  (constraint hole_clearance (min 0.20mm)))
+
+(rule "JLCPCB: PTH hole to other-net copper"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint hole_clearance (min 0.28mm)))
+
+(rule "JLCPCB: pad to track fabrication spacing"
+  (condition "A.Type == 'Pad' && (B.Type == 'Track' || B.Type == 'Arc') && A.Net != B.Net")
+  (constraint physical_clearance (min 0.10mm)))
+
+(rule "JLCPCB: SMD pad to SMD pad fabrication spacing"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD' && A.Net != B.Net")
+  (constraint physical_clearance (min 0.15mm)))
+
+(rule "JLCPCB: routed edge copper clearance"
+  (condition "A.Layer == '*.Cu'")
+  (constraint edge_clearance (min 0.20mm)))
+
+(rule "JLCPCB: silkscreen spacing"
+  (constraint silk_clearance (min 0.15mm)))
+
+(rule "JLCPCB: silkscreen text height"
+  (condition "A.Layer == '*.SilkS'")
+  (constraint text_height (min 1.00mm)))
+
+(rule "JLCPCB: silkscreen text stroke"
+  (condition "A.Layer == '*.SilkS'")
+  (constraint text_thickness (min 0.15mm)))
