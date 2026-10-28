@@ -4453,7 +4453,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "AHC-CONN-CPU"
+	(symbol "AHC-CONN-CPU-HOST"
 		(pin_names
 			(offset 1.016)
 		)
@@ -4518,7 +4518,7 @@
 				)
 			)
 		)
-		(symbol "AHC-CONN-CPU_0_0"
+		(symbol "AHC-CONN-CPU-HOST_0_0"
 			(rectangle
 				(start -12.7 43.18)
 				(end 12.7 -43.18)
@@ -4531,7 +4531,7 @@
 				)
 			)
 		)
-		(symbol "AHC-CONN-CPU_0_1"
+		(symbol "AHC-CONN-CPU-HOST_0_1"
 			(polyline
 				(pts
 					(xy -12.7 12.7) (xy 12.7 12.7)
@@ -4545,7 +4545,7 @@
 				)
 			)
 		)
-		(symbol "AHC-CONN-CPU_1_1"
+		(symbol "AHC-CONN-CPU-HOST_1_1"
 			(pin power_in line
 				(at -17.78 40.64 0)
 				(length 5.08)
@@ -4621,7 +4621,7 @@
 			(pin power_in line
 				(at -17.78 30.48 0)
 				(length 5.08)
-				(name "GND"
+				(name "+3V3_ID"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4978,7 +4978,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at -17.78 -22.86 0)
 				(length 5.08)
 				(name "I2S_SDIN"
@@ -4996,7 +4996,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -17.78 -25.4 0)
 				(length 5.08)
 				(name "I2S_SDOUT"
@@ -5032,7 +5032,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -17.78 -30.48 0)
 				(length 5.08)
 				(name "I2S_BCLK"
@@ -5050,7 +5050,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -17.78 -33.02 0)
 				(length 5.08)
 				(name "I2S_WCLK"
@@ -5086,7 +5086,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -17.78 -38.1 0)
 				(length 5.08)
 				(name "I2S_MCLK"
@@ -5233,7 +5233,7 @@
 			(pin open_collector line
 				(at 17.78 25.4 180)
 				(length 5.08)
-				(name "~{SLOT_VIDEO}"
+				(name "~{SLOT_HS}"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11077,6 +11077,491 @@
 					(effects
 						(font
 							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "NL7SZ57DBVT1G"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0.635 5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "NL7SZ57DBVT1G"
+			(at 0.635 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-74-6_1.55x2.9mm_P0.95mm"
+			(at 5.715 -22.225 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/nl7sz57-d.pdf"
+			(at 5.08 42.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Configurable Multiple Function Configurable 1 Circuit 3 Input SC-74"
+			(at 5.08 42.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part No." "488-NL7SZ57DBVT1GCT-ND"
+			(at -4.445 46.355 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(symbol "NL7SZ57DBVT1G_0_1"
+			(arc
+				(start -3.048 3.302)
+				(mid -2.8684 3.2276)
+				(end -2.794 3.048)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -3.048 0.762)
+				(mid -2.8684 0.6876)
+				(end -2.794 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -3.048 -1.778)
+				(mid -2.8684 -1.8524)
+				(end -2.794 -2.032)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.794 2.286) (xy -2.794 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.794 -0.254) (xy -2.794 0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.794 -2.794) (xy -2.794 -2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 3.302) (xy -3.048 3.302)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 3.302)
+				(mid -2.3604 3.2276)
+				(end -2.286 3.048)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 2.032)
+				(mid -2.7196 2.1064)
+				(end -2.794 2.286)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0.762) (xy -3.048 0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 0.762)
+				(mid -2.3604 0.6876)
+				(end -2.286 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 -0.508)
+				(mid -2.7196 -0.4336)
+				(end -2.794 -0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.778) (xy -3.048 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 -1.778)
+				(mid -2.3604 -1.8524)
+				(end -2.286 -2.032)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.54 -3.048)
+				(mid -2.7196 -2.9736)
+				(end -2.794 -2.794)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 3.048) (xy -2.286 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 0.508) (xy -2.286 -0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 -2.032) (xy -2.286 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.032 2.032)
+				(mid -2.2116 2.1064)
+				(end -2.286 2.286)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 2.032) (xy -2.54 2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.032 -0.508)
+				(mid -2.2116 -0.4336)
+				(end -2.286 -0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.508) (xy -2.54 -0.508)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.032 -3.048)
+				(mid -2.2116 -2.9736)
+				(end -2.286 -2.794)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -3.048) (xy -2.54 -3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "NL7SZ57DBVT1G_1_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "Y"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)

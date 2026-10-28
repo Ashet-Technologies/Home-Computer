@@ -465,7 +465,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
@@ -1054,7 +1054,7 @@
         "uuid": "c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
       }
     ],
-    "used_designators": "#FLG402-440,NT1-23,D1-3,D402-403,C102-103,U1-18,R425-440,R1008,R1017-1018,R1114,R3003-3004,#PWR1-2,#PWR113,#PWR115,#PWR432-434,#PWR441-458,#PWR1036,#PWR1052-1057,#PWR2110-2111,#PWR2927,#PWR2930-2931,#PWR2935-2937,#PWR3007",
+    "used_designators": "#FLG402-447,#FLG2905,NT1-30,D1-3,D402-403,C102-135,C206-218,U1-47,TP404-406,TP409-412,R204-208,R425-455,R1008,R1017-1019,R1114,R3003-3004,#PWR1-2,#PWR113,#PWR115,#PWR127-129,#PWR133-172,#PWR210-270,#PWR432-434,#PWR441-465,#PWR1036,#PWR1052-1059,#PWR2110-2111,#PWR2927,#PWR2930-2931,#PWR2935-2937,#PWR3007",
     "variants": []
   },
   "sheets": [
