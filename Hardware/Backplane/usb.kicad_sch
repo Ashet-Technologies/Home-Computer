@@ -1107,6 +1107,12 @@
 					(unit 1)
 				)
 			)
+			(project "Backplane_System_Proto"
+				(path "/196c3381-2d2e-4fbb-9138-f5aa99519e5a/4fe21013-c6f5-4dbc-8a86-a6410b5ed8b0"
+					(reference "P1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1169,6 +1175,12 @@
 		(instances
 			(project "Mainboard"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cd6a3d34-3aa3-4f68-b966-40de0f2bdfec"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+			(project "Backplane_System_Proto"
+				(path "/196c3381-2d2e-4fbb-9138-f5aa99519e5a/4fe21013-c6f5-4dbc-8a86-a6410b5ed8b0"
 					(reference "#PWR051")
 					(unit 1)
 				)
@@ -1281,6 +1293,12 @@
 					(unit 1)
 				)
 			)
+			(project "Backplane_System_Proto"
+				(path "/196c3381-2d2e-4fbb-9138-f5aa99519e5a/4fe21013-c6f5-4dbc-8a86-a6410b5ed8b0"
+					(reference "P2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1343,6 +1361,12 @@
 		(instances
 			(project "Mainboard"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cd6a3d34-3aa3-4f68-b966-40de0f2bdfec"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+			(project "Backplane_System_Proto"
+				(path "/196c3381-2d2e-4fbb-9138-f5aa99519e5a/4fe21013-c6f5-4dbc-8a86-a6410b5ed8b0"
 					(reference "#PWR050")
 					(unit 1)
 				)

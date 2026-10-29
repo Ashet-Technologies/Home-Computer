@@ -18,6 +18,9 @@ _autosave-*.kicad_*
 production/
 .history/
 
+review-draft*/
+review-round*/
+
 # Blender
 
 *.blend?
