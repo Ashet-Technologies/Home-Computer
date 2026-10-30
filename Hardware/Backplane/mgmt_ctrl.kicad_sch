@@ -3552,7 +3552,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0cbc3e99-ed04-48d9-8522-870902a5e528")
-		(property "Reference" "C502"
+		(property "Reference" "C7"
 			(at 187.96 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3625,6 +3625,12 @@
 			(uuid "94ef0ad7-cd1f-4fe5-9150-f9a85215f929")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "C7")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "C201")
@@ -3672,7 +3678,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14761b40-f7bf-4994-a683-a234621e1782")
-		(property "Reference" "C503"
+		(property "Reference" "C8"
 			(at 213.36 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3745,6 +3751,12 @@
 			(uuid "dac9c9b3-f867-47a6-b97d-6a150972f299")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "C8")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "C202")
@@ -3792,7 +3804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14dbe67e-2e6e-45a8-8a5f-390c756835b7")
-		(property "Reference" "TP2013"
+		(property "Reference" "TP10"
 			(at 146.685 98.425 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3852,6 +3864,12 @@
 			(uuid "e7b89431-5707-426a-a0bd-d3a75d221f35")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "TP2018")
@@ -3899,7 +3917,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16d1fa12-f606-46c2-b77c-b512d303008a")
-		(property "Reference" "C504"
+		(property "Reference" "C9"
 			(at 238.76 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3972,6 +3990,12 @@
 			(uuid "7428e7f1-c6e1-4307-aae7-4913820accd8")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "C9")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "C203")
@@ -4021,7 +4045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b4f72b0-9ece-47cc-bab3-6bb02300165b")
-		(property "Reference" "#PWR0508"
+		(property "Reference" "#PWR02009"
 			(at 105.41 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -4079,6 +4103,12 @@
 			(uuid "c9351539-0b67-4700-9d61-5f93e5495dde")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02009")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02009")
@@ -4127,7 +4157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1caf37ba-71a9-4775-b82a-6f44d49aba00")
-		(property "Reference" "#PWR0511"
+		(property "Reference" "#PWR0122"
 			(at 203.2 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4185,6 +4215,12 @@
 			(uuid "686d47a9-6724-4f7b-adc4-d21e7b56e9b1")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0122")
@@ -4232,7 +4268,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e32ed85-cf31-46aa-be70-10a762a8aabd")
-		(property "Reference" "R505"
+		(property "Reference" "R26"
 			(at 204.47 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4305,6 +4341,12 @@
 			(uuid "5fafdaa9-a17d-48ce-9d65-26a6336bde6e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R26")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R217")
@@ -4353,7 +4395,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25af7e52-754f-46ca-bbba-158cafa6ca37")
-		(property "Reference" "#PWR0509"
+		(property "Reference" "#PWR0121"
 			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4411,6 +4453,12 @@
 			(uuid "f762cba9-bffc-48ed-b7ff-c28b5934075e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0121")
@@ -4458,7 +4506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d458384-b0f9-4a5e-9198-4055525b91a9")
-		(property "Reference" "R503"
+		(property "Reference" "R24"
 			(at 179.07 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4531,6 +4579,12 @@
 			(uuid "63e46235-5729-4f8b-99a5-30e7c6194b46")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R24")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R215")
@@ -4579,7 +4633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3014aeb7-1d40-4d24-afdf-342a610b4d07")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR02008"
 			(at 105.41 28.575 0)
 			(hide yes)
 			(show_name no)
@@ -4638,6 +4692,12 @@
 			(uuid "1e1421df-0fce-4292-8961-458b69e17440")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02008")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02008")
@@ -4685,7 +4745,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31d3936c-20ab-4637-a6b3-12ba816caef8")
-		(property "Reference" "R507"
+		(property "Reference" "R28"
 			(at 229.87 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4758,6 +4818,12 @@
 			(uuid "28f32fef-ab9b-49e3-bdc5-0798124401b5")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R28")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R219")
@@ -4805,7 +4871,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3f4c2dd0-5e35-4e50-a6a7-19128d8a31ca")
-		(property "Reference" "TP2021"
+		(property "Reference" "TP11"
 			(at 146.685 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4865,6 +4931,12 @@
 			(uuid "5c699cb4-6273-4204-9dff-bd7c1aee446a")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "TP2026")
@@ -4912,7 +4984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "456dfe9a-c32c-4d61-a1d3-c48b892211e5")
-		(property "Reference" "R504"
+		(property "Reference" "R25"
 			(at 204.47 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,6 +5057,12 @@
 			(uuid "23b68e43-86eb-40fe-a3d0-48daa9874770")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R25")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R216")
@@ -5032,7 +5110,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4cba402c-9113-4cb2-b393-44b01e894c99")
-		(property "Reference" "U37"
+		(property "Reference" "U5"
 			(at 156.21 88.8298 0)
 			(hide yes)
 			(show_name no)
@@ -5117,6 +5195,12 @@
 			(uuid "f92e3a82-19bb-44d0-a35f-6e4d0b610633")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "U5")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "U42")
@@ -5165,7 +5249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73e40378-1753-45ef-93b9-e15f6e40a2e8")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR02010"
 			(at 45.72 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5223,6 +5307,12 @@
 			(uuid "e1ecb0df-04bb-4aed-94fe-c1af897296ad")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02010")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02010")
@@ -5270,7 +5360,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73ecf85a-1eac-4190-937c-c942fbbfa3e5")
-		(property "Reference" "Q501"
+		(property "Reference" "Q3"
 			(at 69.85 65.4049 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5346,6 +5436,12 @@
 			(uuid "51da2110-62d0-4576-98bd-818cb9ad28c3")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "Q2001")
@@ -5394,7 +5490,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7517dd67-db32-4c78-9410-4a756c2b4dad")
-		(property "Reference" "C501"
+		(property "Reference" "C6"
 			(at 104.775 26.035 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5467,6 +5563,12 @@
 			(uuid "ba904497-7bb0-4156-b158-6871355066e5")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "C6")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "C2002")
@@ -5515,7 +5617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77d3a580-f8ed-4bb3-83da-c05e48f909ff")
-		(property "Reference" "#PWR0514"
+		(property "Reference" "#PWR0124"
 			(at 238.125 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5573,6 +5675,12 @@
 			(uuid "4aae2bac-3dc5-4b92-ad92-944962d5bd0e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0124")
@@ -5621,7 +5729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e0881f6-9db7-41f0-abd2-e4ff45d7597d")
-		(property "Reference" "#PWR0513"
+		(property "Reference" "#PWR0123"
 			(at 228.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5679,6 +5787,12 @@
 			(uuid "de5dfed0-662e-4316-b882-3667589743be")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0123")
@@ -5726,7 +5840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bc8103f-d34b-43e0-8d67-e927ba759dac")
-		(property "Reference" "R501"
+		(property "Reference" "R21"
 			(at 65.405 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,6 +5912,12 @@
 			(uuid "036f2422-6e94-449f-b7a5-caafb41fa434")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R21")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R2001")
@@ -5846,7 +5966,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c3c7d48-a6fa-4676-a2b3-a4cf6fee4e32")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR02011"
 			(at 83.82 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5905,6 +6025,12 @@
 			(uuid "0c86e7a4-2686-4dca-9fc5-f1391ebabbe3")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02011")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02011")
@@ -5953,7 +6079,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e098e85-308f-4b32-b0e0-84a7991fb89b")
-		(property "Reference" "R508"
+		(property "Reference" "R20"
 			(at 50.8 64.135 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6024,6 +6150,12 @@
 			(uuid "9086fb19-ed84-4845-a4ca-6176746a70dd")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R20")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R2002")
@@ -6071,7 +6203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9591aff6-06c5-4a09-a696-6b352eade151")
-		(property "Reference" "R506"
+		(property "Reference" "R27"
 			(at 229.87 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6144,6 +6276,12 @@
 			(uuid "757f11d7-4a62-45c0-8a4b-0c24c9182022")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R27")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R218")
@@ -6192,7 +6330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95a38c48-945d-4cb7-881a-c301ee7bf401")
-		(property "Reference" "#PWR0515"
+		(property "Reference" "#PWR02001"
 			(at 52.705 86.995 0)
 			(hide yes)
 			(show_name no)
@@ -6250,6 +6388,12 @@
 			(uuid "1f5d76b8-b76a-430a-81e4-f37e18aee752")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02001")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02001")
@@ -6298,7 +6442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dc78307-acf6-4ee5-9492-b5fa5a704aa8")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR02012"
 			(at 83.82 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6356,6 +6500,12 @@
 			(uuid "675345d3-3a26-46f1-a31d-6e975386c2a2")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02012")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02012")
@@ -6403,7 +6553,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a1d528d4-30c7-4164-b900-1f3a29cc0c44")
-		(property "Reference" "TP502"
+		(property "Reference" "TP8"
 			(at 146.685 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6463,6 +6613,12 @@
 			(uuid "8f8cc3b7-f9f8-42c5-bbcc-70cf14a14f69")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "TP2004")
@@ -6510,7 +6666,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a87bda0e-283a-4608-b181-d846b62ed87a")
-		(property "Reference" "U502"
+		(property "Reference" "U6"
 			(at 95.885 34.925 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6637,6 +6793,12 @@
 			(uuid "fce7f14a-830d-4494-93b0-f14cbeee21a9")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "U2004")
@@ -6685,7 +6847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abed1a6c-9901-4fa5-b5b3-8241c20221e4")
-		(property "Reference" "#PWR0510"
+		(property "Reference" "#PWR0120"
 			(at 187.325 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6743,6 +6905,12 @@
 			(uuid "9e13e750-2bb7-42c9-af0b-d42c4addb4fa")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0120")
@@ -6791,7 +6959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af90086d-cf8d-4126-a17c-a5457fa818d0")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR02014"
 			(at 95.25 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6849,6 +7017,12 @@
 			(uuid "ff1e6157-86de-4fc4-bdfd-cfc8107ad0ff")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02014")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02014")
@@ -6897,7 +7071,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b246e6ec-57d3-47c7-a037-d93a885090f7")
-		(property "Reference" "#PWR0516"
+		(property "Reference" "#PWR02002"
 			(at 73.025 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -6956,6 +7130,12 @@
 			(uuid "08a86da3-0420-42ae-9ee2-d2105675d66c")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02002")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02002")
@@ -7003,7 +7183,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb2202d7-01b8-43a0-abe2-b044c33a4279")
-		(property "Reference" "R502"
+		(property "Reference" "R23"
 			(at 179.07 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7076,6 +7256,12 @@
 			(uuid "3d0404d8-0177-419f-b7d1-8f9bf297ecae")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R23")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R214")
@@ -7124,7 +7310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c617d5e3-f8e6-4fa1-a2e1-2d3307d4e983")
-		(property "Reference" "#PWR0512"
+		(property "Reference" "#PWR0125"
 			(at 212.725 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7182,6 +7368,12 @@
 			(uuid "f19e2b10-0536-452c-96b7-34159d6abce1")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR0125")
@@ -7229,7 +7421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbd09557-a678-4fe5-b2af-0630f7961875")
-		(property "Reference" "TP501"
+		(property "Reference" "TP7"
 			(at 146.685 85.725 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7289,6 +7481,12 @@
 			(uuid "99c86142-4b72-4aaa-95a2-60081056ffe7")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "TP2003")
@@ -7337,7 +7535,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc5fe423-3ca9-4c50-a57f-f44eadcaa8c4")
-		(property "Reference" "R509"
+		(property "Reference" "R19"
 			(at 45.72 73.025 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7409,6 +7607,12 @@
 			(uuid "967ee7b8-f0be-4d04-bcf7-7b9b4ae6448a")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R19")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R2003")
@@ -7457,7 +7661,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d56e8eee-4eeb-46a4-aaab-23df4d8d26a9")
-		(property "Reference" "R510"
+		(property "Reference" "R22"
 			(at 70.485 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7528,6 +7732,12 @@
 			(uuid "994c0714-dee8-4fd3-92b1-5c0201fabbfd")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "R22")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "R2004")
@@ -7576,7 +7786,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7534f46-bfba-41e8-a360-6a0ae4d27921")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR02015"
 			(at 66.675 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7635,6 +7845,12 @@
 			(uuid "74f22d5d-7c90-4b3b-85fe-674695e6299e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02015")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02015")
@@ -7682,7 +7898,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "de69ef59-2f3a-43ef-b299-a66c6adc4c0f")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR02013"
 			(at 95.25 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7741,6 +7957,12 @@
 			(uuid "b2ceb3ba-6a4f-4333-a825-fe3ffa0b529e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "#PWR02013")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "#PWR02013")
@@ -7788,7 +8010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f53b42d1-d752-45ea-9dab-e9ac2c71c200")
-		(property "Reference" "TP2005"
+		(property "Reference" "TP9"
 			(at 146.685 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7848,6 +8070,12 @@
 			(uuid "9025ca89-6213-491c-a379-9e879ec22374")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "TP2010")
@@ -7897,7 +8125,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "faf6feae-9375-4588-94ee-efc45b4ceb91")
-		(property "Reference" "J501"
+		(property "Reference" "J2"
 			(at 51.435 91.4399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7973,6 +8201,12 @@
 			(uuid "5daae377-0215-4599-acbd-7fdc370a896e")
 		)
 		(instances
+			(project "Backplane_ExpSlot"
+				(path "/89135f31-e012-4e4f-adb0-2a6aa8bf6c1c/949fa056-fe8c-4593-9900-03a187f2acea/8c0db8fc-3591-4cdc-ae49-7339c5352f54"
+					(reference "J2")
+					(unit 1)
+				)
+			)
 			(project "Backplane"
 				(path "/c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b/830eb735-4083-4e97-a24b-40cca75ad59b/6ccf9da9-b2eb-4e25-a052-9a2bd1ca4ad0"
 					(reference "J2002")

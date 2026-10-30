@@ -179,6 +179,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -190,6 +191,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -201,6 +203,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -492,6 +495,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -565,7 +569,7 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {},
     "netclass_assignments": {
       "+12V": [
         "Power_500mA"
@@ -642,78 +646,6 @@
       "/Expansions/Module Slot 6/MOD_+5V": [
         "Power_500mA"
       ],
-      "/Expansions/Module Slot 7/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Expansions/Module Slot 7/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Expansions/Module Slot 7/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 1/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 1/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 1/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 2/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 2/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 2/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 3/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 3/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 3/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 4/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 4/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 4/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 5/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 5/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 5/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 6/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 6/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 6/MOD_+5V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 7/MOD_+12V": [
-        "Power_500mA"
-      ],
-      "/Module Slot 7/MOD_+3V3": [
-        "Power_500mA"
-      ],
-      "/Module Slot 7/MOD_+5V": [
-        "Power_500mA"
-      ],
       "/USB A Socket 1/VBUS": [
         "Power_500mA"
       ],
@@ -768,73 +700,28 @@
       "Net-(J2902-Pin_11)": [
         "Power_4A"
       ],
-      "Net-(J2902-Pin_12)": [
-        "Power_4A"
-      ],
       "Net-(J2902-Pin_5)": [
         "Power_4A"
       ],
       "Net-(Q1102-S)": [
         "Power_500mA"
       ],
-      "Net-(Q1103-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q1104-S)": [
-        "Power_500mA"
-      ],
       "Net-(Q1402-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q1403-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q1404-S)": [
         "Power_500mA"
       ],
       "Net-(Q1702-S)": [
         "Power_500mA"
       ],
-      "Net-(Q1703-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q1704-S)": [
-        "Power_500mA"
-      ],
       "Net-(Q2202-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q2203-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q2204-S)": [
         "Power_500mA"
       ],
       "Net-(Q2502-S)": [
         "Power_500mA"
       ],
-      "Net-(Q2503-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q2504-S)": [
-        "Power_500mA"
-      ],
       "Net-(Q402-S)": [
         "Power_500mA"
       ],
-      "Net-(Q403-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q404-S)": [
-        "Power_500mA"
-      ],
       "Net-(Q702-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q703-S)": [
-        "Power_500mA"
-      ],
-      "Net-(Q704-S)": [
         "Power_500mA"
       ],
       "Net-(TP2906-A)": [
@@ -1054,7 +941,7 @@
         "uuid": "c6da991a-d3ed-4ac1-8b0d-12cd7ba8539b"
       }
     ],
-    "used_designators": "#FLG402-447,#FLG2905,NT1-30,D1-3,D402-403,C102-135,C206-218,U1-47,TP404-406,TP409-412,R204-208,R425-455,R1008,R1017-1019,R1114,R3003-3004,#PWR1-2,#PWR113,#PWR115,#PWR127-129,#PWR133-172,#PWR210-270,#PWR432-434,#PWR441-465,#PWR1036,#PWR1052-1059,#PWR2110-2111,#PWR2927,#PWR2930-2931,#PWR2935-2937,#PWR3007",
+    "used_designators": "#FLG402-447,#FLG2905,#PWR1-2,#PWR113,#PWR115,#PWR127-129,#PWR133-172,#PWR210-270,#PWR432-434,#PWR441-465,#PWR1036,#PWR1052-1059,#PWR2110-2111,#PWR2927,#PWR2930-2931,#PWR2935-2937,#PWR3007,C102-135,C206-218,D1-3,D402-403,NT1-30,R204-208,R425-455,R1008,R1017-1019,R1114,R3003-3004,TP404-406,TP409-412,U1-47",
     "variants": []
   },
   "sheets": [
